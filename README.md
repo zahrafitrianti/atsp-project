@@ -1,33 +1,48 @@
-What we have to do for the project
+# atsp-project
 
-- submit APK and analyze it
-- select features
-- decide what kind of output to get
-- try to automate the process (go over the dataset) [done]
-- Calculate:
-security/vulnerability score; how many vulnerabilities it has, bad security practices.
-output -> combine the (right) different tools
+## Analyzer tools installation
 
+### Androwarn
+* clone this repository: [https://github.com/maaaaz/androwarn](https://github.com/maaaaz/androwarn)
+* cd to the cloned repository: `cd androwarn`
+* install requirements: `pip3 install -r requirements.txt`
+* to test the analyzer:
+```python3 androwarn.py -i <apk.file> -r <output file type> -v <verbose level> ```
 
-I tried
-- Static analyzer tool = androwarn (require >=Python3.x)
-- App vulnerability scanner = AndroBugs (require Python2.x)
-- Qark - destroys my pip3 + entire python env (would advise against it)
-- Dynamic Analysis Tools = Mobile-Security-Framework MobSF (Only considered, not tried)
+### Androbugs
+* clone this repository: [https://github.com/AndroBugs/AndroBugs_Framework](https://github.com/AndroBugs/AndroBugs_Framework)
+* cd to the cloned AndroBugs_Framework: `cd AndroBugs_Framework`
+* to test the analyzer:
+```
+python androbugs.py -f <apk.file> -o <output directory>
+```
+* NOTE: Androbugs uses Python 2.x
 
-TO-DO:
-- parse output txt file
-- calculate vulnerability score -> higher (bad) (androbugs)
-For androbugs, score can be calculated as:
-Score(app) = (c*NumofCriticals) + (w*NumofWarnings) + (n*NumofNotices) + (i*NumofInfo), where c, w, n, and i are weights.
+## Running the analysis
+* Download the Benign-sample-187 directory which consists of 187 apk files from the shared drive
+* Make sure you have all the analyzer tools installed (preferrably in a virtual environment)
+* To run analysis using Androwarn:
+```
+python3 run_androwarn.py
+```
+* To run analysis using Androbugs:
+```
+python3 run_androbugs.py
+```
 
-For androwarn:
-score(app) = num of features
+The above commands will run the analysis for all apk files. The output txt files are saved in `report_androwarn/` folder for Androwarn and in `report_androbugs/` folder for Androbugs.
 
-- calculate runtime per app, and per analyzer
-- report
-
-Extension:
-- go further into the output file and count the number of times a certain feature occurs
-- find some malicious apps and compare the scores with the benign ones
-
+### Creating a virtual environment
+* If you do not have `virtualenv` installed, type: `pip3 install virtualenv`
+* To create a python environment:
+```
+python3 -m virtualenv <name of virtual environment>
+```
+* Activate the newly created environment
+```
+source <name of virtual environment>/bin/activate
+```
+* To deactivate the virtual environment
+```
+deactivate
+```
