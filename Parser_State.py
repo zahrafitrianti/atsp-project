@@ -36,7 +36,7 @@ def extract_features(fname):
 		Output = {}
 		with open(fname, encoding='utf-8') as f:
 			for line in f:
-				#print(line)
+				print('Line: ' +line)
 				#print(featureDict)
 				if(line == '===== Androwarn Report =====' or line == ''):
 					continue
@@ -44,14 +44,16 @@ def extract_features(fname):
 					#print('main Cat: ' + line)
 					if mainCount > 0:
 						Output[mainCat] = featureDict.copy();
-					#	print('Dict')
-					#	print(Output)
-						featureDict = {}
-						mainCount = 0
+						print('feature list' + str(featureCount))
+						print(featureDict)
+						print('Dict' + str(mainCount))
+						print(Output)
+						featureDict.clear()
 					mainCount += 1
 					mainCat = strip_Main_Cat(line)
 				if line.startswith('\t[.]'):
-					#print('feature: ' + line)
+					print('feature: ' + line +' MainCat: ' + mainCat)
+					print(featureDict)
 					if featureCount > 0:
 						featureDict[featureCat] = ContentList.copy()
 						contentList = []
