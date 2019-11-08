@@ -13,8 +13,8 @@ def combine_scores(androwarn, androbugs):
 def main():
 
 	# csv files of the results
-	result_androwarn = 'result_androwarn.csv'
-	result_androbugs = 'result_androbugs.csv'
+	result_androwarn = './result/result_androwarn.csv'
+	result_androbugs = './result/result_androbugs.csv'
 
 	# read csv files
 	androwarn = pd.read_csv(result_androwarn)
@@ -35,7 +35,7 @@ def main():
 	
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
-	df.to_csv('final_result.csv')
+	df.to_csv('./result/final_result.csv')
 
 if __name__ == '__main__':
    main()

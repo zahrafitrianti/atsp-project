@@ -89,7 +89,6 @@ def main():
 
 	# directory of the output file
 	directory = './report_androbugs'
-	# directory = './test'
 	
 	# initialize a dictionary for the results
 	app_dict = {'app_name': [], 'score': [], 'features': []}
@@ -113,7 +112,7 @@ def main():
 	
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
-	df.to_csv('result_androbugs.csv')
+	df.to_csv('./result/result_androbugs.csv')
 
 if __name__ == '__main__':
    main()

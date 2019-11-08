@@ -105,7 +105,7 @@ def main():
 	
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
-	df.to_csv('result_androwarn.csv')
+	df.to_csv('./result/result_androwarn.csv')
 
 if __name__ == '__main__':
    main()
