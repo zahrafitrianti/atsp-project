@@ -23,7 +23,6 @@ def extract_features(fname):
 				if line.startswith('-'):
 					continue
 				final_list.append(line.strip())
-
 	except IOError:
 		print("Error in reading file...")
 		sys.exit(0)

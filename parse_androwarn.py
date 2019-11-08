@@ -67,6 +67,41 @@ def read_file(fname):
 	return Output
 
 
+"""
+Calculate score using the following formula:
+score(app) = weights[i] * features_count[i]
+Feature with the highest number of occurrences (counts) is given a higher weight to indicate importance
+"""
+def calculate_scores(features):
+
+	feature_count = {}
+
+	# count the number of occurrences of each feature
+	for key, value in features.items():
+		feature_count[key] = len([i for i in value if i])
+	
+	# initialize weights
+	weights = np.ones(len(features.keys()))
+
+	# find the feature with the highest counts
+	if feature_count.items():
+		max_feature, _ = max(feature_count.items(), key=lambda x:x[1])
+		ind = list(feature_count.keys()).index(max_feature)
+	else:
+		max_feature = []
+	
+	score = 0
+	i = 0
+
+	# calculate the score
+	for key, value in feature_count.items():
+		weights[ind] = 3
+		score += weights[i] * feature_count[key]
+		i += 1
+	
+	return score
+
+
 def main():
 
 	# directory of the output file
@@ -89,8 +124,9 @@ def main():
 			# extract features from each app
 			features = output.get(name).get('Analysis Results')
 
-			# calculate the scores (count the number of features)
-			score = len(features) / len(os.listdir(directory))
+			# calculate the scores and normalize
+			score = calculate_scores(features)
+			score /= len(os.listdir(directory))
 
 			# compile output to a dict object
 			app_dict['app_name'].append(name)
@@ -100,7 +136,7 @@ def main():
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
 	print('Save results to csv...')
-	df.to_csv('./result/result_androwarn_normalized.csv', index=False)
+	df.to_csv('./result/result_androwarn_weighted.csv', index=False)
 
 if __name__ == '__main__':
    main()

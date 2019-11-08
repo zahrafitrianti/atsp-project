@@ -17,7 +17,7 @@ def combine_scores(androwarn, androbugs):
 def main():
 
 	# csv files of the results
-	result_androwarn = './result/result_androwarn_normalized.csv'
+	result_androwarn = './result/result_androwarn_weighted.csv'
 	result_androbugs = './result/result_androbugs_normalized.csv'
 
 	# read csv files
@@ -39,7 +39,8 @@ def main():
 	
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
-	df.to_csv('./result/final_scores_normalized.csv', index=False)
+	print('Save output to csv file...')
+	df.to_csv('./result/final_scores_weighted.csv', index=False)
 
 if __name__ == '__main__':
    main()
