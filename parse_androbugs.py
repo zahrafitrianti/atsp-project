@@ -74,6 +74,7 @@ def count_features(final_list):
 """
 Calculate score using the following formula:
 score(app) = c * numOfCritical + w * numOfWarning + n * numOfNotice + i * numOfInfo
+c, w, n, i are weights for each respective feature
 """
 def calculate_score(features):
 	
@@ -124,6 +125,7 @@ def main():
 	
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
+	print('Save results to csv...')
 	df.to_csv('./result/result_androbugs_normalized.csv', index=False)
 
 if __name__ == '__main__':

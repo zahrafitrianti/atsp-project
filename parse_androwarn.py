@@ -1,70 +1,63 @@
 import os
-import time
 import numpy as np
 import sys
 import pandas as pd
 
+
 """
 String preprocessing
 """
-def strip_Main_Cat(category):
+def strip_category(category):
 	return category.strip().replace('\n','').replace('[+]','').strip()	
 def strip_feature(feature):
 	return feature.strip().replace('\t','').replace('[.]','').replace('\n','').strip()
-def strip_line(line):
+def strip_item(line):
 	return line.strip().replace('\t\t','').lstrip(' -').strip()
 
 
 """
-Extract features from the output txt file.
-It reads each txt file line by line, starting from the line: '[+] Analysis Results'
-Save all the features in a list and return them.
+Read the output txt file and parse them as a dictionary object.
+It creates a nested dictionary with the following structure:
+{
+	main_category:
+		{
+			features: item
+		}
+}
+Return the dictionary of the output file
 """
-def extract_features(fname):
+def read_file(fname):
+
+	Output = {}
 
 	try:
-		mainCat = ''
-		mainCount = 0
-		featureCat = ''
-		featureCount = 0 
-		ContentList = []
-		featureDict = {}
-		Output = {}
-
 		with open(fname, encoding='utf-8') as f:
 			for line in f:
-				
-				# skip the first line and empty lines
-				if(line == '===== Androwarn Report =====' or line == '\n'):
-					continue
-				
-				# save each category
-				if line.startswith('[+]'):
-					if mainCount > 0:
-						Output[mainCat] = featureDict.copy()
-						featureDict.clear()
-					mainCount += 1
-					mainCat = strip_Main_Cat(line)
-				
-				# save features
-				if line.startswith('\t[.]'):
-					if featureCount > 0:
-						featureDict[featureCat] = ContentList.copy()
-						contentList = []
-						featureCount = 0
-					featureCat = strip_feature(line)
-					if featureCat == 'Description': # was treated as a feature
-						continue
-					featureCount += 1
-				
-				# save logs
-				if line.startswith('\t\t -'):
-					ContentList.append(strip_line(line))
-					
-				# Keep permissions
-				# elif line.startswith('\t\t - Asked:'):
-				#     permissions.append(line)
 
+				# skip first line and empty lines
+				if line.startswith('=') or line.startswith('\n'):
+					continue
+
+				# save main categories; a line which starts with [+]
+				# set main categories as keys in the dictionary
+				if line.startswith('[+]'):
+					category = strip_category(line)
+
+					# initialize an empty dictionary to create a nested dictionary
+					Output[category] = {}
+				
+				# save features; a line which starts with [.]
+				if line.startswith('\t[.]'):
+					features = strip_feature(line)
+
+					# set features as key in the nested dictionary
+					# initialize an empty list for its values
+					Output[category][features] = []
+
+				# save remaining items (logs/permissions); a line which starts with -
+				# items are values to the nested dictionary (features)
+				if line.startswith('\t\t -'):
+					Output[category][features].append(strip_item(line))
 	except IOError:
 		print("Error in reading file...")
 		sys.exit(0)
@@ -78,11 +71,10 @@ def main():
 
 	# directory of the output file
 	directory = './report_androwarn'
-	category = 'Analysis Results' 
 	
 	# initialize a dictionary for the results
 	app_dict = {'app_name': [], 'score': [], 'features': []}
-	features = {}
+	output = {}
 
 	# loop over all txt files
 	for filename in os.listdir(directory):
@@ -91,20 +83,23 @@ def main():
 			fname = os.path.join(directory, filename)
 			name = filename[0:len(filename)-15]
 			
+			# read output file
+			output[name] = read_file(fname)
+
 			# extract features from each app
-			features[name] = extract_features(fname)
+			features = output.get(name).get('Analysis Results')
 
 			# calculate the scores (count the number of features)
-			score = len(features.get(name).get(category)) / len(os.listdir(directory))
+			score = len(features) / len(os.listdir(directory))
 
 			# compile output to a dict object
 			app_dict['app_name'].append(name)
 			app_dict['score'].append(score)
-			feature_names = features.get(name).get(category).keys()
-			app_dict['features'].append(', '.join(feature_names))
+			app_dict['features'].append([', '.join(features.keys())])
 	
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
+	print('Save results to csv...')
 	df.to_csv('./result/result_androwarn_normalized.csv', index=False)
 
 if __name__ == '__main__':
