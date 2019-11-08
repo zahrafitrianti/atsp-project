@@ -1,20 +1,24 @@
 import pandas as pd
 
-# calculate combined scores from both analyzers
+"""
+Calculate combined scores from both analyzers
+"""
 def combine_scores(androwarn, androbugs):
+
+	# take the scores for all app from each analyzer
 	scores_androwarn = androwarn.score.values
 	scores_androbugs = androbugs.score.values
 
+	# add them up to compute the combined score and normalize it
 	combined_scores = [sum(x) for x in zip(scores_androwarn, scores_androbugs)]
-
 	return combined_scores
 	
 
 def main():
 
 	# csv files of the results
-	result_androwarn = './result/result_androwarn.csv'
-	result_androbugs = './result/result_androbugs.csv'
+	result_androwarn = './result/result_androwarn_normalized.csv'
+	result_androbugs = './result/result_androbugs_normalized.csv'
 
 	# read csv files
 	androwarn = pd.read_csv(result_androwarn)
@@ -35,7 +39,7 @@ def main():
 	
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
-	df.to_csv('./result/final_result.csv')
+	df.to_csv('./result/final_scores_normalized.csv', index=False)
 
 if __name__ == '__main__':
    main()

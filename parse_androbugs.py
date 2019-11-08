@@ -1,5 +1,4 @@
 import os
-import time
 import numpy as np
 import sys
 import pandas as pd
@@ -8,7 +7,7 @@ import re
 
 """
 Extract features from the output txt file.
-It reads each txt file line by line, starting from the line: '[+] Analysis Results'
+It reads each txt file line by line, starting from the line: '-----' in the output file
 Save all the features in a list and return them.
 """
 def extract_features(fname):
@@ -34,25 +33,29 @@ def extract_features(fname):
 	return final_list
 
 
-def count_features(features):
+"""
+Count the number of features per app.
+Features = [Critical], [Warning], [Notice], [Info]
+"""
+def count_features(final_list):
 	
 	critical = []
 	warning = []
 	notice = []
 	info = []
 
-	for f in features:
+	for f in final_list:
 		substr1 = re.findall(r'\[Critical\]', f)
 		substr2 = re.findall(r'\[Warning\]', f)
 		substr3 = re.findall(r'\[Notice\]', f)
 		substr4 = re.findall(r'\[Info\]', f)
 		if substr1:
 			critical.append(substr1)
-		if substr2:
+		elif substr2:
 			warning.append(substr2)
-		if substr3:
+		elif substr3:
 			notice.append(substr3)
-		if substr4:
+		elif substr4:
 			info.append(substr4) 
 	
 	critical = np.asarray(critical).flatten()
@@ -68,6 +71,10 @@ def count_features(features):
 
 	return features
 
+"""
+Calculate score using the following formula:
+score(app) = c * numOfCritical + w * numOfWarning + n * numOfNotice + i * numOfInfo
+"""
 def calculate_score(features):
 	
 	# initialize score
@@ -79,9 +86,9 @@ def calculate_score(features):
 	n = 1
 	i = 1
 
+	# calculate score and return it
 	scores += (c*features['critical']) + (w*features['warning']) + (n*features['notice']) + (i*features['info'])
 	return scores
-
 
 
 
@@ -101,18 +108,23 @@ def main():
 			name = filename.split('_')[0] + '.apk'
 			
 			# extract features from each app
-			features = extract_features(fname)
-			feature_dict = count_features(features)
-			score = calculate_score(feature_dict)
+			final_list = extract_features(fname)
+
+			# count the number of features per app
+			features = count_features(final_list)
+
+			# calculate score per app
+			score = calculate_score(features)
+			score /= len(os.listdir(directory))
 
 			# compile output to a dict object
 			app_dict['app_name'].append(name)
 			app_dict['score'].append(score)
-			app_dict['features'].append(feature_dict)
+			app_dict['features'].append(features)
 	
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
-	df.to_csv('./result/result_androbugs.csv')
+	df.to_csv('./result/result_androbugs_normalized.csv', index=False)
 
 if __name__ == '__main__':
    main()

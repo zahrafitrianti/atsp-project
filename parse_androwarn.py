@@ -93,9 +93,9 @@ def main():
 			
 			# extract features from each app
 			features[name] = extract_features(fname)
-			
+
 			# calculate the scores (count the number of features)
-			score = len(features.get(name).get(category))
+			score = len(features.get(name).get(category)) / len(os.listdir(directory))
 
 			# compile output to a dict object
 			app_dict['app_name'].append(name)
@@ -105,7 +105,7 @@ def main():
 	
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
-	df.to_csv('./result/result_androwarn.csv')
+	df.to_csv('./result/result_androwarn_normalized.csv', index=False)
 
 if __name__ == '__main__':
    main()
