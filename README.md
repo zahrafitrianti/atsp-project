@@ -3,10 +3,10 @@ To run this project you have to change the hardcoded path for input and output i
 
 ## Structure tree
 ``` bash
-+---Reports		                       -> Folder of all reports
-|   +---Report MobSF		               -> Folder of MobSF reports 
-|   |   +---Report Benign apk		       -> MobSF reports for bening apk dataset
-|   |   +---Report Malicious apk	   -> MobSF reports for malicious apk dataset 
++---Reports                             -> Folder of all reports
+|   +---Report MobSF                    -> Folder of MobSF reports 
+|   |   +---Report Benign apk           -> MobSF reports for bening apk dataset
+|   |   +---Report Malicious apk        -> MobSF reports for malicious apk dataset 
 |   |   \---Report other malicious apk (test) -> MobSF reports for other malicious apk
 |   +---report_androbugs_bening		        -> Androbugs reports for bening apk dataset
 |   +---report_androbugs_malicious		    -> Androbugs reports for malicious apk dataset 
