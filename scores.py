@@ -52,12 +52,12 @@ def plot_scores(df, analyzer):
 def main():
 
 	# csv files of the results
-	result_androwarn = './result/result_androwarn.csv'
-	result_androbugs = './result/result_androbugs.csv'
+	result_androwarn = './result/result_androwarn/result_androwarn.csv'
+	result_androbugs = './result/Androbugs/result_androbugs.csv'
 
 	# csv files of the malicious apps results
-	# result_androwarn = './result/result_androwarn_malicious.csv'
-	# result_androbugs = './result/result_androbugs_malicious.csv'
+	# result_androwarn = './result/result_androwarn/result_androwarn_malicious.csv'
+	# result_androbugs = './result/Androbugs/result_androbugs_malicious.csv'
 
 	# read csv files
 	androwarn = pd.read_csv(result_androwarn)
@@ -80,7 +80,7 @@ def main():
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
 	print('Save output to csv file...')
-	df.to_csv('./result/final_scores.csv', index=False)
+	# df.to_csv('./result/final_scores.csv', index=False)
 	# df.to_csv('./result/final_scores_malicious.csv', index=False)
 
 	# plot histogram of scores

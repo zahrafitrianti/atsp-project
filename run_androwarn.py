@@ -45,8 +45,8 @@ def main():
 
 	running_time = np.vstack([time_elapsed_per_app, ['Total time elapsed', total_time_elapsed]])
 	print("Save output to file...")
-	np.savetxt('./result/Androwarn/running_time_androwarn.txt', running_time, delimiter=" ", fmt="%s")
-	# np.savetxt('./result/Androwarn/running_time_androwarn_malicious.txt', running_time, delimiter=" ", fmt="%s")
+	np.savetxt('./result/result_androwarn/running_time_androwarn.txt', running_time, delimiter=" ", fmt="%s")
+	# np.savetxt('./result/result_androwarn/running_time_androwarn_malicious.txt', running_time, delimiter=" ", fmt="%s")
 
 if __name__ == '__main__':
    main()
