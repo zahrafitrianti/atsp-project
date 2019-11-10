@@ -1,0 +1,38 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Adobe Flash Player
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.paranbijuv.aijuy
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - fafaebe042ba9c59b2c3f65f43774cdb5369f838469e133a7c26e824f6d20cc6.apk
+
+	[.] Fingerprint                             
+		 - MD5: 56ed9c77571c81c208bf49fef4422e8f
+		 - SHA-1: ec52eebf6742c23fafc9e1f4de0203825fe1647d
+		 - SHA-256: fafaebe042ba9c59b2c3f65f43774cdb5369f838469e133a7c26e824f6d20cc6
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.CALL_PHONE',  'android.permission.CHANGE_NETWORK_STATE',
+		   'android.permission.CHANGE_WIFI_STATE',  'android.permission.GET_TASKS',  'android.permission.INTERNET',  'android.permission.READ_CONTACTS',  'android.permission.READ_PHONE_STATE',
+		   'android.permission.READ_SMS',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_SMS',  'android.permission.SEND_SMS',  'android.permission.USES_POLICY_FORCE_LOCK',
+		   'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_SETTINGS',  'android.permission.WRITE_SMS',  'com.android.browser.permission.READ_HISTORY_BOOKMARKS']
+		 - Implied: []
+		 - Declared: []
+
+

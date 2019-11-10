@@ -1,0 +1,225 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: com.parental.control.v4
+Package Version Name: 1.0
+Package Version Code: 1
+Min Sdk: 8
+Target Sdk: 14
+MD5   : db01f96d5e66d82f7eb61b85eb96ef6e
+SHA1  : 9c3844d7a798d913ea6310e5fd94c4a0f65387c6
+SHA256: 099a57328de9335c524f44514e225d50731c808145221affdd684d8b4dad5a1d
+SHA512: 3f194bd6da8637a60b43ff4042b69eac640ccff082030a13363958f755cf9189de5e22bb25686fc95401690a14113a979c22f3a80667a06144e7a2bf56fe8404
+Analyze Signature: 3a7c814abb03b25461ae45c34fcc311c6e5bc86fc27b74c6af1b986664e315a81bcd6aaddc4116b3757e1e1f19cc8bf568416ee847fc144e5fbe13ec51dd7262
+------------------------------------------------------------------------------------------------
+[Critical] <Hacker> Base64 String Encryption:
+           Found Base64 encoding "String(s)" (Total: 2). We cannot guarantee all of the Strings are Base64 encoding and also we will not
+           show you the decoded binary file:
+               http://pizzachip.com/rat
+                   ->Original Encoding String: aHR0cDovL3BpenphY2hpcC5jb20vcmF0
+                   ->From class: Lcom/connect/MyService;-><init>()V
+               keylimepie
+                   ->Original Encoding String: a2V5bGltZXBpZQ==
+                   ->From class: Lcom/connect/MyService;-><init>()V
+[Critical] <SSL_Security><Hacker> Base64 String Encryption:
+           Base64 encoding "HTTP URLs without SSL" from all the Strings (Total: 1)
+               http://pizzachip.com/rat
+                   ->Original Encoding String: aHR0cDovL3BpenphY2hpcC5jb20vcmF0
+                   ->From class: Lcom/connect/MyService;-><init>()V
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lcom/connect/MyService$2;->run()V (0x1004) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/connect/MyService$changeDirectory;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x86) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/connect/MyService$changeDirectory;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0xf6) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/connect/MyService;->onStart(Landroid/content/Intent; I)V (0x25a) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/connect/MyService;->onStart(Landroid/content/Intent; I)V (0x1c) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+[Warning]  Codes for Sending SMS:
+           This app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage):
+               => Lcom/connect/MyService$sendText;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x2a) --->
+                    Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/connect/MyService$deleteFiles;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x86) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/connect/UpdateApp;->doInBackground([Ljava/lang/String;)Ljava/lang/Void; (0x62) ---> Ljava/io/File;->delete()Z
+[Notice]  HttpURLConnection Android Bug Checking:
+           You're using "HttpURLConnection". Prior to Android 2.2 (Froyo), "HttpURLConnection" had some frustrating bugs.
+           In particular, calling close() on a readable InputStream could poison the connection pool. Work around this by disabling
+           connection pooling.
+           Please check the reference:
+            (1)http://developer.android.com/reference/java/net/HttpURLConnection.html
+            (2)http://android-developers.blogspot.tw/2011/09/androids-http-clients.html
+               => Lcom/connect/MyService$UploadFile;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x126) --->
+                    Ljava/net/HttpURLConnection;->setDoInput(Z)V
+               => Lcom/connect/MyService$UploadFile;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x134) --->
+                    Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/connect/MyService$UploadFile;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x142) --->
+                    Ljava/net/HttpURLConnection;->setUseCaches(Z)V
+               => Lcom/connect/MyService$UploadFile;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x150) --->
+                    Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/connect/MyService$UploadFile;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x166) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/connect/MyService$UploadFile;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x19a) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/connect/MyService$UploadFile;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x1a4) --->
+                    Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/connect/MyService$UploadFile;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x2b6) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/connect/MyService$UploadFile;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x2be) --->
+                    Ljava/net/HttpURLConnection;->getResponseMessage()Ljava/lang/String;
+               => Lcom/connect/MyService$UploadFiles;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x23e) --->
+                    Ljava/net/HttpURLConnection;->setDoInput(Z)V
+               => Lcom/connect/MyService$UploadFiles;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x24c) --->
+                    Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/connect/MyService$UploadFiles;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x25a) --->
+                    Ljava/net/HttpURLConnection;->setUseCaches(Z)V
+               => Lcom/connect/MyService$UploadFiles;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x268) --->
+                    Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/connect/MyService$UploadFiles;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x27e) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/connect/MyService$UploadFiles;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x2b2) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/connect/MyService$UploadFiles;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x2bc) --->
+                    Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/connect/MyService$UploadFiles;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x3ea) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/connect/MyService$UploadFiles;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x3f2) --->
+                    Ljava/net/HttpURLConnection;->getResponseMessage()Ljava/lang/String;
+               => Lcom/connect/MyService$isUrlAlive;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x20) --->
+                    Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/connect/MyService$isUrlAlive;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x26) --->
+                    Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/connect/MyService$isUrlAlive;->doInBackground([Ljava/lang/String;)Ljava/lang/String; (0x2c) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/connect/UpdateApp;->doInBackground([Ljava/lang/String;)Ljava/lang/Void; (0x20) --->
+                    Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/connect/UpdateApp;->doInBackground([Ljava/lang/String;)Ljava/lang/Void; (0x28) --->
+                    Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/connect/UpdateApp;->doInBackground([Ljava/lang/String;)Ljava/lang/Void; (0x2e) --->
+                    Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/connect/UpdateApp;->doInBackground([Ljava/lang/String;)Ljava/lang/Void; (0x72) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" you're not using it.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is "NOT" using Android SQLite databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info]  Dynamic Code Loading:
+           No dynamic code loading(DexClassLoader) found.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <Signature><Hacker> Getting Signature Code Checking:
+           Did not detect this app is checking the signature in the code.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest Exported Components Checking:
+           No exported components(except for Launcher) for receiving Android or outside applications' actions (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting IMEI and Device ID:
+           Did not detect this app is getting the "device id(IMEI)" by "TelephonyManager.getDeviceId()" approach.
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Connection Checking:
+           Did not discover urls that are not under SSL (Notice: if you encrypt the url string, we can not discover that).
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+[Info] <WebView> WebView Local File Access Attacks Checking:
+           Did not find potentially critical local file access settings.
+[Info] <WebView> WebView Potential XSS Attacks Checking:
+           Did not detect "setJavaScriptEnabled(true)" in WebView.
+[Info] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           WebView addJavascriptInterface vulnerabilities not found.
+------------------------------------------------------------
+AndroBugs analyzing time: 0.622978 secs
+Total elapsed time: 1.724755 secs

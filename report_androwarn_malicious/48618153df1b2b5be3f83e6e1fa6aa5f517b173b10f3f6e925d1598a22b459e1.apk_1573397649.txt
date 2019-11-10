@@ -1,0 +1,76 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Atualização WA [4ed5]
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.gelini
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message ' Points are coincident' under the tag 'PathParser'
+		 - This application logs the message '' under the tag ' Points are coincident PathParser'
+		 - This application logs the message '' under the tag 'ActionProvider(support)'
+		 - This application logs the message '3' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'CURRENTLY UNSUPPORTED' under the tag 'ConstraintSet'
+		 - This application logs the message 'Cannot find app view' under the tag 'TooltipPopup'
+		 - This application logs the message 'Could not call getMaxAvailableHeightMethod(View, int, boolean) on PopupWindow. Using the public version.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method getMaxAvailableHeight(View, int, boolean) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method getScaledScrollFactor() on ViewConfiguration' under the tag 'ViewConfigCompat'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setEpicenterBounds(Rect) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Could not find voice search activity' under the tag 'SearchView'
+		 - This application logs the message 'Could not invoke setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Failed to find font-family tag' under the tag 'ResourcesCompat'
+		 - This application logs the message 'Ljava/lang/Object;->getClass()Ljava/lang/Class;' under the tag 'TypefaceCompatApi24Impl'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'ConstraintHelper'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'ConstraintSet'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'NestedScrollView'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'TypefaceCompatUtil'
+		 - This application logs the message 'Mutated drawable is not the same instance as the input.' under the tag 'AppCompatDrawableManag'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Unable to collect necessary private methods. Fallback to legacy implementation.' under the tag 'TypefaceCompatApi26Impl'
+		 - This application logs the message 'Unable to collect necessary private methods.Fallback to legacy implementation.' under the tag 'TypefaceCompatApi24Impl'
+		 - This application logs the message 'layout_constraintWidth_default="wrap" is deprecated.\nUse layout_width="WRAP_CONTENT" and layout_constrainedWidth="true" instead.' under the tag
+		   'ConstraintLayout'
+		 - This application logs the message 'sActiveHandler.mPopup == null' under the tag 'TooltipCompatHandler'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'v5' under the tag 'Landroid/support/v7/widget/x;->i()Landroid/view/View;'
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address '' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'timeout' on the 'N/A' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 48618153df1b2b5be3f83e6e1fa6aa5f517b173b10f3f6e925d1598a22b459e1.apk
+
+	[.] Fingerprint                             
+		 - MD5: 6c39197bb2c2fd5fc9253ed18467d0d7
+		 - SHA-1: 001212905053226705b33713056311f17cc05b89
+		 - SHA-256: 48618153df1b2b5be3f83e6e1fa6aa5f517b173b10f3f6e925d1598a22b459e1
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET',  'android.permission.REQUEST_DELETE_PACKAGES',  'android.permission.REQUEST_INSTALL_PACKAGES',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

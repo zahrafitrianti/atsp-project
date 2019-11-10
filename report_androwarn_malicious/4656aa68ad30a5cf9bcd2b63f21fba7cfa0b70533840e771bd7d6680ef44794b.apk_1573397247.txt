@@ -1,0 +1,64 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 一键优化大师
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.good.sunsine
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the SIM's serial number
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the constant indicating the state of the device SIM card
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'PropertyValuesHolder'
+		 - This application logs the message '3' under the tag 'PropertyValuesHolder'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application lists applications installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Code Execution                          
+		 - This application executes a UNIX command
+		 - This application executes a UNIX command containing this argument: ''
+		 - This application executes a UNIX command containing this argument: '0'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 4656aa68ad30a5cf9bcd2b63f21fba7cfa0b70533840e771bd7d6680ef44794b.apk
+
+	[.] Fingerprint                             
+		 - MD5: 592fa585b64412e31b3da77b1e825208
+		 - SHA-1: 3689a276f85fd94750dc063860097fdc28ec527f
+		 - SHA-256: 4656aa68ad30a5cf9bcd2b63f21fba7cfa0b70533840e771bd7d6680ef44794b
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_MTK_MMHW',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.BROADCAST_STICKY',
+		   'android.permission.CHANGE_NETWORK_STATE',  'android.permission.CHANGE_WIFI_STATE',  'android.permission.CLEAR_APP_CACHE',  'android.permission.GET_PACKAGE_SIZE',  'android.permission.GET_TASKS',
+		   'android.permission.INTERNET',  'android.permission.KILL_BACKGROUND_PROCESSES',  'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',  'android.permission.READ_EXTERNAL_STORAGE',
+		   'android.permission.READ_LOGS',  'android.permission.READ_PHONE_STATE',  'android.permission.READ_SMS',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_SMS',
+		   'android.permission.RESTART_PACKAGES',  'android.permission.SEND_SMS',  'android.permission.SYSTEM_ALERT_WINDOW',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE',
+		   'android.permission.WRITE_SETTINGS',  'android.permission.WRITE_SMS',  'com.android.alarm.permission.SET_ALARM']
+		 - Implied: []
+		 - Declared: []
+
+

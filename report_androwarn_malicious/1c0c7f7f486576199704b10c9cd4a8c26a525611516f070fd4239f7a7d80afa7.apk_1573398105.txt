@@ -1,0 +1,403 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - TV Remote
+
+	[.] Application Version                     
+		 - 6.0
+
+	[.] Package Name                            
+		 - tv.remote.control.universal.com
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the constant indicating the state of the device SIM card
+		 - This application reads the current location of the device
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+		 - This application reads the Cell ID value
+		 - This application reads the Location Area Code value
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Destroying:  ' under the tag 'LoaderManager'
+		 - This application logs the message ' ' under the tag '1'
+		 - This application logs the message ' Points are coincident' under the tag 'PathParser'
+		 - This application logs the message ' to  ' under the tag 'FragmentManager'
+		 - This application logs the message '' under the tag ' Points are coincident PathParser'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag '1'
+		 - This application logs the message '' under the tag 'ActionProvider(support)'
+		 - This application logs the message '' under the tag 'Cea708Decoder'
+		 - This application logs the message '' under the tag 'Content-Length 0'
+		 - This application logs the message '' under the tag 'ExifInterface 9'
+		 - This application logs the message '' under the tag 'ExifInterface'
+		 - This application logs the message '' under the tag 'ExoPlayerImpl'
+		 - This application logs the message '' under the tag 'FBAudienceNetwork'
+		 - This application logs the message '' under the tag 'FragmentManager 4'
+		 - This application logs the message '' under the tag 'FragmentManager FragmentManager'
+		 - This application logs the message '' under the tag 'FragmentManager'
+		 - This application logs the message '' under the tag 'JobManager'
+		 - This application logs the message '' under the tag 'JobService'
+		 - This application logs the message '' under the tag 'LinearLayoutManager'
+		 - This application logs the message '' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag 'MediaCodecVideoRenderer'
+		 - This application logs the message '' under the tag 'PREFS MainActivity'
+		 - This application logs the message '' under the tag 'PesReader'
+		 - This application logs the message '' under the tag 'ProxyCache'
+		 - This application logs the message '' under the tag 'REDIRECTACTION: '
+		 - This application logs the message '' under the tag 'Read content info from  ProxyCache'
+		 - This application logs the message '' under the tag 'RecyclerView'
+		 - This application logs the message '' under the tag 'Skip the tag entry since tag number is not defined:  Skip the tag entry since data format ( ) is unexpected for tag:  ExifInterface'
+		 - This application logs the message '' under the tag 'View'
+		 - This application logs the message '' under the tag 'WavHeaderReader WavHeaderReader WavHeaderReader'
+		 - This application logs the message '' under the tag 'WavHeaderReader WavHeaderReader'
+		 - This application logs the message '' under the tag 'WavHeaderReader'
+		 - This application logs the message '' under the tag 'WebvttCueBuilder'
+		 - This application logs the message '' under the tag 'application/dvbsubs application/pgs application/vobsub application/x-subrip audio/raw audio/x-unknown audio/raw audio/x-unknown
+		   audio/x-unknown'
+		 - This application logs the message '' under the tag 'application/dvbsubs application/pgs application/vobsub application/x-subrip audio/raw audio/x-unknown audio/raw audio/x-unknown'
+		 - This application logs the message '' under the tag 'application/dvbsubs application/pgs application/vobsub application/x-subrip audio/raw audio/x-unknown'
+		 - This application logs the message '/data/data/ ' under the tag 'ProxyCache'
+		 - This application logs the message '0' under the tag ''
+		 - This application logs the message '0' under the tag 'DynamiteModule'
+		 - This application logs the message '0' under the tag 'Landroid/support/v7/widget/av;->i()Landroid/view/View;'
+		 - This application logs the message '0' under the tag 'Lcom/facebook/ads/internal/a/f;->h()Z'
+		 - This application logs the message '0' under the tag 'LoaderManager'
+		 - This application logs the message '1' under the tag '1'
+		 - This application logs the message '1' under the tag 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;'
+		 - This application logs the message '2' under the tag '2'
+		 - This application logs the message '2' under the tag 'DynamiteModule'
+		 - This application logs the message '2' under the tag 'FBAudienceNetwork'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'Picasso'
+		 - This application logs the message '2' under the tag 'Volley'
+		 - This application logs the message '3' under the tag '1'
+		 - This application logs the message '3' under the tag '4'
+		 - This application logs the message '3' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '3' under the tag 'UidVerifier'
+		 - This application logs the message '32' under the tag 'ExifInterface ExifInterface ExifInterface ExifInterface ExifInterface ExifInterface'
+		 - This application logs the message '32' under the tag 'ExifInterface ExifInterface ExifInterface ExifInterface ExifInterface'
+		 - This application logs the message '32' under the tag 'ExifInterface ExifInterface ExifInterface ExifInterface'
+		 - This application logs the message '32' under the tag 'ExifInterface ExifInterface ExifInterface'
+		 - This application logs the message '32' under the tag 'ExifInterface ExifInterface'
+		 - This application logs the message '4' under the tag 'DynamiteModule'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag '5'
+		 - This application logs the message '5' under the tag 'DynamiteModule'
+		 - This application logs the message '6' under the tag '6'
+		 - This application logs the message '6' under the tag 'MediaCodecUtil'
+		 - This application logs the message '8' under the tag 'AudioTrack'
+		 - This application logs the message '8' under the tag 'DynamiteModule'
+		 - This application logs the message ':  ' under the tag 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;'
+		 - This application logs the message '==============' under the tag 'LinearLayoutManager'
+		 - This application logs the message 'API >= 21' under the tag 'MainActivity'
+		 - This application logs the message 'Activity result delivered for unknown Fragment. ' under the tag 'FragmentActivity'
+		 - This application logs the message 'Activity result delivered for unknown Fragment.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Ad cannot be clicked before it is viewed.' under the tag 'FBAudienceNetworkLog'
+		 - This application logs the message 'Alarm finished' under the tag 'JobService'
+		 - This application logs the message 'AppCompatDelegate' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'AtomParsers' under the tag 'AtomParsers'
+		 - This application logs the message 'Attempted to bind to a service in a STOPPED package.' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Attempting to present the AppInviteDialog with an outdated Facebook app on the device' under the tag 'AppInviteDialog'
+		 - This application logs the message 'Attempting to present the Like Dialog with an outdated Facebook app on the device' under the tag 'LikeDialog'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Bitmap size exceeds max size for storage' under the tag 'Ljava/io/ByteArrayOutputStream;->size()I'
+		 - This application logs the message 'CURRENTLY UNSUPPORTED' under the tag 'ConstraintSet'
+		 - This application logs the message 'Cannot call LoginFragment with a null calling package. This can occur if the launchMode of the caller is singleInstance.' under the tag 'LoginFragment'
+		 - This application logs the message 'Cannot call this method in a scroll callback. Scroll callbacks mightbe run during a measure & layout pass where you cannot change theRecyclerView data. Any
+		   method call that might change the structureof the RecyclerView or the adapter contents should be postponed tothe next frame.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot find app view' under the tag 'TooltipPopup'
+		 - This application logs the message 'Cannot fling without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot scroll to position a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot smooth scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Closing socket... Socket is closed by client.' under the tag 'ProxyCache'
+		 - This application logs the message 'Could not call getMaxAvailableHeightMethod(View, int, boolean) on PopupWindow. Using the public version.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method getMaxAvailableHeight(View, int, boolean) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method getScaledScrollFactor() on ViewConfiguration' under the tag 'ViewConfigCompat'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setEpicenterBounds(Rect) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.'
+		   under the tag 'TwilightManager'
+		 - This application logs the message 'Could not invoke setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Could not link program: ' under the tag 'SphericalVideoRenderer'
+		 - This application logs the message 'Currently unsupported' under the tag 'ExifInterface'
+		 - This application logs the message 'Data field length exceeds limit' under the tag 'DvbParser'
+		 - This application logs the message 'Data too short to be an ID3 tag' under the tag 'Id3Decoder'
+		 - This application logs the message 'Discarding invalid ID3 tag' under the tag 'Id3Reader'
+		 - This application logs the message 'Encountered DTVCC_PACKET_DATA before DTVCC_PACKET_START' under the tag 'Cea708Decoder'
+		 - This application logs the message 'FacebookActivity is declared incorrectly in the AndroidManifest.xml, please add com.facebook.FacebookActivity to your AndroidManifest.xml file. See
+		   https://developers.facebook.com/docs/android/getting-started for more info.' under the tag ''
+		 - This application logs the message 'FacebookActivity is not declared in the AndroidManifest.xml. If you are using the facebook-common module or dependent modules please add
+		   com.facebook.FacebookActivity to your AndroidManifest.xml file. See https://developers.facebook.com/docs/android/getting-started for more info.' under the tag '0'
+		 - This application logs the message 'Failed to create JSONObject' under the tag 'Lcom/facebook/marketing/ViewIndexer;->access$100()Ljava/lang/String;'
+		 - This application logs the message 'Failed to find font-family tag' under the tag 'ResourcesCompat'
+		 - This application logs the message 'Failed to initialize CookieManager.' under the tag 'Landroid/webkit/CookieManager;->getInstance()Landroid/webkit/CookieManager;'
+		 - This application logs the message 'Failed to load remote module:  8' under the tag 'DynamiteModule'
+		 - This application logs the message 'Failed to parse cover art attribute' under the tag 'MetadataUtil'
+		 - This application logs the message 'Failed to parse standard genre code' under the tag 'MetadataUtil'
+		 - This application logs the message 'Failed to parse uint8 attribute value' under the tag 'MetadataUtil'
+		 - This application logs the message 'Failed to query codec   ( )' under the tag 'MediaCodecUtil'
+		 - This application logs the message 'Failed to retrieve remote module version.' under the tag 'DynamiteModule'
+		 - This application logs the message 'FragmentManager ' under the tag 'FragmentManager'
+		 - This application logs the message 'Frame size exceeds remaining tag data' under the tag 'Id3Decoder'
+		 - This application logs the message 'FullScreenActivity is missing from AndroidManifest.xml' under the tag 'StartAppSDKInternal'
+		 - This application logs the message 'Google Play Store is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google always throw an exception with setBackgroundDrawable on Nougat above. so we silently ignore it.' under the tag
+		   'Lcom/facebook/ads/internal/settings/AdInternalSettings;->isDebugBuild()Z'
+		 - This application logs the message 'Google always throw an exception with setForeground on Nougat above. so we silently ignore it.' under the tag
+		   'Lcom/facebook/ads/internal/settings/AdInternalSettings;->isDebugBuild()Z'
+		 - This application logs the message 'GoogleCertificates has been initialized already' under the tag 'GoogleCertificates'
+		 - This application logs the message 'IOException occurred while closing InputStream IOException occurred while closing InputStream IOException occurred while closing InputStream IOException
+		   occurred while closing InputStream ExifInterface' under the tag '32'
+		 - This application logs the message 'Ignoring messages sent after release.' under the tag 'ExoPlayerImplInternal'
+		 - This application logs the message 'Ignoring negative offset to sample data.' under the tag 'FragmentedMp4Extractor'
+		 - This application logs the message 'Integration Error - App ID is missing' under the tag 'StartApp'
+		 - This application logs the message 'Interstitial Admob Failed..' under the tag 'ExtActivity'
+		 - This application logs the message 'Interstitial Facebook Failed..' under the tag 'ExtActivity'
+		 - This application logs the message 'Invalid Window info in window interactive check, assuming is not a Lockscreen.' under the tag '1'
+		 - This application logs the message 'Invalid Window info in window interactive check, assuming not obstructed by Keyguard.' under the tag '1'
+		 - This application logs the message 'Invalid requestCode mapping in savedInstanceState.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Invalid strip offset value' under the tag 'ExifInterface'
+		 - This application logs the message 'Job Cancelled before completion' under the tag 'JobService'
+		 - This application logs the message 'Job Started' under the tag 'JobService'
+		 - This application logs the message 'Job finished' under the tag 'JobService'
+		 - This application logs the message 'Job scheduled' under the tag 'JobService'
+		 - This application logs the message 'Job scheduled' under the tag 'MainActivity'
+		 - This application logs the message 'Job scheduling failed' under the tag 'JobService'
+		 - This application logs the message 'Job scheduling failed' under the tag 'MainActivity'
+		 - This application logs the message 'Json Exception in creating deeplink context' under the tag 'AppInviteDialog'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glGetProgramInfoLog(I)Ljava/lang/String;' under the tag 'SphericalVideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glGetShaderInfoLog(I)Ljava/lang/String;' under the tag 'SphericalVideoRenderer'
+		 - This application logs the message 'Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;' under the tag 'Landroid/os/Looper;->myLooper()Landroid/os/Looper;'
+		 - This application logs the message 'Landroid/support/v7/widget/au;->getLayoutManager()Landroid/support/v7/widget/bc$h;' under the tag '3'
+		 - This application logs the message 'Lcom/facebook/FacebookSdk;->getApplicationId()Ljava/lang/String;' under the tag 'Lcom/facebook/FacebookSdk;->getApplicationContext()Landroid/content/Context;'
+		 - This application logs the message 'Lcom/facebook/ads/internal/protocol/a;->b()Ljava/lang/String;' under the tag 'FBAudienceNetwork'
+		 - This application logs the message 'Lcom/facebook/ads/internal/view/i/d/b;->getContext()Landroid/content/Context;' under the tag '0'
+		 - This application logs the message 'Lcom/facebook/ads/internal/w/b/z;->a(Ljava/util/Map;)Z' under the tag 'Lcom/facebook/ads/internal/w/b/z;->a(Ljava/util/Map;)Z'
+		 - This application logs the message 'Ljava/lang/Boolean;->booleanValue()Z' under the tag 'IS_UNITY'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'HttpUrlPinger'
+		 - This application logs the message 'Ljava/lang/Number;->longValue()J' under the tag 'JobManager'
+		 - This application logs the message 'Ljava/lang/Object;->getClass()Ljava/lang/Class;' under the tag 'TypefaceCompatApi24Impl'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/String;->length()I' under the tag 'Ljava/lang/String;->length()I'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'DynamiteModule'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GmsClient'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag ' event. '
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag '0'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'AccessTokenManager'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'AdtsReader'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'AudioTrack'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'Cea708Decoder'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'ConstraintHelper'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'ConstraintSet'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'DefaultHttpDataSource'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'DynamiteModule'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'ExifInterface'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'ExtActivity'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'FBAudienceNetworkLog'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'GmsClient'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'GmsClientSupervisor'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'H265Reader'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'HttpUrlPinger'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'Id3Decoder'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'Landroid/media/MediaPlayer;->release()V'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'Lcom/facebook/Profile;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'Lcom/facebook/appevents/AppEventsLogger;->access$200()Ljava/lang/String;'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'Lcom/facebook/marketing/FacebookUninstallTracker;->access$200()Ljava/lang/String;'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'Lcom/facebook/marketing/ViewIndexer;->access$100()Ljava/lang/String;'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'LinearLayoutManager'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'LocalBroadcastManager'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'LoginMethodHandler'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'MediaCodecInfo'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'MediaCodecRenderer'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'MediaCodecUtil'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'MediaCodecVideoRenderer'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'MetadataUtil'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'NalUnitUtil'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'NavUtils'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'NestedScrollView'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'PesReader'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'ProxyCache'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'RecyclerView'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'SphericalVideoRenderer'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'StartAppWall.Util'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'SubripDecoder'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'TtmlDecoder'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'TypefaceCompatUtil'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'ViewDragHelper'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'VorbisUtil'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'WebvttCueParser'
+		 - This application logs the message 'Ljava/util/LinkedList;->peekLast()Ljava/lang/Object;' under the tag 'Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;'
+		 - This application logs the message 'Ljava/util/List;->isEmpty()Z' under the tag 'MediaCodecUtil'
+		 - This application logs the message 'Ljava/util/Map;->clear()V' under the tag 'FBAudienceNetwork'
+		 - This application logs the message 'Loaded FfmpegAudioRenderer.' under the tag 'DefaultRenderersFactory'
+		 - This application logs the message 'Loaded LibflacAudioRenderer.' under the tag 'DefaultRenderersFactory'
+		 - This application logs the message 'Loaded LibopusAudioRenderer.' under the tag 'DefaultRenderersFactory'
+		 - This application logs the message 'Loaded LibvpxVideoRenderer.' under the tag 'DefaultRenderersFactory'
+		 - This application logs the message 'Ltv/remote/control/universal/com/a;->a()Ltv/remote/control/universal/com/a;' under the tag ': 2'
+		 - This application logs the message 'MediaView is missing.' under the tag 'Lcom/facebook/ads/internal/settings/AdInternalSettings;->isDebugBuild()Z'
+		 - This application logs the message 'MediaViewVideo is null; unable to find it.' under the tag 'Lcom/facebook/ads/internal/settings/AdInternalSettings;->isDebugBuild()Z'
+		 - This application logs the message 'MetadataUtil' under the tag 'MetadataUtil'
+		 - This application logs the message 'Multiple values in fontSize attribute. Picking the second value for vertical font size and ignoring the first.' under the tag 'TtmlDecoder'
+		 - This application logs the message 'Mutated drawable is not the same instance as the input.' under the tag 'AppCompatDrawableManag'
+		 - This application logs the message 'Native Ad was already registered with a View. Auto unregistering and proceeding.' under the tag 'ad media type is not supported.'
+		 - This application logs the message 'Native ad clicked!' under the tag 'ExtActivity'
+		 - This application logs the message 'Native ad finished downloading all assets.' under the tag 'ExtActivity'
+		 - This application logs the message 'Native ad impression logged!' under the tag 'ExtActivity'
+		 - This application logs the message 'Native ad is loaded and ready to be displayed!' under the tag 'ExtActivity'
+		 - This application logs the message 'No adapter attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'No code path should ever result in a null appCall' under the tag 'FacebookDialog'
+		 - This application logs the message 'No image meets the size requirements of a thumbnail image.' under the tag 'ExifInterface'
+		 - This application logs the message 'No internet permissions granted for the app, please add <uses-permission android:name="android.permission.INTERNET" /> to your AndroidManifest.xml.' under the
+		   tag '0'
+		 - This application logs the message 'No layout manager attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'No touch data recorded, please ensure touch events reach the ad View by returning false if you intercept the event.' under the tag 'FBAudienceNetworkLog'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message 'Passed over target position while smooth scrolling.' under the tag 'RecyclerView'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'Proxy cache server started. Ping it...' under the tag 'ProxyCache'
+		 - This application logs the message 'ProxyCache error' under the tag 'ProxyCache is interrupted ProxyCache'
+		 - This application logs the message 'ProxyCache is interrupted' under the tag 'ProxyCache'
+		 - This application logs the message 'ProxyCache' under the tag 'ProxyCache'
+		 - This application logs the message 'RecyclerView does not support scrolling to an absolute position. Use scrollToPosition instead' under the tag 'RecyclerView'
+		 - This application logs the message 'Releasing input stream... Socket is closed by client.' under the tag 'ProxyCache'
+		 - This application logs the message 'Remote account accessor probably died' under the tag 'AccountAccessor'
+		 - This application logs the message 'Retaining in  ' under the tag 'here LoaderManager'
+		 - This application logs the message 'Runtime exception while getting specialized handlers' under the tag 'CustomTabsHelper'
+		 - This application logs the message 'Shutdown proxy server' under the tag 'ProxyCache'
+		 - This application logs the message 'Skipped ID3 tag with majorVersion=2 and undefined compression scheme' under the tag 'Id3Decoder'
+		 - This application logs the message 'Skipped pssh atom (failed to extract uuid)' under the tag 'FragmentedMp4Extractor'
+		 - This application logs the message 'Skipping remainder of malformed SEI NAL unit.' under the tag 'CeaUtil'
+		 - This application logs the message 'Skipping unsupported compressed or encrypted frame' under the tag 'Id3Decoder'
+		 - This application logs the message 'Smooth Scroll action is being updated too frequently. Make sure you are not changing it unless necessary' under the tag 'RecyclerView'
+		 - This application logs the message 'Starting in  ' under the tag 'here LoaderManager'
+		 - This application logs the message 'Stopping in  ' under the tag 'here LoaderManager'
+		 - This application logs the message 'SurfaceTextureListener already unset or replaced.' under the tag 'SimpleExoPlayer'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The publish_actions permissions are missing, the share will fail unless this app was authorized to publish in another installation.' under the tag 'ShareApi'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Unable to collect necessary private methods. Fallback to legacy implementation.' under the tag 'TypefaceCompatApi26Impl'
+		 - This application logs the message 'Unable to collect necessary private methods.Fallback to legacy implementation.' under the tag 'TypefaceCompatApi24Impl'
+		 - This application logs the message 'Unable to create external cache directory' under the tag 'ProxyCache'
+		 - This application logs the message 'Unable to find MediaViewVideo child.' under the tag 'Lcom/facebook/ads/internal/settings/AdInternalSettings;->isDebugBuild()Z'
+		 - This application logs the message 'Unexpected start indicator reading extended header' under the tag 'PesReader'
+		 - This application logs the message 'Unsupported FourCC. Setting mimeType to video/x-unknown' under the tag 'MatroskaExtractor'
+		 - This application logs the message 'Unsupported action type' under the tag 'Lcom/facebook/appevents/codeless/CodelessLoggingEventListener;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'Unsupported action type' under the tag 'Lcom/facebook/marketing/internal/ButtonIndexingEventListener;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'Unsupported character encoding' under the tag 'Id3Decoder'
+		 - This application logs the message 'User clicked skip before the ads is allowed to skip.' under the tag 'SkipPlugin'
+		 - This application logs the message 'View already registered with a NativeAd. Auto unregistering and proceeding.' under the tag '10'
+		 - This application logs the message 'Webview already destroyed, cannot activate' under the tag 'Lcom/facebook/ads/internal/adapters/m;->c()Ljava/lang/String;'
+		 - This application logs the message 'Webview already destroyed, cannot activate' under the tag 'Lcom/facebook/ads/internal/view/g/c;->f()Ljava/lang/String;'
+		 - This application logs the message 'You must override onLayoutChildren(Recycler recycler, State state) ' under the tag 'RecyclerView'
+		 - This application logs the message 'You must override smoothScrollToPosition to support smooth scrolling' under the tag 'RecyclerView'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR_OVERLAY id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'addJobCreator' under the tag 'JobManager'
+		 - This application logs the message 'api' under the tag 'FBAudienceNetwork'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'audio' under the tag '0'
+		 - This application logs the message 'com.facebook.ads 1' under the tag 'FBAudienceNetwork'
+		 - This application logs the message 'data ' under the tag 'WavHeaderReader'
+		 - This application logs the message 'decode object failure' under the tag '1'
+		 - This application logs the message 'detach:  ' under the tag 'FragmentManager'
+		 - This application logs the message 'internal representation of views on the screen' under the tag 'LinearLayoutManager'
+		 - This application logs the message 'layout_constraintHeight_default="wrap" is deprecated.\nUse layout_height="WRAP_CONTENT" and layout_constrainedHeight="true" instead.' under the tag
+		   'ConstraintLayout'
+		 - This application logs the message 'layout_constraintWidth_default="wrap" is deprecated.\nUse layout_width="WRAP_CONTENT" and layout_constrainedWidth="true" instead.' under the tag
+		   'ConstraintLayout'
+		 - This application logs the message 'mServiceBroker is null, client disconnected' under the tag 'GmsClient'
+		 - This application logs the message 'null ' under the tag 'Ltv/remote/control/universal/com/a;->a()Ltv/remote/control/universal/com/a;'
+		 - This application logs the message 'onLoadFinished ' under the tag 'LoaderManager'
+		 - This application logs the message 'received deprecated onAccountValidationComplete callback, ignoring' under the tag 'GmsClient'
+		 - This application logs the message 'sActiveHandler.mPopup == null' under the tag 'TooltipCompatHandler'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'screen is off or mintime' under the tag 'JobService'
+		 - This application logs the message 'screen is off' under the tag 'JobService'
+		 - This application logs the message 'screen is on' under the tag 'JobService'
+		 - This application logs the message 'sending initial request' under the tag 'JobManager'
+		 - This application logs the message 'service probably died' under the tag 'GmsClient'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'stripByteCounts should not be null.' under the tag 'ExifInterface'
+		 - This application logs the message 'stripOffsets should not be null.' under the tag 'ExifInterface'
+		 - This application logs the message 'unregistering receiver' under the tag 'startapp'
+		 - This application logs the message 'wfswl Invalid window in window interactive check, assuming interactive.' under the tag '0'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the '3' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/facebook/FacebookSdk;->getApplicationContext()Landroid/content/Context;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/facebook/ads/internal/l/b;->f()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Ljava/util/Iterator;->next()Ljava/lang/Object;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the '' application installed on the system
+		 - This application retrieves 'GET_META_DATA' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves 'GET_SERVICES' information about the '' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the '' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES, MATCH_UNINSTALLED_PACKAGES' information about the 'com.android.vending' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address '' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'timeout' on the 'N/A' port
+
+	[.] Code Execution                          
+		 - This application executes a UNIX command containing this argument: '2'
+		 - This application executes a UNIX command containing this argument: 'getprop'
+		 - This application executes a UNIX command containing this argument: 'mount'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 1c0c7f7f486576199704b10c9cd4a8c26a525611516f070fd4239f7a7d80afa7.apk
+
+	[.] Fingerprint                             
+		 - MD5: b09dcb40ee0b848c64e6610c2ce6b566
+		 - SHA-1: 9a28f5ec22ef5ab85a3cee9d3504938abfe0bd9f
+		 - SHA-256: 1c0c7f7f486576199704b10c9cd4a8c26a525611516f070fd4239f7a7d80afa7
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET',  'android.permission.RECEIVE_BOOT_COMPLETED',
+		   'android.permission.VIBRATE',  'com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -1,0 +1,44 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - towelroot
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.geohot.towelroot
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '4' under the tag 'towelroot_java'
+		 - This application logs the message '7' under the tag 'towelroot_java'
+		 - This application logs the message 'got ClientProtocolException' under the tag 'towelroot_java'
+		 - This application logs the message 'got IOException' under the tag 'towelroot_java'
+
+	[.] Code Execution                          
+		 - This application loads a native library: 'exploit'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - towelroot.apk
+
+	[.] Fingerprint                             
+		 - MD5: e4a62ee2a35b0652a29a2816abcef48a
+		 - SHA-1: 86994dd46d8f889da44d24fc5dadd506ae1b8623
+		 - SHA-256: 4b69cf008f8d8e5276301abaf3dc301394b4c2e803c9caff628f136bc29bc4f9
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET', 'android.permission.KILL_BACKGROUND_PROCESSES']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None],  ['android.permission.READ_PHONE_STATE', None],  ['android.permission.WRITE_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

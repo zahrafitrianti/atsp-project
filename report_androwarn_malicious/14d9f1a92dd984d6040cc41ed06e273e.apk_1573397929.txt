@@ -1,0 +1,295 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - AndroidFramework
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.google.progress
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the SIM's serial number
+		 - This application reads the current location of the device
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the Cell ID value
+		 - This application reads the Location Area Code value
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '!!!!!!!!!!!!!!!!!!!' under the tag 'hello'
+		 - This application logs the message '*********************************' under the tag 'apn'
+		 - This application logs the message '********************connect**********************' under the tag 'connect'
+		 - This application logs the message '---->铃声静音<----' under the tag 'call'
+		 - This application logs the message '--->配置的域名端口错误<---' under the tag 'url'
+		 - This application logs the message '0' under the tag '***'
+		 - This application logs the message '0' under the tag 'data'
+		 - This application logs the message '0' under the tag 'wifi'
+		 - This application logs the message '1' under the tag 'content'
+		 - This application logs the message '1' under the tag 'gps'
+		 - This application logs the message '1' under the tag 'hello'
+		 - This application logs the message '1' under the tag 'wifi'
+		 - This application logs the message '10' under the tag '***'
+		 - This application logs the message '10' under the tag 'send_or_recv'
+		 - This application logs the message '12' under the tag 'abc'
+		 - This application logs the message '12' under the tag 'connect'
+		 - This application logs the message '13' under the tag '***'
+		 - This application logs the message '14' under the tag '***'
+		 - This application logs the message '15' under the tag '***'
+		 - This application logs the message '15' under the tag 'cmd'
+		 - This application logs the message '2' under the tag '***'
+		 - This application logs the message '2' under the tag 'abc'
+		 - This application logs the message '2' under the tag 'apn'
+		 - This application logs the message '2' under the tag 'audio'
+		 - This application logs the message '2' under the tag 'gps'
+		 - This application logs the message '2' under the tag 'grs'
+		 - This application logs the message '2' under the tag 'hello'
+		 - This application logs the message '2' under the tag 'ring'
+		 - This application logs the message '2' under the tag 'usb'
+		 - This application logs the message '2345' under the tag 'tag'
+		 - This application logs the message '3' under the tag '***'
+		 - This application logs the message '3' under the tag 'apn'
+		 - This application logs the message '3' under the tag 'connect'
+		 - This application logs the message '3' under the tag 'hello'
+		 - This application logs the message '3' under the tag 'ring'
+		 - This application logs the message '3' under the tag 'send_or_recv'
+		 - This application logs the message '3' under the tag 'tt'
+		 - This application logs the message '3' under the tag 'vibrate'
+		 - This application logs the message '3' under the tag 'wifi'
+		 - This application logs the message '3456' under the tag 'tag'
+		 - This application logs the message '4' under the tag '***'
+		 - This application logs the message '4' under the tag 'check'
+		 - This application logs the message '4' under the tag 'cmd'
+		 - This application logs the message '4' under the tag 'count'
+		 - This application logs the message '4' under the tag 'gps'
+		 - This application logs the message '4' under the tag 'hello'
+		 - This application logs the message '4' under the tag 'mms'
+		 - This application logs the message '4' under the tag 'tt'
+		 - This application logs the message '4' under the tag 'wifi'
+		 - This application logs the message '5' under the tag '***'
+		 - This application logs the message '5' under the tag 'call'
+		 - This application logs the message '5' under the tag 'check'
+		 - This application logs the message '5' under the tag 'hello'
+		 - This application logs the message '5' under the tag 'phone'
+		 - This application logs the message '5' under the tag 'ta'
+		 - This application logs the message '5' under the tag 'tag'
+		 - This application logs the message '5' under the tag 'wifi'
+		 - This application logs the message '6' under the tag '***'
+		 - This application logs the message '6' under the tag '123'
+		 - This application logs the message '6' under the tag 'content'
+		 - This application logs the message '6' under the tag 'gps'
+		 - This application logs the message '6' under the tag 'url'
+		 - This application logs the message '6' under the tag 'wifi'
+		 - This application logs the message '7' under the tag '***'
+		 - This application logs the message '7' under the tag 'apn'
+		 - This application logs the message '7' under the tag 'grs'
+		 - This application logs the message '7' under the tag 'hello'
+		 - This application logs the message '7' under the tag 'sht'
+		 - This application logs the message '7' under the tag 'tag'
+		 - This application logs the message '7' under the tag 'url'
+		 - This application logs the message '8' under the tag '***'
+		 - This application logs the message '9' under the tag '***'
+		 - This application logs the message '9' under the tag 'call'
+		 - This application logs the message '9' under the tag 'mms'
+		 - This application logs the message '9' under the tag 'tag'
+		 - This application logs the message '9' under the tag 'url'
+		 - This application logs the message '<------sms------>' under the tag '***'
+		 - This application logs the message 'FileListThread' under the tag 'FileListThread'
+		 - This application logs the message 'GPS已经开启' under the tag 'gps'
+		 - This application logs the message 'GPS未开启' under the tag 'gps'
+		 - This application logs the message 'Ljava/lang/Exception;->toString()Ljava/lang/String;' under the tag 'hello'
+		 - This application logs the message 'Ljava/lang/Exception;->toString()Ljava/lang/String;' under the tag 'tag'
+		 - This application logs the message 'Ljava/lang/Exception;->toString()Ljava/lang/String;' under the tag 'ttt'
+		 - This application logs the message 'Ljava/util/ArrayList;->toString()Ljava/lang/String;' under the tag 'gps'
+		 - This application logs the message 'Service onDestroy' under the tag 'call'
+		 - This application logs the message 'Wifi已经开启' under the tag 'wifi'
+		 - This application logs the message 'Wifi开启完成' under the tag 'wifi'
+		 - This application logs the message 'Wifi扫描结果为空' under the tag 'wifi'
+		 - This application logs the message 'Wifi未开启' under the tag 'wifi'
+		 - This application logs the message 'check result fail' under the tag 'hello'
+		 - This application logs the message 'check result success' under the tag 'hello'
+		 - This application logs the message 'else In stopRecord ' under the tag 'hello'
+		 - This application logs the message 'exception1' under the tag 'hello'
+		 - This application logs the message 'exception2' under the tag 'hello'
+		 - This application logs the message 'exception3' under the tag 'hello'
+		 - This application logs the message 'exist' under the tag '***'
+		 - This application logs the message 'first' under the tag 'ta'
+		 - This application logs the message 'flag--->1' under the tag 'ttt'
+		 - This application logs the message 'hello' under the tag 'hello'
+		 - This application logs the message 'hello' under the tag 'phone'
+		 - This application logs the message 'in CMD OR mr isnot Null' under the tag 'hello'
+		 - This application logs the message 'isSupport_VoiceCall=true' under the tag 'hello'
+		 - This application logs the message 'monitorPhoneNumber is not set' under the tag '***'
+		 - This application logs the message 'oncreate over' under the tag '***'
+		 - This application logs the message 'oncreate' under the tag '***'
+		 - This application logs the message 'replace' under the tag '***'
+		 - This application logs the message 'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrr' under the tag 'ttt'
+		 - This application logs the message 'second' under the tag 'ta'
+		 - This application logs the message 'sendFile success' under the tag 'hello'
+		 - This application logs the message 'servername is null' under the tag '***'
+		 - This application logs the message 'service destroy' under the tag 'trafficstats'
+		 - This application logs the message 'service------->onDestroy' under the tag 'trafficstats'
+		 - This application logs the message '停止' under the tag '***'
+		 - This application logs the message '停止录音成功' under the tag 'audio'
+		 - This application logs the message '关闭Wifi' under the tag 'wifi'
+		 - This application logs the message '关闭失败' under the tag 'gps'
+		 - This application logs the message '关闭成功' under the tag 'gps'
+		 - This application logs the message '删除apn失败' under the tag 'apn'
+		 - This application logs the message '删除apn成功' under the tag 'apn'
+		 - This application logs the message '即将停止录音' under the tag 'hello'
+		 - This application logs the message '即将关闭GPS' under the tag 'gps'
+		 - This application logs the message '即将开启GPS' under the tag 'gps'
+		 - This application logs the message '即将开始录音' under the tag 'hello'
+		 - This application logs the message '即将播放录音文件' under the tag 'hello'
+		 - This application logs the message '即将设置接收超时' under the tag 'tt'
+		 - This application logs the message '即将进行网络检查' under the tag 'wifi'
+		 - This application logs the message '发送CR命令' under the tag 'hello'
+		 - This application logs the message '发送OR命令' under the tag 'hello'
+		 - This application logs the message '已设置环境监听' under the tag '***'
+		 - This application logs the message '开启失败' under the tag 'check'
+		 - This application logs the message '开启失败,不开始卫星定位' under the tag 'gps'
+		 - This application logs the message '开启成功' under the tag 'check'
+		 - This application logs the message '开启成功,开始卫星定位' under the tag 'gps'
+		 - This application logs the message '开启通话录音，注册环境监听器...' under the tag '***'
+		 - This application logs the message '开始卫星定位' under the tag 'gps'
+		 - This application logs the message '开始录音失败' under the tag 'hello'
+		 - This application logs the message '开始录音成功' under the tag 'audio'
+		 - This application logs the message '开始录音成功' under the tag 'hello'
+		 - This application logs the message '开始环境监听' under the tag '***'
+		 - This application logs the message '开始连接中转服务器....' under the tag '***'
+		 - This application logs the message '当前Wifi网络不可用' under the tag 'wifi'
+		 - This application logs the message '当前Wifi网络不可用,继续搜索连接' under the tag 'wifi'
+		 - This application logs the message '当前Wifi网络可用' under the tag 'wifi'
+		 - This application logs the message '当前没有GPRS网络,即将开启' under the tag 'check'
+		 - This application logs the message '当前没有网络' under the tag '123'
+		 - This application logs the message '录音即将暂停' under the tag 'hello'
+		 - This application logs the message '录音成功暂停' under the tag 'hello'
+		 - This application logs the message '录音暂停失败' under the tag 'hello'
+		 - This application logs the message '成功停止录音' under the tag 'hello'
+		 - This application logs the message '手机APN配置完成,即将检查APN是否可用' under the tag 'apn'
+		 - This application logs the message '手机SIM卡为电信卡,即将为手机配置APN' under the tag 'apn'
+		 - This application logs the message '手机SIM卡为移动卡,即将为手机配置APN' under the tag 'apn'
+		 - This application logs the message '手机SIM卡为联通卡,即将为手机配置APN' under the tag 'apn'
+		 - This application logs the message '手机Wifi联网失败' under the tag 'wifi'
+		 - This application logs the message '手机Wifi联网成功,即将检查当前Wifi网络能否连接中转' under the tag 'wifi'
+		 - This application logs the message '手机即将关闭程序开启的GPRS网络' under the tag 'wifi'
+		 - This application logs the message '手机即将自动连接配置网络' under the tag 'wifi'
+		 - This application logs the message '手机已经开启GPRS网路' under the tag 'wifi'
+		 - This application logs the message '手机开启GPRS网络失败' under the tag 'wifi'
+		 - This application logs the message '手机开启GPRS网络成功' under the tag 'wifi'
+		 - This application logs the message '手机当前apn不可用' under the tag 'apn'
+		 - This application logs the message '手机当前apn可用' under the tag 'apn'
+		 - This application logs the message '手机状态发生改变' under the tag 'call'
+		 - This application logs the message '手机目前无网络连接' under the tag 'wifi'
+		 - This application logs the message '手机目前有GPRS网络' under the tag 'wifi'
+		 - This application logs the message '手机目前有GPRS网络连接' under the tag 'wifi'
+		 - This application logs the message '手机目前有Wifi网络,即将检查当前Wifi网络能否连接中转' under the tag 'wifi'
+		 - This application logs the message '手机目前有Wifi网络连接' under the tag 'wifi'
+		 - This application logs the message '手机目前没有Wifi网络' under the tag 'wifi'
+		 - This application logs the message '手机目前没有网络,即将开启GPRS网络' under the tag 'wifi'
+		 - This application logs the message '手机目前的GPRS网络连接为用户开启的' under the tag 'wifi'
+		 - This application logs the message '手机目前的GPRS网络连接为程序开启的' under the tag 'wifi'
+		 - This application logs the message '手机自动连接配置网络失败' under the tag 'wifi'
+		 - This application logs the message '手机自动连接配置网络成功' under the tag 'wifi'
+		 - This application logs the message '手机自动连接配置网络成功,即将检查当前Wifi网络能否连接中转' under the tag 'wifi'
+		 - This application logs the message '手机获取到GPS位置------->NULL' under the tag 'content'
+		 - This application logs the message '手机获取到GPS位置------->空' under the tag 'content'
+		 - This application logs the message '挂断电话------onCallStateChanged' under the tag 'call'
+		 - This application logs the message '挂断电话------响铃状态' under the tag 'call'
+		 - This application logs the message '挂断电话----->ScreenOffBroadcastReceiver' under the tag 'call'
+		 - This application logs the message '挂断电话----->onStop' under the tag 'call'
+		 - This application logs the message '挂断电话-----onKeyDown' under the tag 'call'
+		 - This application logs the message '接听电话中...' under the tag '***'
+		 - This application logs the message '接收线程已退出!' under the tag '***'
+		 - This application logs the message '搜索连接失败' under the tag 'wifi'
+		 - This application logs the message '搜索连接成功' under the tag 'wifi'
+		 - This application logs the message '早已收到OR命令' under the tag 'audio'
+		 - This application logs the message '早已收到OR命令' under the tag 'hello'
+		 - This application logs the message '有可能在这吧！' under the tag '***'
+		 - This application logs the message '有网络' under the tag '123'
+		 - This application logs the message '服务未存启动过,即将启动服务' under the tag 'service'
+		 - This application logs the message '服务正在运行' under the tag 'service'
+		 - This application logs the message '未开启录音' under the tag 'hello'
+		 - This application logs the message '未开启录音......' under the tag 'audio'
+		 - This application logs the message '来电响铃中...' under the tag '***'
+		 - This application logs the message '正在录音中......' under the tag 'audio'
+		 - This application logs the message '正在检测当前网络是否可用' under the tag 'wifi'
+		 - This application logs the message '正在环境监听....' under the tag '***'
+		 - This application logs the message '正在重新连接中转服务器...' under the tag '***'
+		 - This application logs the message '正在重新连接中转服务器...' under the tag 'connect'
+		 - This application logs the message '没出异常' under the tag 'connect'
+		 - This application logs the message '没有SD卡开始录音失败' under the tag 'hello'
+		 - This application logs the message '没有SD卡录音失败' under the tag 'audio'
+		 - This application logs the message '没有与中转连接，无法发送数据' under the tag 'send_or_recv'
+		 - This application logs the message '注册通话监听器' under the tag '***'
+		 - This application logs the message '注册通话，环境监听成功!' under the tag '***'
+		 - This application logs the message '测试完成' under the tag 'gps'
+		 - This application logs the message '测试线程已退出!' under the tag '***'
+		 - This application logs the message '用户按下键' under the tag 'keyevent'
+		 - This application logs the message '监听电话，挂断或空闲状态!' under the tag 'tag'
+		 - This application logs the message '程序即将开启GPRS' under the tag 'wifi'
+		 - This application logs the message '网络异常，连接失败' under the tag '***'
+		 - This application logs the message '设置接收超时完成' under the tag 'tt'
+		 - This application logs the message '该被控端已登录!' under the tag '***'
+		 - This application logs the message '还没收到OR命令' under the tag 'audio'
+		 - This application logs the message '还没收到OR命令' under the tag 'hello'
+		 - This application logs the message '连接中转成功!' under the tag '***'
+		 - This application logs the message '连接中转服务器失败稍后将尝试连接..' under the tag '***'
+		 - This application logs the message '连接中转服务器失败稍后将尝试连接..' under the tag 'connect'
+		 - This application logs the message '连接失败' under the tag 'wifi'
+		 - This application logs the message '连接成功!' under the tag '***'
+		 - This application logs the message '连接成功' under the tag 'wifi'
+		 - This application logs the message '连接成功，即将关闭GPRS' under the tag 'wifi'
+		 - This application logs the message '连接服务器失败' under the tag 'connect'
+		 - This application logs the message '连接服务器失败——usb' under the tag 'connect'
+		 - This application logs the message '连接服务器成功' under the tag 'connect'
+		 - This application logs the message '配置的APN不可用' under the tag 'apn'
+		 - This application logs the message '配置的APN可用' under the tag 'apn'
+		 - This application logs the message '重新连接中转成功!' under the tag 'connect'
+		 - This application logs the message '静音' under the tag 'ring'
+		 - This application retrieves '' information about the 'Lcom/google/progress/AndroidClientService;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads the WiFi credentials
+		 - This application reads details about the currently active data network
+
+	[.] Audio Video Eavesdropping               
+		 - This application records audio from the 'MIC' source
+		 - This application records audio from the 'VOICE_CALL' source
+		 - This application records audio from the 'VOICE_DOWNLINK' source
+
+	[.] Pim Data Leakage                        
+		 - This application accesses the SMS list
+
+	[.] Code Execution                          
+		 - This application executes a UNIX command containing this argument: 'ping www.baidu.com'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 14d9f1a92dd984d6040cc41ed06e273e.apk
+
+	[.] Fingerprint                             
+		 - MD5: 14d9f1a92dd984d6040cc41ed06e273e
+		 - SHA-1: 42b25b60aa7d6d9f0b388c10a45e8a8f8c1fc718
+		 - SHA-256: be0df39d6e334908c685e4c77b89efc49cc9bddc528a7c2434576b5a8b740f88
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',
+		   'android.permission.BROADCAST_PACKAGE_REMOVED',  'android.permission.CALL_PHONE',  'android.permission.CHANGE_NETWORK_STATE',  'android.permission.CHANGE_WIFI_STATE',
+		   'android.permission.INTERNET',  'android.permission.MODIFY_AUDIO_SETTINGS',  'android.permission.MODIFY_PHONE_STATE',  'android.permission.PROCESS_OUTGOING_CALLS',
+		   'android.permission.READ_CONTACTS',  'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.READ_PHONE_STATE',  'android.permission.READ_SMS',
+		   'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_SMS',  'android.permission.RECORD_AUDIO',  'android.permission.SEND_SMS',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_APN_SETTINGS',  'android.permission.WRITE_CONTACTS',  'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SMS']
+		 - Implied: [['android.permission.READ_CALL_LOG', None],  ['android.permission.WRITE_CALL_LOG', None]]
+		 - Declared: []
+
+

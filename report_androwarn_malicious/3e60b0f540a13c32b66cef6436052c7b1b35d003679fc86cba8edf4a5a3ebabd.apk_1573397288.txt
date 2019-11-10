@@ -1,0 +1,114 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Pro Selfie Camera
+
+	[.] Application Version                     
+		 - 0.7
+
+	[.] Package Name                            
+		 - com.selfie.beauty.candy.camera.pro
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '0' under the tag 'SecShell'
+		 - This application logs the message '1' under the tag 'SecShell'
+		 - This application logs the message '2' under the tag 'SecShell'
+		 - This application logs the message '3' under the tag 'SecShell'
+		 - This application logs the message '4' under the tag 'SecShell'
+		 - This application logs the message '5' under the tag 'SecShell'
+		 - This application logs the message 'Can not close bugly because bugly is disable.' under the tag 'Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not close crash report because bugly is disable.' under the tag 'Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not close native report because bugly is disable.' under the tag 'Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not get App ID because bugly is disable.' under the tag 'unknown Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not get App channel because bugly is disable.' under the tag 'unknown Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not get app version because bugly is disable.' under the tag 'unknown Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not get user ID because bugly is disable.' under the tag 'unknown Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not post crash caught because bugly is disable.' under the tag 'Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not put SDK extra data because bugly is disable.' under the tag '0'
+		 - This application logs the message 'Can not set user ID because bugly is disable.' under the tag 'Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not start crash report because bugly is disable.' under the tag 'Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not test ANR crash because bugly is disable.' under the tag 'Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not test Java crash because bugly is disable.' under the tag 'Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Can not test native crash because bugly is disable.' under the tag 'Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z'
+		 - This application logs the message 'Lcom/tencent/bugly/legu/crashreport/common/info/a;->e()Ljava/lang/String;' under the tag
+		   'Lcom/tencent/bugly/legu/crashreport/common/info/a;->e()Ljava/lang/String;'
+		 - This application logs the message 'Webview is null. Lcom/tencent/bugly/legu/CrashModule;->hasInitialized()Z' under the tag '1'
+		 - This application logs the message 'Webview is null.' under the tag '1'
+		 - This application logs the message '[init] context of init() is null, check it.' under the tag '[init] initial Multi-times, ignore this.'
+		 - This application logs the message 'failed to get IMEI' under the tag '0'
+		 - This application logs the message 'failed to get IMSI' under the tag '0'
+		 - This application logs the message 'fixAndroid' under the tag 'SecShell'
+		 - This application logs the message 'getAllUserDataKeys args context should not be null' under the tag 'Ljava/util/HashSet;-><init>()V'
+		 - This application logs the message 'getPackageName changeEnv call' under the tag 'SecShell'
+		 - This application logs the message 'getPackageName changeEnv end' under the tag 'SecShell'
+		 - This application logs the message 'getUserDataValue args context should not be null' under the tag 'unknown'
+		 - This application logs the message 'null' under the tag ''
+		 - This application logs the message 'null' under the tag '0'
+		 - This application logs the message 'putSdkData key length over limit %d, will be cutted. 5' under the tag 'Ljava/lang/String;->length()I'
+		 - This application logs the message 'putSdkData value length over limit %d, will be cutted! 5' under the tag 'Ljava/lang/String;->length()I'
+		 - This application logs the message 'queue handler was closed , should not post task! queue task is null' under the tag 'Lcom/tencent/bugly/legu/proguard/v;->c()Z'
+		 - This application logs the message 'queue handler was closed , should not post task!' under the tag 'Lcom/tencent/bugly/legu/proguard/v;->c()Z'
+		 - This application logs the message 'removeUserData args context should not be null' under the tag 'unknown'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'TxAppEntry' application installed on the system
+		 - This application retrieves 'GET_PERMISSIONS' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Code Execution                          
+		 - This application loads a native library: '6'
+		 - This application loads a native library: 'Ljava/lang/System;->load(Ljava/lang/String;)V'
+		 - This application loads a native library: 'nfix'
+		 - This application loads a native library: 'ufix'
+		 - This application executes a UNIX command
+		 - This application executes a UNIX command containing this argument: '2'
+		 - This application executes a UNIX command containing this argument: 'threadtime 0'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 3e60b0f540a13c32b66cef6436052c7b1b35d003679fc86cba8edf4a5a3ebabd.apk
+
+	[.] Fingerprint                             
+		 - MD5: 8b64643b2dbe2de2b6b06ac31627b7eb
+		 - SHA-1: 5335e8dbfecce6a4e6a9f64b0f80c7d2e6bb57c8
+		 - SHA-256: 3e60b0f540a13c32b66cef6436052c7b1b35d003679fc86cba8edf4a5a3ebabd
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.BLUETOOTH',
+		   'android.permission.CAMERA',  'android.permission.CHANGE_WIFI_STATE',  'android.permission.FLASHLIGHT',  'android.permission.GET_TASKS',  'android.permission.INTERNET',
+		   'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',  'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.READ_LOGS',  'android.permission.RECEIVE_BOOT_COMPLETED',
+		   'android.permission.RECORD_AUDIO',  'android.permission.SYSTEM_ALERT_WINDOW',  'android.permission.SYSTEM_OVERLAY_WINDOW',  'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SETTINGS',  'com.anddoes.launcher.permission.READ_SETTINGS',  'com.anddoes.launcher.permission.WRITE_SETTINGS',
+		   'com.android.launcher.permission.INSTALL_SHORTCUT',  'com.android.launcher.permission.READ_SETTINGS',  'com.android.launcher.permission.UNINSTALL_SHORTCUT',
+		   'com.android.launcher.permission.WRITE_SETTINGS',  'com.android.launcher2.permission.READ_SETTINGS',  'com.android.launcher2.permission.WRITE_SETTINGS',
+		   'com.android.launcher3.permission.READ_SETTINGS',  'com.android.launcher3.permission.WRITE_SETTINGS',  'com.android.mylauncher.permission.READ_SETTINGS',
+		   'com.android.mylauncher.permission.WRITE_SETTINGS',  'com.android.vending.BILLING',  'com.ebproductions.android.launcher.permission.READ_SETTINGS',
+		   'com.ebproductions.android.launcher.permission.WRITE_SETTINGS',  'com.fede.launcher.permission.READ_SETTINGS',  'com.fede.launcher.permission.WRITE_SETTINGS',
+		   'com.google.android.c2dm.permission.RECEIVE',  'com.htc.launcher.permission.READ_SETTINGS',  'com.htc.launcher.permission.WRITE_SETTINGS',  'com.huawei.android.launcher.permission.READ_SETTINGS',
+		   'com.huawei.android.launcher.permission.WRITE_SETTINGS',  'com.huawei.launcher2.permission.READ_SETTINGS',  'com.huawei.launcher2.permission.WRITE_SETTINGS',
+		   'com.huawei.launcher3.permission.READ_SETTINGS',  'com.huawei.launcher3.permission.WRITE_SETTINGS',  'com.lge.launcher.permission.READ_SETTINGS',  'com.lge.launcher.permission.WRITE_SETTINGS',
+		   'com.oppo.launcher.permission.READ_SETTINGS',  'com.oppo.launcher.permission.WRITE_SETTINGS',  'com.qihoo360.launcher.permission.READ_SETTINGS',
+		   'com.qihoo360.launcher.permission.WRITE_SETTINGS',  'com.sec.android.app.twlauncher.settings.READ_SETTINGS',  'com.sec.android.app.twlauncher.settings.WRITE_SETTINGS',
+		   'com.selfie.beauty.candy.camera.pro.permission.C2D_MESSAGE',  'com.tencent.qqlauncher.permission.READ_SETTINGS',  'com.tencent.qqlauncher.permission.WRITE_SETTINGS',
+		   'dianxin.permission.ACCESS_LAUNCHER_DATA',  'net.qihoo.launcher.permission.READ_SETTINGS',  'net.qihoo.launcher.permission.WRITE_SETTINGS',  'org.adw.launcher.permission.READ_SETTINGS',
+		   'org.adw.launcher.permission.WRITE_SETTINGS',  'org.adw.launcher_donut.permission.READ_SETTINGS',  'org.adw.launcher_donut.permission.WRITE_SETTINGS',
+		   'org.adwfreak.launcher.permission.READ_SETTINGS',  'org.adwfreak.launcher.permission.WRITE_SETTINGS',  'telecom.mdesk.permission.READ_SETTINGS',  'telecom.mdesk.permission.WRITE_SETTINGS']
+		 - Implied: []
+		 - Declared: ['com.selfie.beauty.candy.camera.pro.permission.C2D_MESSAGE']
+
+

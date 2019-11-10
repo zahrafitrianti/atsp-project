@@ -1,0 +1,38 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Adobe Flash Player
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.loliqkzwuw.oldtf
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - b8b9868a24898c8cb39d90c6d38233efabff5b0daf67bbbb54d1e3d0751dd4cb.apk
+
+	[.] Fingerprint                             
+		 - MD5: 58fb8f875f3c9acf0fd0c4ee3c0a002a
+		 - SHA-1: 7afd33c865c9c6074fca3ef720fb04c5bb86a3d2
+		 - SHA-256: b8b9868a24898c8cb39d90c6d38233efabff5b0daf67bbbb54d1e3d0751dd4cb
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.CALL_PHONE',  'android.permission.CHANGE_NETWORK_STATE',
+		   'android.permission.CHANGE_WIFI_STATE',  'android.permission.GET_TASKS',  'android.permission.INTERNET',  'android.permission.READ_CONTACTS',  'android.permission.READ_PHONE_STATE',
+		   'android.permission.READ_SMS',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_SMS',  'android.permission.SEND_SMS',  'android.permission.USES_POLICY_FORCE_LOCK',
+		   'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_SETTINGS',  'android.permission.WRITE_SMS',  'com.android.browser.permission.READ_HISTORY_BOOKMARKS']
+		 - Implied: []
+		 - Declared: []
+
+

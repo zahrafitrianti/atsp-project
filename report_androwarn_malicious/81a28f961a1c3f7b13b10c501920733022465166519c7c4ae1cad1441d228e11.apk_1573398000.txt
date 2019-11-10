@@ -1,0 +1,47 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Secret Lock
+
+	[.] Application Version                     
+		 - 30.0.2
+
+	[.] Package Name                            
+		 - com.yy.lock.unlock.fingerlock
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Code Execution                          
+		 - This application executes a UNIX command containing this argument: 'getprop ro.product.cpu.abi'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 81a28f961a1c3f7b13b10c501920733022465166519c7c4ae1cad1441d228e11.apk
+
+	[.] Fingerprint                             
+		 - MD5: 37156243ebab4412e9fc21610b752c90
+		 - SHA-1: a515e25af60156ee29ac049d8fa5719749e77aaf
+		 - SHA-256: 81a28f961a1c3f7b13b10c501920733022465166519c7c4ae1cad1441d228e11
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.intent.action.BOOT_COMPLETED',  'android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_DOWNLOAD_MANAGER',  'android.permission.ACCESS_MTK_MMHW',
+		   'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WAKE_LOCK',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.BATTERY_STATS',  'android.permission.CAMERA',
+		   'android.permission.CHANGE_CONFIGURATION',  'android.permission.CHANGE_NETWORK_STATE',  'android.permission.CHANGE_WIFI_STATE',  'android.permission.DISABLE_KEYGUARD',
+		   'android.permission.EXPAND_STATUS_BAR',  'android.permission.GET_PACKAGE_SIZE',  'android.permission.GET_TASKS',  'android.permission.INTERNET',  'android.permission.MODIFY_PHONE_STATE',
+		   'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',  'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.READ_LOGS',  'android.permission.READ_PHONE_STATE',
+		   'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_USER_PRESENT',  'android.permission.RUN_INSTRUMENTATION',  'android.permission.SET_WALLPAPER',
+		   'android.permission.SET_WALLPAPER_HINTS',  'android.permission.SYSTEM_ALERT_WINDOW',  'android.permission.SYSTEM_OVERLAY_WINDOW',  'android.permission.UPDATE_DEVICE_STATS',
+		   'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_APN_SETTINGS',  'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SECURE_SETTINGS',
+		   'android.permission.WRITE_SETTINGS',  'com.android.launcher.permission.INSTALL_SHORTCUT',  'com.android.launcher.permission.UNINSTALL_SHORTCUT',  'com.android.permission.UNINSTALL_SHORTCUT',
+		   'com.example.testbutton.RECEIVE']
+		 - Implied: []
+		 - Declared: ['android.permission.DELETE_PACKAGES',  'android.permission.INSTALL_PACKAGES',  'android.permission.PACKAGE_USAGE_STATS']
+
+

@@ -1,0 +1,124 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Сбербанк
+
+	[.] Application Version                     
+		 - 3.0
+
+	[.] Package Name                            
+		 - krep.itmtd.ywtjexf
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the SIM's serial number
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'Landroid/support/v4/widget/SwipeRefreshLayout;->canChildScrollUp()Z'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '1' under the tag 'Phone Receive Error'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'NotifManCompat'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '13' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'android.support.v4.speech.tts'
+		 - This application logs the message '15' under the tag 'ERROR DOWNLOADING'
+		 - This application logs the message '15' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'NotifManCompat'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '3' under the tag 'ContextCompat'
+		 - This application logs the message '3' under the tag 'DocumentFile'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'Ljava/util/Set;->iterator()Ljava/util/Iterator;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'MediaControllerCompat'
+		 - This application logs the message '3' under the tag 'NotifManCompat 5'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '3' under the tag 'RoundedBitmapDrawableFactory'
+		 - This application logs the message '4' under the tag 'DocumentFile'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag 'Rating'
+		 - This application logs the message '5' under the tag 'DocumentFile'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '8' under the tag 'DocumentFile'
+		 - This application logs the message '8' under the tag 'apipas'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Cannot programmatically select non-user route because the platform is missing the selectRouteInt() method.  Media routing may not work.' under the tag
+		   'MediaRouterJellybean'
+		 - This application logs the message 'Cannot scan for wifi displays because the DisplayManager.scanWifiDisplays() method is not available on this device.' under the tag 'MediaRouterJellybeanMr1'
+		 - This application logs the message 'Invalid percentage-based rating value' under the tag 'Rating'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'Trying to set out of range star-based rating' under the tag 'Rating'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application lists applications installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+		 - This application sends an SMS message 'v8' to the 'v7' phone number
+
+
+[+] Apk File
+	[.] File Name                               
+		 - krep.itmtd.ywtjexf-1.apk
+
+	[.] Fingerprint                             
+		 - MD5: 02e231f85558f37da6802142440736f6
+		 - SHA-1: f79d044fc0530484ddd092a961d58146049ed368
+		 - SHA-256: 9d767c41599325ccd0643d6f432b9075775a85c60df176a845605715be230263
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.CALL_PHONE',  'android.permission.GET_TASKS',  'android.permission.INTERNET',
+		   'android.permission.KILL_BACKGROUND_PROCESSES',  'android.permission.READ_CALENDAR',  'android.permission.READ_CALL_LOG',  'android.permission.READ_CONTACTS',
+		   'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.READ_LOGS',  'android.permission.READ_PHONE_STATE',  'android.permission.READ_PROFILE',  'android.permission.READ_SMS',
+		   'android.permission.READ_SYNC_SETTINGS',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_SMS',  'android.permission.RESTART_PACKAGES',  'android.permission.SEND_SMS',
+		   'android.permission.SYSTEM_ALERT_WINDOW',  'android.permission.VIBRATE',  'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SMS',  'com.android.alarm.permission.SET_ALARM',
+		   'com.android.browser.permission.READ_HISTORY_BOOKMARKS']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -1,0 +1,102 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 156.YılMobil
+
+	[.] Application Version                     
+		 - 2
+
+	[.] Package Name                            
+		 - com.specgamer.arcappmb
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message ' Points are coincident' under the tag 'PathParser'
+		 - This application logs the message ' to  ' under the tag 'FragmentManager'
+		 - This application logs the message '' under the tag ' Points are coincident PathParser'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'ActionProvider(support)'
+		 - This application logs the message '' under the tag 'FragmentManager 4'
+		 - This application logs the message '' under the tag 'FragmentManager'
+		 - This application logs the message '' under the tag 'LoaderManager'
+		 - This application logs the message '0' under the tag 'Landroid/support/v7/widget/ak;->i()Landroid/view/View;'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message ':  ' under the tag 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;'
+		 - This application logs the message 'Activity result delivered for unknown Fragment. ' under the tag 'FragmentActivity'
+		 - This application logs the message 'Activity result delivered for unknown Fragment.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'AppCompatDelegate' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'CURRENTLY UNSUPPORTED' under the tag 'ConstraintSet'
+		 - This application logs the message 'Cannot find app view' under the tag 'TooltipPopup'
+		 - This application logs the message 'Could not call getMaxAvailableHeightMethod(View, int, boolean) on PopupWindow. Using the public version.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method getMaxAvailableHeight(View, int, boolean) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setEpicenterBounds(Rect) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.'
+		   under the tag 'TwilightManager'
+		 - This application logs the message 'Could not invoke setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Failed to find font-family tag' under the tag 'ResourcesCompat'
+		 - This application logs the message 'FragmentManager ' under the tag 'FragmentManager'
+		 - This application logs the message 'Invalid requestCode mapping in savedInstanceState.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Landroid/net/Uri;->toString()Ljava/lang/String;' under the tag 'UpdateChecker'
+		 - This application logs the message 'Ljava/io/File;->toString()Ljava/lang/String;' under the tag 'UpdateChecker'
+		 - This application logs the message 'Ljava/lang/Object;->getClass()Ljava/lang/Class;' under the tag 'TypefaceCompatApi24Impl'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'ConstraintHelper'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'ConstraintSet'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'DownloadService'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'NavUtils'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'NestedScrollView'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'TypefaceCompatUtil'
+		 - This application logs the message 'Mutated drawable is not the same instance as the input.' under the tag 'AppCompatDrawableManag'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'The arg context is null' under the tag 'UpdateChecker'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Unable to collect necessary private methods. Fallback to legacy implementation.' under the tag 'TypefaceCompatApi26Impl'
+		 - This application logs the message 'Unable to collect necessary private methods.Fallback to legacy implementation.' under the tag 'TypefaceCompatApi24Impl'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR_OVERLAY id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'audio' under the tag '0'
+		 - This application logs the message 'detach:  ' under the tag 'FragmentManager'
+		 - This application logs the message 'http  error' under the tag 'UpdateChecker'
+		 - This application logs the message 'layout_constraintWidth_default="wrap" is deprecated.\nUse layout_width="WRAP_CONTENT" and layout_constrainedWidth="true" instead.' under the tag
+		   'ConstraintLayout'
+		 - This application logs the message 'parse json error' under the tag 'UpdateChecker'
+		 - This application logs the message 'sActiveHandler.mPopup == null' under the tag 'TooltipCompatHandler'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application retrieves '' information about the '' application installed on the system
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 79866c174dd807159ea626f530ed610ee9330f8c44aff6c29c35febf19ec21f9.apk
+
+	[.] Fingerprint                             
+		 - MD5: aaaeefe2e30af595c3352d401cbd0cc8
+		 - SHA-1: 135ff1ce6324fa345272236b40f79d2f751b94ed
+		 - SHA-256: 79866c174dd807159ea626f530ed610ee9330f8c44aff6c29c35febf19ec21f9
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET', 'android.permission.REQUEST_INSTALL_PACKAGES']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -5,8 +5,11 @@ import numpy as np
 
 def main():
 	
-	# directory of apk files
+	# directory of benign apk files
 	directory = './Benign-sample-187'
+	
+	# directory of malicious apk files
+	# directory = './malicious_apps'
 	time_elapsed_per_app = []
 	start = time.time()
 
@@ -27,11 +30,12 @@ def main():
 			tstart = time.time()
 			timestamp = int(tstart)
 
-			# # output target
+			# output target
 			output_dir = os.path.join(os.getcwd(), 'report_androwarn')
+			# output_dir = os.path.join(os.getcwd(), 'report_androwarn_malicious')
 			output_file = os.path.join(output_dir, f"{filename}_{timestamp}")
 			
-			# # command to run the analyzer tool
+			# command to run the analyzer tool
 			os.system(f"python3 ./androwarn/androwarn.py -i {fname} -o {output_file} -r {report_type} -v {verbose_level}")
 			
 			tend = time.time() - tstart 
@@ -42,6 +46,7 @@ def main():
 	running_time = np.vstack([time_elapsed_per_app, ['Total time elapsed', total_time_elapsed]])
 	print("Save output to file...")
 	np.savetxt('running_time_androwarn.txt', running_time, delimiter=" ", fmt="%s")
+	# np.savetxt('running_time_androwarn_malicious.txt', running_time, delimiter=" ", fmt="%s")
 
 if __name__ == '__main__':
    main()

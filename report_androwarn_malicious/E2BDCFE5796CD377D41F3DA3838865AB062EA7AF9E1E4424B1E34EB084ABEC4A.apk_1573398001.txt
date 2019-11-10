@@ -1,0 +1,36 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - com.android.sync
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.br.srd
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - E2BDCFE5796CD377D41F3DA3838865AB062EA7AF9E1E4424B1E34EB084ABEC4A.apk
+
+	[.] Fingerprint                             
+		 - MD5: 7022578af4a5fa7a049b568559b97c89
+		 - SHA-1: 24cd5086383126a9cdbb43d7dbe5bcb91d9bb13d
+		 - SHA-256: e2bdcfe5796cd377d41f3da3838865ab062ea7af9e1e4424b1e34eb084abec4a
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.DELETE_PACKAGES',  'android.permission.GET_TASKS',  'android.permission.INSTALL_PACKAGES',  'android.permission.INTERNET',
+		   'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',  'android.permission.READ_PHONE_STATE',  'android.permission.WRITE_EXTERNAL_STORAGE',  'com.android.launcher.permission.INSTALL_SHORTCUT']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

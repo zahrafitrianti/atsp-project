@@ -5,3 +5,5 @@ androwarn/
 atspvenv/
 .ipynb*
 *.png
+android-malware/
+malicious_apps/

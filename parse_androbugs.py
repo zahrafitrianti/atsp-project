@@ -97,6 +97,7 @@ def main():
 
 	# directory of the output file
 	directory = './report_androbugs'
+	# directory = './report_androbugs_malicious'
 	
 	# initialize a dictionary for the results
 	app_dict = {'app_name': [], 'score': [], 'features': []}
@@ -123,16 +124,17 @@ def main():
 			app_dict['features'].append(features)
 	
 
-	x = np.asarray(app_dict['score']).reshape(-1, 1)
-	scaler = MinMaxScaler()
-	score_scaled = scaler.fit_transform(x)
-	app_dict['score'] = np.asarray(score_scaled).flatten()
+	# x = np.asarray(app_dict['score']).reshape(-1, 1)
+	# scaler = MinMaxScaler()
+	# score_scaled = scaler.fit_transform(x)
+	# app_dict['score'] = np.asarray(score_scaled).flatten()
 
 
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
 	print('Save results to csv...')
-	df.to_csv('./result/result_androbugs_scaled.csv', index=False)
+	df.to_csv('./result/result_androbugs.csv', index=False)
+	# df.to_csv('./result/result_androbugs_malicious.csv', index=False)
 
 if __name__ == '__main__':
    main()

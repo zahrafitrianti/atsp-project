@@ -1,0 +1,49 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Postbank
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - anu_bispro.app
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the ISO country code equivalent of the current registered operator's MCC (Mobile Country Code)
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message 'CI ' under the tag '\x15T '
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 642da73bc4c78004304dfed2e6e704ebb352ff9f1db19a19cc2296c86164e723.apk
+
+	[.] Fingerprint                             
+		 - MD5: 2287daf7c2c7bb6c7af35ee21dd37a5b
+		 - SHA-1: 6bb21263290cc0c6d76d01965b8e00af93bb4c89
+		 - SHA-256: 642da73bc4c78004304dfed2e6e704ebb352ff9f1db19a19cc2296c86164e723
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.GET_TASKS',  'android.permission.INTERNET',
+		   'android.permission.READ_CONTACTS',  'android.permission.READ_PHONE_STATE',  'android.permission.READ_SMS',  'android.permission.RECEIVE_SMS',  'android.permission.SEND_SMS',
+		   'android.permission.WAKE_LOCK',  'android.permission.WRITE_SMS']
+		 - Implied: []
+		 - Declared: []
+
+

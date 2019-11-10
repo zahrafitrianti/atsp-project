@@ -1,0 +1,83 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Label_Reader
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.example.androiddefender2
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'BackStackEntry'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '5' under the tag 'BackStackEntry'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'BackStackEntry'
+		 - This application logs the message '7' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'FragmentActivity'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Cancelling' under the tag 'ThreadControl'
+		 - This application logs the message 'Done waiting' under the tag 'ThreadControl'
+		 - This application logs the message 'FragmentManager' under the tag 'FragmentManager'
+		 - This application logs the message 'Going to wait' under the tag 'ThreadControl'
+		 - This application logs the message 'Ljava/io/IOException;->getMessage()Ljava/lang/String;' under the tag 'Error: '
+		 - This application logs the message 'Ljava/io/IOException;->toString()Ljava/lang/String;' under the tag 'BBB'
+		 - This application logs the message 'Ljavax/xml/parsers/ParserConfigurationException;->getMessage()Ljava/lang/String;' under the tag 'Error: '
+		 - This application logs the message 'Lorg/xml/sax/SAXException;->getMessage()Ljava/lang/String;' under the tag 'Error: '
+		 - This application logs the message 'Pausing' under the tag 'ThreadControl'
+		 - This application logs the message 'Resuming' under the tag 'ThreadControl'
+		 - This application logs the message 'onCreate' under the tag 'avServiceLogs'
+		 - This application logs the message 'onDestroy' under the tag 'avServiceLogs'
+		 - This application logs the message 'onStartCommand' under the tag 'avServiceLogs'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application retrieves '' information about the '0' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+
+[+] Apk File
+	[.] File Name                               
+		 - fakeAV_6F237D25472D9D09FC44ECE7DC9CED92_LabelReader.apk
+
+	[.] Fingerprint                             
+		 - MD5: 6f237d25472d9d09fc44ece7dc9ced92
+		 - SHA-1: 070b0d684df4b559597d51e20eb5b9dc5c00468a
+		 - SHA-256: 5f96e12b035ee083f11f0e121352258c2bc86132e13d95811ffc2f4d3304a74e
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.CALL_PHONE',  'android.permission.GET_TASKS',  'android.permission.INTERNET',  'android.permission.PROCESS_OUTGOING_CALLS',
+		   'android.permission.READ_CONTACTS',  'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.READ_PHONE_STATE',  'android.permission.RECEIVE_BOOT_COMPLETED',
+		   'android.permission.RECEIVE_SMS',  'android.permission.VIBRATE',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: []
+		 - Declared: []
+
+

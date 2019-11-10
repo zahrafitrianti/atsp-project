@@ -1,0 +1,38 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - googl app stoy
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.sdwiurse
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - b103f3897b1619dee157e62a1737e864452a85bab613ad971ac6193b3f6a4834.apk
+
+	[.] Fingerprint                             
+		 - MD5: 568d40ccd7b91951715ac4079a860128
+		 - SHA-1: c1ebb205b0c5350b1adb091eba4d3fa92b78b645
+		 - SHA-256: b103f3897b1619dee157e62a1737e864452a85bab613ad971ac6193b3f6a4834
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_WIFI_STATE',  'android.permission.CALL_PHONE',  'android.permission.GET_TASKS',  'android.permission.INTERNET',  'android.permission.MOUNT_FORMAT_FILESYSTEMS',
+		   'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',  'android.permission.READ_CONTACTS',  'android.permission.READ_PHONE_STATE',  'android.permission.READ_SMS',
+		   'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_SMS',  'android.permission.SEND_SMS',  'android.permission.SYSTEM_ALERT_WINDOW',
+		   'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_CALL_LOG', None],  ['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

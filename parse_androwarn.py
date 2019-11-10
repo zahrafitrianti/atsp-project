@@ -116,6 +116,7 @@ def main():
 
 	# directory of the output file
 	directory = './report_androwarn'
+	# directory = './report_androwarn_malicious'
 	
 	# initialize a dictionary for the results
 	app_dict = {'app_name': [], 'score': [], 'features': []}
@@ -142,16 +143,17 @@ def main():
 			app_dict['score'].append(score)
 			app_dict['features'].append(features)
 	
-	# scale scores between 0 to 1
-	x = np.asarray(app_dict['score']).reshape(-1, 1)
-	scaler = MinMaxScaler()
-	score_scaled = scaler.fit_transform(x)
-	app_dict['score'] = np.asarray(score_scaled).flatten()
+	# # scale scores between 0 to 1
+	# x = np.asarray(app_dict['score']).reshape(-1, 1)
+	# scaler = MinMaxScaler()
+	# score_scaled = scaler.fit_transform(x)
+	# app_dict['score'] = np.asarray(score_scaled).flatten()
 
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
 	print('Save results to csv...')
-	df.to_csv('./result/result_androwarn_scaled.csv', index=False)
+	df.to_csv('./result/result_androwarn.csv', index=False)
+	# df.to_csv('./result/result_androwarn_malicious.csv', index=False)
 
 if __name__ == '__main__':
    main()

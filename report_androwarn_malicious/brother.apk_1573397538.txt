@@ -1,0 +1,53 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - System Certificate
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.android.system.certificate
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+
+	[.] Device Settings Harvesting              
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Code Execution                          
+		 - This application executes a UNIX command
+
+
+[+] Apk File
+	[.] File Name                               
+		 - brother.apk
+
+	[.] Fingerprint                             
+		 - MD5: 88678764a0247d2ea9ea1cf2505318fa
+		 - SHA-1: 29557466bea20397689fcf155322347923d5fa9b
+		 - SHA-256: 135d6acff3ca27e6e7997429e5f8051f88215d12351e4103f8344cd66611e0f3
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET',  'android.permission.READ_PHONE_STATE',
+		   'android.permission.WAKE_LOCK']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -1,0 +1,67 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Google Play Services
+
+	[.] Application Version                     
+		 - 5.1.1-1819740
+
+	[.] Package Name                            
+		 - cosmetiq.fl
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the ISO country code equivalent for the SIM provider's country code
+		 - This application reads the ISO country code equivalent of the current registered operator's MCC (Mobile Country Code)
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'UtilConnect'
+		 - This application logs the message '3' under the tag 'myLog'
+		 - This application logs the message '5' under the tag 'glory'
+		 - This application logs the message '6' under the tag 'glory'
+		 - This application logs the message '6' under the tag 'this'
+		 - This application logs the message 'Ljava/security/NoSuchAlgorithmException;->getLocalizedMessage()Ljava/lang/String;' under the tag 'MD5'
+		 - This application retrieves '' information about the 'isScreenLock ' application installed on the system
+		 - This application lists applications installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+		 - This application sends an SMS message 'v12' to the 'v16' phone number
+
+	[.] Code Execution                          
+		 - This application executes a UNIX command containing this argument: 'service call notification 1'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - Google-play.apk
+
+	[.] Fingerprint                             
+		 - MD5: 790a62a841927f4ec1e0675a590c56d1
+		 - SHA-1: c6a72b78a28ce14e992189322be74139aef2b463
+		 - SHA-256: d56f569e1d056a400e3b1fc19cd5291842bdfde8bf219757ceec4c9378a60292
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.CHANGE_NETWORK_STATE',  'android.permission.CHANGE_WIFI_STATE',
+		   'android.permission.DEVICE_POWER',  'android.permission.GET_TASKS',  'android.permission.INTERNET',  'android.permission.READ_CONTACTS',  'android.permission.READ_EXTERNAL_STORAGE',
+		   'android.permission.READ_PHONE_STATE',  'android.permission.READ_SMS',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_SMS',  'android.permission.SEND_SMS',
+		   'android.permission.SYSTEM_ALERT_WINDOW',  'android.permission.USES_POLICY_FORCE_LOCK',  'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SETTINGS',  'android.permission.WRITE_SMS']
+		 - Implied: []
+		 - Declared: []
+
+

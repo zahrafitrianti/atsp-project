@@ -1,0 +1,220 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: com.android.system.op.guardianship.server
+Package Version Name: 9.0
+Package Version Code: 9
+Min Sdk: 1
+MD5   : 9521824fcec4da5046c0a1de4ac66a8b
+SHA1  : 032ed44468e04a8d0e081aae2743212a93c1ff4e
+SHA256: b2c2f74772c5057451668f144191f8d7191e5f98dbc6b6533698af5aa2baabc8
+SHA512: 89b9d4cda821c18709c132fcb2a8a7dde25f1a69ebdd3cb07b9914434b26164c038331c500a3e4873340e730b95e5d01acbd122993957d4c649b59bf43751c8a
+Analyze Signature: 4110f9b24d5835a56c36bb2bcdd043f00f79041ac4c3db340499117934946fce077c7bd736a89c43220664c0e5e7ce97799982ef03dfb61710d12e66a056123f
+------------------------------------------------------------------------------------------------
+[Critical] <Command> Runtime Command Checking:
+           This app is using critical function 'Runtime.getRuntime().exec("...")'.
+           Please confirm these following code secions are not harmful:
+               => Lcom/android/system/q;->a(Ljava/lang/String;)Ljava/lang/String; (0x5a) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+[Critical] <Implicit_Intent> Implicit Service Checking:
+           To ensure your app is secure, always use an explicit intent when starting a Service and DO NOT declare intent filters for your
+           services. Using an implicit intent to start a service is a security hazard because you cannot be certain what service will
+           respond to the intent, and the user cannot see which service starts.
+           Reference: http://developer.android.com/guide/components/intents-filters.html#Types
+               => com.android.system.AndroidGuardianship
+[Critical]  AndroidManifest Critical Use Permission Checking:
+           This app has very high privileges. Use it carefully.
+               Critical use-permission found: "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+[Warning]  Dynamic Code Loading:
+           Dynamic code loading(DexClassLoader) found:
+               => Lcom/android/system/a;-><init>(Landroid/content/Context; Ljava/lang/String;)V (0x8c) --->
+                    Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lcom/android/system/a;-><init>(Landroid/content/Context; Ljava/lang/String;)V (0xdc) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lcom/android/system/q;->d()Ljava/lang/String; (0x1c) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/android/system/q;->f()J (0x20) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning]  AndroidManifest Exported Components Checking:
+           Found "exported" components(except for Launcher) for receiving outside applications' actions (AndroidManifest.xml).
+           These components can be initilized by other apps. You should add or modify the attribute to [exported="false"] if you don't want
+           to.
+           You can also protect it with a customized permission with "signature" or higher protectionLevel and specify in
+           "android:permission" attribute.
+                  service => com.android.system.AndroidGuardianship
+[Warning] <Sensitive_Information> Getting IMEI and Device ID:
+           This app has code getting the "device id(IMEI)" but there are problems with this "TelephonyManager.getDeviceId()" approach.
+           1.Non-phones: Wifi-only devices or music players that don't have telephony hardware just don't have this kind of unique
+           identifier.
+           2.Persistence: On devices which do have this, it persists across device data wipes and factory resets. It's not clear at all if,
+           in this situation, your app should regard this as the same device.
+           3.Privilege:It requires READ_PHONE_STATE permission, which is irritating if you don't otherwise use or need telephony.
+           4.Bugs: We have seen a few instances of production phones for which the implementation is buggy and returns garbage, for example
+           zeros or asterisks.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/android/system/AGApp;->f()Ljava/lang/String; (0x22) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/android/system/AGApp;->h()V (0x10) ---> Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/android/system/AGApp;->f()Ljava/lang/String; (0x72) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/android/system/l;->run()V (0x46) ---> Ljava/io/File;->delete()Z
+               => Lcom/android/system/o;->e(Lcom/android/system/l;)V (0x14a) ---> Ljava/io/File;->delete()Z
+               => Lcom/android/system/q;->a()V (0x4c) ---> Ljava/io/File;->delete()Z
+               => Lcom/android/system/q;->f(Ljava/lang/String;)Z (0x24) ---> Ljava/io/File;->delete()Z
+[Notice]  HttpURLConnection Android Bug Checking:
+           You're using "HttpURLConnection". Prior to Android 2.2 (Froyo), "HttpURLConnection" had some frustrating bugs.
+           In particular, calling close() on a readable InputStream could poison the connection pool. Work around this by disabling
+           connection pooling.
+           Please check the reference:
+            (1)http://developer.android.com/reference/java/net/HttpURLConnection.html
+            (2)http://android-developers.blogspot.tw/2011/09/androids-http-clients.html
+               => Lcom/android/system/l;->d()Z (0x28) ---> Ljava/net/HttpURLConnection;->setDoInput(Z)V
+               => Lcom/android/system/l;->d()Z (0x34) ---> Ljava/net/HttpURLConnection;->setUseCaches(Z)V
+               => Lcom/android/system/l;->d()Z (0x44) ---> Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/android/system/l;->d()Z (0x54) ---> Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/android/system/l;->d()Z (0x62) ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/android/system/l;->d()Z (0x11a) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/android/system/l;->run()V (0xc2) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/android/system/l;->run()V (0xcc) ---> Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/android/system/l;->run()V (0xd6) ---> Ljava/net/HttpURLConnection;->getContentLength()I
+               => Lcom/android/system/l;->run()V (0x100) ---> Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/android/system/l;->run()V (0x164) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/android/system/l;->run()V (0x182) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/android/system/n;->a()[B (0x50) ---> Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/android/system/n;->a()[B (0x56) ---> Ljava/net/HttpURLConnection;->setDoInput(Z)V
+               => Lcom/android/system/n;->a()[B (0x5c) ---> Ljava/net/HttpURLConnection;->setUseCaches(Z)V
+               => Lcom/android/system/n;->a()[B (0x62) ---> Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/android/system/n;->a()[B (0x68) ---> Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/android/system/n;->a()[B (0x72) ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/android/system/n;->a()[B (0x8a) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/android/system/n;->a()[B (0x98) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/android/system/n;->a()[B (0xa6) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/android/system/n;->a()[B (0xb4) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/android/system/n;->a()[B (0xbe) ---> Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/android/system/n;->a()[B (0xe2) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/android/system/n;->a()[B (0xfa) ---> Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+[Notice]  Google Cloud Messaging Suggestion:
+           Your supporting minSdk is 1
+           You are now allowing minSdk to less than 8. Please check: http://developer.android.com/about/dashboards/index.html
+           Google Cloud Messaging (Push Message) service only allows Android SDK >= 8 (Android 2.2). Pleae check:
+           http://developer.android.com/google/gcm/gcm.html
+           You may have the change to use GCM in the future, so please set minSdk to at least 9.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" you're not using it.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is "NOT" using Android SQLite databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <Signature><Hacker> Getting Signature Code Checking:
+           Did not detect this app is checking the signature in the code.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Connection Checking:
+           Did not discover urls that are not under SSL (Notice: if you encrypt the url string, we can not discover that).
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info] <WebView> WebView Local File Access Attacks Checking:
+           Did not find potentially critical local file access settings.
+[Info] <WebView> WebView Potential XSS Attacks Checking:
+           Did not detect "setJavaScriptEnabled(true)" in WebView.
+[Info] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           WebView addJavascriptInterface vulnerabilities not found.
+------------------------------------------------------------
+AndroBugs analyzing time: 0.068117 secs
+Total elapsed time: 0.211681 secs

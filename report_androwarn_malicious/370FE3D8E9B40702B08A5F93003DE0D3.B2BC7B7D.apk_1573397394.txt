@@ -1,0 +1,198 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Google Service
+
+	[.] Application Version                     
+		 - 12.3
+
+	[.] Package Name                            
+		 - com.android.service
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the constant indicating the state of the device SIM card
+		 - This application reads the current location of the device
+		 - This application reads the neighboring cell information of the device
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+		 - This application reads the Cell ID value
+		 - This application reads the Location Area Code value
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'Landroid/support/v4/widget/SwipeRefreshLayout;->canChildScrollUp()Z'
+		 - This application logs the message '--------------->' under the tag '--------------->'
+		 - This application logs the message '//===========doInBackground背景抓=============//' under the tag 'doInBackground'
+		 - This application logs the message '//===========onPreExecute>>前景=============//' under the tag 'onPreExecute'
+		 - This application logs the message '0' under the tag 'ExpirationDate'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '1' under the tag 'PhotoViewAttacher'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'NotifManCompat'
+		 - This application logs the message '10' under the tag 'Test'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '13' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'android.support.v4.speech.tts'
+		 - This application logs the message '15' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'NotifManCompat'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '2' under the tag 'baidu_location_service'
+		 - This application logs the message '3' under the tag 'ContextCompat'
+		 - This application logs the message '3' under the tag 'DocumentFile'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'Ljava/util/Set;->iterator()Ljava/util/Iterator;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'NotifManCompat 5'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '3' under the tag 'PhotoViewAttacher'
+		 - This application logs the message '3' under the tag 'RoundedBitmapDrawableFactory'
+		 - This application logs the message '3' under the tag 'command content: '
+		 - This application logs the message '3' under the tag 'command from: '
+		 - This application logs the message '3' under the tag 'from --->to..'
+		 - This application logs the message '3' under the tag 'from .'
+		 - This application logs the message '3' under the tag 'mark'
+		 - This application logs the message '4' under the tag 'DocumentFile'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag 'Rating'
+		 - This application logs the message '4' under the tag 'mark'
+		 - This application logs the message '5' under the tag 'DocumentFile'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'PhotoViewAttacher'
+		 - This application logs the message '5' under the tag 'baidumapsdk'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '7' under the tag 'PhotoViewAttacher'
+		 - This application logs the message '7' under the tag 'Test'
+		 - This application logs the message '8' under the tag 'DocumentFile'
+		 - This application logs the message '8' under the tag 'mark'
+		 - This application logs the message '8' under the tag 'url'
+		 - This application logs the message '9' under the tag 'Decompress'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Cancel Fling' under the tag 'PhotoViewAttacher'
+		 - This application logs the message 'Cannot programmatically select non-user route because the platform is missing the selectRouteInt() method.  Media routing may not work.' under the tag
+		   'MediaRouterJellybean'
+		 - This application logs the message 'Cannot scan for wifi displays because the DisplayManager.scanWifiDisplays() method is not available on this device.' under the tag 'MediaRouterJellybeanMr1'
+		 - This application logs the message 'GPS Enabled' under the tag 'GPS Enabled'
+		 - This application logs the message 'Invalid percentage-based rating value' under the tag 'Rating'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/String;->length()I' under the tag 'v18'
+		 - This application logs the message 'Ljava/lang/String;->trim()Ljava/lang/String;' under the tag 'null 6'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'context:'
+		 - This application logs the message 'Lorg/json/JSONObject;->toString()Ljava/lang/String;' under the tag 'strAddress--------------->'
+		 - This application logs the message 'Network' under the tag 'Network'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'Status' under the tag 'Status'
+		 - This application logs the message 'Trying to set out of range star-based rating' under the tag 'Rating'
+		 - This application logs the message 'ZipFolder(String, String)' under the tag 'XZip'
+		 - This application logs the message 'baidu location connected ...' under the tag 'baidu_location_client'
+		 - This application logs the message 'baidu location service stop ...' under the tag 'baidu_location_service'
+		 - This application logs the message 'error' under the tag 'Status'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'getHttpClinentJason:' under the tag 'getHttpClinentJason:'
+		 - This application logs the message 'hideIcon' under the tag 'hideIcon'
+		 - This application logs the message 'hideIconMain' under the tag 'hideIconMain'
+		 - This application logs the message 'imei: imsi:' under the tag 'imei: imsi:'
+		 - This application logs the message 'imei:' under the tag 'Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String;'
+		 - This application logs the message 'login failed...' under the tag '--------------->'
+		 - This application logs the message 'logining...' under the tag '--------------->'
+		 - This application logs the message 'logining...' under the tag 'connectToServer()'
+		 - This application logs the message 'offline' under the tag 'offline'
+		 - This application logs the message 'onCreate' under the tag 'DeviceListActivity'
+		 - This application logs the message 'onDrag: dx: %.2f. dy: %.2f 3' under the tag 'PhotoViewAttacher'
+		 - This application logs the message 'onScale: scale: %.2f. fX: %.2f. fY: %.2f 2' under the tag 'PhotoViewAttacher'
+		 - This application logs the message 'populateList' under the tag 'DeviceListActivity'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message '接收到訊息' under the tag '接收到訊息'
+		 - This application logs the message '没有可用网络' under the tag 'mark'
+		 - This application logs the message '＝＝＝Got GPS＝＝＝' under the tag '＝＝＝AlarmReceiver＝＝＝'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/baidu/vi/c;->a()Landroid/content/Context;' application installed on the system
+		 - This application retrieves '' information about the 'com.baidu.BaiduMap' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application lists applications installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+		 - This application sends an SMS message '4' to the '4' phone number
+
+	[.] Audio Video Eavesdropping               
+		 - This application records audio from the 'MIC' source
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Lorg/jivesoftware/smackx/packet/Bytestream$StreamHost;->getPort()I' on the
+		   'Lorg/jivesoftware/smackx/packet/Bytestream$StreamHost;->getPort()I' port
+
+	[.] Pim Data Leakage                        
+		 - This application accesses the SMS list
+		 - This application accesses the calendar
+
+	[.] Code Execution                          
+		 - This application loads a native library: 'BaiduMapSDK_v2_1_3'
+		 - This application loads a native library: 'BaiduMapVOS_v2_1_3'
+		 - This application loads a native library: 'locSDK3'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 370FE3D8E9B40702B08A5F93003DE0D3.B2BC7B7D.apk
+
+	[.] Fingerprint                             
+		 - MD5: 370fe3d8e9b40702b08a5f93003de0d3
+		 - SHA-1: a2fb111de6a08da5833c904676c144c9278f9afb
+		 - SHA-256: a9a20553c00b20b18724bb5b3da849af24d90332ebe09486e35659d9927fe028
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',
+		   'android.permission.ACCESS_WIFI_STATE',  'android.permission.BLUETOOTH',  'android.permission.BROADCAST_STICKY',  'android.permission.CALL_PHONE',  'android.permission.CAMERA',
+		   'android.permission.CHANGE_NETWORK_STATE',  'android.permission.CHANGE_WIFI_STATE',  'android.permission.DISABLE_KEYGUARD',  'android.permission.GET_ACCOUNTS',  'android.permission.INTERNET',
+		   'android.permission.MODIFY_AUDIO_SETTINGS',  'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',  'android.permission.PROCESS_OUTGOING_CALLS',  'android.permission.READ_CALENDAR',
+		   'android.permission.READ_CONTACTS',  'android.permission.READ_LOGS',  'android.permission.READ_PHONE_STATE',  'android.permission.READ_SMS',  'android.permission.RECEIVE_BOOT_COMPLETED',
+		   'android.permission.RECEIVE_SMS',  'android.permission.RECORD_AUDIO',  'android.permission.RECORD_VIDEO',  'android.permission.RESTART_PACKAGES',  'android.permission.SEND_SMS',
+		   'android.permission.SYSTEM_ALERT_WINDOW',  'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_CONTACTS',  'android.permission.WRITE_EXTERNAL_STORAGE',
+		   'android.permission.WRITE_SETTINGS',  'android.permission.WRITE_SMS',  'com.android.browser.permission.READ_HISTORY_BOOKMARKS',  'com.android.email.permission.ACCESS_PROVIDER',
+		   'com.android.launcher.action.INSTALL_SHORTCUT']
+		 - Implied: [['android.permission.READ_CALL_LOG', None],  ['android.permission.READ_EXTERNAL_STORAGE', None],  ['android.permission.WRITE_CALL_LOG', None]]
+		 - Declared: []
+
+

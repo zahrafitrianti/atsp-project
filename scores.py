@@ -28,17 +28,17 @@ def plot_scores(df, analyzer):
 		title = 'Scores per app for Androwarn'
 		y = df['score']
 		ylabel = 'scores'
-		filename = 'plot_scores_androwarn_scaled.png'
+		filename = 'plot_scores_androwarn.png'
 	elif analyzer == 2:
 		title = 'Scores per app for Androbugs'
 		y = df['score']
 		ylabel = 'scores'
-		filename = 'plot_scores_androbugs_scaled.png'
+		filename = 'plot_scores_androbugs.png'
 	elif analyzer == 3:
 		title = 'Combined scores per app'
 		y = df['combined score']
 		ylabel = 'combined scores'
-		filename = 'plot_combined_scores_scaled.png'
+		filename = 'plot_combined_scores.png'
 
 	plt.figure(figsize=(12,7))
 	plt.title(title)
@@ -52,8 +52,12 @@ def plot_scores(df, analyzer):
 def main():
 
 	# csv files of the results
-	result_androwarn = './result/result_androwarn_scaled.csv'
-	result_androbugs = './result/result_androbugs_scaled.csv'
+	result_androwarn = './result/result_androwarn.csv'
+	result_androbugs = './result/result_androbugs.csv'
+
+	# csv files of the malicious apps results
+	# result_androwarn = './result/result_androwarn_malicious.csv'
+	# result_androbugs = './result/result_androbugs_malicious.csv'
 
 	# read csv files
 	androwarn = pd.read_csv(result_androwarn)
@@ -76,7 +80,8 @@ def main():
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
 	print('Save output to csv file...')
-	df.to_csv('./result/final_scores_scaled.csv', index=False)
+	df.to_csv('./result/final_scores.csv', index=False)
+	# df.to_csv('./result/final_scores_malicious.csv', index=False)
 
 	# plot histogram of scores
 	plot_scores(androwarn, 1)

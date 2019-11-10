@@ -1,0 +1,36 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - WifiSearch
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.oyws.pdu
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - CEE6584CD2E01FAB5F075F94AF2A0CE024ED5E4F2D52E3DC39F7655C736A7232.apk
+
+	[.] Fingerprint                             
+		 - MD5: 15fbef81a464e1442ea53ab80cba657d
+		 - SHA-1: 051888210f8ddaedbbbfcb52bb091d4a3614eb1d
+		 - SHA-256: cee6584cd2e01fab5f075f94af2a0ce024ed5e4f2d52e3dc39f7655c736a7232
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.INTERNET',  'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',  'android.permission.READ_EXTERNAL_STORAGE',
+		   'android.permission.READ_OWNER_DATA',  'android.permission.READ_PHONE_STATE',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: []
+		 - Declared: []
+
+

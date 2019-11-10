@@ -1,0 +1,116 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Dendroid
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.parental.control.v4
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'com.connect'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'com.connect'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '11' under the tag 'com.connect'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '13' under the tag 'UpdateAPP'
+		 - This application logs the message '14' under the tag 'com.connect'
+		 - This application logs the message '2' under the tag 'BackStackEntry'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'com.connect'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '5' under the tag 'BackStackEntry'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'com.connect'
+		 - This application logs the message '6' under the tag 'BackStackEntry'
+		 - This application logs the message '7' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'FragmentActivity'
+		 - This application logs the message 'BITMAP SAVED' under the tag 'com.connect'
+		 - This application logs the message 'Back' under the tag 'com.connect'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Dendroid' under the tag 'com.connect'
+		 - This application logs the message 'FragmentManager' under the tag 'FragmentManager'
+		 - This application logs the message 'Front' under the tag 'com.connect'
+		 - This application logs the message 'Ljava/lang/Exception;->toString()Ljava/lang/String;' under the tag 'Could not save'
+		 - This application logs the message 'Location Is Dead' under the tag 'com.connect'
+		 - This application logs the message 'Pictures done' under the tag 'com.connect'
+		 - This application logs the message 'Pictures started' under the tag 'com.connect'
+		 - This application logs the message 'Profiled' under the tag 'com.connect'
+		 - This application logs the message 'Receiver ON' under the tag 'com.connect'
+		 - This application logs the message 'SD Card' under the tag 'com.connect'
+		 - This application logs the message 'Screen Off Run Service' under the tag 'com.connect'
+		 - This application logs the message 'Screen Off' under the tag 'com.connect'
+		 - This application logs the message 'io problems while preparing' under the tag 'com.connect'
+		 - This application logs the message 'onCreate' under the tag 'CameraTest'
+		 - This application logs the message 'onResume' under the tag 'CameraTest'
+		 - This application logs the message 'onStop' under the tag 'CameraTest'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'startService' under the tag 'com.connect'
+		 - This application logs the message 'surfaceChanged' under the tag 'CameraTest'
+		 - This application logs the message 'surfaceCreated' under the tag 'com.connect'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'com.connect'
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+	[.] Audio Video Eavesdropping               
+		 - This application records audio from the 'DEFAULT' source
+		 - This application records audio from the 'MIC' source
+		 - This application captures video from the 'DEFAULT' source
+
+	[.] Pim Data Leakage                        
+		 - This application accesses the SMS list
+		 - This application accesses the call log
+
+
+[+] Apk File
+	[.] File Name                               
+		 - com.parental.control.v4.apk
+
+	[.] Fingerprint                             
+		 - MD5: db01f96d5e66d82f7eb61b85eb96ef6e
+		 - SHA-1: 9c3844d7a798d913ea6310e5fd94c4a0f65387c6
+		 - SHA-256: 099a57328de9335c524f44514e225d50731c808145221affdd684d8b4dad5a1d
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.CALL_PHONE',  'android.permission.CAMERA',  'android.permission.GET_ACCOUNTS',
+		   'android.permission.GET_TASKS',  'android.permission.INTERNET',  'android.permission.PROCESS_OUTGOING_CALLS',  'android.permission.READ_CONTACTS',  'android.permission.READ_PHONE_STATE',
+		   'android.permission.READ_SMS',  'android.permission.RECEIVE_SMS',  'android.permission.RECORD_AUDIO',  'android.permission.SEND_SMS',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SETTINGS',  'android.permission.WRITE_SMS',  'com.android.browser.permission.READ_HISTORY_BOOKMARKS']
+		 - Implied: [['android.permission.READ_CALL_LOG', None],  ['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

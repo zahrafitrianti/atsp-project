@@ -1,0 +1,328 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: org.merry.core
+Package Version Name: 1.0
+Package Version Code: 1
+Min Sdk: 1
+MD5   : e06dd5ba1a101f855604b486d90d2651
+SHA1  : 6f067fc7bad5a0aa3c5e58c37d428663be5968a1
+SHA256: 1264c25d67d41f52102573d3c528bcddda42129df5052881f7e98b4a90f61f23
+SHA512: 0c55a9326b884621f331e095e1403a67e81d41773968ca02858c4b012c23fc0d7dde598f4d2dc82a32fbed0f1212844b79492794814440d0199b54f4e551999a
+Analyze Signature: 3df15a84a065bbf532ef1a0ea66627f5fe689f3983ef71f08ebbaec47fcf1e31c58f512562f7785eff945472a6c52d609460c0030c764749e773c4b1f8f1d264
+------------------------------------------------------------------------------------------------
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:2):
+               http://192.227.137.154/request.php
+                   => Lcom/xbot/core/RunService;->onStartCommand(Landroid/content/Intent; I I)I
+                   => Lorg/merry/core/RunService;->onStartCommand(Landroid/content/Intent; I I)I
+                   => Lorg/luckybird/core/RunService;->onStartCommand(Landroid/content/Intent; I I)I
+                   => Lorg/verywell/kernel/RunService;->onStartCommand(Landroid/content/Intent; I I)I
+               http://23.227.163.110/locker.php
+                   => Lorg/verywell/kernel/Consts;-><clinit>()V
+                   => Lorg/merry/core/Consts;-><clinit>()V
+                   => Lcom/xbot/core/Consts;-><clinit>()V
+                   => Lorg/luckybird/core/Consts;-><clinit>()V
+[Critical]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' only works in emulator environment. Please remove this permission if it is a
+           released application.
+[Critical] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           Found a critical WebView "addJavascriptInterface" vulnerability. This method can be used to allow JavaScript to control the host
+           application.
+           This is a powerful feature, but also presents a security risk for applications targeted to API level JELLY_BEAN(4.2) or below,
+           because JavaScript could use reflection to access an injected object's public fields. Use of this method in a WebView containing
+           untrusted content could allow an attacker to manipulate the host application in unintended ways, executing Java code with the
+           permissions of the host application.
+           Reference:
+             1."http://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface(java.lang.Object,
+           java.lang.String) "
+             2.https://labs.mwrinfosecurity.com/blog/2013/09/24/webview-addjavascriptinterface-remote-code-execution/
+             3.http://50.56.33.56/blog/?p=314
+             4.http://blog.trustlook.com/2013/09/04/alert-android-webview-addjavascriptinterface-code-execution-vulnerability/
+           Please modify the below code:
+               => Lcom/xbot/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0xcc) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/xbot/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0xea) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/xbot/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x102) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/xbot/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x118) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/xbot/core/locker/Lock;->onCreate(Landroid/os/Bundle;)V (0xcc) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/xbot/core/locker/Lock;->onCreate(Landroid/os/Bundle;)V (0xea) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/xbot/core/locker/Lock;->onCreate(Landroid/os/Bundle;)V (0x102) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/xbot/core/locker/Lock;->onCreate(Landroid/os/Bundle;)V (0x118) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/luckybird/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0xcc) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/luckybird/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0xea) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/luckybird/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x102) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/luckybird/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x118) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/luckybird/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0xcc) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/luckybird/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0xea) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/luckybird/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0x102) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/luckybird/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0x118) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/merry/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0xcc) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/merry/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0xea) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/merry/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x102) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/merry/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x118) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/merry/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0xcc) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/merry/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0xea) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/merry/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0x102) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/merry/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0x118) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/verywell/kernel/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0xcc) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/verywell/kernel/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0xea) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/verywell/kernel/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x102) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/verywell/kernel/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x118) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/verywell/kernel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0xcc) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/verywell/kernel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0xea) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/verywell/kernel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0x102) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/verywell/kernel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0x118) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+[Warning]  Dynamic Code Loading:
+           Dynamic code loading(DexClassLoader) found:
+               => Lcom/xbot/core/tools/DexLoader;->getExternalClass(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Class; (0x2e) --->
+                    Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lcom/xbot/core/tools/DexLoader;->getExternalClass(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Class; (0x34) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lorg/luckybird/core/utilities/DexLoader;->getExternalClass(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Class; (0x2e)
+                    ---> Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lorg/luckybird/core/utilities/DexLoader;->getExternalClass(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Class; (0x34)
+                    ---> Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lorg/merry/core/utilities/DexLoader;->getExternalClass(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Class; (0x2e) --->
+                    Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lorg/merry/core/utilities/DexLoader;->getExternalClass(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Class; (0x34) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lorg/verywell/kernel/utilities/DexLoader;->getExternalClass(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Class; (0x2e)
+                    ---> Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lorg/verywell/kernel/utilities/DexLoader;->getExternalClass(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Class; (0x34)
+                    ---> Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lcom/xbot/core/Log;->init()V (0xa) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/luckybird/core/Log;->init()V (0xa) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/merry/core/Log;->init()V (0xa) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/verywell/kernel/Log;->init()V (0xa) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning]  AndroidManifest Exported Components Checking:
+           Found "exported" components(except for Launcher) for receiving outside applications' actions (AndroidManifest.xml).
+           These components can be initilized by other apps. You should add or modify the attribute to [exported="false"] if you don't want
+           to.
+           You can also protect it with a customized permission with "signature" or higher protectionLevel and specify in
+           "android:permission" attribute.
+                 receiver => org.merry.core.sms.SentReceiver
+                 receiver => org.merry.core.sms.DeliveredReceiver
+[Warning] <Sensitive_Information> Getting IMEI and Device ID:
+           This app has code getting the "device id(IMEI)" but there are problems with this "TelephonyManager.getDeviceId()" approach.
+           1.Non-phones: Wifi-only devices or music players that don't have telephony hardware just don't have this kind of unique
+           identifier.
+           2.Persistence: On devices which do have this, it persists across device data wipes and factory resets. It's not clear at all if,
+           in this situation, your app should regard this as the same device.
+           3.Privilege:It requires READ_PHONE_STATE permission, which is irritating if you don't otherwise use or need telephony.
+           4.Bugs: We have seen a few instances of production phones for which the implementation is buggy and returns garbage, for example
+           zeros or asterisks.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/xbot/core/xAPI;->getTelephonyInfo()[Ljava/lang/String; (0xe) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lorg/luckybird/core/xAPI;->getTelephonyInfo()[Ljava/lang/String; (0xe) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lorg/merry/core/xAPI;->getTelephonyInfo()[Ljava/lang/String; (0xe) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lorg/verywell/kernel/xAPI;->getTelephonyInfo()[Ljava/lang/String; (0xe) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+[Warning]  Codes for Sending SMS:
+           This app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage):
+               => Lcom/xbot/core/xAPI;->sendSMS(Ljava/lang/String; Ljava/lang/String; I)V (0x92) --->
+                    Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+               => Lorg/luckybird/core/xAPI;->sendSMS(Ljava/lang/String; Ljava/lang/String; I)V (0x92) --->
+                    Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+               => Lorg/merry/core/xAPI;->sendSMS(Ljava/lang/String; Ljava/lang/String; I)V (0x92) --->
+                    Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+               => Lorg/verywell/kernel/xAPI;->sendSMS(Ljava/lang/String; Ljava/lang/String; I)V (0x92) --->
+                    Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[Warning] <WebView> WebView Local File Access Attacks Checking:
+           Found "setAllowFileAccess(true)" or not set(enabled by default) in WebView. The attackers could inject malicious script into
+           WebView and exploit the opportunity to access local resources. This can be mitigated or prevented by disabling local file system
+           access. (It is enabled by default)
+           Note that this enables or disables file system access only. Assets and resources are still accessible using file:///android_asset
+           and file:///android_res.
+           The attackers can use "mWebView.loadUrl("file:///data/data/[Your_Package_Name]/[File]");" to access app's local file.
+           Reference: (1)https://labs.mwrinfosecurity.com/blog/2012/04/23/adventures-with-android-webviews/
+                      (2)http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)
+           Please add or modify "yourWebView.getSettings().setAllowFileAccess(false)" to your WebView:
+               Lcom/xbot/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V
+               Lcom/xbot/core/locker/Lock;->onCreate(Landroid/os/Bundle;)V
+               Lorg/luckybird/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V
+               Lorg/luckybird/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V
+               Lorg/merry/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V
+               Lorg/merry/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V
+               Lorg/verywell/kernel/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V
+               Lorg/verywell/kernel/lck/Lock;->onCreate(Landroid/os/Bundle;)V
+[Warning] <WebView> WebView Potential XSS Attacks Checking:
+           Found "setJavaScriptEnabled(true)" in WebView, which could exposed to potential XSS attacks. Please check the web page code
+           carefully and sanitize the output:
+               => Lcom/xbot/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x64) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/xbot/core/locker/Lock;->onCreate(Landroid/os/Bundle;)V (0x64) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lorg/luckybird/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x64) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lorg/luckybird/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0x64) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lorg/merry/core/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x64) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lorg/merry/corel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0x64) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lorg/verywell/kernel/activities/BrowserActivity;->onCreate(Landroid/os/Bundle;)V (0x64) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lorg/verywell/kernel/lck/Lock;->onCreate(Landroid/os/Bundle;)V (0x64) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice]  HttpURLConnection Android Bug Checking:
+           You're using "HttpURLConnection". Prior to Android 2.2 (Froyo), "HttpURLConnection" had some frustrating bugs.
+           In particular, calling close() on a readable InputStream could poison the connection pool. Work around this by disabling
+           connection pooling.
+           Please check the reference:
+            (1)http://developer.android.com/reference/java/net/HttpURLConnection.html
+            (2)http://android-developers.blogspot.tw/2011/09/androids-http-clients.html
+               => Lorg/mozilla/javascript/commonjs/module/provider/UrlModuleSourceProvider$URLValidator;->isResourceChanged(Ljava/net/URLCon
+                    nection;)Z (0x10) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+[Notice]  Google Cloud Messaging Suggestion:
+           Your supporting minSdk is 1
+           You are now allowing minSdk to less than 8. Please check: http://developer.android.com/about/dashboards/index.html
+           Google Cloud Messaging (Push Message) service only allows Android SDK >= 8 (Android 2.2). Pleae check:
+           http://developer.android.com/google/gcm/gcm.html
+           You may have the change to use GCM in the future, so please set minSdk to at least 9.
+[Notice]  AndroidManifest Exported Components Checking 2:
+           Found "exported" components(except for Launcher) for receiving Google's "Android" actions (AndroidManifest.xml):
+                 receiver => org.merry.core.OnBootHandler
+                 receiver => org.merry.core.SMSHandler
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" you're not using it.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is "NOT" using Android SQLite databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info]  File Unsafe Delete Checking:
+           Did not detect that you are unsafely deleting files.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <Signature><Hacker> Getting Signature Code Checking:
+           Did not detect this app is checking the signature in the code.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting ANDROID_ID:
+           Did not detect this app is getting the 64-bit number "Settings.Secure.ANDROID_ID".
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+------------------------------------------------------------
+AndroBugs analyzing time: 2.871802 secs
+Total elapsed time: 9.377947 secs

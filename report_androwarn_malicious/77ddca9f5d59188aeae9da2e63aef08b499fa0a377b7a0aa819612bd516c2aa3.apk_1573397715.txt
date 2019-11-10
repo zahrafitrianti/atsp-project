@@ -1,0 +1,395 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 童话酷跑
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - qy.opb.xb.mm.thkp
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the ISO country code equivalent for the SIM provider's country code
+		 - This application reads the ISO country code equivalent of the current registered operator's MCC (Mobile Country Code)
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the SIM's serial number
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the alphabetic identifier associated with the voice mail number
+		 - This application reads the constant indicating the state of the device SIM card
+		 - This application reads the current data connection state
+		 - This application reads the current location of the device
+		 - This application reads the device phone type value
+		 - This application reads the neighboring cell information of the device
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the phone's current state
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the software version number for the device, for example, the IMEI/SV for GSM phones
+		 - This application reads the type of activity on a data connection
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+		 - This application reads the voice mail number
+		 - This application reads the Cell ID value
+		 - This application reads the Location Area Code value
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message ' not need initialize ...' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '----------------------ssoDeviceRegister start-----------------------\r\n' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message '0' under the tag '3'
+		 - This application logs the message '0' under the tag 'CmccOmpUtility'
+		 - This application logs the message '0' under the tag 'CmccompSharedPreferences'
+		 - This application logs the message '0' under the tag 'Decompress'
+		 - This application logs the message '0' under the tag 'EnableCallingBySSO'
+		 - This application logs the message '0' under the tag 'HTTPConnectionTool'
+		 - This application logs the message '0' under the tag 'IdentifyApp'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '0' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '0' under the tag 'MMClientSDK_ForPhone'
+		 - This application logs the message '0' under the tag 'MmClientSdk'
+		 - This application logs the message '0' under the tag 'MobileAgent'
+		 - This application logs the message '0' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message '0' under the tag 'PackageUtil'
+		 - This application logs the message '0' under the tag 'Seed'
+		 - This application logs the message '0' under the tag 'UTF8'
+		 - This application logs the message '0' under the tag 'ylc'
+		 - This application logs the message '1' under the tag 'CmccOmpUtility'
+		 - This application logs the message '1' under the tag 'CmccompSharedPreferences'
+		 - This application logs the message '1' under the tag 'IdentifyApp'
+		 - This application logs the message '1' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '1' under the tag 'MMClientSDK_ForPhone'
+		 - This application logs the message '1' under the tag 'MmClientSdk'
+		 - This application logs the message '1' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message '1' under the tag 'wpr'
+		 - This application logs the message '1' under the tag 'ylc'
+		 - This application logs the message '10' under the tag 'CmccOmpGetEncryptedContentBySSO'
+		 - This application logs the message '10' under the tag 'CmccOmpUtility'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'MmClientSdk'
+		 - This application logs the message '10' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message '10' under the tag '加密后'
+		 - This application logs the message '11' under the tag ''
+		 - This application logs the message '11' under the tag 'CmccOmpUtility'
+		 - This application logs the message '11' under the tag 'CmccOmpUtilitytime'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '11' under the tag 'HTTPConnectionTool'
+		 - This application logs the message '11' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '11' under the tag 'MmClientSdk'
+		 - This application logs the message '12' under the tag 'CmccOmpUtility'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'HTTPConnectionTool'
+		 - This application logs the message '12' under the tag 'MMClientSDK_ForPhone'
+		 - This application logs the message '12' under the tag 'MmClientSdk'
+		 - This application logs the message '13' under the tag 'EnableCallingBySSO_001'
+		 - This application logs the message '13' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '13' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message '14' under the tag 'CmccOmpUtility'
+		 - This application logs the message '14' under the tag 'Cocos2dx'
+		 - This application logs the message '14' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '14' under the tag 'MMClientSDK_ForPhone'
+		 - This application logs the message '14' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message '15' under the tag 'EnableCallingBySSO'
+		 - This application logs the message '15' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '15' under the tag 'MmClientSdk'
+		 - This application logs the message '2' under the tag 'CmccompSharedPreferences'
+		 - This application logs the message '2' under the tag 'EnableCallingBySSO'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '2' under the tag 'MMClientSDK_ForPhone'
+		 - This application logs the message '2' under the tag 'MmClientSdk'
+		 - This application logs the message '2' under the tag 'MobileAgent'
+		 - This application logs the message '2' under the tag 'PushService'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '2' under the tag '[SAF_FRAMEWORK_IAP]'
+		 - This application logs the message '2' under the tag 'font size'
+		 - This application logs the message '2' under the tag 'wpr'
+		 - This application logs the message '2' under the tag 'ylc'
+		 - This application logs the message '3' under the tag 'CmccompSharedPreferences'
+		 - This application logs the message '3' under the tag 'EnableCallingBySSO'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '3' under the tag 'MMClientSDK_ForPhone'
+		 - This application logs the message '3' under the tag 'MmClientSdk'
+		 - This application logs the message '3' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message '3' under the tag 'wpr'
+		 - This application logs the message '3' under the tag 'ylc'
+		 - This application logs the message '4' under the tag 'CmccOmpUtility'
+		 - This application logs the message '4' under the tag 'CmccOmpUtility_isConnect'
+		 - This application logs the message '4' under the tag 'Cocos2dxSound'
+		 - This application logs the message '4' under the tag 'EnableCallingBySSO'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '4' under the tag 'MMClientSDK_ForPhone'
+		 - This application logs the message '4' under the tag 'MmClientSdk'
+		 - This application logs the message '4' under the tag 'ylc'
+		 - This application logs the message '4' under the tag 'zhide'
+		 - This application logs the message '5' under the tag 'CmccOmpGetEncryptedContentBySSO'
+		 - This application logs the message '5' under the tag 'CmccOmpUtility'
+		 - This application logs the message '5' under the tag 'Cocos2dxLocalStorage'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '5' under the tag 'MMClientSDK_ForPhone'
+		 - This application logs the message '5' under the tag 'MmClientSdk'
+		 - This application logs the message '5' under the tag 'ylc'
+		 - This application logs the message '6' under the tag '2'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'CmccOmpUtility'
+		 - This application logs the message '6' under the tag 'EnableCallingBySSO'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '6' under the tag 'MMClientSDK_ForPhone'
+		 - This application logs the message '6' under the tag 'MmClientSdk'
+		 - This application logs the message '6' under the tag 'ylc'
+		 - This application logs the message '7' under the tag 'Cocos2dxBitmap'
+		 - This application logs the message '7' under the tag 'EnableCallingBySSO'
+		 - This application logs the message '7' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '7' under the tag 'MMClientSDK_ForPhone'
+		 - This application logs the message '7' under the tag 'MmClientSdk'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '8' under the tag 'CmccOmpGetEncryptedContentBySSO'
+		 - This application logs the message '8' under the tag 'EnableCallingBySSO'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '8' under the tag 'MMClientSDK_ForPhone'
+		 - This application logs the message '8' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message '8' under the tag 'ylc'
+		 - This application logs the message '8' under the tag '加密后'
+		 - This application logs the message '9' under the tag 'FragmentActivity'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'MMClientSDK_ForPad'
+		 - This application logs the message '9' under the tag 'MmClientSdk'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'CmccOmpGetEncryptedContentBySSO is calling......start' under the tag 'CmccOmpGetEncryptedContentBySSO'
+		 - This application logs the message 'Connection is failed...5150' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'Could not read MAC, forget to include ACCESS_WIFI_STATE permission?' under the tag 'MobileUtils'
+		 - This application logs the message 'Could not read MOBILE_CHANNEL meta-data from AndroidManifest.xml.' under the tag 'MobileUtils'
+		 - This application logs the message 'Du have not permission to collect data' under the tag 'Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z'
+		 - This application logs the message 'Du have not permission to collect data' under the tag 'MobileAgent'
+		 - This application logs the message 'EnableCalling request...' under the tag 'EnableCallingBySSO'
+		 - This application logs the message 'Exception occurent in onEventRt() , length more than 2000' under the tag 'MobileAgent'
+		 - This application logs the message 'Exception occurred in MobileAgent.onResume(). ' under the tag 'MobileAgent'
+		 - This application logs the message 'Exception occurred when recording usage.' under the tag 'MobileAgent'
+		 - This application logs the message 'Found update' under the tag '12'
+		 - This application logs the message 'Frontia is not initialized, need to call Frontia.init to initialize Frontia first' under the tag 'Frontia'
+		 - This application logs the message 'HideSoftInput' under the tag 'GLSurfaceView'
+		 - This application logs the message 'Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;' under the tag '1'
+		 - This application logs the message 'Lcom/baidu/android/silentupdate/SilentManager;->a(Ljava/io/File;)Ljava/lang/String;' under the tag 'v1'
+		 - This application logs the message 'Lcom/ccit/mmwlan/vo/DeviceInfo;->toString()Ljava/lang/String;' under the tag 'MmClientSdk'
+		 - This application logs the message 'Lib file check ok' under the tag 'Copy from assert fail!'
+		 - This application logs the message 'Ljava/io/IOException;->toString()Ljava/lang/String;' under the tag 'ReadConfigFile'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/ClassNotFoundException;->getMessage()Ljava/lang/String;' under the tag 'ReflectHelper'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'ReflectHelper'
+		 - This application logs the message 'Ljava/lang/Exception;->toString()Ljava/lang/String;' under the tag 'invoke native function error'
+		 - This application logs the message 'Ljava/lang/NoSuchMethodException;->getMessage()Ljava/lang/String;' under the tag 'ReflectHelper'
+		 - This application logs the message 'Ljava/lang/Object;->toString()Ljava/lang/String;' under the tag 'Blaze_Core LOG:'
+		 - This application logs the message 'Ljava/lang/Object;->toString()Ljava/lang/String;' under the tag 'Blaze_OP LOG:'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag ']'
+		 - This application logs the message 'MobileAgentAPI' under the tag 'MobileAgent'
+		 - This application logs the message 'RSA check ok' under the tag 'RSA check fail'
+		 - This application logs the message 'SAF-A Exception:500001' under the tag 'ApkDownloadTask'
+		 - This application logs the message 'SAF-A Exception:500002' under the tag 'ApkDownloadTask'
+		 - This application logs the message 'SAF-A Exception:500003' under the tag 'ApkDownloadTask'
+		 - This application logs the message 'SAF-A Exception:511001' under the tag 'QueryTask'
+		 - This application logs the message 'SAF-A Exception:511002' under the tag 'QueryTask'
+		 - This application logs the message 'SAF-A Exception:511003' under the tag 'QueryTask'
+		 - This application logs the message 'SAF-A Exception:511004' under the tag 'QueryTask'
+		 - This application logs the message 'SAF-A Exception:511005' under the tag 'QueryTask'
+		 - This application logs the message 'SAF-A Exception:512002' under the tag 'PackageUtil'
+		 - This application logs the message 'SAF-A Exception:512003' under the tag 'PackageUtil'
+		 - This application logs the message 'SAF-A Exception:514001' under the tag 'AuthUtil'
+		 - This application logs the message 'SAF-A Exception:520002' under the tag 'Ljava/util/Iterator;->next()Ljava/lang/Object;'
+		 - This application logs the message 'SAF-A Exception:520003' under the tag 'Ljava/util/Iterator;->next()Ljava/lang/Object;'
+		 - This application logs the message 'SAF-A Exception:530001' under the tag 'Lsafiap/framework/SafFrameworkManager;->b()Ljava/lang/String;'
+		 - This application logs the message 'SAF-A Exception:530001' under the tag 'Lsafiap/framework/UpdateManager;->b()Ljava/lang/String;'
+		 - This application logs the message 'SAF-A Exception:540001' under the tag 'PluginInfo'
+		 - This application logs the message 'SAF-A Exception:550001' under the tag 'SafFrameworkDB'
+		 - This application logs the message 'SAF-A Exception:550002' under the tag 'SafFrameworkDB'
+		 - This application logs the message 'SAF-A Exception:550003' under the tag 'SafFrameworkDB'
+		 - This application logs the message 'SAF-A Exception:550004' under the tag 'SafFrameworkDB'
+		 - This application logs the message 'SAF-A Exception:550007(query)' under the tag 'SafFrameworkDB'
+		 - This application logs the message 'SAF-A Exception:550010' under the tag 'SafFrameworkDB'
+		 - This application logs the message 'SAF-A Exception:550013' under the tag 'SafFrameworkDB'
+		 - This application logs the message 'SAF-A Exception:550017' under the tag 'SafFrameworkDB'
+		 - This application logs the message 'SAF-A StatusCode:510001' under the tag 'IAPSAFFramework'
+		 - This application logs the message 'SAF-A StatusCode:510002' under the tag 'IAPSAFFramework'
+		 - This application logs the message 'SAF-A StatusCode:510003' under the tag 'IAPSAFFramework'
+		 - This application logs the message 'SAF-A StatusCode:510006' under the tag 'IAPSAFFramework'
+		 - This application logs the message 'SAF-A StatusCode:510008' under the tag 'IAPSAFFramework'
+		 - This application logs the message 'SAF-A StatusCode:510009' under the tag 'IAPSAFFramework'
+		 - This application logs the message 'SAF-A StatusCode:510010' under the tag 'IAPSAFFramework'
+		 - This application logs the message 'SAF-A StatusCode:510017' under the tag 'IAPSAFFramework'
+		 - This application logs the message 'SDK del a dirty data' under the tag 'MobileAgent'
+		 - This application logs the message 'SMS initialize' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'TDGA' under the tag 'TDGA'
+		 - This application logs the message 'The key contains more than one value.' under the tag 'Cocos2dxLocalStorage'
+		 - This application logs the message 'Token is invalid....5004' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'act log sd' under the tag 'MobileAgent'
+		 - This application logs the message 'already init' under the tag 'Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z'
+		 - This application logs the message 'already init' under the tag 'MobileAgent'
+		 - This application logs the message 'app is test mode....' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message 'applySecCertFromMoserver()  Errormsg ->  4' under the tag 'MmClientSdk'
+		 - This application logs the message 'applySecCertFromMoserver()  Errormsg -> Apply cert failed!' under the tag 'MmClientSdk'
+		 - This application logs the message 'can not find log file' under the tag 'MobileAgentRun'
+		 - This application logs the message 'cjClassInit' under the tag 'ylc'
+		 - This application logs the message 'cmmm init finish' under the tag 'ylc'
+		 - This application logs the message 'cmnet' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'cmwap' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'content 1' under the tag 'Ljava/lang/String;'
+		 - This application logs the message 'deviceToken error' under the tag 'TDGA EventPushToken'
+		 - This application logs the message 'deviceid is null...errorcode=5059need initialize..' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message 'doPost() without proxy ->' under the tag 'HTTPConnectionTool'
+		 - This application logs the message 'download error' under the tag 'TDZipDownload'
+		 - This application logs the message 'enablerCallingBySSO is Calling' under the tag 'EnableCallingBySSO'
+		 - This application logs the message 'encWithPubKey() error -> parameters error!' under the tag 'MmClientSdk'
+		 - This application logs the message 'encryptedInfo is error' under the tag 'CmccOmpGetEncryptedContentBySSO'
+		 - This application logs the message 'erLog sd' under the tag 'MobileAgent'
+		 - This application logs the message 'errorCode:5100; input enccontent error!' under the tag 'CmccOmpGetEncryptedContentBySSO'
+		 - This application logs the message 'errorCode:5100; input plaincontent error!' under the tag 'CmccOmpGetEncryptedContentBySSO'
+		 - This application logs the message 'evn log sd' under the tag 'MobileAgent'
+		 - This application logs the message 'evnrt log sd' under the tag 'MobileAgent'
+		 - This application logs the message 'file r/w execption' under the tag 'MobileAgentRun'
+		 - This application logs the message 'file=false' under the tag 'wpr'
+		 - This application logs the message 'file=true' under the tag 'wpr'
+		 - This application logs the message 'frontia init' under the tag 'frontia'
+		 - This application logs the message 'genPKIKey() error -> generation pki key failed!' under the tag 'MmClientSdk'
+		 - This application logs the message 'genPKIKey() error -> parameters error!' under the tag 'MmClientSdk'
+		 - This application logs the message 'getMac failed..getMac request is null' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message 'getPid exception ...5052' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'google_sdk...simulator is running...not apn setting' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'init parameters error...5100appid or url error' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'input ExData is error...5108' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'input appid is error... 5104' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'input channelid is error...5105' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'isMusicOn isOn = false' under the tag 'QYPay'
+		 - This application logs the message 'isMusicOn isOn = true' under the tag 'QYPay'
+		 - This application logs the message 'labwap3' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'local init failed...5053context is null' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'md5 GDWLANIDP#%s#%s:%s 3' under the tag '0'
+		 - This application logs the message 'mm init111' under the tag 'ylc'
+		 - This application logs the message 'mm init222' under the tag 'ylc'
+		 - This application logs the message 'no seed error...' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message 'no statuscode error.   ' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message 'no statuscode error...' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message 'null method called' under the tag 'TDGA'
+		 - This application logs the message 'opClassInit' under the tag 'ylc'
+		 - This application logs the message 'parse appid failed... 5104' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'playBackgroundMusic: background media player is null' under the tag '4'
+		 - This application logs the message 'playBackgroundMusic: error state' under the tag '0'
+		 - This application logs the message 'please check your network' under the tag 'MobileAgent'
+		 - This application logs the message 'rewindBackgroundMusic: error state' under the tag '0'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'saveEditor , initState = initState' under the tag 'CmccompSharedPreferences'
+		 - This application logs the message 'send feedback success' under the tag 'MobileAgent'
+		 - This application logs the message 'showSoftInput' under the tag 'GLSurfaceView'
+		 - This application logs the message 'sidSignature =  sidSignature 4' under the tag 'EnableCallingBySSO'
+		 - This application logs the message 'ssoDeviceRegister is calling...' under the tag 'OmpInitEnvBySSO'
+		 - This application logs the message 'the appkey is empty,please init datau.sdk' under the tag 'MobileUtils'
+		 - This application logs the message 'the classloader has been inserted' under the tag 'PushClassloader'
+		 - This application logs the message 'the eventId contain illegal char' under the tag 'MobileAgent'
+		 - This application logs the message 'timestamp timestamp APK newer than dex!' under the tag 'v1'
+		 - This application logs the message 'ttoken =  ttoken 4' under the tag 'EnableCallingBySSO'
+		 - This application logs the message 'unexpected empty appkey' under the tag 'UploadThread'
+		 - This application logs the message 'unexpected empty channelId' under the tag 'UploadThread'
+		 - This application logs the message 'unzipFile' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'waiting get networkinfo time out' under the tag 'CmccOmpUtility'
+		 - This application logs the message 'wifi' under the tag 'CmccOmpUtility'
+		 - This application logs the message '本地初始化context失败 error = 5053，context为null' under the tag 'CmccOmpUtility'
+		 - This application logs the message '移动' under the tag '运营商'
+		 - This application logs the message '联通/电信' under the tag '运营商'
+		 - This application logs the message '解析失败' under the tag 'ylc'
+		 - This application logs the message '解析成功' under the tag 'ylc'
+		 - This application logs the message '连接失败' under the tag 'wpr'
+		 - This application logs the message '连接成功' under the tag 'wpr'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lsafiap/framework/sdk/b/d;->e(Ljava/lang/String;)Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the '' application installed on the system
+		 - This application retrieves 'GET_PERMISSIONS' information about the 'v0' application installed on the system
+		 - This application retrieves 'GET_SERVICES' information about the '' application installed on the system
+		 - This application retrieves 'GET_SERVICES' information about the '4' application installed on the system
+		 - This application retrieves 'GET_SERVICES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application lists applications installed on the system
+
+	[.] Location Lookup                         
+		 - This application reads location information from all available providers (WiFi, GPS etc.)
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+		 - This application sends an SMS message '5' to the '10658682803' phone number
+		 - This application sends an SMS message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' to the '0' phone number
+		 - This application sends an SMS message 'Ljava/util/Iterator;->next()Ljava/lang/Object;' to the '1' phone number
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'CmccOmpUtility' on the '5' port
+		 - This application opens a Socket and connects it to the remote address 'Lcom/tendcloud/tenddata/game/by;->b()Lorg/apache/http/HttpHost;' on the
+		   'Lcom/tendcloud/tenddata/game/by;->b()Lorg/apache/http/HttpHost;' port
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/URL;->getPath()Ljava/lang/String;' on the 'Ljava/net/URL;->getPath()Ljava/lang/String;' port
+		 - This application opens a Socket and connects it to the remote address 'SocketTask do timeOut!' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'write data error!' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'www.talkingdata.net' on the '80' port
+
+	[.] Pim Data Leakage                        
+		 - This application accesses the downloads folder
+
+	[.] Code Execution                          
+		 - This application loads a native library: '4'
+		 - This application loads a native library: 'casdkjni'
+		 - This application loads a native library: 'cmcc_rusteze'
+		 - This application loads a native library: 'getuiext'
+		 - This application loads a native library: 'identifyapp'
+		 - This application executes a UNIX command containing this argument: '2'
+		 - This application executes a UNIX command containing this argument: '4'
+		 - This application executes a UNIX command containing this argument: '604 '
+		 - This application executes a UNIX command containing this argument: '705 '
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 77ddca9f5d59188aeae9da2e63aef08b499fa0a377b7a0aa819612bd516c2aa3.apk
+
+	[.] Fingerprint                             
+		 - MD5: cc4169a69d5f126dea5d36c845b9350a
+		 - SHA-1: eb49c6623fb377421f71a6a520d395dd1e39a97a
+		 - SHA-256: 77ddca9f5d59188aeae9da2e63aef08b499fa0a377b7a0aa819612bd516c2aa3
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_MTK_MMHW',  'android.permission.ACCESS_NETWORK_STATE',
+		   'android.permission.ACCESS_WIFI_STATE',  'android.permission.BROADCAST_STICKY',  'android.permission.CHANGE_NETWORK_STATE',  'android.permission.CHANGE_WIFI_STATE',
+		   'android.permission.CLEAR_APP_CACHE',  'android.permission.CLEAR_APP_USER_DATA',  'android.permission.DELETE_PACKAGES',  'android.permission.DISABLE_KEYGUARD',
+		   'android.permission.GET_PACKAGE_SIZE',  'android.permission.GET_TASKS',  'android.permission.INSTALL_PACKAGES',  'android.permission.INTERNET',  'android.permission.KILL_BACKGROUND_PROCESSES',
+		   'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',  'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.READ_LOGS',  'android.permission.READ_OWNER_DATA',
+		   'android.permission.READ_PHONE_STATE',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_USER_PRESENT',  'android.permission.RESTART_PACKAGES',
+		   'android.permission.SEND_SMS',  'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_APN_SETTINGS',  'android.permission.WRITE_EXTERNAL_STORAGE',
+		   'android.permission.WRITE_OWNER_DATA',  'android.permission.WRITE_SECURE_SETTINGS',  'android.permission.WRITE_SETTINGS',  'android.webkit.permission.PLUGIN',
+		   'com.talkingdata.push.permission.JPUSH_MESSAGE',  'getui.permission.GetuiService']
+		 - Implied: []
+		 - Declared: ['com.talkingdata.push.permission.JPUSH_MESSAGE',  'getui.permission.GetuiService']
+
+

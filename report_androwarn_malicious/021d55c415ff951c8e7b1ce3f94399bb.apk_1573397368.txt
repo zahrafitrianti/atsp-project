@@ -1,0 +1,67 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Facebook OTP
+
+	[.] Application Version                     
+		 - 1.2
+
+	[.] Package Name                            
+		 - com.BioTechnology.iClientsService44370
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the SIM's serial number
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application retrieves '' information about the 'andorid  ' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+		 - This application sends an SMS message '2' to the '2' phone number
+		 - This application sends an SMS message 'Let;->a(Landroid/content/Context;)Let;' to the 'onLine 2' phone number
+		 - This application sends an SMS message 'i am  ( 1' to the 'i am  ( 1' phone number
+
+	[.] Audio Video Eavesdropping               
+		 - This application records audio
+		 - This application records audio from the 'VOICE_CALL' source
+
+	[.] Pim Data Leakage                        
+		 - This application accesses the SMS list
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 021d55c415ff951c8e7b1ce3f94399bb.apk
+
+	[.] Fingerprint                             
+		 - MD5: 021d55c415ff951c8e7b1ce3f94399bb
+		 - SHA-1: e95088075f49488e8b4014493b974b2fbb9cc71d
+		 - SHA-256: f448c6d8e2e970020c1993be69120a6a8761df7be978f989d41da8c531c33063
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.CALL_PHONE',
+		   'android.permission.CHANGE_NETWORK_STATE',  'android.permission.CHANGE_WIFI_STATE',  'android.permission.DISABLE_KEYGUARD',  'android.permission.INTERNET',
+		   'android.permission.MODIFY_AUDIO_SETTINGS',  'android.permission.READ_CONTACTS',  'android.permission.READ_PHONE_STATE',  'android.permission.READ_SMS',
+		   'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_SMS',  'android.permission.RECORD_AUDIO',  'android.permission.SEND_SMS',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_CONTACTS',  'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SMS']
+		 - Implied: [['android.permission.READ_CALL_LOG', None],  ['android.permission.READ_EXTERNAL_STORAGE', None],  ['android.permission.WRITE_CALL_LOG', None]]
+		 - Declared: []
+
+

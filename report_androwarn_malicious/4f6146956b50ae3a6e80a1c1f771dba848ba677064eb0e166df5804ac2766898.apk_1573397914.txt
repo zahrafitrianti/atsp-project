@@ -1,0 +1,232 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Sincronizzazione Contatti Android
+
+	[.] Application Version                     
+		 - 5.1.2.5
+
+	[.] Package Name                            
+		 - operatore.italia
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the constant indicating the state of the device SIM card
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is running; configuring pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load canceled -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load canceled -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message ' Points are coincident' under the tag 'PathParser'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '0' under the tag 'DocumentFile'
+		 - This application logs the message '0' under the tag 'EnvironmentCompat'
+		 - This application logs the message '0' under the tag 'Fade'
+		 - This application logs the message '0' under the tag 'FragmentActivity'
+		 - This application logs the message '0' under the tag 'FragmentManager'
+		 - This application logs the message '0' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '0' under the tag 'MBServiceCompat'
+		 - This application logs the message '0' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '0' under the tag 'ThreadUtil'
+		 - This application logs the message '1' under the tag '0'
+		 - This application logs the message '1' under the tag 'LinearLayoutManager'
+		 - This application logs the message '1' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'NavUtils'
+		 - This application logs the message '1' under the tag 'NestedScrollView'
+		 - This application logs the message '1' under the tag 'STUB'
+		 - This application logs the message '1' under the tag 'VectorDrawableCompat'
+		 - This application logs the message '14' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'AsyncListUtil'
+		 - This application logs the message '2' under the tag 'AtomicFile'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'GridLayoutManager'
+		 - This application logs the message '2' under the tag 'LLM#LayoutState'
+		 - This application logs the message '2' under the tag 'LinearSmoothScroller'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'MBServiceCompat'
+		 - This application logs the message '2' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '2' under the tag 'NotifManCompat'
+		 - This application logs the message '2' under the tag 'RecyclerView'
+		 - This application logs the message '2' under the tag 'TextViewCompatGingerbread'
+		 - This application logs the message '2' under the tag 'ThreadUtil'
+		 - This application logs the message '2' under the tag 'VectorDrawableCompat'
+		 - This application logs the message '2' under the tag 'View'
+		 - This application logs the message '2' under the tag 'ViewDragHelper'
+		 - This application logs the message '2' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '3' under the tag '2'
+		 - This application logs the message '3' under the tag '3'
+		 - This application logs the message '3' under the tag 'AsyncListUtil'
+		 - This application logs the message '3' under the tag 'ContextCompat'
+		 - This application logs the message '3' under the tag 'CoordinatorLayout'
+		 - This application logs the message '3' under the tag 'Fade'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'MBServiceCompat'
+		 - This application logs the message '3' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '3' under the tag 'Rating'
+		 - This application logs the message '3' under the tag 'RecyclerView'
+		 - This application logs the message '3' under the tag 'RoundedBitmapDrawableFactory'
+		 - This application logs the message '3' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '3' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '3' under the tag 'TextViewCompatGingerbread'
+		 - This application logs the message '3' under the tag 'ViewPager'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'LinearLayoutManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '4' under the tag 'NestedScrollView'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '5' under the tag 'DocumentFile'
+		 - This application logs the message '5' under the tag 'Fade'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '5' under the tag 'NotifManCompat'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'ViewPager'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '8' under the tag 'ListPopupWindow'
+		 - This application logs the message '8' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '==============' under the tag 'LinearLayoutManager'
+		 - This application logs the message 'ActionBarDrawerToggleHoneycomb' under the tag 'ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message 'Activity result delivered for unknown Fragment.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'AppCompatDelegate' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Cannot call this method in a scroll callback. Scroll callbacks mightbe run during a measure & layout pass where you cannot change theRecyclerView data. Any
+		   method call that might change the structureof the RecyclerView or the adapter contents should be postponed tothe next frame.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot fling without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot scroll to position a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot smooth scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Could not call getMaxAvailableHeightMethod(View, int, boolean) on PopupWindow. Using the public version.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not fetch setConstantState(). Oh well.' under the tag 'DrawableUtils'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method getMaxAvailableHeight(View, int, boolean) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setEpicenterBounds(Rect) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Could not find voice search activity' under the tag 'SearchView'
+		 - This application logs the message 'Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.'
+		   under the tag 'TwilightManager'
+		 - This application logs the message 'Could not invoke setConstantState(). Oh well.' under the tag 'DrawableUtils'
+		 - This application logs the message 'Could not invoke setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'DrawerToggle may not show up because NavigationIcon is not visible. You may need to call actionbar.setDisplayHomeAsUpEnabled(true);' under the tag
+		   'ActionBarDrawerToggle'
+		 - This application logs the message 'EditText added is not a TextInputEditText. Please switch to using that class instead.' under the tag 'TextInputLayout'
+		 - This application logs the message 'Got ACTION_MOVE event but have an invalid active pointer id.' under the tag '1'
+		 - This application logs the message 'Got ACTION_POINTER_DOWN event but have an invalid action index.' under the tag '1'
+		 - This application logs the message 'Got ACTION_POINTER_DOWN event but have an invalid action index.' under the tag 'Landroid/support/v4/p/x;->b(Landroid/view/MotionEvent;)I'
+		 - This application logs the message 'Invalid percentage-based rating value' under the tag 'Rating'
+		 - This application logs the message 'Invalid requestCode mapping in savedInstanceState.' under the tag 'FragmentActivity'
+		 - This application logs the message 'JobScheduler not supported. Sorry!' under the tag 'STUB'
+		 - This application logs the message 'Landroid/database/Cursor;->getPosition()I' under the tag 'SearchView'
+		 - This application logs the message 'Landroid/support/v4/i/a$f$4;' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Lch/qos/logback/classic/spi/ILoggingEvent;->getLevel()Lch/qos/logback/classic/Level;' under the tag '3'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'MenuItemWrapper'
+		 - This application logs the message 'Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;' under the tag 'Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'MediaBrowserCompat...' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'More than one BroadcastReceiver that handles android.intent.action.MEDIA_BUTTON was found, returning null.' under the tag 'MediaButtonReceiver'
+		 - This application logs the message 'Mutated drawable is not the same instance as the input.' under the tag 'AppCompatDrawableManager'
+		 - This application logs the message 'No adapter attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'No layout manager attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'Not connected, unable to retrieve the MediaItem.' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Not connected, unable to search.' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'Passed over target position while smooth scrolling.' under the tag 'RecyclerView'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'RecyclerView does not support scrolling to an absolute position. Use scrollToPosition instead' under the tag 'RecyclerView'
+		 - This application logs the message 'Remote error getting media item.' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Remote error registering client messenger.' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Remote error unregistering client messenger.' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'ServiceCallbacks.onConnect...' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Setting a custom background is not supported.' under the tag 'FloatingActionButton'
+		 - This application logs the message 'Smooth Scroll action is being updated too frequently. Make sure you are not changing it unless necessary' under the tag 'RecyclerView'
+		 - This application logs the message 'Start drag has been called but swiping is not enabled' under the tag 'ItemTouchHelper'
+		 - This application logs the message 'Start drag has been called with a view holder which is not a child of the RecyclerView which is controlled by this ItemTouchHelper.' under the tag
+		   'ItemTouchHelper'
+		 - This application logs the message 'Start swipe has been called but dragging is not enabled' under the tag 'ItemTouchHelper'
+		 - This application logs the message 'Start swipe has been called with a view holder which is not a child of the RecyclerView controlled by this ItemTouchHelper.' under the tag 'ItemTouchHelper'
+		 - This application logs the message 'The component name of media button receiver should be provided.' under the tag 'MediaButtonReceiver'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Trying to set out of range star-based rating' under the tag 'Rating'
+		 - This application logs the message 'Unable to register media button event receiver with PendingIntent, falling back to ComponentName.' under the tag 'MediaSessionCompatApi18'
+		 - This application logs the message 'You must override onLayoutChildren(Recycler recycler, State state) ' under the tag 'RecyclerView'
+		 - This application logs the message 'You must override smoothScrollToPosition to support smooth scrolling' under the tag 'RecyclerView'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR_OVERLAY id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'addSubscription failed with RemoteException.' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'connect...' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'disconnect...' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'internal representation of views on the screen' under the tag 'LinearLayoutManager'
+		 - This application logs the message 'onMeasure: More than two child views are not supported.' under the tag 'SlidingPaneLayout'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'setDefaultNightMode() called with an unknown mode' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'setLocalNightMode() called with an unknown mode' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'tag must not be null or empty' under the tag 'MediaSessionCompat'
+		 - This application logs the message 'v0' under the tag 'Landroid/support/v7/widget/aq;->m()Landroid/view/View;'
+		 - This application logs the message 'v2' under the tag 'SupportMenuInflater'
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address '0' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address '2' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'Lokhttp3/internal/http/RouteException;' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'timeout' on the 'N/A' port
+
+	[.] Pim Data Leakage                        
+		 - This application accesses the SMS list
+
+	[.] Code Execution                          
+		 - This application executes a UNIX command containing this argument: '3'
+		 - This application executes a UNIX command containing this argument: '4'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 4f6146956b50ae3a6e80a1c1f771dba848ba677064eb0e166df5804ac2766898.apk
+
+	[.] Fingerprint                             
+		 - MD5: 1212a7feee0b088cbb01cd27e4936948
+		 - SHA-1: 14926a5de51114082daafe638e46f58997199baa
+		 - SHA-256: 4f6146956b50ae3a6e80a1c1f771dba848ba677064eb0e166df5804ac2766898
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.CAMERA',
+		   'android.permission.INTERNET',  'android.permission.READ_CALL_LOG',  'android.permission.READ_CONTACTS',  'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.READ_PHONE_STATE',
+		   'android.permission.READ_SMS',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_SMS',  'android.permission.RECORD_AUDIO',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: []
+		 - Declared: []
+
+

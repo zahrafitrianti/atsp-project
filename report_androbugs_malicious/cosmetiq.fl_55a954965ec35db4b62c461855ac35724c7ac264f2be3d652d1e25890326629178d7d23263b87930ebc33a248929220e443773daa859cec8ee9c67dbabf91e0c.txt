@@ -1,0 +1,385 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: cosmetiq.fl
+Package Version Name: 5.1.1-1819740
+Package Version Code: 22
+Min Sdk: 16
+Target Sdk: 22
+MD5   : 790a62a841927f4ec1e0675a590c56d1
+SHA1  : c6a72b78a28ce14e992189322be74139aef2b463
+SHA256: d56f569e1d056a400e3b1fc19cd5291842bdfde8bf219757ceec4c9378a60292
+SHA512: 1ff93f589bb100b5b9653522222c2fef59d920384a51a9b88ba73d390d8653be36d052623b094572e05feb20e6c4e9743500408387e776fd304010c696de03c6
+Analyze Signature: 55a954965ec35db4b62c461855ac35724c7ac264f2be3d652d1e25890326629178d7d23263b87930ebc33a248929220e443773daa859cec8ee9c67dbabf91e0c
+------------------------------------------------------------------------------------------------
+[Critical] <Command> Runtime Command Checking:
+           This app is using critical function 'Runtime.getRuntime().exec("...")'.
+           Please confirm these following code secions are not harmful:
+               => Lo/Ê¸;->run()V (0x64) ---> Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Lo/Ä±;->Ë(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)V (0x162) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+[Critical] <Hacker> Base64 String Encryption:
+           Found Base64 encoding "String(s)" (Total: 52). We cannot guarantee all of the Strings are Base64 encoding and also we will not
+           show you the decoded binary file:
+               com.cleanmaster.security,com.cleanmaster.mguard,com.piriform.ccleaner,com.cleanmaster.mguard_x86,com.cleanmaster.sdk,com.clea
+                    nmaster.boost,com.drweb,com.qihoo.security,com.kms.free,com.eset.ems2.gp,com.qihoo.security.lite,com.symantec.mobilesecu
+                    rity,com.dianxinos.optimizer.duplay
+                   ->Original Encoding String: Y29tLmNsZWFubWFzdGVyLnNlY3VyaXR5LGNvbS5jbGVhbm1hc3Rlci5tZ3VhcmQsY29tLnBpcmlmb3JtLmNjbGVhbmVyL
+                    GNvbS5jbGVhbm1hc3Rlci5tZ3VhcmRfeDg2LGNvbS5jbGVhbm1hc3Rlci5zZGssY29tLmNsZWFubWFzdGVyLmJvb3N0LGNvbS5kcndlYixjb20ucWlob28uc
+                    2VjdXJpdHksY29tLmttcy5mcmVlLGNvbS5lc2V0LmVtczIuZ3AsY29tLnFpaG9vLnNlY3VyaXR5LmxpdGUsY29tLnN5bWFudGVjLm1vYmlsZXNlY3VyaXR5L
+                    GNvbS5kaWFueGlub3Mub3B0aW1pemVyLmR1cGxheQ==
+                   ->From class: Lo/Î¹;-><init>(Lcosmetiq/fl/controllers/activities/WebMainService;)V
+               time_start_app
+                   ->Original Encoding String: dGltZV9zdGFydF9hcHA=
+                   ->From class: Lo/Íº;-><clinit>()V
+               apps_list
+                   ->Original Encoding String: YXBwc19saXN0
+                   ->From class: Lo/Íº;-><clinit>()V
+               free_dialog
+                   ->Original Encoding String: ZnJlZV9kaWFsb2c=
+                   ->From class: Lo/Íº;-><clinit>()V
+               cmt_timestamp
+                   ->Original Encoding String: Y210X3RpbWVzdGFtcA==
+                   ->From class: Lo/Íº;-><clinit>()V
+               is_clear_on
+                   ->Original Encoding String: aXNfY2xlYXJfb24=
+                   ->From class: Lo/Íº;-><clinit>()V
+               CONNECTIVITY_CHANGE:
+                   ->Original Encoding String: Q09OTkVDVElWSVRZX0NIQU5HRTo=
+                   ->From class: Lcosmetiq/fl/services/receivers/NetworkChangeReceiver;->onReceive(Landroid/content/Context;
+                    Landroid/content/Intent;)V
+               browserrestart
+                   ->Original Encoding String: YnJvd3NlcnJlc3RhcnQ=
+                   ->From class: Lo/á»;->Ë(Lo/á¥;)V
+               android.intent.action.MAIN
+                   ->Original Encoding String: YW5kcm9pZC5pbnRlbnQuYWN0aW9uLk1BSU4=
+                   ->From class: Lo/Ê¸;->run()V
+                   ->From class: Lcosmetiq/fl/services/receivers/AdministrationReceiver;->Ê¾(Landroid/content/Context;)V
+               default_sms
+                   ->Original Encoding String: ZGVmYXVsdF9zbXM=
+                   ->From class: Lo/Íº;-><clinit>()V
+               root_phone
+                   ->Original Encoding String: cm9vdF9waG9uZQ==
+                   ->From class: Lo/Íº;-><clinit>()V
+               main_pref
+                   ->Original Encoding String: bWFpbl9wcmVm
+                   ->From class: Lo/Íº;-><clinit>()V
+               showApps
+                   ->Original Encoding String: c2hvd0FwcHM=
+                   ->From class: Lo/Íº;-><clinit>()V
+               display_name
+                   ->Original Encoding String: ZGlzcGxheV9uYW1l
+                   ->From class: Lo/Íº;-><clinit>()V
+               trafferId
+                   ->Original Encoding String: dHJhZmZlcklk
+                   ->From class: Lo/Íº;-><clinit>()V
+               show_page
+                   ->Original Encoding String: c2hvd19wYWdl
+                   ->From class: Lo/Íº;-><clinit>()V
+               server_count_id
+                   ->Original Encoding String: c2VydmVyX2NvdW50X2lk
+                   ->From class: Lo/Íº;-><clinit>()V
+               server_disconected
+                   ->Original Encoding String: c2VydmVyX2Rpc2NvbmVjdGVk
+                   ->From class: Lo/Íº;-><clinit>()V
+               is_admin_active
+                   ->Original Encoding String: aXNfYWRtaW5fYWN0aXZl
+                   ->From class: Lo/Íº;-><clinit>()V
+               app_put
+                   ->Original Encoding String: YXBwX3B1dA==
+                   ->From class: Lo/Íº;-><clinit>()V
+               bank_web_app_done
+                   ->Original Encoding String: YmFua193ZWJfYXBwX2RvbmU=
+                   ->From class: Lo/Íº;-><clinit>()V
+               sms_hook
+                   ->Original Encoding String: c21zX2hvb2s=
+                   ->From class: Lo/Íº;-><clinit>()V
+                   ->From class: Lo/á;->Ë(Lo/á; Landroid/content/Context; Ljava/util/ArrayList;)V
+                   ->From class: Lcosmetiq/fl/services/receivers/mess/ReceiverIncoming;->onReceive(Landroid/content/Context;
+                    Landroid/content/Intent;)V
+               params
+                   ->Original Encoding String: cGFyYW1z
+                   ->From class: Lo/á;->Ë(Lo/á¥;)V
+               type_cc
+                   ->Original Encoding String: dHlwZV9jYw==
+                   ->From class: Lo/Íº;-><clinit>()V
+               timestamp
+                   ->Original Encoding String: dGltZXN0YW1w
+                   ->From class: Lo/á;->Ë(Lo/á¥;)V
+               appsList
+                   ->Original Encoding String: YXBwc0xpc3Q=
+                   ->From class: Lo/Íº;-><clinit>()V
+               data1
+                   ->Original Encoding String: ZGF0YTE=
+                   ->From class: Lo/Íº;-><clinit>()V
+               wifi_sleep_policy
+                   ->Original Encoding String: d2lmaV9zbGVlcF9wb2xpY3k=
+                   ->From class: Lo/Íº;-><clinit>()V
+               default_browsers_apps_json
+                   ->Original Encoding String: ZGVmYXVsdF9icm93c2Vyc19hcHBzX2pzb24=
+                   ->From class: Lo/Íº;-><clinit>()V
+               body
+                   ->Original Encoding String: Ym9keQ==
+                   ->From class: Lo/Íº;-><clinit>()V
+               stop_gp_service
+                   ->Original Encoding String: c3RvcF9ncF9zZXJ2aWNl
+                   ->From class: Lo/Íº;-><clinit>()V
+               typeCC
+                   ->Original Encoding String: dHlwZUND
+                   ->From class: Lo/Íº;-><clinit>()V
+               manual_host_api
+                   ->Original Encoding String: bWFudWFsX2hvc3RfYXBp
+                   ->From class: Lo/Íº;-><clinit>()V
+               free_dialog_url
+                   ->Original Encoding String: ZnJlZV9kaWFsb2dfdXJs
+                   ->From class: Lo/Íº;-><clinit>()V
+               android.intent.category.HOME
+                   ->Original Encoding String: YW5kcm9pZC5pbnRlbnQuY2F0ZWdvcnkuSE9NRQ==
+                   ->From class: Lo/Ê¸;->run()V
+                   ->From class: Lcosmetiq/fl/services/receivers/AdministrationReceiver;->Ê¾(Landroid/content/Context;)V
+               traffer_id
+                   ->Original Encoding String: dHJhZmZlcl9pZA==
+                   ->From class: Lo/Íº;-><clinit>()V
+               server_api_json
+                   ->Original Encoding String: c2VydmVyX2FwaV9qc29u
+                   ->From class: Lo/Íº;-><clinit>()V
+               rent_start
+                   ->Original Encoding String: cmVudF9zdGFydA==
+                   ->From class: Lo/Íº;-><clinit>()V
+               android.settings.SETTINGS
+                   ->Original Encoding String: YW5kcm9pZC5zZXR0aW5ncy5TRVRUSU5HUw==
+                   ->From class: Lcosmetiq/fl/services/receivers/AdministrationReceiver;->onReceive(Landroid/content/Context;
+                    Landroid/content/Intent;)V
+               android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED
+                   ->Original Encoding String: YW5kcm9pZC5hcHAuYWN0aW9uLkRFVklDRV9BRE1JTl9ESVNBQkxFX1JFUVVFU1RFRA==
+                   ->From class: Lcosmetiq/fl/services/receivers/AdministrationReceiver;->onReceive(Landroid/content/Context;
+                    Landroid/content/Intent;)V
+               time_before
+                   ->Original Encoding String: dGltZV9iZWZvcmU=
+                   ->From class: Lo/Íº;-><clinit>()V
+               api_ser
+                   ->Original Encoding String: YXBpX3Nlcg==
+                   ->From class: Lo/Íº;-><clinit>()V
+               timeBefore
+                   ->Original Encoding String: dGltZUJlZm9yZQ==
+                   ->From class: Lcosmetiq/fl/services/LaunchActivity;->onCreate(Landroid/os/Bundle;)V
+               sms_hook_no_api
+                   ->Original Encoding String: c21zX2hvb2tfbm9fYXBp
+                   ->From class: Lo/Íº;-><clinit>()V
+                   ->From class: Lo/á;->Ë(Lo/á; Landroid/content/Context; Ljava/util/ArrayList;)V
+                   ->From class: Lcosmetiq/fl/services/receivers/mess/ReceiverIncoming;->onReceive(Landroid/content/Context;
+                    Landroid/content/Intent;)V
+               default_apps_json
+                   ->Original Encoding String: ZGVmYXVsdF9hcHBzX2pzb24=
+                   ->From class: Lo/Íº;-><clinit>()V
+               is_browsers_start
+                   ->Original Encoding String: aXNfYnJvd3NlcnNfc3RhcnQ=
+                   ->From class: Lo/Íº;-><clinit>()V
+               "BootReceiver:"
+                   ->Original Encoding String: IkJvb3RSZWNlaXZlcjoi
+                   ->From class: Lcosmetiq/fl/services/receivers/BootReceiver;->onReceive(Landroid/content/Context;
+                    Landroid/content/Intent;)V
+               command
+                   ->Original Encoding String: Y29tbWFuZA==
+                   ->From class: Lo/á;->Ë(Lo/á¥;)V
+               content://sms/inbox
+                   ->Original Encoding String: Y29udGVudDovL3Ntcy9pbmJveA==
+                   ->From class: Lo/á®;->á(Landroid/content/Context;)Lorg/json/JSONArray;
+               pname
+                   ->Original Encoding String: cG5hbWU=
+                   ->From class: Lo/Íº;-><clinit>()V
+               browserappsupdate
+                   ->Original Encoding String: YnJvd3NlcmFwcHN1cGRhdGU=
+                   ->From class: Lo/á»;->Ë(Lo/á¥;)V
+               app_kil
+                   ->Original Encoding String: YXBwX2tpbA==
+                   ->From class: Lo/Íº;-><clinit>()V
+[Critical] <Implicit_Intent> Implicit Service Checking:
+           To ensure your app is secure, always use an explicit intent when starting a Service and DO NOT declare intent filters for your
+           services. Using an implicit intent to start a service is a security hazard because you cannot be certain what service will
+           respond to the intent, and the user cannot see which service starts.
+           Reference: http://developer.android.com/guide/components/intents-filters.html#Types
+               => cosmetiq.fl.controllers.activities.WebMainService
+               => cosmetiq.fl.services.call.SmsKitKatService
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lo/Ê³;->doInBackground([Ljava/lang/Object;)Ljava/lang/Object; (0x0) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lo/ï¹¶;->run()V (0x0) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lo/áµ;-><clinit>()V (0xe) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lo/ï¬;->Ê»(Ljava/lang/String;)V (0x12) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lo/ï¬;->Ë(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)V (0x8e) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning]  AndroidManifest Exported Components Checking:
+           Found "exported" components(except for Launcher) for receiving outside applications' actions (AndroidManifest.xml).
+           These components can be initilized by other apps. You should add or modify the attribute to [exported="false"] if you don't want
+           to.
+           You can also protect it with a customized permission with "signature" or higher protectionLevel and specify in
+           "android:permission" attribute.
+                  service => cosmetiq.fl.controllers.activities.WebMainService
+                  service => cosmetiq.fl.services.call.SmsKitKatService
+[Warning] <Sensitive_Information> Getting IMEI and Device ID:
+           This app has code getting the "device id(IMEI)" but there are problems with this "TelephonyManager.getDeviceId()" approach.
+           1.Non-phones: Wifi-only devices or music players that don't have telephony hardware just don't have this kind of unique
+           identifier.
+           2.Persistence: On devices which do have this, it persists across device data wipes and factory resets. It's not clear at all if,
+           in this situation, your app should regard this as the same device.
+           3.Privilege:It requires READ_PHONE_STATE permission, which is irritating if you don't otherwise use or need telephony.
+           4.Bugs: We have seen a few instances of production phones for which the implementation is buggy and returns garbage, for example
+           zeros or asterisks.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lo/ï½°;->Ë(Landroid/content/Context;)Ljava/lang/String; (0x1a) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lo/á®;->Ë()Lorg/apache/http/client/methods/HttpRequestBase; (0x16a) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lo/á®;->Ë()Lorg/apache/http/client/methods/HttpRequestBase; (0x2ca) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lo/ï½°;->Ë(Landroid/content/Context;)Ljava/lang/String; (0x42) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+[Warning]  Codes for Sending SMS:
+           This app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage):
+               => Lo/áµ¢;->Ë(Ljava/lang/String; Ljava/lang/String;)V (0x22) --->
+                    Landroid/telephony/SmsManager;->sendMultipartTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/util/ArrayList;
+                    Ljava/util/ArrayList; Ljava/util/ArrayList;)V
+               => Lo/á;->Ë(Lo/á; Landroid/content/Context; Ljava/util/ArrayList;)V (0x166) --->
+                    Landroid/telephony/SmsManager;->sendMultipartTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/util/ArrayList;
+                    Ljava/util/ArrayList; Ljava/util/ArrayList;)V
+               => Lo/á;->Ë(Lo/á; Landroid/content/Context; Ljava/util/ArrayList;)V (0x17c) --->
+                    Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[Warning] <WebView> WebView Local File Access Attacks Checking:
+           Found "setAllowFileAccess(true)" or not set(enabled by default) in WebView. The attackers could inject malicious script into
+           WebView and exploit the opportunity to access local resources. This can be mitigated or prevented by disabling local file system
+           access. (It is enabled by default)
+           Note that this enables or disables file system access only. Assets and resources are still accessible using file:///android_asset
+           and file:///android_res.
+           The attackers can use "mWebView.loadUrl("file:///data/data/[Your_Package_Name]/[File]");" to access app's local file.
+           Reference: (1)https://labs.mwrinfosecurity.com/blog/2012/04/23/adventures-with-android-webviews/
+                      (2)http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)
+           Please add or modify "yourWebView.getSettings().setAllowFileAccess(false)" to your WebView:
+               Lo/CON;->onResume()V
+[Warning] <WebView> WebView Potential XSS Attacks Checking:
+           Found "setJavaScriptEnabled(true)" in WebView, which could exposed to potential XSS attacks. Please check the web page code
+           carefully and sanitize the output:
+               => Lo/CON;->onResume()V (0xa0) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcosmetiq/fl/services/LaunchActivity;->onCreate(Landroid/os/Bundle;)V (0x58) ---> Ljava/io/File;->delete()Z
+               => Lo/AUX;->Ë(Lo/á¥;)V (0x10) ---> Ljava/io/File;->delete()Z
+[Notice]  AndroidManifest Exported Components Checking 2:
+           Found "exported" components(except for Launcher) for receiving Google's "Android" actions (AndroidManifest.xml):
+                 activity => cosmetiq.fl.services.IncomeSMSActivity
+                 receiver => cosmetiq.fl.services.receivers.InstallReceiver
+                 receiver => cosmetiq.fl.services.receivers.mess.ReceiverIncoming
+                 receiver => cosmetiq.fl.services.receivers.BootReceiver
+                 receiver => cosmetiq.fl.services.receivers.NetworkChangeReceiver
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" because your set minSdk >= 11.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is "NOT" using Android SQLite databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info]  Dynamic Code Loading:
+           No dynamic code loading(DexClassLoader) found.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <Signature><Hacker> Getting Signature Code Checking:
+           Did not detect this app is checking the signature in the code.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Connection Checking:
+           Did not discover urls that are not under SSL (Notice: if you encrypt the url string, we can not discover that).
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+[Info] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           WebView addJavascriptInterface vulnerabilities not found.
+------------------------------------------------------------
+AndroBugs analyzing time: 0.255797 secs
+Total elapsed time: 0.862791 secs

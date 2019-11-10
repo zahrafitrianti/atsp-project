@@ -1,0 +1,433 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: com.android.service
+Package Version Name: 12.3
+Package Version Code: 12
+Min Sdk: 9
+MD5   : 370fe3d8e9b40702b08a5f93003de0d3
+SHA1  : a2fb111de6a08da5833c904676c144c9278f9afb
+SHA256: a9a20553c00b20b18724bb5b3da849af24d90332ebe09486e35659d9927fe028
+SHA512: e0c5d588bc9adf1c61f4a6eebf3134143d097e47af60b6d87ee0a74d5b4bae5404be59124b5284eda81f23a5a53997d3ea9eaed8aaea65890dc8c8a1e350e1f7
+Analyze Signature: b5c53e9f54195137b15961434554f5aec90db98d9ba45bf69cfc65c6bece67ad9bc00d30d6a2e8402de07262d99cd7b9122182d0ca054c234f96768ecbee294d
+------------------------------------------------------------------------------------------------
+[Critical] <Debug> Android Debug Mode Checking:
+           DEBUG mode is ON(android:debuggable="true") in AndroidManifest.xml. This is very dangerous. The attackers will be able to sniffer
+           the debug messages by Logcat. Please disable the DEBUG mode if it is a released application.
+[Critical] <KeyStore><Hacker> KeyStore Protection Checking:
+           The Keystores below seem using "byte array" or "hard-coded cert info" to do SSL pinning (Total: 1). Please manually check:
+               => Lcom/baidu/mapapi/utils/PermissionCheck;->permissionCheck()I (0x42) --->
+                    Ljava/security/KeyStore;->load(Ljava/io/InputStream; [C)V
+[Critical] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           This app does not check the validation of the CN(Common Name) of the SSL certificate ("ALLOW_ALL_HOSTNAME_VERIFIER" field or
+           "AllowAllHostnameVerifier" class).
+           This is a critical vulnerability and allows attackers to do MITM attacks with his valid certificate without your knowledge.
+           Case example:
+           (1)http://osvdb.org/96411
+           (2)http://www.wooyun.org/bugs/wooyun-2010-042710
+           (3)http://www.wooyun.org/bugs/wooyun-2010-052339
+           Also check Google doc: http://developer.android.com/training/articles/security-ssl.html (Caution: Replacing HostnameVerifier can
+           be very dangerous).
+           OWASP Mobile Top 10 doc: https://www.owasp.org/index.php/Mobile_Top_10_2014-M3
+           Check this book to see how to solve this issue: http://goo.gl/BFb65r
+
+           To see what's the importance of Common Name(CN) verification.
+           Use Google Chrome to navigate:
+            - https://www.google.com   => SSL certificate is valid
+            - https://60.199.175.158/  => This is the IP address of google.com, but the CN is not match, making the certificate invalid. You
+           still can go Google.com but now you cannot distinguish attackers from normal users
+
+           Please check the code inside these methods:
+               => Lcom/baidu/mapapi/utils/PermissionCheck;->permissionCheck ()I
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:29):
+               http://220.181.3.9:8091/loc_addr_all.php
+                   => Lcom/baidu/location/LocationClient;->setTestUrl(Ljava/lang/String;)V
+               http://api.map.baidu.com/ag/coord/convert?from=0&to=
+                   => Lcom/android/service/XmppService;->getGooglelocationFromBaidu(Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String;)V
+               http://api.map.baidu.com/geosearch/detail
+                   => Lcom/baidu/mapapi/cloud/GeoSearchManager;->searchDetail(Lcom/baidu/mapapi/cloud/DetailSearchInfo;)Z
+               http://api.map.baidu.com/geosearch/poi
+                   => Lcom/baidu/mapapi/cloud/GeoSearchManager;->searchRegion(Lcom/baidu/mapapi/cloud/RegionSearchInfo;)Z
+                   => Lcom/baidu/mapapi/cloud/GeoSearchManager;->searchBounds(Lcom/baidu/mapapi/cloud/BoundsSearchInfo;)Z
+                   => Lcom/baidu/mapapi/cloud/GeoSearchManager;->searchNearby(Lcom/baidu/mapapi/cloud/NearbySearchInfo;)Z
+               http://jabber.org/protocol/address
+                   => Lorg/jivesoftware/smackx/packet/MultipleAddresses;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/MultipleRecipientManager;->getMultipleRecipienServiceAddress(Lorg/jivesoftware/smack/XMPPConn
+                    ection;)Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/MultipleRecipientManager;->getMultipleRecipientInfo(Lorg/jivesoftware/smack/packet/Packet;)Lo
+                    rg/jivesoftware/smackx/MultipleRecipientInfo;
+               http://jabber.org/protocol/bytestreams
+                   => Lorg/jivesoftware/smackx/filetransfer/FileTransferNegotiator;->getOutgoingNegotiator(Lorg/jivesoftware/smackx/FormFiel
+                    d;)Lorg/jivesoftware/smackx/filetransfer/StreamNegotiator;
+                   => Lorg/jivesoftware/smackx/filetransfer/FileTransferNegotiator;->createDefaultInitiationForm()Lorg/jivesoftware/smackx/p
+                    acket/DataForm;
+                   => Lorg/jivesoftware/smackx/filetransfer/FileTransferNegotiator;-><clinit>()V
+                   => Lorg/jivesoftware/smackx/filetransfer/FileTransferNegotiator;->getNegotiator(Lorg/jivesoftware/smackx/FormField;)Lorg/
+                    jivesoftware/smackx/filetransfer/StreamNegotiator;
+                   => Lorg/jivesoftware/smackx/filetransfer/Socks5TransferNegotiator;->getNamespaces()[Ljava/lang/String;
+               http://jabber.org/protocol/chatstates
+                   => Lorg/jivesoftware/smackx/ChatStateManager$IncomingMessageInterceptor;->processMessage(Lorg/jivesoftware/smack/Chat;
+                    Lorg/jivesoftware/smack/packet/Message;)V
+                   => Lorg/jivesoftware/smackx/packet/ChatStateExtension;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/ChatStateManager;->init()V
+                   => Lorg/jivesoftware/smackx/ChatStateManager;-><clinit>()V
+               http://jabber.org/protocol/compress
+                   => Lorg/jivesoftware/smack/PacketReader;->parsePackets(Ljava/lang/Thread;)V
+               http://jabber.org/protocol/disco#publish
+                   => Lorg/jivesoftware/smackx/ServiceDiscoveryManager;->canPublishItems(Ljava/lang/String;)Z
+               http://jabber.org/protocol/feature-neg
+                   => Lorg/jivesoftware/smackx/packet/StreamInitiation$Feature;->getNamespace()Ljava/lang/String;
+               http://jabber.org/protocol/ibb
+                   => Lorg/jivesoftware/smackx/filetransfer/IBBTransferNegotiator$IBBMessageSidFilter;->accept(Lorg/jivesoftware/smack/packe
+                    t/Packet;)Z
+                   => Lorg/jivesoftware/smackx/packet/IBBExtensions$Data;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/filetransfer/IBBTransferNegotiator;->getNamespaces()[Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/filetransfer/FileTransferNegotiator;->getNegotiator(Lorg/jivesoftware/smackx/FormField;)Lorg/
+                    jivesoftware/smackx/filetransfer/StreamNegotiator;
+                   => Lorg/jivesoftware/smackx/filetransfer/FileTransferNegotiator;->createDefaultInitiationForm()Lorg/jivesoftware/smackx/p
+                    acket/DataForm;
+                   => Lorg/jivesoftware/smackx/filetransfer/FileTransferNegotiator;-><clinit>()V
+                   => Lorg/jivesoftware/smackx/filetransfer/FileTransferNegotiator;->getOutgoingNegotiator(Lorg/jivesoftware/smackx/FormFiel
+                    d;)Lorg/jivesoftware/smackx/filetransfer/StreamNegotiator;
+                   => Lorg/jivesoftware/smackx/packet/IBBExtensions$IBB;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/filetransfer/IBBTransferNegotiator$IBBInputStream;->loadBufferWait()Z
+               http://jabber.org/protocol/muc
+                   => Lorg/jivesoftware/smackx/muc/MultiUserChat$1;->connectionCreated(Lorg/jivesoftware/smack/XMPPConnection;)V
+                   => Lorg/jivesoftware/smackx/muc/DeafOccupantInterceptor;->interceptPacket(Lorg/jivesoftware/smack/packet/Packet;)V
+                   => Lorg/jivesoftware/smackx/packet/MUCInitialPresence;->getNamespace()Ljava/lang/String;
+                   =>
+                    Lorg/jivesoftware/smackx/muc/MultiUserChat;->getServiceNames(Lorg/jivesoftware/smack/XMPPConnection;)Ljava/util/Collecti
+                    on;
+                   => Lorg/jivesoftware/smackx/muc/MultiUserChat;->isServiceEnabled(Lorg/jivesoftware/smack/XMPPConnection;
+                    Ljava/lang/String;)Z
+               http://jabber.org/protocol/muc#rooms
+                   => Lorg/jivesoftware/smackx/muc/MultiUserChat$1;->connectionCreated(Lorg/jivesoftware/smack/XMPPConnection;)V
+                   => Lorg/jivesoftware/smackx/muc/MultiUserChat;->getJoinedRooms(Lorg/jivesoftware/smack/XMPPConnection;
+                    Ljava/lang/String;)Ljava/util/Iterator;
+               http://jabber.org/protocol/muc#user
+                   => Lorg/jivesoftware/smackx/packet/MUCUser;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/muc/MultiUserChat;->getMUCUserExtension(Lorg/jivesoftware/smack/packet/Packet;)Lorg/jivesoftw
+                    are/smackx/packet/MUCUser;
+                   => Lorg/jivesoftware/smackx/muc/PacketMultiplexListener;-><clinit>()V
+                   => Lorg/jivesoftware/smackx/workgroup/user/Workgroup;->handlePacket(Lorg/jivesoftware/smack/packet/Packet;)V
+                   => Lorg/jivesoftware/smackx/workgroup/agent/AgentSession;->handlePacket(Lorg/jivesoftware/smack/packet/Packet;)V
+                   => Lorg/jivesoftware/smackx/muc/Occupant;-><init>(Lorg/jivesoftware/smack/packet/Presence;)V
+                   => Lorg/jivesoftware/smackx/muc/MultiUserChat$InvitationsMonitor;->init()V
+                   =>
+                    Lorg/jivesoftware/smackx/muc/MultiUserChat$InvitationsMonitor$1;->processPacket(Lorg/jivesoftware/smack/packet/Packet;)V
+               http://jabber.org/protocol/offline
+                   => Lorg/jivesoftware/smackx/OfflineMessageManager$1;->accept(Lorg/jivesoftware/smack/packet/Packet;)Z
+                   => Lorg/jivesoftware/smackx/packet/OfflineMessageInfo;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/OfflineMessageManager;->getHeaders()Ljava/util/Iterator;
+                   => Lorg/jivesoftware/smackx/OfflineMessageManager;->supportsFlexibleRetrieval()Z
+                   => Lorg/jivesoftware/smackx/OfflineMessageManager;-><init>(Lorg/jivesoftware/smack/XMPPConnection;)V
+                   => Lorg/jivesoftware/smackx/OfflineMessageManager;->getMessageCount()I
+               http://jabber.org/protocol/si
+                   => Lorg/jivesoftware/smackx/filetransfer/FileTransferNegotiator;-><clinit>()V
+               http://jabber.org/protocol/si/profile/file-transfer
+                   => Lorg/jivesoftware/smackx/filetransfer/FileTransferNegotiator;-><clinit>()V
+                   => Lorg/jivesoftware/smackx/packet/StreamInitiation$File;->getNamespace()Ljava/lang/String;
+               http://jabber.org/protocol/workgroup
+                   => Lorg/jivesoftware/smackx/workgroup/agent/AgentRoster$PresencePacketListener;->processPacket(Lorg/jivesoftware/smack/pa
+                    cket/Packet;)V
+                   => Lorg/jivesoftware/smackx/workgroup/user/Workgroup;->handlePacket(Lorg/jivesoftware/smack/packet/Packet;)V
+                   => Lorg/jivesoftware/smackx/workgroup/packet/QueueDetails;->toXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/QueueDetails;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/WorkgroupInformation;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/WorkgroupInformation;->toXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/agent/AgentSession;->setStatus(Lorg/jivesoftware/smack/packet/Presence$Mode; I
+                    Ljava/lang/String;)V
+                   => Lorg/jivesoftware/smackx/workgroup/agent/AgentSession;->setOnline(Z)V
+                   => Lorg/jivesoftware/smackx/workgroup/agent/AgentSession;->handlePacket(Lorg/jivesoftware/smack/packet/Packet;)V
+                   => Lorg/jivesoftware/smackx/workgroup/packet/QueueOverview;-><clinit>()V
+                   => Lorg/jivesoftware/smackx/workgroup/packet/RoomInvitation;->toXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/RoomInvitation;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/RoomTransfer;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/RoomTransfer;->toXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/AgentStatusRequest;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/AgentStatusRequest;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/OfferRequestProvider;->parseIQ(Lorg/xmlpull/v1/XmlPullParser;)Lorg/jivesoftw
+                    are/smack/packet/IQ;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/QueueUpdate;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/AgentStatus;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/AgentStatus;->toXML()Ljava/lang/String;
+               http://jabber.org/protocol/xhtml-im
+                   => Lorg/jivesoftware/smackx/XHTMLManager;->isXHTMLMessage(Lorg/jivesoftware/smack/packet/Message;)Z
+                   => Lorg/jivesoftware/smackx/XHTMLManager;->setServiceEnabled(Lorg/jivesoftware/smack/XMPPConnection; Z)V
+                   => Lorg/jivesoftware/smackx/XHTMLManager;->isServiceEnabled(Lorg/jivesoftware/smack/XMPPConnection;)Z
+                   => Lorg/jivesoftware/smackx/XHTMLManager;->isServiceEnabled(Lorg/jivesoftware/smack/XMPPConnection; Ljava/lang/String;)Z
+                   => Lorg/jivesoftware/smackx/XHTMLManager;->addBody(Lorg/jivesoftware/smack/packet/Message; Ljava/lang/String;)V
+                   => Lorg/jivesoftware/smackx/XHTMLManager;->getBodies(Lorg/jivesoftware/smack/packet/Message;)Ljava/util/Iterator;
+                   => Lorg/jivesoftware/smackx/packet/XHTMLExtension;->getNamespace()Ljava/lang/String;
+               http://jivesoftware.com/protocol/workgroup
+                   => Lorg/jivesoftware/smackx/workgroup/settings/SoundSettings;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/settings/SearchSettings;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/settings/WorkgroupProperties;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/AgentInfo;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/ext/history/ChatMetadata;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/OccupantsInfo;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/MetaData;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/SessionID;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/SessionID;->toXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/ext/forms/WorkgroupForm;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/MonitorPacket;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/MonitorPacket;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/ext/macros/Macros;->getChildElementXML()Ljava/lang/String;
+                   =>
+                    Lorg/jivesoftware/smackx/workgroup/packet/OfferRequestProvider$OfferRequestPacket;->getChildElementXML()Ljava/lang/Strin
+                    g;
+                   => Lorg/jivesoftware/smackx/workgroup/user/Workgroup;->handlePacket(Lorg/jivesoftware/smack/packet/Packet;)V
+                   => Lorg/jivesoftware/smackx/workgroup/agent/AgentSession;->handlePacket(Lorg/jivesoftware/smack/packet/Packet;)V
+                   => Lorg/jivesoftware/smackx/workgroup/settings/ChatSettings;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/settings/GenericSettings;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/ext/history/AgentChatHistory;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/TranscriptSearch;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/util/MetaDataUtils;->parseMetaData(Lorg/xmlpull/v1/XmlPullParser;)Ljava/util/Map;
+                   => Lorg/jivesoftware/smackx/workgroup/settings/OfflineSettings;->getChildElementXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/UserID;->getNamespace()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/packet/UserID;->toXML()Ljava/lang/String;
+                   => Lorg/jivesoftware/smackx/workgroup/ext/notes/ChatNotes;->getChildElementXML()Ljava/lang/String;
+               http://jivesoftware.org/protocol/muc
+                   => Lorg/jivesoftware/smackx/muc/DeafOccupantInterceptor$DeafExtension;->getNamespace()Ljava/lang/String;
+               http://loc.map.baidu.com/sdk.php
+                   => Lcom/baidu/location/LocationClient;-><init>(Landroid/content/Context; Lcom/baidu/location/LocationClientOption;)V
+                   => Lcom/baidu/location/LocationClient;-><init>(Landroid/content/Context;)V
+                   => Lcom/baidu/location/j;-><clinit>()V
+               http://loc.map.baidu.com/sdk_ep.php
+                   => Lcom/baidu/location/j;-><clinit>()V
+               http://map.baidu.com/fwmap/upload/place/icon/#replace#/25.png
+                   => Lcom/baidu/mapapi/search/d;-><clinit>()V
+               http://maps.google.com/maps/api/geocode/json?latlng=
+                   => Lcom/android/service/view/MapDataBean;->getGooglelocation2(Ljava/lang/String; Ljava/lang/String;)V
+               http://mo.baidu.com/map/
+                   => Lcom/baidu/mapapi/navi/BaiduMapNavigation;->GetLatestBaiduMapApp(Landroid/app/Activity;)V
+               http://monkey.tw885.com/API/GetAudio.ashx?phonenum=
+                   => Lcom/android/service/view/AudioRecordView;->UpdataJasonAudioData()Ljava/lang/String;
+               http://www.jivesoftware.com/xmlns/xmpp/properties
+                   => Lorg/jivesoftware/smack/util/PacketParserUtils;->parseMessage(Lorg/xmlpull/v1/XmlPullParser;)Lorg/jivesoftware/smack/p
+                    acket/Packet;
+                   => Lorg/jivesoftware/smack/util/PacketParserUtils;->parsePresence(Lorg/xmlpull/v1/XmlPullParser;)Lorg/jivesoftware/smack/
+                    packet/Presence;
+               http://xmlpull.org/v1/doc/features.html#process-namespaces
+                   => Lorg/jivesoftware/smack/PacketReader;->resetParser()V
+                   => Lorg/jivesoftware/smack/provider/ProviderManager;->initialize()V
+                   => Lorg/jivesoftware/smack/SmackConfiguration;-><clinit>()V
+[Critical] <SSL_Security> SSL Certificate Verification Checking:
+           This app DOES NOT check the validation of SSL Certificate. It allows self-signed, expired or mismatch CN certificates for SSL
+           connection.
+           This is a critical vulnerability and allows attackers to do MITM attacks without your knowledge.
+           If you are transmitting users' username or password, these sensitive information may be leaking.
+           Reference:
+           (1)OWASP Mobile Top 10 doc: https://www.owasp.org/index.php/Mobile_Top_10_2014-M3
+           (2)Android Security book: http://goo.gl/BFb65r
+           (3)https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=134807561
+           This vulnerability is much more severe than Apple's "goto fail" vulnerability: http://goo.gl/eFlovw
+           Please do not try to create a "X509Certificate" and override "checkClientTrusted", "checkServerTrusted", and "getAcceptedIssuers"
+           functions with blank implementation.
+           We strongly suggest you use the existing API instead of creating your own X509Certificate class.
+           Please modify or remove these vulnerable code:
+               [Confirm Vulnerable]
+               => Lcom/baidu/mapapi/utils/g;
+                     -> used by: Lcom/baidu/mapapi/utils/f;-><init>(Ljava/security/KeyStore;)V
+               --------------------------------------------------
+               [Maybe Vulnerable (Please manually confirm)]
+               => Lorg/jivesoftware/smack/ServerTrustManager;
+               => Lorg/jivesoftware/smack/OpenTrustManager;
+                     -> used by: Lorg/jivesoftware/smack/XMPPConnection;->proceedTLSReceived()V
+[Critical]  AndroidManifest Critical Use Permission Checking:
+           This app has very high privileges. Use it carefully.
+               Critical use-permission found: "android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+               Critical use-permission found: "android.permission.RESTART_PACKAGES"
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lcom/baidu/location/f$a;->a()V (0x10) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/baidu/location/f$a;->uncaughtException(Ljava/lang/Thread; Ljava/lang/Throwable;)V (0x86) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/baidu/location/f;-><clinit>()V (0xc) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/baidu/mapapi/utils/b;->b(Landroid/content/Context;)V (0xa4) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/baidu/mapapi/utils/b;->b(Landroid/content/Context;)V (0xba) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/baidu/mapapi/utils/b;->b(Landroid/content/Context;)V (0xd2) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/baidu/mapapi/utils/i;->a(Landroid/content/Context;)V (0x0) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/baidu/vi/VDeviceAPI;->getSdcardFreeSpace()J (0x0) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/baidu/vi/VDeviceAPI;->getSdcardPath()Ljava/lang/String; (0x0) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/baidu/vi/VDeviceAPI;->getSdcardTotalSpace()J (0x0) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/xmpp/client/util/ValueUtiles;->showlog(Ljava/lang/String;)V (0x8) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning] <Sensitive_Information> Getting IMEI and Device ID:
+           This app has code getting the "device id(IMEI)" but there are problems with this "TelephonyManager.getDeviceId()" approach.
+           1.Non-phones: Wifi-only devices or music players that don't have telephony hardware just don't have this kind of unique
+           identifier.
+           2.Persistence: On devices which do have this, it persists across device data wipes and factory resets. It's not clear at all if,
+           in this situation, your app should regard this as the same device.
+           3.Privilege:It requires READ_PHONE_STATE permission, which is irritating if you don't otherwise use or need telephony.
+           4.Bugs: We have seen a few instances of production phones for which the implementation is buggy and returns garbage, for example
+           zeros or asterisks.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/android/service/ActivityLogin;->user_insertimei(Ljava/lang/String;)V (0x12) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/baidu/location/c;->a(Landroid/telephony/CellLocation;)V (0x20) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/baidu/location/c;->do()V (0x66) ---> Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/baidu/location/j$b;->do(Landroid/content/Context;)Ljava/lang/String; (0x18) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/baidu/platform/comapi/d/c;->k(Landroid/content/Context;)Ljava/lang/String; (0x16) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/baidu/vi/VDeviceAPI;->getImei()Ljava/lang/String; (0x1c) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/baidu/location/j$b;->if(Landroid/content/Context;)Ljava/lang/String; (0x10) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/baidu/platform/comapi/d/c;->h(Landroid/content/Context;)V (0xc) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+[Warning]  Codes for Sending SMS:
+           This app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage):
+               => Lcom/android/service/MainControlActivity$6;->onClick(Landroid/content/DialogInterface; I)V (0x6e) --->
+                    Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/android/service/XmppService$1;->handleMessage(Landroid/os/Message;)V (0x52c) ---> Ljava/io/File;->delete()Z
+               => Lcom/baidu/location/b$d;->for()Z (0x1c) ---> Ljava/io/File;->delete()Z
+               => Lcom/baidu/location/b;->d()Z (0x16) ---> Ljava/io/File;->delete()Z
+               => Lcom/baidu/mapapi/utils/b;->a(Ljava/lang/String;)Z (0x3e) ---> Ljava/io/File;->delete()Z
+               => Lcom/baidu/mapapi/utils/b;->a(Ljava/lang/String;)Z (0x58) ---> Ljava/io/File;->delete()Z
+               => Lcom/baidu/platform/comapi/d/c;->d(Landroid/content/Context;)V (0x218) ---> Ljava/io/File;->delete()Z
+               => Lcom/baidu/platform/comapi/d/c;->d(Landroid/content/Context;)V (0x4ac) ---> Ljava/io/File;->delete()Z
+[Notice] <KeyStore><Hacker> KeyStore Protection Information:
+           The Keystores below are "protected" by password and seem using SSL-pinning (Total: 1). You can use "Portecle" tool to manage the
+           certificates in the KeyStore:
+               => Lorg/jivesoftware/smack/ServerTrustManager;-><init>(Ljava/lang/String; Lorg/jivesoftware/smack/ConnectionConfiguration;)V
+                    (0x4a) ---> Ljava/security/KeyStore;->load(Ljava/io/InputStream; [C)V
+[Notice] <Signature><Hacker> Getting Signature Code Checking:
+           This app has code checking the package signature in the code. It might be used to check for whether the app is hacked by the
+           attackers.
+               => Lcom/baidu/mapapi/utils/a;->a(Landroid/content/Context; Ljava/lang/String;)Ljava/lang/String; (0x12) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/baidu/platform/comapi/d/c;->b(Landroid/content/Context;)[B (0x14) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+[Notice]  Native Library Loading Checking:
+           Native library loading codes(System.loadLibrary(...)) found:
+               [liblocSDK3.so]
+               => Lcom/baidu/location/Jni;-><clinit>()V (0x42) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libBaiduMapVOS_v2_1_3.so]
+               => Lcom/baidu/mapapi/BMapManager;-><clinit>()V (0x4) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libBaiduMapSDK_v2_1_3.so]
+               => Lcom/baidu/mapapi/BMapManager;-><clinit>()V (0xe) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+[Notice]  AndroidManifest Exported Components Checking 2:
+           Found "exported" components(except for Launcher) for receiving Google's "Android" actions (AndroidManifest.xml):
+                 receiver => com.android.service.SMSReceive
+                 receiver => com.android.service.BootReceiver
+                 receiver => com.android.service.PhoneBroadcastReceiver
+                 receiver => com.android.service.GetPackageBroadcast
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" you're not using it.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is "NOT" using Android SQLite databases.
+[Info]  Dynamic Code Loading:
+           No dynamic code loading(DexClassLoader) found.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info] <WebView> WebView Local File Access Attacks Checking:
+           Did not find potentially critical local file access settings.
+[Info] <WebView> WebView Potential XSS Attacks Checking:
+           Did not detect "setJavaScriptEnabled(true)" in WebView.
+[Info] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           WebView addJavascriptInterface vulnerabilities not found.
+------------------------------------------------------------
+AndroBugs analyzing time: 3.875093 secs
+Total elapsed time: 10.920399 secs

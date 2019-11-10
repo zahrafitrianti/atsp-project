@@ -1,0 +1,211 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: operatore.italia
+Package Version Name: 5.1.1.8
+Package Version Code: 5118
+Min Sdk: 11
+Target Sdk: 11
+MD5   : 84c4d0cef28c4814e4f78ac7f1a5fdc7
+SHA1  : e75ea5f2f57c09f04253e7e0ffa82ad7380d076b
+SHA256: 26fef238028ee4b5b8da631c77bfb44ada3d5db8129c45dea5df6a51c9ea5f55
+SHA512: 046c7fc3545e1eaa35252e74daf33d2a0b493116b27736c0cccf318f04aa13ca13b477089473d15bc1e4b0b78b625abbc345095624ae05eb18337653dd36eeac
+Analyze Signature: bf86f51696475b0c78642de7eb992536b80e6731301d74fa00c01a060f2f0f58da01344e66dcab43479859c5399cbbf27e022bb46bf443285c39f4b9acbcd22e
+------------------------------------------------------------------------------------------------
+[Critical] <Command> Runtime Command Checking:
+           This app is using critical function 'Runtime.getRuntime().exec("...")'.
+           Please confirm these following code secions are not harmful:
+               => Llib/operatore/core/e;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; [B)V (0x25a) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+               => Llib/operatore/core/e;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; [B)V (0x2ba) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+[Critical] <KeyStore><Hacker> KeyStore Protection Checking:
+           The Keystores below seem using "byte array" or "hard-coded cert info" to do SSL pinning (Total: 1). Please manually check:
+               => Llib/operatore/core/f;->a()Ljavax/net/ssl/SSLSocketFactory; (0x48) --->
+                    Ljava/security/KeyStore;->load(Ljava/io/InputStream; [C)V
+[Critical] <Implicit_Intent> Implicit Service Checking:
+           To ensure your app is secure, always use an explicit intent when starting a Service and DO NOT declare intent filters for your
+           services. Using an implicit intent to start a service is a security hazard because you cannot be certain what service will
+           respond to the intent, and the user cannot see which service starts.
+           Reference: http://developer.android.com/guide/components/intents-filters.html#Types
+               => lib.operatore.core.PublicService
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:6):
+               http://logback.qos.ch/codes.html#renamingError
+                   => Lch/qos/logback/core/rolling/helper/RenameUtil;-><clinit>()V
+               http://logback.qos.ch/codes.html#rfa_collision
+                   => Lch/qos/logback/core/rolling/RollingFileAppender;-><clinit>()V
+               http://logback.qos.ch/codes.html#rfa_no_rp
+                   => Lch/qos/logback/core/rolling/RollingFileAppender;-><clinit>()V
+               http://logback.qos.ch/codes.html#rfa_no_tp
+                   => Lch/qos/logback/core/rolling/RollingFileAppender;-><clinit>()V
+               http://logback.qos.ch/codes.html#sbtp_size_format
+                   => Lch/qos/logback/core/rolling/SizeBasedTriggeringPolicy;->toFileSize(Ljava/lang/String;)J
+               http://logback.qos.ch/css/classic.css
+                   => Lch/qos/logback/classic/html/UrlCssBuilder;-><init>()V
+[Warning]  Dynamic Code Loading:
+           Dynamic code loading(DexClassLoader) found:
+               => Llib/operatore/core/g;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)Z (0x72) --->
+                    Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Llib/operatore/core/g;->a(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)Z (0x10c) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lch/qos/logback/core/android/CommonPathUtil;->getExternalStorageDirectoryPath()Ljava/lang/String; (0xc) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lch/qos/logback/core/android/CommonPathUtil;->getMountedExternalStorageDirectoryPath()Ljava/lang/String; (0x36) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning]  AndroidManifest Exported Components Checking:
+           Found "exported" components(except for Launcher) for receiving outside applications' actions (AndroidManifest.xml).
+           These components can be initilized by other apps. You should add or modify the attribute to [exported="false"] if you don't want
+           to.
+           You can also protect it with a customized permission with "signature" or higher protectionLevel and specify in
+           "android:permission" attribute.
+                  service => lib.operatore.core.PublicService
+[Warning] <Sensitive_Information> Getting IMEI and Device ID:
+           This app has code getting the "device id(IMEI)" but there are problems with this "TelephonyManager.getDeviceId()" approach.
+           1.Non-phones: Wifi-only devices or music players that don't have telephony hardware just don't have this kind of unique
+           identifier.
+           2.Persistence: On devices which do have this, it persists across device data wipes and factory resets. It's not clear at all if,
+           in this situation, your app should regard this as the same device.
+           3.Privilege:It requires READ_PHONE_STATE permission, which is irritating if you don't otherwise use or need telephony.
+           4.Bugs: We have seen a few instances of production phones for which the implementation is buggy and returns garbage, for example
+           zeros or asterisks.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Llib/operatore/core/b;->c()V (0x1c) ---> Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lch/qos/logback/core/rolling/FixedWindowRollingPolicy;->rollover()V (0x2e) ---> Ljava/io/File;->delete()Z
+               => Lch/qos/logback/core/rolling/helper/Compressor;->gzCompress(Ljava/lang/String; Ljava/lang/String;)V (0x204) --->
+                    Ljava/io/File;->delete()Z
+               => Lch/qos/logback/core/rolling/helper/Compressor;->zipCompress(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+                    (0x236) ---> Ljava/io/File;->delete()Z
+               => Lch/qos/logback/core/rolling/helper/DefaultArchiveRemover;->removeFolderIfEmpty(Ljava/io/File; I)V (0x58) --->
+                    Ljava/io/File;->delete()Z
+               => Lch/qos/logback/core/rolling/helper/FileFilterUtil;->removeEmptyParentDirectories(Ljava/io/File; I)V (0x28) --->
+                    Ljava/io/File;->delete()Z
+               => Lch/qos/logback/core/rolling/helper/RenameUtil;->renameByCopying(Ljava/lang/String; Ljava/lang/String;)V (0x22) --->
+                    Ljava/io/File;->delete()Z
+               => Lch/qos/logback/core/rolling/helper/SizeAndTimeBasedArchiveRemover;->cleanByPeriodOffset(Ljava/util/Date; I)V (0x7a) --->
+                    Ljava/io/File;->delete()Z
+               => Lch/qos/logback/core/rolling/helper/TimeBasedArchiveRemover;->cleanByPeriodOffset(Ljava/util/Date; I)V (0x3a) --->
+                    Ljava/io/File;->delete()Z
+               => Llib/operatore/core/e;->a(Ljava/io/File;)V (0x2c) ---> Ljava/io/File;->delete()Z
+               => Llib/operatore/core/e;->a(Ljava/lang/String;)Z (0x16) ---> Ljava/io/File;->delete()Z
+               => Lokhttp3/internal/io/FileSystem$1;->delete(Ljava/io/File;)V (0x0) ---> Ljava/io/File;->delete()Z
+               => Lokhttp3/internal/io/FileSystem$1;->deleteContents(Ljava/io/File;)V (0x5c) ---> Ljava/io/File;->delete()Z
+[Notice] <KeyStore><Hacker> KeyStore Protection Information:
+           The Keystores below are "protected" by password and seem using SSL-pinning (Total: 1). You can use "Portecle" tool to manage the
+           certificates in the KeyStore:
+               => Lch/qos/logback/core/net/ssl/KeyStoreFactoryBean;->createKeyStore()Ljava/security/KeyStore; (0x4e) --->
+                    Ljava/security/KeyStore;->load(Ljava/io/InputStream; [C)V
+[Notice]  AndroidManifest Exported Components Checking 2:
+           Found "exported" components(except for Launcher) for receiving Google's "Android" actions (AndroidManifest.xml):
+                 receiver => lib.operatore.core.PublicReceiver
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" because your set minSdk >= 11.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is "NOT" using Android SQLite databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <Signature><Hacker> Getting Signature Code Checking:
+           Did not detect this app is checking the signature in the code.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting ANDROID_ID:
+           Did not detect this app is getting the 64-bit number "Settings.Secure.ANDROID_ID".
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+[Info] <WebView> WebView Local File Access Attacks Checking:
+           Did not find potentially critical local file access settings.
+[Info] <WebView> WebView Potential XSS Attacks Checking:
+           Did not detect "setJavaScriptEnabled(true)" in WebView.
+[Info] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           WebView addJavascriptInterface vulnerabilities not found.
+------------------------------------------------------------
+AndroBugs analyzing time: 4.335883 secs
+Total elapsed time: 15.350457 secs

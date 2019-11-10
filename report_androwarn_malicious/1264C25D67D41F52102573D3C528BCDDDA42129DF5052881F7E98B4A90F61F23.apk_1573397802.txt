@@ -1,0 +1,66 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Install
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - org.merry.core
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the ISO country code equivalent for the SIM provider's country code
+		 - This application reads the ISO country code equivalent of the current registered operator's MCC (Mobile Country Code)
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the SIM's serial number
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '11' under the tag 'HybiParser'
+		 - This application logs the message '8' under the tag 'HybiParser'
+		 - This application logs the message 'Sending pong!!' under the tag 'HybiParser'
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address '3' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'Connected, but timed out during TCP registration.\nNote: Client#update must be called in a separate thread during connect.'
+		   on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'Connection is closed.' on the 'N/A' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - 1264C25D67D41F52102573D3C528BCDDDA42129DF5052881F7E98B4A90F61F23.apk
+
+	[.] Fingerprint                             
+		 - MD5: e06dd5ba1a101f855604b486d90d2651
+		 - SHA-1: 6f067fc7bad5a0aa3c5e58c37d428663be5968a1
+		 - SHA-256: 1264c25d67d41f52102573d3c528bcddda42129df5052881f7e98b4a90f61f23
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_LOCATION_EXTRA_COMMANDS',  'android.permission.ACCESS_MOCK_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',
+		   'android.permission.BIND_DEVICE_ADMIN',  'android.permission.GET_TASKS',  'android.permission.INTERNET',  'android.permission.READ_CONTACTS',  'android.permission.READ_EXTERNAL_STORAGE',
+		   'android.permission.READ_PHONE_STATE',  'android.permission.READ_SMS',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_SMS',  'android.permission.SEND_SMS',
+		   'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_CALL_LOG', None]]
+		 - Declared: []
+
+

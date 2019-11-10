@@ -1,0 +1,177 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Snake
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.bazaraa.snake
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the ISO country code equivalent for the SIM provider's country code
+		 - This application reads the ISO country code equivalent of the current registered operator's MCC (Mobile Country Code)
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the SIM's serial number
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'Landroid/support/v4/widget/SwipeRefreshLayout;->canChildScrollUp()Z'
+		 - This application logs the message '' under the tag 'MobNativeAds'
+		 - This application logs the message '' under the tag 'NativeAds Proxy NativeAds Proxy'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '1' under the tag 'Ljava/lang/Exception;->printStackTrace()V'
+		 - This application logs the message '1' under the tag 'width'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'NotifManCompat'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '13' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'android.support.v4.speech.tts'
+		 - This application logs the message '15' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag '44646B6C666E5462686D '
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'BaseLib'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'NotifManCompat'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '3' under the tag 'ContextCompat'
+		 - This application logs the message '3' under the tag 'DocumentFile'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'Ljava/util/Set;->iterator()Ljava/util/Iterator;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'MediaControllerCompat'
+		 - This application logs the message '3' under the tag 'NotifManCompat 5'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '3' under the tag 'RoundedBitmapDrawableFactory'
+		 - This application logs the message '4' under the tag 'DocumentFile'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'ListPopupWindow'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag 'Rating'
+		 - This application logs the message '4' under the tag 'RootTest'
+		 - This application logs the message '4' under the tag 'sendEventToLogUrl'
+		 - This application logs the message '5' under the tag 'DocumentFile'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'ActionBarActivityDelegate'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '7' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '8' under the tag 'DocumentFile'
+		 - This application logs the message '8' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Cannot programmatically select non-user route because the platform is missing the selectRouteInt() method.  Media routing may not work.' under the tag
+		   'MediaRouterJellybean'
+		 - This application logs the message 'Cannot scan for wifi displays because the DisplayManager.scanWifiDisplays() method is not available on this device.' under the tag 'MediaRouterJellybeanMr1'
+		 - This application logs the message 'Cannot set dropdown width for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Cannot set horizontal offset for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Cannot set popup background for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Cannot set vertical offset for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find voice search activity' under the tag 'SearchView'
+		 - This application logs the message 'DrawerToggle may not show up because NavigationIcon is not visible. You may need to call actionbar.setDisplayHomeAsUpEnabled(true);' under the tag
+		   'ActionBarDrawerToggle'
+		 - This application logs the message 'Invalid percentage-based rating value' under the tag 'Rating'
+		 - This application logs the message 'Landroid/content/pm/PackageManager$NameNotFoundException;->toString()Ljava/lang/String;' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Landroid/support/v7/internal/view/SupportMenuInflater;->access$500()[Ljava/lang/Class;' under the tag 'SupportMenuInflater'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Network not available,cancel sendEventToTrackUrl' under the tag 'sendEventToLogUrl'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'Please check your network' under the tag 'MobNaitveAds'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Trying to set out of range star-based rating' under the tag 'Rating'
+		 - This application logs the message 'audio' under the tag 'ActionBarActivityDelegateBase'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'setPopupBackgroundDrawable: incompatible spinner mode; ignoring...' under the tag 'Spinner'
+		 - This application logs the message 'trackping method should run in main thread' under the tag 'MobNaitveAds'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/bazaraa/snake/AboutActivity;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lmy/base/AppContext;->getApplicationContext()Landroid/content/Context;' application installed on the system
+		 - This application retrieves '' information about the 'Lmy/base/SingletonAppContext;->getInstance()Lmy/base/SingletonAppContext;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves 'GET_PERMISSIONS' information about the '1' application installed on the system
+		 - This application retrieves 'GET_PERMISSIONS' information about the '2' application installed on the system
+		 - This application lists applications installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Pim Data Leakage                        
+		 - This application accesses the contacts list
+
+	[.] Code Execution                          
+		 - This application executes a UNIX command
+		 - This application executes a UNIX command containing this argument: '646468636B206F693566603635716438 '
+		 - This application executes a UNIX command containing this argument: '747E '
+		 - This application executes a UNIX command containing this argument: 'cat /sys/class/net/wlan0/address '
+		 - This application executes a UNIX command containing this argument: 'conbb od2gf04pd9'
+		 - This application executes a UNIX command containing this argument: 'su'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - ef002a629319eaed04769adcfad03c58cbe19aa3a13674ad2be95e0ba1f5f59f.apk
+
+	[.] Fingerprint                             
+		 - MD5: cea6bdfb06fc5d5a06e2777181b15edf
+		 - SHA-1: 33c1f5a55fe5dac27d199f03c485c9b9a1b4daf0
+		 - SHA-256: ef002a629319eaed04769adcfad03c58cbe19aa3a13674ad2be95e0ba1f5f59f
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.intent.action.BOOT_COMPLETED',  'android.permission.ACCESS_DOWNLOAD_MANAGER',  'android.permission.ACCESS_MTK_MMHW',  'android.permission.ACCESS_NETWORK_STATE',
+		   'android.permission.ACCESS_WAKE_LOCK',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.CAMERA',  'android.permission.CHANGE_NETWORK_STATE',  'android.permission.CHANGE_WIFI_STATE',
+		   'android.permission.DELETE_PACKAGES',  'android.permission.DISABLE_KEYGUARD',  'android.permission.GET_ACCOUNTS',  'android.permission.GET_PACKAGE_SIZE',  'android.permission.GET_TASKS',
+		   'android.permission.INSTALL_PACKAGES',  'android.permission.INTERNET',  'android.permission.KILL_BACKGROUND_PROCESSES',  'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',
+		   'android.permission.PACKAGE_USAGE_STATS',  'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.READ_LOGS',  'android.permission.READ_PHONE_STATE',
+		   'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RESTART_PACKAGES',  'android.permission.SYSTEM_ALERT_WINDOW',  'android.permission.SYSTEM_OVERLAY_WINDOW',
+		   'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SETTINGS',
+		   'com.android.launcher.permission.INSTALL_SHORTCUT',  'com.android.launcher.permission.UNINSTALL_SHORTCUT',  'com.android.permission.UNINSTALL_SHORTCUT']
+		 - Implied: []
+		 - Declared: []
+
+

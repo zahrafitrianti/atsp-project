@@ -1,0 +1,213 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Chistes picantes
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.chistespicanticos
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the ISO country code equivalent for the SIM provider's country code
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'AudioPlayer'
+		 - This application logs the message '0' under the tag 'Landroid/view/MotionEvent;->getY()F'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '10' under the tag 'Cordova'
+		 - This application logs the message '10' under the tag 'FileTransfer'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'InAppBrowser'
+		 - This application logs the message '10' under the tag 'NotifManCompat'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'AudioPlayer'
+		 - This application logs the message '2' under the tag 'CordovaLog'
+		 - This application logs the message '2' under the tag 'CordovaPlugin'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'NotifManCompat'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '3' under the tag 'BatteryManager'
+		 - This application logs the message '3' under the tag 'Capture'
+		 - This application logs the message '3' under the tag 'CordovaNetworkManager'
+		 - This application logs the message '3' under the tag 'CordovaWebView'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'JsMessageQueue'
+		 - This application logs the message '3' under the tag 'Ljava/util/Set;->iterator()Ljava/util/Iterator;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'NetworkManager'
+		 - This application logs the message '3' under the tag 'NotifManCompat 5'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag '1'
+		 - This application logs the message '4' under the tag 'AudioPlayer'
+		 - This application logs the message '4' under the tag 'ContactsAccessor'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'ListPopupWindow'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '5' under the tag '-1'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'InAppBrowser'
+		 - This application logs the message '6' under the tag 'ActionBarActivityDelegate'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'FileTransfer'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '7' under the tag 'ContactsAccessor'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '7' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '8' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '9' under the tag 'CordovaWebView'
+		 - This application logs the message '9' under the tag 'FragmentActivity'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'AudioPlayer Error: Already recording.' under the tag 'AudioPlayer'
+		 - This application logs the message 'AudioPlayer' under the tag 'AudioPlayer'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Could not find contact with ID' under the tag 'ContactsAccessor'
+		 - This application logs the message 'Could not find voice search activity' under the tag 'SearchView'
+		 - This application logs the message 'Disabled addJavascriptInterface() bridge callback due to a bug on the 2.3 emulator' under the tag 'CordovaWebView'
+		 - This application logs the message 'Disabled addJavascriptInterface() bridge since Android version is old.' under the tag 'CordovaWebView'
+		 - This application logs the message 'Doing the NavDump failed with bad arguments' under the tag 'CordovaWebView CordovaWebView'
+		 - This application logs the message 'Doing the NavDump failed with bad arguments' under the tag 'CordovaWebView'
+		 - This application logs the message 'Error: loading video file' under the tag 'Capture'
+		 - This application logs the message 'Got ACTION_MOVE event but have an invalid active pointer id.' under the tag '4'
+		 - This application logs the message 'Got plugin result with no callbackId' under the tag 'JsMessageQueue'
+		 - This application logs the message 'Hidding Custom View' under the tag 'CordovaWebView'
+		 - This application logs the message 'I either have a null image path or bitmap' under the tag 'CameraLauncher'
+		 - This application logs the message 'Landroid/content/pm/PackageManager$NameNotFoundException;->toString()Ljava/lang/String;' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Landroid/support/v7/internal/view/SupportMenuInflater;->access$500()[Ljava/lang/Class;' under the tag 'SupportMenuInflater'
+		 - This application logs the message 'Landroid/view/MotionEvent;->getY()F' under the tag '1'
+		 - This application logs the message 'Ljava/io/FileNotFoundException;->getMessage()Ljava/lang/String;' under the tag 'ContactsAccessor'
+		 - This application logs the message 'Ljava/io/IOException;->getLocalizedMessage()Ljava/lang/String;' under the tag 'FileUtils'
+		 - This application logs the message 'Ljava/io/IOException;->getMessage()Ljava/lang/String;' under the tag 'ContactsAccessor'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'ContactsAccessor'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'FileTransfer'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'WifiWizard'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Lorg/json/JSONException;->getMessage()Ljava/lang/String;' under the tag 'BatteryManager'
+		 - This application logs the message 'Lorg/json/JSONException;->getMessage()Ljava/lang/String;' under the tag 'ContactsAccessor'
+		 - This application logs the message 'Lorg/json/JSONException;->getMessage()Ljava/lang/String;' under the tag 'FileTransfer'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'Replace ctx.bindService() with cordova.getActivity().bindService()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.cancelLoadUrl() with cordova.cancelLoadUrl()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.getActivity() with cordova.getActivity()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.getApplicationContext() with cordova.getActivity().getApplicationContext()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.getAssets() with cordova.getActivity().getAssets()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.getContext() with cordova.getContext()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.getPackageManager() with cordova.getActivity().getPackageManager()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.getResources() with cordova.getActivity().getResources()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.getSharedPreferences() with cordova.getActivity().getSharedPreferences()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.getSystemService() with cordova.getActivity().getSystemService()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.getThreadPool() with cordova.getThreadPool()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.onMessage() with cordova.onMessage()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.runOnUiThread() with cordova.getActivity().runOnUiThread()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.setActivityResultCallback() with cordova.setActivityResultCallback()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.startActivity() with cordova.getActivity().startActivity()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.startActivityForResult() with cordova.startActivityForResult()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.startService() with cordova.getActivity().startService()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.unbindService() with cordova.getActivity().unbindService()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Replace ctx.unregisterReceiver() with cordova.getActivity().unregisterReceiver()' under the tag 'Deprecation Notice'
+		 - This application logs the message 'Send a onStatus update for the new seek' under the tag 'AudioPlayer'
+		 - This application logs the message 'Should never happen' under the tag 'InAppBrowser'
+		 - This application logs the message 'Stopping global listener' under the tag '6'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'WEP unsupported.' under the tag 'WifiWizard'
+		 - This application logs the message 'We are on a modern version of Android, we will deprecate HTC 2.3 devices in 2.8' under the tag 'CordovaWebView'
+		 - This application logs the message 'WebView restoration crew now restoring!' under the tag 'CordovaWebView'
+		 - This application logs the message 'Wifi Authentication Type Not Supported.' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: Network not found to connect.' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: Network not found to disconnect.' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: addNetwork entered.' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: connectNetwork entered.' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: connectNetwork invalid data.' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: disconnect entered.' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: disconnectNetwork entered.' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: disconnectNetwork invalid data' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: isWifiEnabled entered.' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: listNetworks entered.' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: removeNetwork data invalid' under the tag 'Network removed. Network not found. WifiWizard'
+		 - This application logs the message 'WifiWizard: removeNetwork data invalid' under the tag 'WifiWizard'
+		 - This application logs the message 'WifiWizard: removeNetwork entered.' under the tag 'WifiWizard'
+		 - This application logs the message 'Your activity must implement CordovaInterface to work' under the tag 'CordovaWebView'
+		 - This application logs the message 'did we get here?' under the tag '5173'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'in blank' under the tag 'InAppBrowser'
+		 - This application logs the message 'in self' under the tag 'InAppBrowser'
+		 - This application logs the message 'in system' under the tag 'InAppBrowser'
+		 - This application logs the message 'nested call to setPaused detected.' under the tag 'JsMessageQueue'
+		 - This application logs the message 'on completion is calling stopped' under the tag 'AudioPlayer'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'showing Custom View' under the tag 'CordovaWebView'
+		 - This application logs the message 'stopPlaying is calling stopped' under the tag 'AudioPlayer'
+		 - This application logs the message 'v35' under the tag 'ContactsAccessor'
+		 - This application logs the message 'value <plugin> tags are deprecated, please use <features> instead. <plugin> will no longer work as of Cordova 3.0' under the tag '0'
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+	[.] Audio Video Eavesdropping               
+		 - This application records audio from the 'VOICE_DOWNLINK' source
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address '0' on the ': connect, resolve' port
+		 - This application opens a Socket and connects it to the remote address 'already connected' on the 'N/A' port
+
+	[.] Pim Data Leakage                        
+		 - This application accesses the SMS list
+
+
+[+] Apk File
+	[.] File Name                               
+		 - com.chistespicanticos.apk
+
+	[.] Fingerprint                             
+		 - MD5: bdec2455241084c305526f0a59fa3206
+		 - SHA-1: dc799bcc3f1f623e211e50fbb6ececb2e64753a6
+		 - SHA-256: e9bb2455b33c14d5d441934e3f882849b8d56b9e3452120826e683ce7c0a6a46
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.CAMERA',  'android.permission.CHANGE_WIFI_STATE',  'android.permission.INTERNET',
+		   'android.permission.READ_PHONE_STATE',  'android.permission.READ_SMS',  'android.permission.RECEIVE_SMS',  'android.permission.SEND_SMS',  'android.permission.VIBRATE',
+		   'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SMS']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

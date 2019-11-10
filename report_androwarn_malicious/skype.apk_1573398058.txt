@@ -1,0 +1,43 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - skype
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - com.q.t
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message ' - ErrMsg:  0' under the tag 'RLog'
+		 - This application logs the message ' - InfMsg:  0' under the tag 'RLog'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - skype.apk
+
+	[.] Fingerprint                             
+		 - MD5: fbfa665f66829ede0766ac2bcca99129
+		 - SHA-1: 68f6147db6eb4c7ad463409f65686cf78cdf58b4
+		 - SHA-256: dcdc3662f866aaa3f37a431e29701d8f588cd462c69230b1aabbaf04de73ef32
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET',  'android.permission.READ_PHONE_STATE']
+		 - Implied: []
+		 - Declared: []
+
+

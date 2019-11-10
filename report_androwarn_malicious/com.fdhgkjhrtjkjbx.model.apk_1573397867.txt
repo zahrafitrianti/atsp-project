@@ -1,0 +1,47 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 万能电影播放器
+
+	[.] Application Version                     
+		 - 5.0
+
+	[.] Package Name                            
+		 - com.fdhgkjhrtjkjbx.model
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Code Execution                          
+		 - This application loads a native library: 'secexe'
+		 - This application executes a UNIX command containing this argument: '0'
+		 - This application executes a UNIX command containing this argument: '4'
+		 - This application executes a UNIX command containing this argument: '7'
+		 - This application executes a UNIX command containing this argument: 'getprop ro.product.cpu.abi'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - com.fdhgkjhrtjkjbx.model.apk
+
+	[.] Fingerprint                             
+		 - MD5: 3d7e04e37db833f47d08975e27c69a9c
+		 - SHA-1: 91a302f1a2cac8951123431f75ff8d705950fb17
+		 - SHA-256: 9a0dfff4d05e739d53da02e9275b67dcff6ca1fdd82d65cb2c06b96b90fa3c06
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.GET_TASKS',  'android.permission.INTERNET',
+		   'android.permission.READ_PHONE_STATE',  'android.permission.SYSTEM_ALERT_WINDOW',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE',
+		   'com.android.launcher.permission.INSTALL_SHORTCUT']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

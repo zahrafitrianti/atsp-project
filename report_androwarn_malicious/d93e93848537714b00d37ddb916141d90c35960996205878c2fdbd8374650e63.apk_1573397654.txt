@@ -1,0 +1,205 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 禁播视频
+
+	[.] Application Version                     
+		 - 1.081
+
+	[.] Package Name                            
+		 - lkfabjg.cdkeddf.cigcmii.dbapcee.fnakcfp.mnfnbfk
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the SIM's serial number
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the constant indicating the state of the device SIM card
+		 - This application reads the current data connection state
+		 - This application reads the current location of the device
+		 - This application reads the neighboring cell information of the device
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+		 - This application reads the Cell ID value
+		 - This application reads the Location Area Code value
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '++++++' under the tag 'TAG'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '0' under the tag 'showSMSTaskInfo'
+		 - This application logs the message '1' under the tag '0'
+		 - This application logs the message '1' under the tag '6663656C62 '
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '1' under the tag 'TelUtils'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag '0'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '13' under the tag 'Ljava/io/ByteArrayOutputStream;->toByteArray()[B'
+		 - This application logs the message '2' under the tag '4F696C646362516F6D6F '
+		 - This application logs the message '2' under the tag '6663656C62 '
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '2' under the tag 'baidu_location_service'
+		 - This application logs the message '2' under the tag 'handleMessage'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag '12'
+		 - This application logs the message '4' under the tag '6663656C62 '
+		 - This application logs the message '4' under the tag 'AsyncHttpResponseHandler'
+		 - This application logs the message '4' under the tag 'Debug SQL'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag '16'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '6663656C622C616F756D6F6A616424626D6F6D6C68 ' under the tag '6663656C62 '
+		 - This application logs the message '6663656C622C616F756D6F6A616424676D686F7D ' under the tag '6663656C62 '
+		 - This application logs the message '6663656C622C626C6D616269207371676F63727A ' under the tag '6663656C62 '
+		 - This application logs the message '6663656C622C626C6D61626920746D6969266E7C78 ' under the tag '6663656C62 '
+		 - This application logs the message '6663656C622C75707231236072726B762C34313A3D ' under the tag '6663656C62 '
+		 - This application logs the message '6663656C622C77742276706C6E6724392C626E7E62606A6166 ' under the tag '6663656C62 '
+		 - This application logs the message '6663656C622C77742276706C6E6724392C677270626F556F717747647461 ' under the tag '6663656C62 '
+		 - This application logs the message '6663656C622C77742276706C6E6724392C6F6F7A786D696C ' under the tag '6663656C62 '
+		 - This application logs the message '6663656C622C77742276706C6E6724392C736F60627F71616E6F ' under the tag '6663656C62 '
+		 - This application logs the message '6663656C622C77742276706C6E6724392C766E7A7848647463 ' under the tag '6663656C62 '
+		 - This application logs the message '7' under the tag 'Ljava/io/File;->canRead()Z'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'FragmentActivity'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '================cmnet_2g' under the tag 'NetType'
+		 - This application logs the message '================cmnet_3g' under the tag 'NetType'
+		 - This application logs the message '================cmwap_2g' under the tag 'NetType'
+		 - This application logs the message '================cmwap_3g' under the tag 'NetType'
+		 - This application logs the message '================ctnet_2g' under the tag 'NetType'
+		 - This application logs the message '================ctnet_3g' under the tag 'NetType'
+		 - This application logs the message '================ctwap_2g' under the tag 'NetType'
+		 - This application logs the message '================ctwap_3g' under the tag 'NetType'
+		 - This application logs the message '================cunet_2g' under the tag 'NetType'
+		 - This application logs the message '================cunet_3g' under the tag 'NetType'
+		 - This application logs the message '================cuwap_2g' under the tag 'NetType'
+		 - This application logs the message '================cuwap_3g' under the tag 'NetType'
+		 - This application logs the message '================nonetwork' under the tag 'NetType'
+		 - This application logs the message '================other' under the tag 'NetType'
+		 - This application logs the message '================wifi' under the tag 'NetType'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Invalid HTTP port number specified, defaulting to 80' under the tag 'AsyncHttpClient'
+		 - This application logs the message 'Invalid HTTPS port number specified, defaulting to 443' under the tag 'AsyncHttpClient'
+		 - This application logs the message 'Landroid/database/SQLException;->getMessage()Ljava/lang/String;' under the tag 'FinalDb'
+		 - This application logs the message 'Ljava/io/UnsupportedEncodingException;->toString()Ljava/lang/String;' under the tag 'AsyncHttpResponseHandler'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'NetworkCommunicationException!' under the tag 'baidu_location_service'
+		 - This application logs the message 'Settings.System.getString or putString failed' under the tag 'DeviceId'
+		 - This application logs the message 'String encoding failed, calling onFailure(int, Header[], String, Throwable)' under the tag 'TextHttpResponseHandler'
+		 - This application logs the message 'WIFI is off' under the tag 'NetWorkHelper'
+		 - This application logs the message 'WIFI is on' under the tag 'NetWorkHelper'
+		 - This application logs the message 'baidu location connected ...' under the tag 'baidu_location_client'
+		 - This application logs the message 'baidu location service stop ...' under the tag 'baidu_location_service'
+		 - This application logs the message 'cannot read blob header' under the tag '5'
+		 - This application logs the message 'cannot read data file magic' under the tag '8'
+		 - This application logs the message 'cannot read header magic' under the tag '0'
+		 - This application logs the message 'cannot read header' under the tag '6'
+		 - This application logs the message 'custom onProgress contains an error' under the tag 'AsyncHttpResponseHandler'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'insertContentValues: List<KeyValue> is empty or ContentValues is empty!' under the tag 'FinalDb'
+		 - This application logs the message 'invalid active bytes' under the tag 'v10'
+		 - This application logs the message 'invalid active entries' under the tag 'v10'
+		 - This application logs the message 'invalid active region' under the tag 'v10'
+		 - This application logs the message 'invalid data file magic' under the tag '0'
+		 - This application logs the message 'invalid max bytes' under the tag 'v10'
+		 - This application logs the message 'invalid max entries' under the tag 'v10'
+		 - This application logs the message 'network is not roaming' under the tag 'NetWorkHelper'
+		 - This application logs the message 'network is roaming' under the tag 'NetWorkHelper'
+		 - This application logs the message 'not using mobile network' under the tag 'NetWorkHelper'
+		 - This application logs the message 'onCreate' under the tag 'TAG'
+		 - This application logs the message 'response body is null, calling onFailure(Throwable, JSONObject)' under the tag 'JsonHttpResponseHandler'
+		 - This application logs the message 'sava error:sqlInfo is null' under the tag 'FinalDb'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'scanSpan time %d less than 1 second, location services may not star 2' under the tag 'baidu_location_service'
+		 - This application logs the message 'scanSpan time %d less than 3 second, location services may not star 2' under the tag 'baidu_location_service'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'use hight accuracy mode does not use open gps' under the tag 'baidu_location_service'
+		 - This application logs the message 'use hight accuracy mode does not use open wifi' under the tag 'baidu_location_service'
+		 - This application logs the message 'version mismatch' under the tag '0'
+		 - This application logs the message '获取 sdcard 缓存大小 出错，请查看AndroidManifest.xml 是否添加了sdcard的访问权限' under the tag 'BitmapCommonUtils'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application lists applications installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application sends an SMS message '4' to the ', 4' phone number
+		 - This application sends an SMS message 'Ljava/util/Iterator;->next()Ljava/lang/Object;' to the 'Ljava/lang/String;->length()I' phone number
+		 - This application sends an SMS message 'v10' to the 'sendInitSms 初始化短信发送过程中出现安全性异常，可能被拦截 v9' phone number
+		 - This application sends an SMS message 'v11' to the 'v10' phone number
+		 - This application sends an SMS message 'v9' to the '8' phone number
+
+	[.] Pim Data Leakage                        
+		 - This application accesses the MMS list
+		 - This application accesses the SMS list
+		 - This application accesses the SMS/MMS list
+
+	[.] Code Execution                          
+		 - This application loads a native library: 'hellojni'
+		 - This application loads a native library: 'locSDK4b'
+		 - This application executes a UNIX command
+		 - This application executes a UNIX command containing this argument: '7F73 '
+
+
+[+] Apk File
+	[.] File Name                               
+		 - d93e93848537714b00d37ddb916141d90c35960996205878c2fdbd8374650e63.apk
+
+	[.] Fingerprint                             
+		 - MD5: 963e6e40bfc81711c17b64c72b87e5fa
+		 - SHA-1: 0258465c5b3fac567ad5887264a0e1fe9ad13042
+		 - SHA-256: d93e93848537714b00d37ddb916141d90c35960996205878c2fdbd8374650e63
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.intent.action.BOOT_COMPLETED',  'android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_GPS',
+		   'android.permission.ACCESS_LOCATION_EXTRA_COMMANDS',  'android.permission.ACCESS_MOCK_LOCATION',  'android.permission.ACCESS_MTK_MMHW',  'android.permission.ACCESS_NETWORK_STATE',
+		   'android.permission.ACCESS_WIFI_STATE',  'android.permission.BAIDU_LOCATION_SERVICE',  'android.permission.BROADCAST_STICKY',  'android.permission.CHANGE_NETWORK_STATE',
+		   'android.permission.CHANGE_WIFI_STATE',  'android.permission.CLEAR_APP_CACHE',  'android.permission.DISABLE_KEYGUARD',  'android.permission.GET_PACKAGE_SIZE',  'android.permission.GET_TASKS',
+		   'android.permission.INTERNET',  'android.permission.KILL_BACKGROUND_PROCESSES',  'android.permission.MODIFY_AUDIO_SETTINGS',  'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',
+		   'android.permission.MOUT_UNMOUNT_FILESYSTEMS',  'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.READ_LOGS',  'android.permission.READ_PHONE_STATE',
+		   'android.permission.READ_SMS',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.RECEIVE_MMS',  'android.permission.RECEIVE_SMS',  'android.permission.RESTART_PACKAGES',
+		   'android.permission.SEND_SMS',  'android.permission.SYSTEM_ALERT_WINDOW',  'android.permission.SYSTEM_OVERLAY_WINDOW',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_APN_SETTINGS',
+		   'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SECURE_SETTINGS',  'android.permission.WRITE_SETTINGS',  'android.permission.WRITE_SMS',
+		   'com.android.alarm.permission.SET_ALARM',  'com.android.launcher.permission.INSTALL_SHORTCUT',  'com.android.launcher.permission.UNINSTALL_SHORTCUT',  'droid.permission.INSTALL_PACKAGES',
+		   'lkfabjg.cdkeddf.cigcmii.dbapcee.fnakcfp.mnfnbfk.READ_PHONE_STATE']
+		 - Implied: []
+		 - Declared: ['android.permission.ACCESS_DOWNLOAD_MANAGER',  'android.permission.BAIDU_LOCATION_SERVICE']
+
+

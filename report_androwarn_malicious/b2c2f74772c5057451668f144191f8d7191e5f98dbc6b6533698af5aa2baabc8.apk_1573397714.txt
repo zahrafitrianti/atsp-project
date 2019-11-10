@@ -1,0 +1,50 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Android 系统服务
+
+	[.] Application Version                     
+		 - 9.0
+
+	[.] Package Name                            
+		 - com.android.system.op.guardianship.server
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the SIM's serial number
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application lists applications installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Code Execution                          
+		 - This application executes a UNIX command containing this argument: '4'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - b2c2f74772c5057451668f144191f8d7191e5f98dbc6b6533698af5aa2baabc8.apk
+
+	[.] Fingerprint                             
+		 - MD5: 9521824fcec4da5046c0a1de4ac66a8b
+		 - SHA-1: 032ed44468e04a8d0e081aae2743212a93c1ff4e
+		 - SHA-256: b2c2f74772c5057451668f144191f8d7191e5f98dbc6b6533698af5aa2baabc8
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.INTERNET',  'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',  'android.permission.READ_EXTERNAL_STORAGE',
+		   'android.permission.READ_OWNER_DATA',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_OWNER_DATA']
+		 - Implied: [['android.permission.READ_PHONE_STATE', None]]
+		 - Declared: []
+
+

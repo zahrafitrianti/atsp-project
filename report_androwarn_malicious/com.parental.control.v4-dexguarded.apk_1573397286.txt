@@ -1,0 +1,75 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Dendroid
+
+	[.] Application Version                     
+		 - 2.0
+
+	[.] Package Name                            
+		 - com.parental.control.v4
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '10' under the tag 'com.connect'
+		 - This application logs the message '11' under the tag 'com.connect'
+		 - This application logs the message '12' under the tag 'com.connect'
+		 - This application logs the message '2' under the tag 'com.connect'
+		 - This application logs the message '4' under the tag 'com.connect'
+		 - This application logs the message '7' under the tag 'com.connect'
+		 - This application logs the message '9' under the tag 'com.connect'
+		 - This application logs the message 'BITMAP SAVED' under the tag 'com.connect'
+		 - This application logs the message 'Dendroid' under the tag 'com.connect'
+		 - This application logs the message 'Location Is Dead' under the tag 'com.connect'
+		 - This application logs the message 'Pictures done' under the tag 'com.connect'
+		 - This application logs the message 'Pictures started' under the tag 'com.connect'
+		 - This application logs the message 'Profiled' under the tag 'com.connect'
+		 - This application logs the message 'Receiver ON' under the tag 'com.connect'
+		 - This application logs the message 'SD Card' under the tag 'com.connect'
+		 - This application logs the message 'Screen Off Run Service' under the tag 'com.connect'
+		 - This application logs the message 'Screen Off' under the tag 'com.connect'
+		 - This application logs the message 'io problems while preparing' under the tag 'com.connect'
+		 - This application logs the message 'startService' under the tag 'com.connect'
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+	[.] Audio Video Eavesdropping               
+		 - This application records audio from the 'DEFAULT' source
+		 - This application captures video from the 'DEFAULT' source
+
+	[.] Pim Data Leakage                        
+		 - This application accesses the SMS list
+		 - This application accesses the call log
+
+
+[+] Apk File
+	[.] File Name                               
+		 - com.parental.control.v4-dexguarded.apk
+
+	[.] Fingerprint                             
+		 - MD5: 52a30b58257d338617a39643e2216d0c
+		 - SHA-1: 8c5ef693ae781cdcf1a5710be7f98a7eb0052248
+		 - SHA-256: 0b8ba0c6cebe5695639bf1b282b52f126dba733f3c204e37615a3ba5f7dd6fe8
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.CALL_PHONE',  'android.permission.CAMERA',  'android.permission.GET_ACCOUNTS',
+		   'android.permission.GET_TASKS',  'android.permission.INTERNET',  'android.permission.PROCESS_OUTGOING_CALLS',  'android.permission.READ_CONTACTS',  'android.permission.READ_PHONE_STATE',
+		   'android.permission.READ_SMS',  'android.permission.RECEIVE_SMS',  'android.permission.RECORD_AUDIO',  'android.permission.SEND_SMS',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SETTINGS',  'android.permission.WRITE_SMS',  'com.android.browser.permission.READ_HISTORY_BOOKMARKS']
+		 - Implied: [['android.permission.READ_CALL_LOG', None],  ['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

@@ -1,0 +1,58 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 狂爱影吧
+
+	[.] Application Version                     
+		 - 2.2
+
+	[.] Package Name                            
+		 - com.c101421042723
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the SIM's serial number
+		 - This application reads the current data connection state
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application retrieves '' information about the 'Lcom/c101421042723/ui/MyApplication;->a()Landroid/content/Context;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Code Execution                          
+		 - This application loads a native library: ''
+
+
+[+] Apk File
+	[.] File Name                               
+		 - com.c101421042723.apk
+
+	[.] Fingerprint                             
+		 - MD5: 34c082310df3f124ba6976ed861faf87
+		 - SHA-1: bc51df43ed90035307291c89c4651965c1edf37f
+		 - SHA-256: 5a12974cddc7006bbc65daed16cb05ea7cd8713ef69dcb4110149a823689d92e
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.CHANGE_NETWORK_STATE',  'android.permission.INTERNET',
+		   'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',  'android.permission.RAISED_THREAD_PRIORITY',  'android.permission.READ_PHONE_STATE',  'android.permission.READ_SMS',
+		   'android.permission.RECEIVE_MMS',  'android.permission.RECEIVE_SMS',  'android.permission.RECEIVE_WAP_PUSH',  'android.permission.SEND_SMS',  'android.permission.WRITE_EXTERNAL_STORAGE',
+		   'android.permission.WRITE_SECURE_SETTINGS',  'android.permission.WRITE_SETTINGS',  'com.android.launcher.permission.INSTALL_SHORTCUT',  'com.android.launcher.permission.READ_SETTINGS',
+		   'com.android.launcher.permission.WRITE_SETTINGS']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+
