@@ -80,7 +80,7 @@ def main():
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
 	print('Save output to csv file...')
-	# df.to_csv('./result/final_scores.csv', index=False)
+	df.to_csv('./result/final_scores.csv', index=False)
 	# df.to_csv('./result/final_scores_malicious.csv', index=False)
 
 	# plot histogram of scores
