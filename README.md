@@ -1,4 +1,19 @@
 # atsp-project
+To run this project you have to change the hardcoded path for input and output inside the various class to adapt to your path for the input and output
+
+## Structure tree
++---Reports		                                -> Folder of all reports
+|   +---Report MobSF		                    -> Folder of MobSF reports 
+|   |   +---Report Benign apk		            -> MobSF reports for bening apk dataset
+|   |   +---Report Malicious apk		        -> MobSF reports for malicious apk dataset 
+|   |   \---Report other malicious apk (test)	-> MobSF reports for other malicious apk
+|   +---report_androbugs_bening		            -> Androbugs reports for bening apk dataset
+|   +---report_androbugs_malicious		        -> Androbugs reports for malicious apk dataset 
+|   +---report_androwarn_bening		            -> AndroWarn reports for bening apk dataset
+|   \---report_androwarn_malicious		        -> AndroWarn reports for malicious apk dataset 
+\---result		                                -> Result folder, inside the result of the combined scores for the apks
+    +---Result Androbugs		                -> Result for the scores of Androbugs
+    \---Result AndroWarn		                -> Result for the scores of AndroWarn
 
 ## Analyzer tools installation
 
