@@ -23,8 +23,8 @@ def main():
 			tstart = time.time()
 
 			# output directory
-			output_dir = os.path.join(os.getcwd(), 'report_androbugs')
-			# output_dir = os.path.join(os.getcwd(), 'report_androbugs_malicious')
+			output_dir = os.path.join(os.getcwd(), 'Reports/report_androbugs')
+			# output_dir = os.path.join(os.getcwd(), 'Reports/report_androbugs_malicious')
 			
 			# command to run the analyzer tool
 			# NOTE: AndroBugs requires python 2.x
@@ -37,8 +37,8 @@ def main():
 
 	running_time = np.vstack([time_elapsed_per_app, ['Total time elapsed', total_time_elapsed]])
 	print("Save output to file...")
-	np.savetxt('running_time_androbugs.txt', running_time, delimiter=" ", fmt="%s")
-	# np.savetxt('running_time_androbugs_malicious.txt', running_time, delimiter=" ", fmt="%s")
+	np.savetxt('./result/Androbugs/running_time_androbugs.txt', running_time, delimiter=" ", fmt="%s")
+	# np.savetxt('./result/Androbugs/running_time_androbugs_malicious.txt', running_time, delimiter=" ", fmt="%s")
 
 
 if __name__ == '__main__':

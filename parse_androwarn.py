@@ -115,8 +115,8 @@ def calculate_scores(features_dict):
 def main():
 
 	# directory of the output file
-	directory = './report_androwarn'
-	# directory = './report_androwarn_malicious'
+	directory = './Reports/report_androwarn_benign'
+	# directory = './Reports/report_androwarn_malicious'
 	
 	# initialize a dictionary for the results
 	app_dict = {'app_name': [], 'score': [], 'features': []}
@@ -152,8 +152,8 @@ def main():
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
 	print('Save results to csv...')
-	df.to_csv('./result/result_androwarn.csv', index=False)
-	# df.to_csv('./result/result_androwarn_malicious.csv', index=False)
+	df.to_csv('./result/Androwarn/result_androwarn_benign.csv', index=False)
+	# df.to_csv('./result/Androwarn/result_androwarn_malicious.csv', index=False)
 
 if __name__ == '__main__':
    main()
