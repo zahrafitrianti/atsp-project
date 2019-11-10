@@ -152,8 +152,8 @@ def main():
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
 	print('Save results to csv...')
-	df.to_csv('./result/result_androwarn/result_androwarn_benign.csv', index=False)
-	# df.to_csv('./result/result_androwarn/result_androwarn_malicious.csv', index=False)
+	df.to_csv('./result/Result AndroWarn/result_androwarn.csv', index=False)
+	# df.to_csv('./result/Result AndroWarn/result_androwarn_malicious.csv', index=False)
 
 if __name__ == '__main__':
    main()

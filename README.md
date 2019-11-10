@@ -3,19 +3,34 @@ To run this project you have to change the hardcoded path for input and output i
 
 ## Structure tree
 ``` bash
-+---Reports		                       -> Folder of all reports
-|   +---Report MobSF		               -> Folder of MobSF reports 
-|   |   +---Report Benign apk		       -> MobSF reports for bening apk dataset
-|   |   +---Report Malicious apk	   -> MobSF reports for malicious apk dataset 
-|   |   \---Report other malicious apk (test) -> MobSF reports for other malicious apk
-|   +---report_androbugs_bening		        -> Androbugs reports for bening apk dataset
-|   +---report_androbugs_malicious		    -> Androbugs reports for malicious apk dataset 
-|   +---report_androwarn_bening		        -> AndroWarn reports for bening apk dataset
-|   \---report_androwarn_malicious		    -> AndroWarn reports for malicious apk dataset 
-\---result		                            -> Result folder, inside the result of the combined scores for the apks
-    +---Result Androbugs		            -> Result for the scores of Androbugs
-    \---Result AndroWarn		            -> Result for the scores of AndroWarn
++---Reports		                         -> Folder of all reports
+|   +---Report MobSF		                  -> Folder of MobSF reports 
+|   |   +---Report Benign apk		          -> MobSF reports for bening apk dataset
+|   |   +---Report Malicious apk		        -> MobSF reports for malicious apk dataset 
+|   |   \---Report other malicious apk (test)	-> MobSF reports for other malicious apk
+|   +---report_androbugs_bening		            -> Androbugs reports for bening apk dataset
+|   +---report_androbugs_malicious		        -> Androbugs reports for malicious apk dataset 
+|   +---report_androwarn_bening		            -> AndroWarn reports for bening apk dataset
+|   \---report_androwarn_malicious		        -> AndroWarn reports for malicious apk dataset 
+\---result		                                -> Result folder, inside the result of the combined scores for the apks
+    +---Result Androbugs		                -> Result for the scores of Androbugs
+    \---Result AndroWarn		                -> Result for the scores of AndroWarn
 ```
+
+## Relevant scripts
+Below we list the relevant scripts which you can run / refer to reproduce our results.
+
+### Running analyzers
+* [run_androwarn.py](https://github.com/zahrafitrianti/atsp-project/blob/master/run_androwarn.py) - analyze all apks within a dataset using androwarn. Results will be some txt files which are stored in [Reports](https://github.com/zahrafitrianti/atsp-project/tree/master/Reports) folder.
+* [run_androbugs.py](https://github.com/zahrafitrianti/atsp-project/blob/master/run_androbugs.py) - analyze all apks within a dataset using androbugs. Results will be some txt files which are stored in [Reports](https://github.com/zahrafitrianti/atsp-project/tree/master/Reports) folder.
+
+### Parsing output, extract features, calculate scores
+* [parse_androwarn.py](https://github.com/zahrafitrianti/atsp-project/blob/master/parse_androwarn.py) - parse the output files from androwarn generated from previous step and extract features and calculate scores per app. The results are in a form of a csv file which is stored in [Result Androwarn](https://github.com/zahrafitrianti/atsp-project/tree/master/result/Result%20AndroWarn) folder.
+* [parse_androbugs.py](https://github.com/zahrafitrianti/atsp-project/blob/master/parse_androbugs.py) - parse the output files from androwarn generated from previous step and extract features and calculate scores per app. The results are in a form of a csv file which is stored in [Result Androwarn](https://github.com/zahrafitrianti/atsp-project/tree/master/result/Result%20AndroBugs) folder.
+
+### Final (combined) scores and plot
+* [scores.py](https://github.com/zahrafitrianti/atsp-project/blob/master/scores.py) - combine scores of the results from androwarn and androbugs analyzers and save the final scores in a csv file which is stored in [result](https://github.com/zahrafitrianti/atsp-project/tree/master/result). This script will also generate the plot of histograms of scores which we present in the report.
+
 ## Analyzer tools installation
 
 ### Androwarn

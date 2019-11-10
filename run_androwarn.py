@@ -31,7 +31,7 @@ def main():
 			timestamp = int(tstart)
 
 			# output target
-			output_dir = os.path.join(os.getcwd(), 'Reports/report_androwarn')
+			output_dir = os.path.join(os.getcwd(), 'Reports/report_androwarn_benign')
 			# output_dir = os.path.join(os.getcwd(), 'Reports/report_androwarn_malicious')
 			output_file = os.path.join(output_dir, f"{filename}_{timestamp}")
 			
@@ -45,8 +45,8 @@ def main():
 
 	running_time = np.vstack([time_elapsed_per_app, ['Total time elapsed', total_time_elapsed]])
 	print("Save output to file...")
-	np.savetxt('./result/result_androwarn/running_time_androwarn.txt', running_time, delimiter=" ", fmt="%s")
-	# np.savetxt('./result/result_androwarn/running_time_androwarn_malicious.txt', running_time, delimiter=" ", fmt="%s")
+	np.savetxt('./result/Result AndroWarn/running_time_androwarn_benign.txt', running_time, delimiter=" ", fmt="%s")
+	# np.savetxt('./result/Result AndroWarn/running_time_androwarn_malicious.txt', running_time, delimiter=" ", fmt="%s")
 
 if __name__ == '__main__':
    main()

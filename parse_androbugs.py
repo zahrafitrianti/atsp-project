@@ -133,8 +133,8 @@ def main():
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
 	print('Save results to csv...')
-	df.to_csv('./result/Androbugs/result_androbugs_benign.csv', index=False)
-	# df.to_csv('./result/Androbugs/result_androbugs_malicious_1.csv', index=False)
+	df.to_csv('./result/Result Androbugs/result_androbugs_benign.csv', index=False)
+	# df.to_csv('./result/Result Androbugs/result_androbugs_malicious_1.csv', index=False)
 
 if __name__ == '__main__':
    main()

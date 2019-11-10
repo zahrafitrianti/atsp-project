@@ -37,8 +37,8 @@ def main():
 
 	running_time = np.vstack([time_elapsed_per_app, ['Total time elapsed', total_time_elapsed]])
 	print("Save output to file...")
-	np.savetxt('./result/Androbugs/running_time_androbugs.txt', running_time, delimiter=" ", fmt="%s")
-	# np.savetxt('./result/Androbugs/running_time_androbugs_malicious.txt', running_time, delimiter=" ", fmt="%s")
+	np.savetxt('./result/Result Androbugs/running_time_androbugs_benign.txt', running_time, delimiter=" ", fmt="%s")
+	# np.savetxt('./result/Result Androbugs/running_time_androbugs_malicious.txt', running_time, delimiter=" ", fmt="%s")
 
 
 if __name__ == '__main__':

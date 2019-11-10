@@ -52,8 +52,8 @@ def plot_scores(df, analyzer):
 def main():
 
 	# csv files of the results
-	result_androwarn = './result/result_androwarn/result_androwarn.csv'
-	result_androbugs = './result/Androbugs/result_androbugs.csv'
+	result_androwarn = './result/Result AndroWarn/result_androwarn.csv'
+	result_androbugs = './result/Result Androbugs/result_androbugs.csv'
 
 	# csv files of the malicious apps results
 	# result_androwarn = './result/result_androwarn/result_androwarn_malicious.csv'
