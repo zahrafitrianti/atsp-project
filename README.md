@@ -6,8 +6,8 @@ To run this project you have to change the hardcoded path for input and output i
 +---Reports		                       -> Folder of all reports
 |   +---Report MobSF		               -> Folder of MobSF reports 
 |   |   +---Report Benign apk		       -> MobSF reports for bening apk dataset
-|   |   +---Report Malicious apk		        -> MobSF reports for malicious apk dataset 
-|   |   \---Report other malicious apk (test)	-> MobSF reports for other malicious apk
+|   |   +---Report Malicious apk	 -> MobSF reports for malicious apk dataset 
+|   |   \---Report other malicious apk (test)  -> MobSF reports for other malicious apk
 |   +---report_androbugs_bening		            -> Androbugs reports for bening apk dataset
 |   +---report_androbugs_malicious		        -> Androbugs reports for malicious apk dataset 
 |   +---report_androwarn_bening		            -> AndroWarn reports for bening apk dataset
