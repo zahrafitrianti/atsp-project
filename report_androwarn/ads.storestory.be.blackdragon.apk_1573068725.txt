@@ -1,0 +1,57 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Store Story Ad Version
+
+	[.] Application Version                     
+		 - 1.3
+
+	[.] Package Name                            
+		 - ads.storestory.be.blackdragon
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '3' under the tag 'FMOD'
+		 - This application logs the message '3' under the tag 'Video'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the 'Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application lists applications installed on the system
+
+	[.] Location Lookup                         
+		 - This application reads location information from all available providers (WiFi, GPS etc.)
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Code Execution                          
+		 - This application loads a native library
+		 - This application loads a native library: 'main'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - ads.storestory.be.blackdragon.apk
+
+	[.] Fingerprint                             
+		 - MD5: bbab0623f6ca92072d744215c18cea36
+		 - SHA-1: 1ec9165b20be8719faef92da0e4414aba2df755c
+		 - SHA-256: 0a3ca6516735462af21e87b217fb399b7b4ecf0a570a6bd0f1e6204df3609084
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.INTERNET',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

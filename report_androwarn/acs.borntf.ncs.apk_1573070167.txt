@@ -1,0 +1,89 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Calculadora de amor
+
+	[.] Application Version                     
+		 - 1.1
+
+	[.] Package Name                            
+		 - acs.borntf.ncs
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '0' under the tag 'ACS'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'FragmentActivity'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+
+[+] Apk File
+	[.] File Name                               
+		 - acs.borntf.ncs.apk
+
+	[.] Fingerprint                             
+		 - MD5: dc4831c9ba97cbb6cdc84ca53942a0c6
+		 - SHA-1: 550e9dfcb1261d3601ba23c601b42e55e9f8e120
+		 - SHA-256: fd6db1c1a35586fb3b707798f116d8aebb16be063a5ebff4f884ef244dd2557a
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

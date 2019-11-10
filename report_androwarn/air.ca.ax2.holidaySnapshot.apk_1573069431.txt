@@ -1,0 +1,48 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Holiday Snap
+
+	[.] Application Version                     
+		 - 1
+
+	[.] Package Name                            
+		 - air.ca.ax2.holidaySnapshot
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.ca.ax2.holidaySnapshot.apk
+
+	[.] Fingerprint                             
+		 - MD5: 34b1997bf0b7ef98474b295365b4fbd5
+		 - SHA-1: 2a2b7526ac656cce59459ff3c1924d32a51f8193
+		 - SHA-256: 2e1323ac1975b76098de66c888e3fe944e9b341f7bdc9d582e01df79e2abe9ff
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',
+		   'android.permission.CAMERA',  'android.permission.INTERNET',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

@@ -1,0 +1,36 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 43XLIII
+
+	[.] Application Version                     
+		 - 1.0.0
+
+	[.] Package Name                            
+		 - air.A43XLIII
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.A43XLIII.apk
+
+	[.] Fingerprint                             
+		 - MD5: 99676b484214c0df3dd3e3adadb088c8
+		 - SHA-1: d3aaa37bb087cd9480e7bb915a7d0084da2d26a7
+		 - SHA-256: d46d474771fb27be916e9e56eb17a992d6146a89fe61b0fc28791f6e745aabf2
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

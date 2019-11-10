@@ -1,0 +1,54 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Meteorite Wash
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - ab.gamming.meteoriteWash
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '3' under the tag 'FMOD'
+		 - This application logs the message '5' under the tag 'Unity'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+
+	[.] Location Lookup                         
+		 - This application reads location information from all available providers (WiFi, GPS etc.)
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Code Execution                          
+		 - This application loads a native library
+		 - This application loads a native library: 'mono'
+		 - This application loads a native library: 'unity'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - ab.gamming.meteoriteWash.apk
+
+	[.] Fingerprint                             
+		 - MD5: 543dfa856f57995a50c28ac2e41bf985
+		 - SHA-1: de66d7fa614a867f05ecfd04e0ebdf15ca7604bc
+		 - SHA-256: 8756d091f9ccee30cb27566240e87d21a0567e75bc6faa184d0e865e7b909b04
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: []
+		 - Implied: []
+		 - Declared: []
+
+

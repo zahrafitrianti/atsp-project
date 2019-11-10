@@ -1,0 +1,279 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: air.com.abecedaire.JapaneseBrush
+Package Version Name: 1.1.1
+Package Version Code: 1001001
+Min Sdk: 8
+Target Sdk: 13
+MD5   : 9167b0dd0ce9158934c02d253ab81ce2
+SHA1  : 9b07c3f5588d5c2e43ed7c29d1a8aaec920cf75f
+SHA256: e26e4e08135e21e3f87bcbaa2f6fe4c7aba03c3d22c023879df64a7d94146488
+SHA512: 2324ab3d73f4a1047913e1dc9c2cae4a4259eb304ebfb1db1bc13efeab9c3696500083a6865e5209cf0c5d091a7d81ffb33eb3b21616a75be16d25aac269597f
+Analyze Signature: 8abe9947f921a37332a2b9a7ff6c08e80625e83866a876ad3913a221a21f6b66fd79ba16af0e10a7c45643089ff9cdb5735563f91145abc83b8187ae7fad50a0
+------------------------------------------------------------------------------------------------
+[Critical] <KeyStore><Hacker> KeyStore Protection Checking:
+           The Keystores below seem "NOT" protected by password (Total: 1). Please manually check:
+               => Lcom/adobe/air/JavaTrustStoreHelper$SystemKeyStoreManager_sysprop;->getKeyStore()Ljava/security/KeyStore; (0x44) --->
+                    Ljava/security/KeyStore;->load(Ljava/io/InputStream; [C)V
+[Critical]  App Sandbox Permission Checking:
+           Security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found (Please check:
+           https://www.owasp.org/index.php/Mobile_Top_10_2014-M2):
+               [getSharedPreferences]
+               => Lcom/adobe/air/AIRSharedPref;->getConfigData(Landroid/content/Context;)Ljava/lang/String; (0x20) --->
+                    Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+               => Lcom/adobe/air/AIRSharedPref;->getConfigRequestTime(Landroid/content/Context;)Ljava/lang/String; (0x20) --->
+                    Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+               => Lcom/adobe/air/AIRSharedPref;->setConfigData(Landroid/content/Context; Ljava/lang/String;)Z (0xa) --->
+                    Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+               => Lcom/adobe/air/AIRSharedPref;->setConfigRequestTime(Landroid/content/Context; Ljava/lang/String;)Z (0xa) --->
+                    Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+               => Lcom/adobe/air/utils/Utils;->GetTelemetrySettings(Landroid/content/Context; Ljava/lang/String;
+                    Ljava/lang/String;)Ljava/lang/String; (0x5e) ---> Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;
+                    I)Landroid/content/SharedPreferences;
+               --------------------------------------------------
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:7):
+               http://e.admob.com/clk?ad_loc=@gw_adlocid@&qdata=@gw_qdata@&ad_network_id=@gw_adnetid@&js=@gw_sdkver@&session_id=@gw_sessid@&
+                    seq_num=@gw_seqnum@&nr=@gw_adnetrefresh@
+                   => Lcom/google/ads/internal/d;->a(Lcom/google/ads/f; Z)V
+               http://e.admob.com/imp?ad_loc=@gw_adlocid@&qdata=@gw_qdata@&ad_network_id=@gw_adnetid@&js=@gw_sdkver@&session_id=@gw_sessid@&
+                    seq_num=@gw_seqnum@&nr=@gw_adnetrefresh@
+                   => Lcom/google/ads/internal/d;->a(Lcom/google/ads/f; Ljava/lang/Boolean;)V
+               http://e.admob.com/nofill?ad_loc=@gw_adlocid@&qdata=@gw_qdata@&js=@gw_sdkver@&session_id=@gw_sessid@&seq_num=@gw_seqnum@
+                   => Lcom/google/ads/internal/d;->b(Lcom/google/ads/c;)V
+               http://gamespace.adobe.com
+                   => Lcom/adobe/air/AndroidGcmIntentService;->handleNotification(Ljava/lang/String;)V
+               http://media.admob.com/mraid/v1/mraid_app_banner.js
+                   => Lcom/google/ads/l$a;-><init>()V
+               http://media.admob.com/mraid/v1/mraid_app_expanded_banner.js
+                   => Lcom/google/ads/l$a;-><init>()V
+               http://media.admob.com/mraid/v1/mraid_app_interstitial.js
+                   => Lcom/google/ads/l$a;-><init>()V
+[Warning]  Dynamic Code Loading:
+           Dynamic code loading(DexClassLoader) found:
+               => Lair/com/abecedaire/JapaneseBrush/AppEntry;->loadSharedRuntimeDex()V (0x38) --->
+                    Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lair/com/abecedaire/JapaneseBrush/AppEntry;->loadSharedRuntimeDex()V (0x4a) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/adobe/air/GamePreviewAppEntry;->loadSharedRuntimeDex()V (0x38) --->
+                    Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lcom/adobe/air/GamePreviewAppEntry;->loadSharedRuntimeDex()V (0x4a) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lcom/adobe/air/utils/Utils;->GetExternalStorageDirectory()Ljava/lang/String; (0x0) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/google/ads/util/AdUtil;->a(Landroid/content/Context;)Ljava/lang/String; (0x14) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/milkmangames/extensions/android/admob/a;->a()Ljava/lang/String; (0x1e) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+[Warning] <WebView> WebView Local File Access Attacks Checking:
+           Found "setAllowFileAccess(true)" or not set(enabled by default) in WebView. The attackers could inject malicious script into
+           WebView and exploit the opportunity to access local resources. This can be mitigated or prevented by disabling local file system
+           access. (It is enabled by default)
+           Note that this enables or disables file system access only. Assets and resources are still accessible using file:///android_asset
+           and file:///android_res.
+           The attackers can use "mWebView.loadUrl("file:///data/data/[Your_Package_Name]/[File]");" to access app's local file.
+           Reference: (1)https://labs.mwrinfosecurity.com/blog/2012/04/23/adventures-with-android-webviews/
+                      (2)http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)
+           Please add or modify "yourWebView.getSettings().setAllowFileAccess(false)" to your WebView:
+               Lcom/adobe/air/AdobeAIR;->createWebView()V
+               Lcom/adobe/air/AndroidWebView;-><init>()V
+               Lcom/google/ads/internal/AdWebView;-><init>(Lcom/google/ads/m; Lcom/google/ads/AdSize;)V
+               Lcom/google/ads/util/AdUtil;->a(Landroid/webkit/WebView;)V
+               Lcom/google/ads/util/AdUtil;->i(Landroid/content/Context;)Ljava/lang/String;
+               Lcom/google/ads/util/g;->a(Landroid/webkit/WebSettings; Lcom/google/ads/m;)V
+[Warning] <WebView> WebView Potential XSS Attacks Checking:
+           Found "setJavaScriptEnabled(true)" in WebView, which could exposed to potential XSS attacks. Please check the web page code
+           carefully and sanitize the output:
+               => Lcom/adobe/air/AdobeAIR;->createWebView()V (0x40) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/adobe/air/AdobeAIR;->createWebView()V (0xe6) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/adobe/air/AdobeAIR;->createWebView()V (0x17a) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/adobe/air/AndroidWebView;-><init>()V (0x50) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/google/ads/internal/AdWebView;-><init>(Lcom/google/ads/m; Lcom/google/ads/AdSize;)V (0x4a) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice] <Command> Executing "root" or System Privilege Checking:
+           The app may has the code checking for "root" permission, mounting filesystem operations or monitoring system:
+               Lcom/adobe/air/utils/DeviceInfo;->getCPUCount()Ljava/lang/String;  => '/system/bin/cat'
+               Lcom/adobe/air/utils/DeviceInfo;->getTotalMemory()Ljava/lang/String;  => '/system/bin/cat'
+               Lcom/adobe/air/utils/DeviceInfo;->getHardwareInfo()Ljava/lang/String;  => '/system/bin/cat'
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/adobe/air/ApplicationFileManager;->deleteDir(Ljava/io/File;)Z (0x38) ---> Ljava/io/File;->delete()Z
+               => Lcom/adobe/air/ApplicationFileManager;->deleteUnzippedContents(Ljava/lang/String;)Z (0x3e) ---> Ljava/io/File;->delete()Z
+               => Lcom/adobe/air/ApplicationFileManager;->deleteFile(Ljava/lang/String;)V (0xa) ---> Ljava/io/File;->delete()Z
+[Notice]  HttpURLConnection Android Bug Checking:
+           You're using "HttpURLConnection". Prior to Android 2.2 (Froyo), "HttpURLConnection" had some frustrating bugs.
+           In particular, calling close() on a readable InputStream could poison the connection pool. Work around this by disabling
+           connection pooling.
+           Please check the reference:
+            (1)http://developer.android.com/reference/java/net/HttpURLConnection.html
+            (2)http://android-developers.blogspot.tw/2011/09/androids-http-clients.html
+               => Lcom/adobe/air/AndroidGcmIntentService;->getBitmapFromURL(Ljava/lang/String;)Landroid/graphics/Bitmap; (0x18) --->
+                    Ljava/net/HttpURLConnection;->setDoInput(Z)V
+               => Lcom/adobe/air/AndroidGcmIntentService;->getBitmapFromURL(Ljava/lang/String;)Landroid/graphics/Bitmap; (0x1e) --->
+                    Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/adobe/air/AndroidGcmIntentService;->getBitmapFromURL(Ljava/lang/String;)Landroid/graphics/Bitmap; (0x24) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/google/ads/aa;->run()V (0x4e) ---> Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+               => Lcom/google/ads/aa;->run()V (0x54) ---> Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/google/ads/aa;->run()V (0x5a) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/ads/aa;->run()V (0xae) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/ads/aa;->run()V (0xb8) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0xe) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0x30) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0x78) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0xc0) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0x10e) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0x140) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0x17a) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0x192) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0x1b0) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0x1d2) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0x204) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->a(Ljava/net/HttpURLConnection;)V (0x2d0) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->run()V (0x7e) ---> Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/google/ads/internal/f;->run()V (0xa8) ---> Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+               => Lcom/google/ads/internal/f;->run()V (0xae) ---> Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/google/ads/internal/f;->run()V (0xb4) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/ads/internal/f;->run()V (0xcc) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/ads/internal/f;->run()V (0x11c) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/ads/internal/f;->run()V (0x146) ---> Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/google/ads/internal/f;->run()V (0x150) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/ads/internal/f;->run()V (0x192) ---> Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/google/ads/util/AdUtil;->a(Ljava/net/HttpURLConnection; Landroid/content/Context;)V (0xc) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/google/ads/util/g$b;->a(Ljava/lang/String; Landroid/content/Context;)Landroid/webkit/WebResourceResponse; (0x24) --->
+                    Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/google/ads/util/g$b;->a(Ljava/lang/String; Landroid/content/Context;)Landroid/webkit/WebResourceResponse; (0x2e) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/google/ads/util/g$b;->a(Ljava/lang/String; Landroid/content/Context;)Landroid/webkit/WebResourceResponse; (0x68) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/ads/util/g$b;->a(Ljava/lang/String; Landroid/content/Context;)Landroid/webkit/WebResourceResponse; (0x72) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" you're not using it.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is "NOT" using Android SQLite databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <Signature><Hacker> Getting Signature Code Checking:
+           Did not detect this app is checking the signature in the code.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest Exported Components Checking:
+           No exported components(except for Launcher) for receiving Android or outside applications' actions (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting IMEI and Device ID:
+           Did not detect this app is getting the "device id(IMEI)" by "TelephonyManager.getDeviceId()" approach.
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+[Info] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           WebView addJavascriptInterface vulnerabilities not found.
+------------------------------------------------------------
+AndroBugs analyzing time: 0.875473 secs
+Total elapsed time: 2.904179 secs

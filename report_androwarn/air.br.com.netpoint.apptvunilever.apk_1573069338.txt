@@ -1,0 +1,109 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Unilever
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - air.br.com.netpoint.apptvunilever
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '0' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '0' under the tag 'GCMRegistrar'
+		 - This application logs the message '1' under the tag 'GCMRegistrar'
+		 - This application logs the message '10' under the tag 'GCMRegistrar'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'GCMRegistrar'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '3' under the tag 'AdobeAIRMainActivity'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '3' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '3' under the tag 'GCMRegistrar'
+		 - This application logs the message '4' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '4' under the tag 'GCMRegistrar'
+		 - This application logs the message '6' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '7' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '8' under the tag 'GCMRegistrar'
+		 - This application logs the message '9' under the tag 'GCMRegistrar'
+		 - This application logs the message 'ANE 2' under the tag 'ANE'
+		 - This application logs the message 'Acquiring wakelock' under the tag 'GCMBaseIntentService'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'DatePickerDialogContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'ListDialogContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'NativeAlertContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'PickerDialogContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'ProgressContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'TextInputDialogContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'ToastContext'
+		 - This application logs the message 'GCMBroadcastReceiver 3' under the tag 'GCMBroadcastReceiver'
+		 - This application logs the message 'GCMRegistrar 2' under the tag 'No receivers for action '
+		 - This application logs the message 'GCMRegistrar 6' under the tag 'No receivers for action '
+		 - This application logs the message 'Inception Error: Unable to create the runtime exception to notify the application about the previous error.' under the tag 'ANE'
+		 - This application logs the message 'Lcom/google/analytics/tracking/android/Log;->formatMessage(Ljava/lang/String;)Ljava/lang/String;' under the tag 'GAV2'
+		 - This application logs the message 'Ljava/lang/Object;->getClass()Ljava/lang/Class;' under the tag 'GCMBroadcastReceiver'
+		 - This application logs the message 'No receiver for package  Application does not define permission  Could not get receivers for package ' under the tag 'GCMRegistrar'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'DatePickerDialogContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'ListDialogContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'NativeAlertContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'PickerDialogContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'ProgressContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'TextInputDialogContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'ToastContext'
+		 - This application logs the message 'Registering receiver' under the tag 'GCMRegistrar'
+		 - This application logs the message 'Releasing wakelock' under the tag 'GCMBaseIntentService'
+		 - This application logs the message 'Unregistering receiver' under the tag 'GCMRegistrar'
+		 - This application logs the message 'Wakelock reference is null' under the tag 'GCMBaseIntentService'
+		 - This application logs the message 'You must supply a resource ID for a TextView' under the tag 'AbstractWheelAdapter'
+		 - This application logs the message 'got an error' under the tag 'ANE'
+		 - This application logs the message 'internal error: retry receiver class not set yet' under the tag 'GCMRegistrar'
+		 - This application logs the message 'onCancle' under the tag 'DatePickerDialogContext'
+		 - This application logs the message 'onCancle' under the tag 'List Dialog'
+		 - This application logs the message 'onCancle' under the tag 'PickerDialogContext'
+		 - This application logs the message 'onServer GCMRegistrar 2' under the tag 'GCMRegistrar'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/fre/FREContext;->getActivity()Landroid/app/Activity;' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gsf' application installed on the system
+		 - This application retrieves '' information about the 'v4' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_PROVIDERS' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.br.com.netpoint.apptvunilever.apk
+
+	[.] Fingerprint                             
+		 - MD5: fddc882880bcc6845963886df0812aae
+		 - SHA-1: c1eb0dd6b90ef7e4c0389170be5304402a2a941b
+		 - SHA-256: 1bed227f5bc320a3d77f33e14e5adf69e711e48eec2045f47f9d014cb944ef99
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['air.br.com.netpoint.apptvunilever.permission.C2D_MESSAGE',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.GET_ACCOUNTS',
+		   'android.permission.INTERNET',  'android.permission.READ_PHONE_STATE',  'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE',
+		   'com.google.android.c2dm.permission.RECEIVE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: ['air.br.com.netpoint.apptvunilever.permission.C2D_MESSAGE']
+
+

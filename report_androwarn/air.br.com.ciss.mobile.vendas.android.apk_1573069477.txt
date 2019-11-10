@@ -1,0 +1,35 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - CISSMob
+
+	[.] Application Version                     
+		 - 4.7.3
+
+	[.] Package Name                            
+		 - air.br.com.ciss.mobile.vendas.android
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.br.com.ciss.mobile.vendas.android.apk
+
+	[.] Fingerprint                             
+		 - MD5: 647c8e5b232e90a495f4dcd59d7820a0
+		 - SHA-1: e28e7a841ee1b87d19b9995296c7cb6313be569c
+		 - SHA-256: 181fe764fd89e2e0def48216f74fb0c631352e3be34b2f8e0be107b5306dbb4b
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -1,0 +1,49 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - India Newspapers
+
+	[.] Application Version                     
+		 - @7F06001E
+
+	[.] Package Name                            
+		 - air.apps.NewsEnterprise.indianewspapers
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '6' under the tag 'VideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glCreateProgram()I' under the tag 'VideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glCreateShader(I)I' under the tag 'VideoRenderer'
+		 - This application logs the message 'VideoRenderer 2' under the tag 'VideoRenderer'
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.apps.NewsEnterprise.indianewspapers.apk
+
+	[.] Fingerprint                             
+		 - MD5: badf42d2d846a3c5921dc4b87b9f3ae0
+		 - SHA-1: 7a0d815ecc5d4b49d29be2ffe147b88714f3e42e
+		 - SHA-256: dab519a0100349064257f0a851ced1916ebafe68ce8a4f3a828db8ad2e4ad0b9
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.BROADCAST_STICKY', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

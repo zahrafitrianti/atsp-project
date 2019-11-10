@@ -3,6 +3,7 @@ import numpy as np
 import sys
 import pandas as pd
 import re
+from sklearn.preprocessing import MinMaxScaler
 
 
 """
@@ -81,9 +82,9 @@ def calculate_score(features):
 	scores = 0
 
 	# initialize weights
-	c = 3
-	w = 1
-	n = 1
+	c = 10
+	w = 8.5
+	n = 5
 	i = 1
 
 	# calculate score and return it
@@ -115,17 +116,23 @@ def main():
 
 			# calculate score per app
 			score = calculate_score(features)
-			score /= len(os.listdir(directory))
 
 			# compile output to a dict object
 			app_dict['app_name'].append(name)
 			app_dict['score'].append(score)
 			app_dict['features'].append(features)
 	
+
+	x = np.asarray(app_dict['score']).reshape(-1, 1)
+	scaler = MinMaxScaler()
+	score_scaled = scaler.fit_transform(x)
+	app_dict['score'] = np.asarray(score_scaled).flatten()
+
+
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
 	print('Save results to csv...')
-	df.to_csv('./result/result_androbugs_normalized.csv', index=False)
+	df.to_csv('./result/result_androbugs_scaled.csv', index=False)
 
 if __name__ == '__main__':
    main()

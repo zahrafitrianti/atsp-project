@@ -1,0 +1,67 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Tody's BabyBook
+
+	[.] Application Version                     
+		 - 1.4
+
+	[.] Package Name                            
+		 - air.app.mmstudio.mmvisual.todysbabybook
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '0' under the tag '0'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '5' under the tag '[IABExtension]'
+		 - This application logs the message 'Base64 decoding failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Billing already initalized.' under the tag '[IABExtension]'
+		 - This application logs the message 'Could not discover AIR container.' under the tag '3'
+		 - This application logs the message 'IAB.init' under the tag '[IABExtension]'
+		 - This application logs the message 'Invalid key specification.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'NoSuchAlgorithmException.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Signature exception.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Signature verification failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Start Service Connection..' under the tag '[IABExtension]'
+		 - This application logs the message 'context disposal' under the tag '[IABExtension]'
+		 - This application logs the message 'data is null' under the tag 'IABUtil/Security'
+		 - This application logs the message 'signature does not match data.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.app.mmstudio.mmvisual.todysbabybook.apk
+
+	[.] Fingerprint                             
+		 - MD5: 85bac1a015928e8659d51f7b8641f88b
+		 - SHA-1: cede52b2739965f3cf5e4e4955fd081f4e080177
+		 - SHA-256: 8fd89810cdf31f5afb5b7ef55724c241301493a15c0e58f188ebb5c4149a8837
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.DISABLE_KEYGUARD',  'android.permission.INTERNET',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE',  'com.android.vending.BILLING']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

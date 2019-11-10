@@ -1,0 +1,52 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - AQUA Animals Kid
+
+	[.] Application Version                     
+		 - 0.2
+
+	[.] Package Name                            
+		 - air.air.FlashPunk
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'GoogleAdsAssertion 3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'error getBoolean' under the tag 'ane'
+		 - This application logs the message 'error getInt' under the tag 'ane'
+		 - This application logs the message 'error getString' under the tag 'ane'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.air.FlashPunk.apk
+
+	[.] Fingerprint                             
+		 - MD5: 02b18eaeef3d10c0c7be5a4103a09e79
+		 - SHA-1: 6ed27065b33b26ed9d36f88dc71571b4fd0f7ebd
+		 - SHA-256: b99f8827b4e4c6ca23bf91f869f86fd896fe3d709da9a5270f7f64011dca4e9c
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

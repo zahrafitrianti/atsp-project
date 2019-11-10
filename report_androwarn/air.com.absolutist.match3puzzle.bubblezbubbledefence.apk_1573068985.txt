@@ -1,0 +1,439 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Bubblez: Bubble Defense Lite
+
+	[.] Application Version                     
+		 - 1.15.5
+
+	[.] Package Name                            
+		 - air.com.absolutist.match3puzzle.bubblezbubbledefence
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the ISO country code equivalent of the current registered operator's MCC (Mobile Country Code)
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the current location of the device
+		 - This application reads the device phone type value
+		 - This application reads the neighboring cell information of the device
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone's current state
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the Cell ID value
+		 - This application reads the Location Area Code value
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message ' ' under the tag 'SHA 0'
+		 - This application logs the message ' ' under the tag 'no such an algorithm exception'
+		 - This application logs the message ' ' under the tag 'no such an algorithm'
+		 - This application logs the message ' 1' under the tag 'MoatViewTracker'
+		 - This application logs the message ' 4' under the tag 'MoatWebAdTracker'
+		 - This application logs the message ' 5' under the tag 'MoatFactory'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'GoogleApiClientConnecting'
+		 - This application logs the message '' under the tag 's3eAdMob s3eAdMob'
+		 - This application logs the message '0' under the tag '5'
+		 - This application logs the message '0' under the tag 'ChartboostAIR'
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'DynamiteModule'
+		 - This application logs the message '0' under the tag 'FragmentManager'
+		 - This application logs the message '0' under the tag 'GoogleCertificates'
+		 - This application logs the message '0' under the tag 'Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;'
+		 - This application logs the message '0' under the tag 'Lcom/facebook/appevents/AppEventsLogger;->access$1300()Ljava/lang/String;'
+		 - This application logs the message '0' under the tag 'LoaderManager'
+		 - This application logs the message '0' under the tag 'ProviderInstaller'
+		 - This application logs the message '0' under the tag '[GVExtension]'
+		 - This application logs the message '0' under the tag '{ Payload / Native ad Content } is null '
+		 - This application logs the message '1' under the tag 'AutoManageHelper'
+		 - This application logs the message '1' under the tag 'BasePendingResult'
+		 - This application logs the message '1' under the tag 'DynamiteModule'
+		 - This application logs the message '1' under the tag 'FragmentManager'
+		 - This application logs the message '1' under the tag 'GACStateManager'
+		 - This application logs the message '1' under the tag 'GmsClient'
+		 - This application logs the message '1' under the tag 'GmsClientEvents'
+		 - This application logs the message '1' under the tag 'GoogleApiClientConnecting'
+		 - This application logs the message '1' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message '1' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '1' under the tag 'ImageManager'
+		 - This application logs the message '1' under the tag 'Lcom/adobe/fre/FREObject;->getAsString()Ljava/lang/String;'
+		 - This application logs the message '1' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'Rewards: '
+		 - This application logs the message '1' under the tag 'TransformedResultImpl'
+		 - This application logs the message '1' under the tag '[GVExtension]'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '11' under the tag '[GVExtension]'
+		 - This application logs the message '13' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '2' under the tag '7'
+		 - This application logs the message '2' under the tag 'AccessTokenManager'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'AndroidWebView'
+		 - This application logs the message '2' under the tag 'DynamiteModule'
+		 - This application logs the message '2' under the tag 'FragmentActivity'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'GoogleApiManager'
+		 - This application logs the message '2' under the tag 'Lc/m/x/a/iab/p;->d()Z'
+		 - This application logs the message '2' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message '2' under the tag 'MoatActivityState'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '2' under the tag 'Volley'
+		 - This application logs the message '2' under the tag '[GVExtension]'
+		 - This application logs the message '3' under the tag '2'
+		 - This application logs the message '3' under the tag 'Activity'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '3' under the tag 'DynamiteModule'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GoogleApiAvailability'
+		 - This application logs the message '3' under the tag 'Lcom/adobe/fre/FREObject;->getAsString()Ljava/lang/String;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '3' under the tag 'MoatActivityState'
+		 - This application logs the message '3' under the tag 'MoatVideoTracker'
+		 - This application logs the message '3' under the tag 'MoatViewTracker'
+		 - This application logs the message '3' under the tag 'Rewards: '
+		 - This application logs the message '3' under the tag 'UidVerifier'
+		 - This application logs the message '3' under the tag '[GVExtension]'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag 'InMobiAdapter'
+		 - This application logs the message '4' under the tag 'Lcom/millennialmedia/MMSDK;->isInitialized()Z'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'MemoryCache'
+		 - This application logs the message '4' under the tag 'MoatFactory'
+		 - This application logs the message '4' under the tag '[GVExtension]'
+		 - This application logs the message '5' under the tag '0'
+		 - This application logs the message '5' under the tag 'AndroidExtensions'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'InMobiAdapter'
+		 - This application logs the message '5' under the tag 'LoaderManager'
+		 - This application logs the message '5' under the tag 'MoatFactory'
+		 - This application logs the message '5' under the tag '[GVExtension]'
+		 - This application logs the message '5' under the tag '[IABExtension]'
+		 - This application logs the message '5' under the tag 'dcn'
+		 - This application logs the message '6' under the tag 'AndroidExtensions'
+		 - This application logs the message '6' under the tag 'DataHolder'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'LoaderManager'
+		 - This application logs the message '6' under the tag '[GVExtension]'
+		 - This application logs the message '7' under the tag 'AndroidExtensions'
+		 - This application logs the message '7' under the tag 'DataHolder'
+		 - This application logs the message '7' under the tag 'FragmentManager'
+		 - This application logs the message '7' under the tag 'Lcom/adobe/fre/FREObject;->getAsInt()I'
+		 - This application logs the message '7' under the tag 'LoaderManager'
+		 - This application logs the message '7' under the tag 'MoatFactory'
+		 - This application logs the message '7' under the tag '[GVExtension]'
+		 - This application logs the message '8' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '8' under the tag '[GVExtension]'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message 'API Key is null' under the tag '0'
+		 - This application logs the message 'Abort succeeded.' under the tag 'Lcom/google/ads/mediation/millennial/MillennialAdapter;->access$200()Ljava/lang/String;'
+		 - This application logs the message 'Abort succeeded.' under the tag 'Lcom/google/ads/mediation/nexage/NexageAdapter;->access$200()Ljava/lang/String;'
+		 - This application logs the message 'Activity started without extras' under the tag 'GoogleApiActivity'
+		 - This application logs the message 'Activity started without resolution' under the tag 'GoogleApiActivity'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Ad is ready to show' under the tag 'InMobiAdapter'
+		 - This application logs the message 'Already dispatched token initial.' under the tag '[GVExtension]'
+		 - This application logs the message 'Ambiguous ad container: multiple WebViews reside within it.' under the tag 'MoatWebViewHound'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Attempted to bind to a service in a STOPPED package.' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Attempted to call failure callbacks in CONNECTION_MODE_NONE. Callbacks should be disabled via GmsClientSupervisor' under the tag 'CompositeGAC'
+		 - This application logs the message 'Attempted to call success callbacks in CONNECTION_MODE_NONE. Callbacks should be disabled via GmsClientSupervisor' under the tag 'CompositeGAC'
+		 - This application logs the message 'Attempted to remove pending transform when no transforms are registered.' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Attempting bridge installation.' under the tag 'MoatViewTracker'
+		 - This application logs the message 'Attempting to present the AppInviteDialog with an outdated Facebook app on the device' under the tag 'AppInviteDialog'
+		 - This application logs the message 'Attempting to present the Like Dialog with an outdated Facebook app on the device' under the tag 'LikeDialog'
+		 - This application logs the message 'AutoManageLifecycleHelper received onErrorResolutionFailed callback but no failing client ID is set' under the tag 'AutoManageHelper'
+		 - This application logs the message 'Base64 decoding failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Billing already initalized.' under the tag '[IABExtension]'
+		 - This application logs the message 'Both context and applicationId must be non-null Lcom/facebook/appevents/AppEventsLogger;->getSourceApplication()Ljava/lang/String;' under the tag ''
+		 - This application logs the message 'Bundle extras are null' under the tag 'InMobiAdapter'
+		 - This application logs the message 'Call failed' under the tag '[GVExtension]'
+		 - This application logs the message 'Cannot call LoginFragment with a null calling package. This can occur if the launchMode of the caller is singleInstance.' under the tag 'LoginFragment'
+		 - This application logs the message 'Chartboost plugin is already initialized.' under the tag 'ChartboostAIR'
+		 - This application logs the message 'Chartboost.startWith()' under the tag 'ChartboostAIR'
+		 - This application logs the message 'ChartboostContext.<init>()' under the tag 'ChartboostAIR'
+		 - This application logs the message 'ChartboostContext.dispose()' under the tag 'ChartboostAIR'
+		 - This application logs the message 'ChartboostContext.onActivate()' under the tag 'ChartboostAIR'
+		 - This application logs the message 'Check granted--.' under the tag '[GVExtension]'
+		 - This application logs the message 'Client %s made an invalid request %s 2' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Complete graph.' under the tag '[GVExtension]'
+		 - This application logs the message 'Context disposed.' under the tag 'AndroidExtensions'
+		 - This application logs the message 'Context not an Activity. Returning error!' under the tag 'InMobiAdapter'
+		 - This application logs the message 'Could not discover AIR container.' under the tag '3'
+		 - This application logs the message 'Could not wrap existing WebViewClient transparently.' under the tag 'MoatJavaScriptBridge'
+		 - This application logs the message 'Creating NativeVideo tracker.' under the tag 'MoatFactory'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'DialogException.' under the tag '[GVExtension]'
+		 - This application logs the message 'Did init fb' under the tag '[GVExtension]'
+		 - This application logs the message 'Drawable used from cache' under the tag 'MemoryCache'
+		 - This application logs the message 'Empty deferred app link target uri!' under the tag '[GVExtension]'
+		 - This application logs the message 'Encoding failed!' under the tag '[GVExtension]'
+		 - This application logs the message 'Exception hooking AIR container.' under the tag 'Could not discover AIR container.'
+		 - This application logs the message 'Extension disposed.' under the tag 'AndroidExtensions'
+		 - This application logs the message 'Extension initialized.' under the tag 'AndroidExtensions'
+		 - This application logs the message 'FBDialogFinished.' under the tag '[GVExtension]'
+		 - This application logs the message 'Facebook handler ignore unrelated activityresult' under the tag '[GVExtension]'
+		 - This application logs the message 'FacebookActivity is not declared in the AndroidManifest.xml, please add com.facebook.FacebookActivity to your AndroidManifest.xml file. See
+		   https://developers.facebook.com/docs/android/getting-started for more info. FacebookActivity is not declared in the AndroidManifest.xml, please add com.facebook.FacebookActivity to your
+		   AndroidManifest.xml file. See https://developers.facebook.com/docs/android/getting-started for more info.' under the tag 'Ljava/lang/IllegalStateException;'
+		 - This application logs the message 'Fail.' under the tag '[GVExtension]'
+		 - This application logs the message 'Failed closing stream.' under the tag '[GVExtension]'
+		 - This application logs the message 'Failed parsing fb dialog return values.' under the tag '[GVExtension]'
+		 - This application logs the message 'Failed releasing image' under the tag '[GVExtension]'
+		 - This application logs the message 'Failed to get google certificates from remote' under the tag 'GoogleCertificates'
+		 - This application logs the message 'Failed to get google release certificates from remote' under the tag 'GoogleCertificates'
+		 - This application logs the message 'Failed to get remote context' under the tag 'ProviderInstaller'
+		 - This application logs the message 'Failed to remove pending transform - this may lead to memory leaks!' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Failed to retrieve google certificates' under the tag 'GoogleCertificates'
+		 - This application logs the message 'Failed to retrieve google release certificates' under the tag 'GoogleCertificates'
+		 - This application logs the message 'Failed to write temp image stream.' under the tag '[GVExtension]'
+		 - This application logs the message 'File caching failed' under the tag '[GVExtension]'
+		 - This application logs the message 'GoViral initializer-.' under the tag '[GVExtension]'
+		 - This application logs the message 'Google Play Store is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'GoogleApiClient received too many callbacks for the given step. Clients may be in an unexpected state; GoogleApiClient will now disconnect.' under the tag
+		   'GoogleApiClientConnecting'
+		 - This application logs the message 'GoogleCertificates has been initialized already' under the tag 'GoogleCertificates'
+		 - This application logs the message 'Got new publish permissions.' under the tag '[GVExtension]'
+		 - This application logs the message 'Got new read permissions.' under the tag '[GVExtension]'
+		 - This application logs the message 'Handler cancel' under the tag '[GVExtension]'
+		 - This application logs the message 'IAB.init' under the tag '[IABExtension]'
+		 - This application logs the message 'In data not valid' under the tag '[GVExtension]'
+		 - This application logs the message 'In initialization method.' under the tag 'MoatViewTracker'
+		 - This application logs the message 'In initialization method.' under the tag 'MoatWebAdTracker'
+		 - This application logs the message 'In track method.' under the tag 'MoatWebAdTracker'
+		 - This application logs the message 'InMobi interstitial onRewardActionCompleted.' under the tag 'InMobiAdapter'
+		 - This application logs the message 'Initializing.' under the tag 'MoatNativeDispTracker'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Internal tracker not available. Not tracking.' under the tag 'MoatWebAdTracker'
+		 - This application logs the message 'InterstitialInteraction' under the tag 'InMobiAdapter'
+		 - This application logs the message 'Invalid arguments number for SMSFunction! (requested: text, optional: recipient)' under the tag 'AndroidExtensions'
+		 - This application logs the message 'Invalid arguments number for ShareFunction! (requested: subject, text and title)' under the tag 'AndroidExtensions'
+		 - This application logs the message 'Invalid arguments number for ToastFunction! (requested: text, optional: duration type)' under the tag 'AndroidExtensions'
+		 - This application logs the message 'Invalid key specification.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Lcom/facebook/FacebookException;->toString()Ljava/lang/String;' under the tag '[GVExtension]'
+		 - This application logs the message 'Lcom/google/android/gms/common/api/Api;->getName()Ljava/lang/String;' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Lcom/google/android/gms/common/internal/zzd;->zzarp()Ljava/lang/String;' under the tag 'GmsClient'
+		 - This application logs the message 'Lcom/google/android/gms/internal/zzqd;->zzapv()Ljava/lang/String;' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Lcom/google/android/gms/internal/zzsj$zza;->getMessage()Ljava/lang/String;' under the tag 'DynamiteModule'
+		 - This application logs the message 'Lcom/inmobi/ads/InMobiAdRequestStatus;->getMessage()Ljava/lang/String;' under the tag ' InMobiNativeAd '
+		 - This application logs the message 'Lcom/inmobi/ads/InMobiAdRequestStatus;->getMessage()Ljava/lang/String;' under the tag 'InMobiBanner'
+		 - This application logs the message 'Ljava/io/File;->getPath()Ljava/lang/String;' under the tag 'SupportV4Utils'
+		 - This application logs the message 'Ljava/io/IOException;->getMessage()Ljava/lang/String;' under the tag 'ProcessUtils'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'AIR_AndroidDialog'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'ProcessUtils'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag '[GVExtension]'
+		 - This application logs the message 'Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;' under the tag 'Please Set age properly'
+		 - This application logs the message 'Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;' under the tag 'Please Set income properly'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'TransformedResultImpl'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'AutoManageHelper'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'DynamiteModule'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GmsClient'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GmsClientEvents'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GoogleApiClientConnecting'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'WorkSourceUtil'
+		 - This application logs the message 'Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;' under the tag 'Asserts'
+		 - This application logs the message 'Ljava/util/Iterator;->next()Ljava/lang/Object;' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Login canceled' under the tag '[GVExtension]'
+		 - This application logs the message 'Login has failed.' under the tag '[GVExtension]'
+		 - This application logs the message 'Lorg/json/JSONException;->getMessage()Ljava/lang/String;' under the tag ' [ InMobiAdapterUtils : Error parsing pubContent ] : '
+		 - This application logs the message 'Millennial ad closed' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message 'Millennial inline ad clicked.' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message 'Millennial inline ad collapsed.' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message 'Millennial inline ad expanded.' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message 'Millennial inline ad left application.' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message 'Millennial inline ad request succeeded.' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message 'Millennial interstitial cached ad expired.' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message 'Millennial interstitial clicked.' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message 'Millennial interstitial left application.' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message 'Millennial interstitial loaded.' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message 'Millennial interstitial shown.' under the tag 'Lcom/google/ads/mediation/ThreadUtils;->runOnUiThread(Ljava/lang/Runnable;)V'
+		 - This application logs the message 'Missing required listener. Millennial cannot make ad request. 10' under the tag '1'
+		 - This application logs the message 'Missing required listener. Millennial cannot make ad request.' under the tag '1'
+		 - This application logs the message 'Multiple handlers found for this intent: %s\n Stack trace: %s 3' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'No code path should ever result in a null appCall' under the tag 'FacebookDialog'
+		 - This application logs the message 'No deferred app link data!' under the tag '[GVExtension]'
+		 - This application logs the message 'No internet permissions granted for the app, please add <uses-permission android:name="android.permission.INTERNET" /> to your AndroidManifest.xml. No internet
+		   permissions granted for the app, please add <uses-permission android:name="android.permission.INTERNET" /> to your AndroidManifest.xml.' under the tag 'Ljava/lang/IllegalStateException;'
+		 - This application logs the message 'No reauth required for this graph request.' under the tag '[GVExtension]'
+		 - This application logs the message 'NoSuchAlgorithmException.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'One of the API components you attempted to connect to is not available.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message 'Pending graph request has failed.' under the tag '[GVExtension]'
+		 - This application logs the message 'Purchase->Update' under the tag 'Lc/m/x/a/iab/p;->d()Z'
+		 - This application logs the message 'Read bmp' under the tag '[GVExtension]'
+		 - This application logs the message 'Ready for communication (setting environment variables).' under the tag 'MoatJavaScriptBridge'
+		 - This application logs the message 'Received call to unregister a listener without a matching registration call.' under the tag 'GoogleApiManager'
+		 - This application logs the message 'Refreshed permissions for session.' under the tag '[GVExtension]'
+		 - This application logs the message 'Refreshing permissions failed.' under the tag '[GVExtension]'
+		 - This application logs the message 'Remote account accessor probably died' under the tag 'AccountAccessor'
+		 - This application logs the message 'Remote service probably died when clearAccountFromSessionStore is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when saveDefaultAccount is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when signIn is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Request to abort failed.' under the tag 'Lcom/google/ads/mediation/millennial/MillennialAdapter;->access$200()Ljava/lang/String;'
+		 - This application logs the message 'Request to abort failed.' under the tag 'Lcom/google/ads/mediation/nexage/NexageAdapter;->access$200()Ljava/lang/String;'
+		 - This application logs the message 'Requested new publish permissions failed.' under the tag '[GVExtension]'
+		 - This application logs the message 'Requested new read permissions failed.' under the tag '[GVExtension]'
+		 - This application logs the message 'Resume->activate publish' under the tag '[GVExtension]'
+		 - This application logs the message 'Running pending publish task on token update.' under the tag '[GVExtension]'
+		 - This application logs the message 'Service exception..-.' under the tag '[GVExtension]'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Signature exception.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Signature verification failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Start Service Connection..' under the tag '[IABExtension]'
+		 - This application logs the message 'Started session and initalized ads' under the tag 'Lcom/adobe/fre/FREContext;->getActivity()Landroid/app/Activity;'
+		 - This application logs the message 'Target ViewGroup is null. Not creating WebAdTracker.' under the tag 'MoatFactory'
+		 - This application logs the message 'Target view is null. Not creating NativeDisplayTracker.' under the tag 'MoatFactory'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'The current user profile is restricted and could not use authenticated features.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'The publish_actions permissions are missing, the share will fail unless this app was authorized to publish in another installation.' under the tag 'ShareApi'
+		 - This application logs the message 'The specified account could not be signed in.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'There are no handler of this intent: %s\n Stack trace: %s 2' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Twitter intent did not allow image attachment.' under the tag '[GVExtension]'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'Unable to initialize MMSDK' under the tag '6'
+		 - This application logs the message 'Unresolved error while connecting client. Stopping auto-manage.' under the tag 'AutoManageHelper'
+		 - This application logs the message 'Warning: Request without access token missing application ID or client token.' under the tag '1'
+		 - This application logs the message 'WebView is null. Will not track.' under the tag 'MoatWebAdTracker'
+		 - This application logs the message 'Will init fb' under the tag '[GVExtension]'
+		 - This application logs the message '_ctx.adView = null' under the tag 's3eAdMob'
+		 - This application logs the message 'accountid 3' under the tag 'InMobiAdapter'
+		 - This application logs the message 'accountid 7' under the tag 'InMobiAdptr AccountId'
+		 - This application logs the message 'ad recieved' under the tag 's3eAdMob'
+		 - This application logs the message 'age is null' under the tag '0'
+		 - This application logs the message 'auth called with open session; exit' under the tag '[GVExtension]'
+		 - This application logs the message 'call inner init' under the tag '[GVExtension]'
+		 - This application logs the message 'callback login nil token' under the tag '[GVExtension]'
+		 - This application logs the message 'callback login token initial' under the tag '[GVExtension]'
+		 - This application logs the message 'callback login with token' under the tag '[GVExtension]'
+		 - This application logs the message 'com.google.android.gms.googlecertificates module is loaded' under the tag 'GoogleCertificates'
+		 - This application logs the message 'context disposal' under the tag '[IABExtension]'
+		 - This application logs the message 'create' under the tag '[GVExtension]'
+		 - This application logs the message 'createContext' under the tag 'NativeAlert'
+		 - This application logs the message 'destroy view' under the tag 's3eAdMob'
+		 - This application logs the message 'dispose' under the tag 'NativeAlert'
+		 - This application logs the message 'doDebugDisplay' under the tag '[GVExtension]'
+		 - This application logs the message 'errorId is null' under the tag '0'
+		 - This application logs the message 'execute async task: %s 2' under the tag 'Lcom/facebook/FacebookSdk;->isDebugEnabled()Z'
+		 - This application logs the message 'exeption' under the tag 's3eAdMob'
+		 - This application logs the message 'facebook handler caught activityresult' under the tag '[GVExtension]'
+		 - This application logs the message 'gender Female' under the tag '5'
+		 - This application logs the message 'gender Male' under the tag '5'
+		 - This application logs the message 'gender is null' under the tag 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;'
+		 - This application logs the message 'get parent' under the tag 's3eAdMob'
+		 - This application logs the message 'getFunctions' under the tag 'NativeAlert'
+		 - This application logs the message 'handler error' under the tag '[GVExtension]'
+		 - This application logs the message 'iCertData failed to retrive data from remote' under the tag 'GoogleCertificates'
+		 - This application logs the message 'iCertData is null, skipping' under the tag 'GoogleCertificates'
+		 - This application logs the message 'id = %s, message = %s 2' under the tag 'MoatNativeDispTracker'
+		 - This application logs the message 'inData' under the tag '[GVExtension]'
+		 - This application logs the message 'init fb already dispatched' under the tag '[GVExtension]'
+		 - This application logs the message 'init fb token found' under the tag '[GVExtension]'
+		 - This application logs the message 'init fb token not found' under the tag '[GVExtension]'
+		 - This application logs the message 'init fb with token check' under the tag '[GVExtension]'
+		 - This application logs the message 'initialize called from InMobiAdapter.' under the tag 'InMobiAdapter'
+		 - This application logs the message 'initialize' under the tag 'NativeAlert'
+		 - This application logs the message 'log event with params' under the tag 'Ljava/util/HashMap;->size()I'
+		 - This application logs the message 'mServiceBroker is null, client disconnected' under the tag 'GmsClient'
+		 - This application logs the message 'no out file.' under the tag '[GVExtension]'
+		 - This application logs the message 'null event name' under the tag '0'
+		 - This application logs the message 'onAdDismissed' under the tag 'InMobiAdapter'
+		 - This application logs the message 'onAdDisplayed' under the tag 'InMobiAdapter'
+		 - This application logs the message 'onAdFailedToLoad' under the tag 's3eAdMob'
+		 - This application logs the message 'onAdLoadFailed' under the tag 'InMobiAdapter'
+		 - This application logs the message 'onAdLoadSucceeded' under the tag 'InMobiAdapter'
+		 - This application logs the message 'onBannerInteraction called' under the tag 'onBannerInteraction'
+		 - This application logs the message 'onInterstitialInteraction called' under the tag 'InMobiAdapter'
+		 - This application logs the message 'onUserLeftApplication' under the tag 'InMobiAdapter'
+		 - This application logs the message 'parameterKeys is null while parameterValues is not log event without params null event name' under the tag '2'
+		 - This application logs the message 'parameterKeys is null while parameterValues is not log event without params' under the tag '2'
+		 - This application logs the message 'parameterKeys is null while parameterValues is not' under the tag '2'
+		 - This application logs the message 'parameterValues is null while parameterKeys is not' under the tag '1'
+		 - This application logs the message 'parent not null???' under the tag 's3eAdMob'
+		 - This application logs the message 'permission for graph request failed' under the tag '[GVExtension]'
+		 - This application logs the message 'placementid 3' under the tag 'InMobiAdapter'
+		 - This application logs the message 'placementid 7' under the tag 'InMobiAdptr PlacementId'
+		 - This application logs the message 'received deprecated onAccountValidationComplete callback, ignoring' under the tag 'GmsClient'
+		 - This application logs the message 'removed context' under the tag 's3eAdMob'
+		 - This application logs the message 'request auth-read session..' under the tag '[GVExtension]'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'send error async' under the tag 's3eAdMob'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'service probably died' under the tag 'GmsClient'
+		 - This application logs the message 'showErrorNotification(context, errorCode) is called for RESOLUTION_REQUIRED when showErrorNotification(context, result) should be called' under the tag
+		   'GoogleApiAvailability'
+		 - This application logs the message 'signature does not match data.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'sms not kit kat+' under the tag '[GVExtension]'
+		 - This application logs the message 'start dispatch error' under the tag 's3eAdMob'
+		 - This application logs the message 'start remove context' under the tag 's3eAdMob'
+		 - This application logs the message 'started fb' under the tag '[GVExtension]'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'try create context' under the tag '[GVExtension]'
+		 - This application logs the message 'use kit' under the tag '[GVExtension]'
+		 - This application logs the message 'user id is null' under the tag '0'
+		 - This application logs the message 'version Name is null' under the tag '0'
+		 - This application retrieves '' information about the 'Landroid/app/Application;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/flurry/sdk/do;->a()Lcom/flurry/sdk/do;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'com.facebook.katana' application installed on the system
+		 - This application retrieves '' information about the 'com.facebook.orca' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_CONFIGURATIONS, GET_GIDS, GET_PERMISSIONS, GET_PROVIDERS, GET_RECEIVERS, GET_SIGNATURES, GET_SERVICES' information about the
+		   'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_META_DATA' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves 'GET_META_DATA' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_PERMISSIONS' information about the 'Lcom/inmobi/commons/a/a;->b()Landroid/content/Context;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the '' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES, MATCH_UNINSTALLED_PACKAGES' information about the 'Lcom/google/android/gms/common/util/zzi;->zzck(Landroid/content/Context;)Z' application installed on
+		   the system
+
+	[.] Location Lookup                         
+		 - This application reads location information from all available providers (WiFi, GPS etc.)
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.com.absolutist.match3puzzle.bubblezbubbledefence.apk
+
+	[.] Fingerprint                             
+		 - MD5: a4c0f4828207f40d497912b9371e36b1
+		 - SHA-1: aa27ae74e07c390d1354714e854a65299b6da5a5
+		 - SHA-256: 013d6b311becb9fd13db60b747ea853da7cf91db29b2441261724eb939aae578
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',
+		   'android.permission.INTERNET',  'android.permission.WRITE_EXTERNAL_STORAGE',  'com.android.vending.BILLING',  'com.android.vending.CHECK_LICENSE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

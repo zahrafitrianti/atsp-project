@@ -1,0 +1,52 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - ForestArcher
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - air.Archerfree
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'GoogleAdsAssertion 3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'error getBoolean' under the tag 'ane'
+		 - This application logs the message 'error getInt' under the tag 'ane'
+		 - This application logs the message 'error getString' under the tag 'ane'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.Archerfree.apk
+
+	[.] Fingerprint                             
+		 - MD5: 0112277fb8aa7071ae8f71561f22aa06
+		 - SHA-1: a0373aefaa737075c554c29264c9d77ba167b437
+		 - SHA-256: f6f739f3e627e7d7823875ab7ab64cf094720da1c64aef62094a6f682359afa4
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

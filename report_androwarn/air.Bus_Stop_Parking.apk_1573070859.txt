@@ -1,0 +1,168 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Bus Stop Parking
+
+	[.] Application Version                     
+		 - 3.0.0
+
+	[.] Package Name                            
+		 - air.Bus_Stop_Parking
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '0' under the tag 'MetadataBundle'
+		 - This application logs the message '0' under the tag '[admobex]'
+		 - This application logs the message '1' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '1' under the tag 'WalletClientImpl'
+		 - This application logs the message '1' under the tag '[admobex]'
+		 - This application logs the message '10' under the tag 'MultiDex'
+		 - This application logs the message '10' under the tag '[admobex]'
+		 - This application logs the message '11' under the tag '[admobex]'
+		 - This application logs the message '12' under the tag 'MultiDex'
+		 - This application logs the message '2' under the tag '1'
+		 - This application logs the message '2' under the tag 'Asserts'
+		 - This application logs the message '2' under the tag 'GmsClient'
+		 - This application logs the message '2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '2' under the tag 'ImageManager'
+		 - This application logs the message '2' under the tag 'Lc/m/x/a/iab/p;->d()Z'
+		 - This application logs the message '2' under the tag 'LocationClientImpl'
+		 - This application logs the message '2' under the tag '[RBExtension]'
+		 - This application logs the message '2' under the tag '[admobex]'
+		 - This application logs the message '3' under the tag 'DataHolder'
+		 - This application logs the message '3' under the tag 'DataItem'
+		 - This application logs the message '3' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '3' under the tag 'MultiDex'
+		 - This application logs the message '4' under the tag 'GmsClient'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag '[admobex]'
+		 - This application logs the message '5' under the tag 'GmsClientEvents'
+		 - This application logs the message '5' under the tag 'MultiDex'
+		 - This application logs the message '5' under the tag '[IABExtension]'
+		 - This application logs the message '5' under the tag '[admobex]'
+		 - This application logs the message '6' under the tag 'MultiDex'
+		 - This application logs the message '7' under the tag '[RBExtension]'
+		 - This application logs the message '7' under the tag '[admobex]'
+		 - This application logs the message '8' under the tag 'MultiDex'
+		 - This application logs the message '9' under the tag 'MultiDex'
+		 - This application logs the message '9' under the tag '[admobex]'
+		 - This application logs the message 'Amazon custom scheme is not available here.' under the tag '[RBExtension]'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Attempt to compare invalid DriveId detected. Has local storage been cleared?' under the tag 'DriveId'
+		 - This application logs the message 'Background.' under the tag '[admobex]'
+		 - This application logs the message 'Base64 decoding failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Begin Android ShowAd Banner.' under the tag '[admobex]'
+		 - This application logs the message 'Billing already initalized.' under the tag '[IABExtension]'
+		 - This application logs the message 'Calling connect() while still connected, missing disconnect().' under the tag 'GmsClient'
+		 - This application logs the message 'Certificate has expired.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Certificate is not yet valid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Context class loader is null. Must be running in test mode. Skip patching.' under the tag 'MultiDex'
+		 - This application logs the message 'Could not discover AIR container.' under the tag '3'
+		 - This application logs the message 'Could not generate certificate.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Could not get certificate instance.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Could not parse dimensions.' under the tag '[admobex]'
+		 - This application logs the message 'Destroy called on an active adView.  Removing from viewGroup.' under the tag '[admobex]'
+		 - This application logs the message 'Detected that extraction must be performed.' under the tag 'MultiDex'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Error parsing active ad state (thread)' under the tag '[admobex]'
+		 - This application logs the message 'Exception hooking AIR container.' under the tag 'Could not discover AIR container.'
+		 - This application logs the message 'Exception in makeDexElement' under the tag 'MultiDex'
+		 - This application logs the message 'Files were not valid zip files.  Forcing a reload.' under the tag 'MultiDex'
+		 - This application logs the message 'GmsClient' under the tag 'GmsClient'
+		 - This application logs the message 'Google Play Store is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services missing when getting application info.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'IAB.init' under the tag '[IABExtension]'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Interstitial has not been preloaded.' under the tag '[admobex]'
+		 - This application logs the message 'Invalid key specification.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Is kindle' under the tag '[RBExtension]'
+		 - This application logs the message 'Lcom/google/android/gms/analytics/l;->a(Ljava/lang/String;)Ljava/lang/String;' under the tag 'GAV4'
+		 - This application logs the message 'Ljava/util/concurrent/locks/Lock;->unlock()V' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Measure view.' under the tag '[admobex]'
+		 - This application logs the message 'NO DIM VIEW' under the tag '[admobex]'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'NoSuchAlgorithmException.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Not kindle' under the tag '[RBExtension]'
+		 - This application logs the message 'Null pending result returned for onFullWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onMaskedWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onPreAuthorizationDetermined' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onWalletObjectsCreated' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Param parsing exception:' under the tag '[admobex]'
+		 - This application logs the message 'Purchase->Update' under the tag 'Lc/m/x/a/iab/p;->d()Z'
+		 - This application logs the message 'Received a location in client after calling removeLocationUpdates.' under the tag 'LocationClientHelper'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Signature exception.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Signature verification failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Start Service Connection..' under the tag '[IABExtension]'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'The date of the device is not valid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Thread Exception' under the tag '[RBExtension]'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'Using amazon custom scheme' under the tag '[RBExtension]'
+		 - This application logs the message 'VM has multidex support, MultiDex support library is disabled.' under the tag 'MultiDex'
+		 - This application logs the message 'context disposal' under the tag '[IABExtension]'
+		 - This application logs the message 'destroy called but adView is null.' under the tag '[admobex]'
+		 - This application logs the message 'install done' under the tag 'MultiDex'
+		 - This application logs the message 'install' under the tag 'MultiDex'
+		 - This application logs the message 'loading existing secondary dex files' under the tag 'MultiDex'
+		 - This application logs the message 'no pending interstitial exists to show.' under the tag '[admobex]'
+		 - This application logs the message 'onAddGeofenceResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByPendingIntentResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByRequestIdsResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'pending interstitial is not ready.' under the tag '[admobex]'
+		 - This application logs the message 'presenting pending interstitial.' under the tag '[admobex]'
+		 - This application logs the message 'service died' under the tag 'AppStateClient'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'setVisibility called but adView is null.' under the tag '[admobex]'
+		 - This application logs the message 'setVisibility invoked internal' under the tag '[admobex]'
+		 - This application logs the message 'signature does not match data.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'try create context' under the tag '[admobext]'
+		 - This application logs the message 'unknown message in LocationHandler.handleMessage' under the tag 'LocationClientHelper'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/google/android/gms/internal/gk;->y(Landroid/content/Context;)Z' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/milkmangames/extensions/android/a;->getActivity()Landroid/app/Activity;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_PROVIDERS, GET_RECEIVERS, GET_SERVICES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;'
+		   application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.Bus_Stop_Parking.apk
+
+	[.] Fingerprint                             
+		 - MD5: ab5563c29e7069412dfed5b6e97949de
+		 - SHA-1: d6d48e9a33e00e9e81dcce9c964d95f093ec9ee0
+		 - SHA-256: f0c05d50959294fb18d118031fcbc6985bbdb2d4ed20388cd52a44171c7e113c
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.INTERNET',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE',  'com.android.vending.BILLING']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

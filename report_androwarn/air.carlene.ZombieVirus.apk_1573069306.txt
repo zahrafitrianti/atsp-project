@@ -1,0 +1,35 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - ZombieVirus
+
+	[.] Application Version                     
+		 - 1.2
+
+	[.] Package Name                            
+		 - air.carlene.ZombieVirus
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.carlene.ZombieVirus.apk
+
+	[.] Fingerprint                             
+		 - MD5: 6f84bae330257298f3b55344539c0180
+		 - SHA-1: 347fb0ae370149a9812a399c83cc0ae88b8b1db2
+		 - SHA-256: eba6fcc8a822b5c1b42addcfd78dab1a84d5caaf7d86098d36815dc6d5a9e4fc
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

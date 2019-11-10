@@ -1,0 +1,48 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Basketball Hustle For Cel
+
+	[.] Application Version                     
+		 - 1.0.0
+
+	[.] Package Name                            
+		 - air.BasketballHustleForCel
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.BasketballHustleForCel.apk
+
+	[.] Fingerprint                             
+		 - MD5: e8bc29f98c68eed8c09db9466f5a9414
+		 - SHA-1: a6309669bac853e1912a13635458716d62f6a0ee
+		 - SHA-256: d6053961b30cc60af03d3f9bd3c836248330e84d649a2a1d77defa767f8e2992
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.BROADCAST_STICKY',  'android.permission.INTERNET',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

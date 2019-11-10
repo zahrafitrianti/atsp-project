@@ -1,0 +1,138 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Conac Abac
+
+	[.] Application Version                     
+		 - 1.9.2
+
+	[.] Package Name                            
+		 - air.br.com.netpoint.conacabac
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the SIM's serial number
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the phone's current state
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '0' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '0' under the tag 'GCMBroadcastReceiver'
+		 - This application logs the message '0' under the tag 'GCMRegistrar'
+		 - This application logs the message '0' under the tag 'Landroid/view/MotionEvent;->getY()F'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '1' under the tag 'GCMRegistrar'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'GCMRegistrar'
+		 - This application logs the message '10' under the tag 'NotifManCompat'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag ''
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'GCMRegistrar'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'NotifManCompat'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '3' under the tag 'GCMRegistrar'
+		 - This application logs the message '3' under the tag 'Ljava/util/Set;->iterator()Ljava/util/Iterator;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'NotifManCompat 5'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '4' under the tag 'GCMBroadcastReceiver'
+		 - This application logs the message '4' under the tag 'GCMRegistrar'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '6' under the tag 'Resources'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '7' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '7' under the tag 'GCMRegistrar'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '8' under the tag 'GCMRegistrar'
+		 - This application logs the message '9' under the tag 'FragmentActivity'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message 'Acquiring wakelock' under the tag 'GCMBaseIntentService'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Could not get receivers for package ' under the tag 'GCMRegistrar'
+		 - This application logs the message 'Got ACTION_MOVE event but have an invalid active pointer id.' under the tag '4'
+		 - This application logs the message 'Landroid/view/MotionEvent;->getY()F' under the tag '1'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Not retrying failed operation' under the tag 'GCMBaseIntentService'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'Registering receiver' under the tag 'GCMRegistrar'
+		 - This application logs the message 'Releasing wakelock' under the tag 'GCMBaseIntentService'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'Unregistering receiver' under the tag 'GCMRegistrar'
+		 - This application logs the message 'Wakelock reference is null' under the tag 'GCMBaseIntentService'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'internal error: retry receiver class not set yet' under the tag 'GCMRegistrar'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gsf' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_PROVIDERS' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.br.com.netpoint.conacabac.apk
+
+	[.] Fingerprint                             
+		 - MD5: a68a5cdb09938de1958b0a9839e5bb2a
+		 - SHA-1: 9eef956647a1b8fb81c7b7ec2379c2de5db18522
+		 - SHA-256: e6295c59d92588673f46a89db76ddb2fa35285e2367ecbd6dce0d633c6c7a5be
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['air.br.com.netpoint.conacabac.permission.C2D_MESSAGE',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.DISABLE_KEYGUARD',
+		   'android.permission.GET_ACCOUNTS',  'android.permission.INTERNET',  'android.permission.READ_PHONE_STATE',  'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE',  'com.google.android.c2dm.permission.RECEIVE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: ['air.br.com.netpoint.conacabac.permission.C2D_MESSAGE']
+
+

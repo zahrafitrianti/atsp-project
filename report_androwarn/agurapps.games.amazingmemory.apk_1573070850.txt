@@ -1,0 +1,74 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Amazing Memory
+
+	[.] Application Version                     
+		 - 1.0.1
+
+	[.] Package Name                            
+		 - agurapps.games.amazingmemory
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  %s: %d\n 8' under the tag 'GdxEglConfigChooser'
+		 - This application logs the message '%d configurations 4' under the tag 'GdxEglConfigChooser'
+		 - This application logs the message '%s: EGL error: 0x%x 3' under the tag '12288'
+		 - This application logs the message '' under the tag 'GLSurfaceView'
+		 - This application logs the message '2' under the tag 'Editable'
+		 - This application logs the message '2' under the tag 'Test'
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'Configuration %d:\n 4' under the tag 'GdxEglConfigChooser'
+		 - This application logs the message 'charAt' under the tag 'Editable'
+		 - This application logs the message 'clear' under the tag 'Editable'
+		 - This application logs the message 'clearSpanes' under the tag 'Editable'
+		 - This application logs the message 'getChars' under the tag 'Editable'
+		 - This application logs the message 'getFilters' under the tag 'Editable'
+		 - This application logs the message 'getSpanEnd' under the tag 'Editable'
+		 - This application logs the message 'getSpanFlags' under the tag 'Editable'
+		 - This application logs the message 'getSpanStart' under the tag 'Editable'
+		 - This application logs the message 'getSpans' under the tag 'Editable'
+		 - This application logs the message 'length' under the tag 'Editable'
+		 - This application logs the message 'nextSpanTransition' under the tag 'Editable'
+		 - This application logs the message 'removeSpan' under the tag 'Editable'
+		 - This application logs the message 'setFilters' under the tag 'Editable'
+		 - This application logs the message 'setSpan' under the tag 'Editable'
+		 - This application logs the message 'subSequence' under the tag 'Editable'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Code Execution                          
+		 - This application loads a native library
+		 - This application loads a native library: 'androidgl20'
+		 - This application loads a native library: 'gdx'
+		 - This application loads a native library: 'gdx64'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - agurapps.games.amazingmemory.apk
+
+	[.] Fingerprint                             
+		 - MD5: 3a8b4925cca330668624e3aa3fe9609a
+		 - SHA-1: 7103f9cf70dc6108977af8d102fe4c6cc86defe1
+		 - SHA-256: 4a99d9d425ae37269366209e11c707ab5308f1d48848cc1597cb4e41ce5bf1bd
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -1,0 +1,49 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - הגדה של פסח נוסח תימן
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - air.com.ami.agada
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Adobe AIR'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the '' application installed on the system
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.com.ami.agada.apk
+
+	[.] Fingerprint                             
+		 - MD5: 3581022063deb30ac7a10864bcd876c2
+		 - SHA-1: a98f1c64af8c534acca523a27a2f550ab87544b7
+		 - SHA-256: 9b8a65854625f6e391850d9937323712426322d7c08a49585f5a4faeb3769885
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

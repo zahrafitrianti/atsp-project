@@ -1,0 +1,82 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Animal Muddle
+
+	[.] Application Version                     
+		 - 2.0.0
+
+	[.] Package Name                            
+		 - air.busythings.androidapps.animalmuddle
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '-------------------------------' under the tag 'MediaCodecCapabilities(j)'
+		 - This application logs the message '0' under the tag 'MediaCodecCapabilities(j)'
+		 - This application logs the message '10' under the tag 'MediaCodecCapabilities(j)'
+		 - This application logs the message '10' under the tag 'MultiDex'
+		 - This application logs the message '12' under the tag 'MultiDex'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'AndroidWebView'
+		 - This application logs the message '2' under the tag 'MediaCodecCapabilities(j)'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '3' under the tag 'AJAudioRecord'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '3' under the tag 'MediaCodecCapabilities(j)'
+		 - This application logs the message '3' under the tag 'MultiDex'
+		 - This application logs the message '4' under the tag 'MediaCodecCapabilities(j)'
+		 - This application logs the message '5' under the tag 'MultiDex'
+		 - This application logs the message '6' under the tag 'MediaCodecCapabilities(j)'
+		 - This application logs the message '6' under the tag 'MultiDex'
+		 - This application logs the message '7' under the tag 'MediaCodecCapabilities(j)'
+		 - This application logs the message '8' under the tag 'MediaCodecCapabilities(j)'
+		 - This application logs the message '8' under the tag 'MultiDex'
+		 - This application logs the message '9' under the tag 'MultiDex'
+		 - This application logs the message 'Context class loader is null. Must be running in test mode. Skip patching.' under the tag 'MultiDex'
+		 - This application logs the message 'Detected that extraction must be performed.' under the tag 'MultiDex'
+		 - This application logs the message 'Exception in makeDexElement' under the tag 'MultiDex'
+		 - This application logs the message 'Files were not valid zip files.  Forcing a reload.' under the tag 'MultiDex'
+		 - This application logs the message 'PrintCodecList ---------' under the tag 'MediaCodecCapabilities(j)'
+		 - This application logs the message 'VM has multidex support, MultiDex support library is disabled.' under the tag 'MultiDex'
+		 - This application logs the message 'caught exception' under the tag 'MediaCodecCapabilities(j)'
+		 - This application logs the message 'install done' under the tag 'MultiDex'
+		 - This application logs the message 'install' under the tag 'MultiDex'
+		 - This application logs the message 'loading existing secondary dex files' under the tag 'MultiDex'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_PERMISSIONS' information about the '' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.busythings.androidapps.animalmuddle.apk
+
+	[.] Fingerprint                             
+		 - MD5: c6100e691b24a06d1df34ddf4d937298
+		 - SHA-1: 205ab8b5f2fd63df5ab7fd3909032fbc604761b1
+		 - SHA-256: 5bbc889fbf7e3a4b5144bea5ff21c1883ec6861521a8932adaebf963c49f91ee
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET', 'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

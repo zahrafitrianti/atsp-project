@@ -1,0 +1,163 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Arabic LetterBox
+
+	[.] Application Version                     
+		 - 2.6
+
+	[.] Package Name                            
+		 - air.ArabicLetterBox
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the ISO country code equivalent for the SIM provider's country code
+		 - This application reads the ISO country code equivalent of the current registered operator's MCC (Mobile Country Code)
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the SIM's serial number
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '' under the tag 'GLSurfaceView'
+		 - This application logs the message '0' under the tag 'InmobiAndroidSDK2.3'
+		 - This application logs the message '0' under the tag 'PPYSocial'
+		 - This application logs the message '1' under the tag '2'
+		 - This application logs the message '1' under the tag 'Corona'
+		 - This application logs the message '1' under the tag 'inneractive'
+		 - This application logs the message '12' under the tag 'inneractive'
+		 - This application logs the message '13' under the tag 'Corona'
+		 - This application logs the message '13' under the tag 'InmobiAndroidSDK2.3'
+		 - This application logs the message '2' under the tag '2'
+		 - This application logs the message '2' under the tag 'Corona'
+		 - This application logs the message '2' under the tag 'Facebook-WebView'
+		 - This application logs the message '2' under the tag 'Facebook-authorize'
+		 - This application logs the message '2' under the tag 'OpenFeint'
+		 - This application logs the message '2' under the tag 'SR'
+		 - This application logs the message '2' under the tag 'inneractive'
+		 - This application logs the message '3' under the tag 'SR'
+		 - This application logs the message '3' under the tag 'inneractive'
+		 - This application logs the message '4' under the tag 'Corona'
+		 - This application logs the message '4' under the tag 'Facebook-WebView'
+		 - This application logs the message '4' under the tag 'Facebook-authorize'
+		 - This application logs the message '4' under the tag 'OpenFeint'
+		 - This application logs the message '5' under the tag 'SR'
+		 - This application logs the message '6' under the tag 'Corona'
+		 - This application logs the message '6' under the tag 'inneractive'
+		 - This application logs the message '7' under the tag 'Corona'
+		 - This application logs the message '7' under the tag 'Facebook-Util'
+		 - This application logs the message '7' under the tag 'SR'
+		 - This application logs the message '8' under the tag 'Corona'
+		 - This application logs the message '8' under the tag 'InmobiAndroidSDK2.3'
+		 - This application logs the message 'ActivityInfo for %s has the wrong configChanges.\nPlease consult README.txt for the correct configuration. 2' under the tag 'OpenFeint'
+		 - This application logs the message 'Back Event' under the tag 'inneractive'
+		 - This application logs the message 'COLLAPSE event' under the tag 'inneractive'
+		 - This application logs the message 'Cannot access user\'s location.  To improve your revenue open manifest.xml and just before the final </manifest> tag add:  <uses-permission
+		   android:name="android.permission.ACCESS_COURSE_LOCATION" />' under the tag 'inneractive'
+		 - This application logs the message 'Cannot get device ID (IMEI) without READ_PHONE_STATE  permissions!  Open manifest.xml and just before the final </manifest> tag add:  <uses-permission
+		   android:name="android.permission.READ_PHONE_STATE" />' under the tag 'innerActive'
+		 - This application logs the message 'Cannot request an ad without Internet permissions!  Open manifest.xml and just before the final </manifest> tag add:  <uses-permission
+		   android:name="android.permission.INTERNET" />' under the tag 'inneractive'
+		 - This application logs the message 'Caught exception while downloading and displaying ad' under the tag 'InmobiAndroidSDK2.3'
+		 - This application logs the message 'Critical error - your appID is invalid! please add your application ID in your layout XML. for example: app:appID=My_App_ID' under the tag 'inneractive'
+		 - This application logs the message 'Critical error - your appID is invalid! please add your application ID' under the tag 'inneractive'
+		 - This application logs the message 'EXPAND event' under the tag 'inneractive'
+		 - This application logs the message 'Encountered generic exception initiating click' under the tag 'InmobiAndroidSDK2.3'
+		 - This application logs the message 'Exception getting response code for redirection URL' under the tag 'InmobiAndroidSDK2.3'
+		 - This application logs the message 'Exception occured while requesting an ad' under the tag 'InmobiAndroidSDK2.3'
+		 - This application logs the message 'Exception processing ad click' under the tag 'InmobiAndroidSDK2.3'
+		 - This application logs the message 'Failed to enable camera.' under the tag 'Corona'
+		 - This application logs the message 'Failed to generate a unique image file name for the photo library.' under the tag 'Corona'
+		 - This application logs the message 'Finished Setting up Payment Methods' under the tag 'SR'
+		 - This application logs the message 'Hosted auth currently disabled. Retrying dialog auth...' under the tag 'Facebook-authorize'
+		 - This application logs the message 'In GetXMLFromPrefs' under the tag 'SR'
+		 - This application logs the message 'In Payment Methods parent thread' under the tag 'SR'
+		 - This application logs the message 'InMobi ad request failed' under the tag 'Corona'
+		 - This application logs the message 'Inneractive ad request failed' under the tag 'Corona'
+		 - This application logs the message 'Internet Connection Not Present' under the tag 'SR'
+		 - This application logs the message 'Lcom/inneractive/api/ads/InneractiveAdView;->access$6()Ljava/lang/String;' under the tag 'inneractive'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(I)Ljava/lang/String;' under the tag 'ImageView2'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Z)Ljava/lang/String;' under the tag 'ImageView2'
+		 - This application logs the message 'Load event' under the tag 'inneractive'
+		 - This application logs the message 'Location provider setup successfully.' under the tag 'inneractive'
+		 - This application logs the message 'Login canceled by user.' under the tag 'Facebook-authorize'
+		 - This application logs the message 'Login canceled' under the tag 'Facebook-authorize'
+		 - This application logs the message 'No Fill. Please try again after sometime.' under the tag 'InmobiAndroidSDK2.3'
+		 - This application logs the message 'No location providers are available.  Ads will not be geotargeted.' under the tag 'inneractive'
+		 - This application logs the message 'Setting up Payment Methods' under the tag 'SR'
+		 - This application logs the message 'Time to get the GPS location...' under the tag 'inneractive'
+		 - This application logs the message 'Trying to get locations from GPS.' under the tag 'inneractive'
+		 - This application logs the message 'Trying to get locations from the network.' under the tag 'inneractive'
+		 - This application logs the message 'Unable to set up location listener. This device is incapable of providing location data.' under the tag 'Corona'
+		 - This application logs the message 'XML retrieved FROM CACHE, passing to parse()' under the tag 'SR'
+		 - This application logs the message 'XML retrieved FROM SR, passing to parse()' under the tag 'SR'
+		 - This application logs the message 'Your request cannot be processed at this time.Please try again later' under the tag 'InmobiAndroidSDK2.3'
+		 - This application logs the message 'callSaveBitmap has invalid controller' under the tag 'Corona'
+		 - This application logs the message 'failed to get the clientID from memory' under the tag 'innerActive'
+		 - This application logs the message 'failed to save the clientID' under the tag 'innerActive'
+		 - This application logs the message 'focus changed...set refresh interval to 0' under the tag 'inneractive'
+		 - This application logs the message 'listener - catch' under the tag 'inneractive'
+		 - This application logs the message 'media.show() does not support the given image source.' under the tag 'Corona'
+		 - This application logs the message 'onClickAd - catch' under the tag 'inneractive'
+		 - This application logs the message 'onClickAd' under the tag 'inneractive'
+		 - This application logs the message 'onFailedToReceiveAd - Cannot request an ad without Internet permissions!  Open manifest.xml and just before the final </manifest> tag add:  <uses-permission
+		   android:name="android.permission.INTERNET" />' under the tag 'inneractive'
+		 - This application logs the message 'onFailedToReceiveAd - catch' under the tag 'inneractive'
+		 - This application logs the message 'onFailedToReceiveAd' under the tag 'inneractive'
+		 - This application logs the message 'onReceiveAd - catch' under the tag 'inneractive'
+		 - This application logs the message 'onReceiveAd' under the tag 'inneractive'
+		 - This application logs the message 'responsecode != 200' under the tag 'inneractive'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/papaya/si/c;->getApplicationContext()Landroid/app/Application;' application installed on the system
+		 - This application retrieves '' information about the 'v30' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Location Lookup                         
+		 - This application reads location information from all available providers (WiFi, GPS etc.)
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+	[.] Audio Video Eavesdropping               
+		 - This application records audio from the 'MIC' source
+
+	[.] Code Execution                          
+		 - This application loads a native library: 'almixer'
+		 - This application loads a native library: 'corona'
+		 - This application loads a native library: 'mpg123'
+		 - This application loads a native library: 'openal'
+		 - This application loads a native library: 'vorbisidec'
+		 - This application executes a UNIX command
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.ArabicLetterBox.apk
+
+	[.] Fingerprint                             
+		 - MD5: e5a928648f59c778f6b0887ab4cec90a
+		 - SHA-1: 03d82dbd8debd348bd53ca2637e737bd908a8320
+		 - SHA-256: bb5c4871db4927aa628d1a212c4af923f3178037bdf9669f833b89e8195340c8
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.INTERNET',  'android.permission.READ_PHONE_STATE']
+		 - Implied: []
+		 - Declared: []
+
+

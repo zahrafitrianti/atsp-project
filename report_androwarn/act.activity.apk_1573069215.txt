@@ -1,0 +1,46 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 沖縄釣魚図鑑
+
+	[.] Application Version                     
+		 - 2.1
+
+	[.] Package Name                            
+		 - act.activity
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '0' under the tag 'AssetFileProvider'
+		 - This application logs the message '1' under the tag 'AssetFileProvider'
+		 - This application logs the message '13' under the tag '12'
+		 - This application logs the message '3' under the tag 'TouchEvent'
+		 - This application logs the message 'Androidアプリ：沖縄釣魚図鑑より ' under the tag 'android.intent.extra.TEXT image/* オンクリック中の魚名( 。‘ω´)'
+		 - This application logs the message 'share()でエラー' under the tag '共有機能'
+		 - This application logs the message 'share()動いてるよーーー。' under the tag '共有機能'
+		 - This application logs the message '友人に共有する機能でエラー' under the tag '友人に共有する機能'
+		 - This application logs the message '恩クリック動いてるよーーー。' under the tag '友人に共有する機能'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - act.activity.apk
+
+	[.] Fingerprint                             
+		 - MD5: d6c2677e4ed3893a93e7ba5da3688c69
+		 - SHA-1: 5afea2e5b689fe58cc9c310461d8b6e321fc4503
+		 - SHA-256: 23fed8b27ba7742095b50dd6db7975839caac73981a2d1068c8af45e9afada82
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.READ_CONTACTS']
+		 - Implied: [['android.permission.READ_CALL_LOG', None]]
+		 - Declared: []
+
+

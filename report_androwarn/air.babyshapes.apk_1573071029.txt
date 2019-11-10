@@ -1,0 +1,68 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - BabyShapes
+
+	[.] Application Version                     
+		 - 1.03
+
+	[.] Package Name                            
+		 - air.babyshapes
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '0' under the tag '0'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '5' under the tag '[IABExtension]'
+		 - This application logs the message 'Could not discover AIR container.' under the tag '1'
+		 - This application logs the message 'IAB.init' under the tag '[IABExtension]'
+		 - This application logs the message 'IABUtil/Security data is null' under the tag 'IABUtil/Security'
+		 - This application logs the message 'RSA IABUtil/Security Invalid key specification. IABUtil/Security Base64 decoding failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'RSA IABUtil/Security Invalid key specification.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Signature verification failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message '[IABExtension] Billing already initalized. [IABExtension] Start Service Connection..' under the tag '[IABExtension]'
+		 - This application logs the message '[IABExtension] Billing already initalized.' under the tag '[IABExtension]'
+		 - This application logs the message 'context disposal' under the tag '[IABExtension]'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/flurry/sdk/eg;->a()Lcom/flurry/sdk/eg;' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_CONFIGURATIONS, GET_GIDS, GET_PERMISSIONS, GET_PROVIDERS, GET_RECEIVERS, GET_SIGNATURES, GET_SERVICES' information about the
+		   'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.babyshapes.apk
+
+	[.] Fingerprint                             
+		 - MD5: 7e3b9583c95502baab7c49309048e8b4
+		 - SHA-1: 39f6b786e76fd5864e6077b71e6b44bf411e5e93
+		 - SHA-256: 3a47b658c70db6eba04e1c37c8ba802403958060919550df380f66120d737f07
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET', 'com.android.vending.BILLING']
+		 - Implied: []
+		 - Declared: []
+
+

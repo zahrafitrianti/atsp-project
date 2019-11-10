@@ -1,0 +1,173 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - AddisKey keyboard
+
+	[.] Application Version                     
+		 - 1.0.8
+
+	[.] Package Name                            
+		 - addis.keyboard
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '0' under the tag 'BinaryDictionary'
+		 - This application logs the message '0' under the tag 'FindDictonary'
+		 - This application logs the message '0' under the tag 'FragmentManager'
+		 - This application logs the message '0' under the tag 'GcmNotification'
+		 - This application logs the message '0' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '0' under the tag 'InstanceID/Store'
+		 - This application logs the message '0' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '0' under the tag 'TextEntryState'
+		 - This application logs the message '1' under the tag 'BinaryDictionary'
+		 - This application logs the message '1' under the tag 'GcmListenerService'
+		 - This application logs the message '1' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '1' under the tag 'InstanceID'
+		 - This application logs the message '1' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '1' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'NavUtils'
+		 - This application logs the message '1' under the tag 'Suggest'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '13' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'AutoDictionary'
+		 - This application logs the message '2' under the tag 'BinaryDictionary'
+		 - This application logs the message '2' under the tag 'FragmentActivity'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '2' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '2' under the tag 'InstanceID'
+		 - This application logs the message '2' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'UserDictionaryProvider'
+		 - This application logs the message '2' under the tag 'Volley'
+		 - This application logs the message '2' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '3' under the tag '2'
+		 - This application logs the message '3' under the tag 'ContextCompat'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GcmNotification'
+		 - This application logs the message '3' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '3' under the tag 'InstanceID'
+		 - This application logs the message '3' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '3' under the tag 'InstanceID/Store'
+		 - This application logs the message '3' under the tag 'Landroid/content/Intent;->getAction()Ljava/lang/String;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'MyGcmListenerService'
+		 - This application logs the message '3' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '3' under the tag 'ViewPager'
+		 - This application logs the message '3' under the tag 'error InstanceID/Rpc InstanceID/Rpc'
+		 - This application logs the message '4' under the tag 'BinaryDictionary'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'InstanceID'
+		 - This application logs the message '5' under the tag 'ListPopupWindow'
+		 - This application logs the message '5' under the tag 'RegIntentService'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '6' under the tag 'ViewPager'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '8' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'LocalBroadcastManager'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'App restored, clearing state' under the tag 'InstanceID/Store'
+		 - This application logs the message 'App unpublished' under the tag 'UpdateChecker'
+		 - This application logs the message 'AppCompatDelegate' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Both Google Play Services and legacy GSF package are missing' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Cannot connect to the Internet!' under the tag 'UpdateChecker'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not load native library jni_latinime' under the tag 'BinaryDictionary'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Dropping invalid message' under the tag 'GCM'
+		 - This application logs the message 'Dropping invalid message' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Error loading image' under the tag 'TAG'
+		 - This application logs the message 'Failed to close input stream' under the tag 'BinaryDictionary'
+		 - This application logs the message 'Failed to resolve REGISTER intent, falling back' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Failed to send ping response' under the tag 'InstanceID'
+		 - This application logs the message 'Google Play Store is neither installed nor updating.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store is updating.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services missing when getting application info.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'MenuItemWrapper'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Messenger failed, fallback to startService' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Multiple APKs published ' under the tag 'UpdateChecker'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'No available memory for binary dictionary' under the tag 'BinaryDictionary'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'One of the API components you attempted to connect to is not available.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'Register result in service ' under the tag '4'
+		 - This application logs the message 'Showing notification' under the tag 'GcmNotification'
+		 - This application logs the message 'Store page format error' under the tag 'UpdateChecker'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'The specified account could not be signed in.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'This device is not supported.' under the tag 'MainActivity'
+		 - This application logs the message 'Token sent back to the client.' under the tag 'MainActivity'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Unexpected error, device missing required alghorithms' under the tag 'InstanceID'
+		 - This application logs the message 'Unexpected response: null' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'application registered with GCM.' under the tag 'MainActivity'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'v2' under the tag 'SupportMenuInflater'
+		 - This application retrieves '' information about the 'Landroid/app/Activity;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/google/android/gms/common/a;->e(Landroid/content/Context;)V' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/google/android/gms/gcm/e;->b(Landroid/content/Context;)Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Lcom/google/android/gms/b/gd;->a(Landroid/content/Context;)Z' application installed on the system
+		 - This application lists applications installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+	[.] Code Execution                          
+		 - This application loads a native library: 'chat.4'
+		 - This application loads a native library: 'jni_addiskey_gingerbread'
+		 - This application loads a native library: 'jni_addiskey_ics'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - addis.keyboard.apk
+
+	[.] Fingerprint                             
+		 - MD5: 1d5840e63198f9a4be3b5cd42e20d96f
+		 - SHA-1: 5dfd19797a3f4dd010104d87f4c2b880b332a17a
+		 - SHA-256: e62ff3c6b61672c8334b061a6d1455060aed4a41841c5fc8516000cef3bcc2a5
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.GET_ACCOUNTS',  'android.permission.INTERNET',
+		   'android.permission.READ_USER_DICTIONARY',  'android.permission.SYSTEM_ALERT_WINDOW',  'android.permission.USE_CREDENTIALS',  'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_USER_DICTIONARY',  'com.android.launcher.permission.UNINSTALL_SHORTCUT',  'com.google.android.c2dm.permission.RECEIVE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

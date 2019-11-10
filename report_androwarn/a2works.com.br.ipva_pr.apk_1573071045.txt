@@ -1,0 +1,234 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - IPVA Paraná
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - a2works.com.br.ipva_pr
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message ' Points are coincident' under the tag 'PathParser'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'GoogleApiClientConnecting'
+		 - This application logs the message '0' under the tag 'DynamiteModule'
+		 - This application logs the message '0' under the tag 'FragmentActivity'
+		 - This application logs the message '0' under the tag 'FragmentManager'
+		 - This application logs the message '0' under the tag 'RecyclerView'
+		 - This application logs the message '0' under the tag 'SphericalVideoRenderer'
+		 - This application logs the message '0' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '1' under the tag 'AutoManageHelper'
+		 - This application logs the message '1' under the tag 'BasePendingResult'
+		 - This application logs the message '1' under the tag 'DynamiteModule'
+		 - This application logs the message '1' under the tag 'GACStateManager'
+		 - This application logs the message '1' under the tag 'GmsClient'
+		 - This application logs the message '1' under the tag 'GmsClientEvents'
+		 - This application logs the message '1' under the tag 'GoogleApiAvailability'
+		 - This application logs the message '1' under the tag 'GoogleApiClientConnecting'
+		 - This application logs the message '1' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message '1' under the tag 'GoogleApiManager'
+		 - This application logs the message '1' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '1' under the tag 'HttpUrlPinger'
+		 - This application logs the message '1' under the tag 'ImageManager'
+		 - This application logs the message '1' under the tag 'NavUtils'
+		 - This application logs the message '1' under the tag 'NestedScrollView'
+		 - This application logs the message '1' under the tag 'TransformedResultImpl'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'DynamiteModule'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'GoogleApiManager'
+		 - This application logs the message '2' under the tag 'GridLayoutManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'MBServiceCompat'
+		 - This application logs the message '2' under the tag 'PropertyValuesHolder'
+		 - This application logs the message '2' under the tag 'RecyclerView'
+		 - This application logs the message '2' under the tag 'TextViewCompatDonut'
+		 - This application logs the message '2' under the tag 'View'
+		 - This application logs the message '2' under the tag 'ViewDragHelper'
+		 - This application logs the message '2' under the tag 'Volley'
+		 - This application logs the message '3' under the tag '2'
+		 - This application logs the message '3' under the tag 'CoordinatorLayout'
+		 - This application logs the message '3' under the tag 'DynamiteModule'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GoogleApiAvailability'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'MBServiceCompat'
+		 - This application logs the message '3' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '3' under the tag 'PropertyValuesHolder'
+		 - This application logs the message '3' under the tag 'RecyclerView'
+		 - This application logs the message '3' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '3' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '3' under the tag 'TextViewCompatDonut'
+		 - This application logs the message '3' under the tag 'UidVerifier'
+		 - This application logs the message '3' under the tag 'ViewPager'
+		 - This application logs the message '4' under the tag 'NestedScrollView'
+		 - This application logs the message '4' under the tag 'SphericalVideoRenderer'
+		 - This application logs the message '4' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'ListPopupWindow'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'ViewPager'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '8' under the tag 'ListPopupWindow'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message 'Activity result delivered for unknown Fragment.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Activity started without extras' under the tag 'GoogleApiActivity'
+		 - This application logs the message 'Activity started without resolution' under the tag 'GoogleApiActivity'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'AppCompatDelegate' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'Attempted to bind to a service in a STOPPED package.' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Attempted to call failure callbacks in CONNECTION_MODE_NONE. Callbacks should be disabled via GmsClientSupervisor' under the tag 'CompositeGAC'
+		 - This application logs the message 'Attempted to call success callbacks in CONNECTION_MODE_NONE. Callbacks should be disabled via GmsClientSupervisor' under the tag 'CompositeGAC'
+		 - This application logs the message 'Attempted to remove pending transform when no transforms are registered.' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'AutoManageLifecycleHelper received onErrorResolutionFailed callback but no failing client ID is set' under the tag 'AutoManageHelper'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Cannot fling without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot read the cache data.' under the tag 'v2'
+		 - This application logs the message 'Cannot scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot smooth scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Could not call getMaxAvailableHeightMethod(View, int, boolean) on PopupWindow. Using the public version.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not fetch mDrawableContainerStateField. Oh well.' under the tag 'DrawableUtils'
+		 - This application logs the message 'Could not fetch setConstantState(). Oh well.' under the tag 'DrawableUtils'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method getMaxAvailableHeight(View, int, boolean) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find voice search activity' under the tag 'SearchView'
+		 - This application logs the message 'Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.'
+		   under the tag 'TwilightManager'
+		 - This application logs the message 'Could not invoke setConstantState(). Oh well.' under the tag 'DrawableUtils'
+		 - This application logs the message 'Could not link program: ' under the tag 'SphericalVideoRenderer'
+		 - This application logs the message 'Could not set mDrawableContainerStateField. Oh well.' under the tag 'DrawableUtils'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'EditText added is not a TextInputEditText. Please switch to using that class instead.' under the tag 'TextInputLayout'
+		 - This application logs the message 'Failed to remove pending transform - this may lead to memory leaks!' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Failed to retrieve remote module version.' under the tag 'DynamiteModule'
+		 - This application logs the message 'File %s not found. No need for deletion 2' under the tag 'Ljava/io/File;->getAbsolutePath()Ljava/lang/String;'
+		 - This application logs the message 'Google Play Store is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'GoogleApiClient received too many callbacks for the given step. Clients may be in an unexpected state; GoogleApiClient will now disconnect.' under the tag
+		   'GoogleApiClientConnecting'
+		 - This application logs the message 'GoogleCertificates has been initialized already' under the tag 'GoogleCertificates'
+		 - This application logs the message 'Got ACTION_MOVE event but have an invalid active pointer id.' under the tag '1'
+		 - This application logs the message 'Got ACTION_POINTER_DOWN event but have an invalid action index.' under the tag '1'
+		 - This application logs the message 'Got ACTION_POINTER_DOWN event but have an invalid action index.' under the tag 'Landroid/support/v4/view/t;->b(Landroid/view/MotionEvent;)I'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Invalid requestCode mapping in savedInstanceState.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Landroid/database/Cursor;->getPosition()I' under the tag 'SearchView'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glGetProgramInfoLog(I)Ljava/lang/String;' under the tag 'SphericalVideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glGetShaderInfoLog(I)Ljava/lang/String;' under the tag 'SphericalVideoRenderer'
+		 - This application logs the message 'Lcom/google/android/gms/common/internal/k;->l_()Ljava/lang/String;' under the tag 'GmsClient'
+		 - This application logs the message 'Lcom/google/android/gms/internal/ow$a;->getMessage()Ljava/lang/String;' under the tag 'DynamiteModule'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'MenuItemWrapper'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'HttpUrlPinger'
+		 - This application logs the message 'Ljava/lang/IndexOutOfBoundsException;->getMessage()Ljava/lang/String;' under the tag 'HttpUrlPinger'
+		 - This application logs the message 'Ljava/lang/Object;->toString()Ljava/lang/String;' under the tag 'DataBuffer'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'TransformedResultImpl'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'AutoManageHelper'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'DynamiteModule'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GmsClient'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GmsClientEvents'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GoogleApiClientConnecting'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'LogSamplerImpl'
+		 - This application logs the message 'Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;' under the tag 'Asserts'
+		 - This application logs the message 'Missing resolution for ConnectionResult.RESOLUTION_REQUIRED. Call GoogleApiAvailability#showErrorNotification(Context, ConnectionResult) instead.' under the tag
+		   'GoogleApiAvailability'
+		 - This application logs the message 'Mutated drawable is not the same instance as the input.' under the tag 'AppCompatDrawableManager'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'No adapter attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'No layout manager attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'No valid DynamiteLoader APK path' under the tag 'DynamiteModule'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'One of the API components you attempted to connect to is not available.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message 'Passed over target position while smooth scrolling.' under the tag 'RecyclerView'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'Received call to unregister a listener without a matching registration call.' under the tag 'UnregisterListenerTask'
+		 - This application logs the message 'RecyclerView does not support scrolling to an absolute position. Use scrollToPosition instead' under the tag 'RecyclerView'
+		 - This application logs the message 'Remote account accessor probably died' under the tag 'AccountAccessor'
+		 - This application logs the message 'Remote service probably died when clearAccountFromSessionStore is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when saveDefaultAccount is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when signIn is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Runtime exception while getting specialized handlers' under the tag 'CustomTabsHelper'
+		 - This application logs the message 'Setting a custom background is not supported.' under the tag 'FloatingActionButton'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Smooth Scroll action is being updated too frequently. Make sure you are not changing it unless necessary' under the tag 'RecyclerView'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'The current user profile is restricted and could not use authenticated features.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'The specified account could not be signed in.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'To support smooth scrolling, you should override \nLayoutManager#computeScrollVectorForPosition.\nFalling back to instant scroll' under the tag
+		   'LinearSmoothScroller'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Unresolved error while connecting client. Stopping auto-manage.' under the tag 'AutoManageHelper'
+		 - This application logs the message 'You must override onLayoutChildren(Recycler recycler, State state) ' under the tag 'RecyclerView'
+		 - This application logs the message 'You must override smoothScrollToPosition to support smooth scrolling' under the tag 'RecyclerView'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR_OVERLAY id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'iCertData failed to retrive data from remote' under the tag 'GoogleCertificates'
+		 - This application logs the message 'mServiceBroker is null, client disconnected' under the tag 'GmsClient'
+		 - This application logs the message 'onMeasure: More than two child views are not supported.' under the tag 'SlidingPaneLayout'
+		 - This application logs the message 'received deprecated onAccountValidationComplete callback, ignoring' under the tag 'GmsClient'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'service probably died' under the tag 'GmsClient'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'v2' under the tag 'SupportMenuInflater'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES, MATCH_UNINSTALLED_PACKAGES' information about the 'Lcom/google/android/gms/common/util/h;->a(Landroid/content/Context;)Z' application installed on the
+		   system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+
+[+] Apk File
+	[.] File Name                               
+		 - a2works.com.br.ipva_pr.apk
+
+	[.] Fingerprint                             
+		 - MD5: d3820ac125ad34f76e99ab632364fb0c
+		 - SHA-1: 71e483c1b76e589627fa12ef2b66237c8bd45ef4
+		 - SHA-256: 7b2f3400fb3e46de4b58a4b8b6709be5d5f22f268be7cbc338da1f541118de0a
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

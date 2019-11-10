@@ -1,0 +1,57 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - bigEar Hear Around
+
+	[.] Application Version                     
+		 - 1.0.10
+
+	[.] Package Name                            
+		 - aerostone.bigear
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message '4' under the tag 'BE'
+		 - This application logs the message '<- onPause' under the tag 'BE'
+		 - This application logs the message '<- onStop' under the tag 'BE'
+		 - This application logs the message '<--- Headset Plug in' under the tag 'BE'
+		 - This application logs the message '<--- heartbeat in sleep' under the tag 'BE'
+		 - This application logs the message '<--- time tick' under the tag 'BE'
+		 - This application logs the message '<---- RESUME play' under the tag 'BE'
+		 - This application logs the message '<---- STOP play' under the tag 'BE'
+		 - This application logs the message '<---- onDestroy' under the tag 'BE'
+		 - This application logs the message '<---- unregisterReceiver' under the tag 'BE'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - aerostone.bigear.apk
+
+	[.] Fingerprint                             
+		 - MD5: 1d977cbf12207abd6fb5521f51ca966c
+		 - SHA-1: 79f06da7bca5b77178f207d8b14420ecad22e7f2
+		 - SHA-256: e2e2d76fc524872f7de23903ed920cd73845c5dc65602eb52a24e921d868ff69
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.INTERNET',
+		   'android.permission.MODIFY_AUDIO_SETTINGS',  'android.permission.RECORD_AUDIO',  'android.permission.WAKE_LOCK',  'com.android.alarm.permission.SET_ALARM']
+		 - Implied: []
+		 - Declared: []
+
+

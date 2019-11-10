@@ -1,0 +1,141 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Com-Phone
+
+	[.] Application Version                     
+		 - 1.4.2
+
+	[.] Package Name                            
+		 - ac.robinson.mediaphone
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Ignoring load canceled -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load canceled -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message ' Points are coincident' under the tag 'PathParser'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '0' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message '1' under the tag 'AnimatorInflater'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'MOVUtilities'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '11' under the tag 'SVGAndroid'
+		 - This application logs the message '12' under the tag 'SVGAndroid'
+		 - This application logs the message '14' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'RecyclerView'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'NestedScrollView'
+		 - This application logs the message '2' under the tag 'View'
+		 - This application logs the message '2' under the tag 'ViewDragHelper'
+		 - This application logs the message '3' under the tag 'CoordinatorLayout'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GridLayoutManager'
+		 - This application logs the message '3' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'RecyclerView'
+		 - This application logs the message '4' under the tag 'GridLayoutManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '5' under the tag 'FragmentActivity'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message '5' under the tag 'ListPopupWindow'
+		 - This application logs the message '5' under the tag 'NestedScrollView'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'MOVUtilities'
+		 - This application logs the message '6' under the tag 'SVGAndroid'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '7' under the tag 'SVGAndroid'
+		 - This application logs the message '7' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '8' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message '8' under the tag 'RecyclerView'
+		 - This application logs the message '8' under the tag 'SVGAndroid'
+		 - This application logs the message '8' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '9' under the tag 'CameraUtilities'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'MOVUtilities'
+		 - This application logs the message '9' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '9' under the tag 'blah'
+		 - This application logs the message 'Activity result delivered for unknown Fragment.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'BAD' under the tag 'BAD'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Cannot call this method in a scroll callback. Scroll callbacks mightbe run during a measure & layout pass where you cannot change theRecyclerView data. Any
+		   method call that might change the structureof the RecyclerView or the adapter contents should be postponed tothe next frame.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot fling without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot smooth scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Could not call getMaxAvailableHeightMethod(View, int, boolean) on PopupWindow. Using the public version.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method getMaxAvailableHeight(View, int, boolean) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setEpicenterBounds(Rect) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.'
+		   under the tag 'TwilightManager'
+		 - This application logs the message 'Could not invoke setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Error creating segmented AMR audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating segmented M4A audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating segmented MOV audio track - combining failed' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating segmented MP3 audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating segmented WAV audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Invalid requestCode mapping in savedInstanceState.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Landroid/content/pm/PackageManager$NameNotFoundException;->toString()Ljava/lang/String;' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Landroid/support/v7/widget/DecorContentParent;->hideOverflowMenu()Z' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Mutated drawable is not the same instance as the input.' under the tag 'AppCompatDrawableManager'
+		 - This application logs the message 'No adapter attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'No layout manager attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'Passed over target position while smooth scrolling.' under the tag 'RecyclerView'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'RecyclerView does not support scrolling to an absolute position. Use scrollToPosition instead' under the tag 'RecyclerView'
+		 - This application logs the message 'Setting a custom background is not supported.' under the tag 'FloatingActionButton'
+		 - This application logs the message 'Smooth Scroll action is being updated too frequently. Make sure you are not changing it unless necessary' under the tag 'RecyclerView'
+		 - This application logs the message 'Temporary directory not found - will warn before narrative export' under the tag
+		   'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'The android:onClick attribute cannot be used within a restricted context' under the tag 'SupportMenuInflater'
+		 - This application logs the message 'Thumbnail directory not found' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Unable to detect camera orientation - setting to 0' under the tag 'CameraUtilities'
+		 - This application logs the message 'Unable to get Bluetooth adapter - not supported' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'You must override onLayoutChildren(Recycler recycler, State state) ' under the tag 'RecyclerView'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR_OVERLAY id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+
+	[.] Code Execution                          
+		 - This application loads a native library: 'opencore-amrnb-wrapper'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - ac.robinson.mediaphone.apk
+
+	[.] Fingerprint                             
+		 - MD5: c2f4ac63b31256dace17e359b0ec215b
+		 - SHA-1: b923cd8b140333d949eee231a4dec4566ce92f5e
+		 - SHA-256: d92585ba9d245653a54cb36c1c579433d99ac4f9c3a548604d27816e3cfafde2
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.BLUETOOTH',  'android.permission.CAMERA',  'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.RECORD_AUDIO',
+		   'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -1,0 +1,51 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - תפילת השלה
+
+	[.] Application Version                     
+		 - @7F06001E
+
+	[.] Package Name                            
+		 - air.com.amihanya.Pray
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'com.adobe.air AVSV'
+		 - This application logs the message 'CreateInstance' under the tag 'com.adobe.air AVSV'
+		 - This application logs the message 'SurfaceCreated' under the tag 'com.adobe.air AVSV'
+		 - This application logs the message 'SurfaceDestroyed' under the tag 'com.adobe.air AVSV'
+		 - This application logs the message 'com.adobe.air AVSV getVideoEgl com.adobe.air AVSV 1' under the tag 'com.adobe.air AVSV'
+		 - This application logs the message 'com.adobe.air AVSV getVideoEgl' under the tag 'com.adobe.air AVSV'
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.com.amihanya.Pray.apk
+
+	[.] Fingerprint                             
+		 - MD5: 143fa2cf351af8098b38275e31571f33
+		 - SHA-1: cf0104ea718d6197e74419e0f6ba2394f898afcd
+		 - SHA-256: 250a86553c669b55866be99388795964661aa17ec1449240cf1725266ba8ee6b
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.BROADCAST_STICKY', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

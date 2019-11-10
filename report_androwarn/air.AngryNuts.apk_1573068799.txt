@@ -1,0 +1,48 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - AngryNuts
+
+	[.] Application Version                     
+		 - 1.1.0
+
+	[.] Package Name                            
+		 - air.AngryNuts
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.AngryNuts.apk
+
+	[.] Fingerprint                             
+		 - MD5: cb023c169faff878528ebf2513027266
+		 - SHA-1: 8a5bbc9487c3a672402f12efe00dc9d098b233fa
+		 - SHA-256: e6eee6b61f7a93bb7310511ee76e4b25176d2c9cb9d1ce13649e1cbb6ae31a97
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.BROADCAST_STICKY', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

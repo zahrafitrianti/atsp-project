@@ -1,0 +1,35 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - HTML5MobileApp
+
+	[.] Application Version                     
+		 - 0.1
+
+	[.] Package Name                            
+		 - air.air.HTML5MobileApp
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.air.HTML5MobileApp.apk
+
+	[.] Fingerprint                             
+		 - MD5: 8942714a666334950980fa5979fe5b8c
+		 - SHA-1: 67247fde7910db249fdd8c0b92b00fba38e3cd5e
+		 - SHA-256: 6c1890903b5a4e9ae42f40d2aa0b0a61845e6fe6c6313dd795fc4332722ddd9f
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

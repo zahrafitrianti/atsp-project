@@ -1,0 +1,49 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Deutsche Zeitungen
+
+	[.] Application Version                     
+		 - @7F06001E
+
+	[.] Package Name                            
+		 - air.apps.NewsEnterprise.deutschezeitungen
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '6' under the tag 'VideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glCreateProgram()I' under the tag 'VideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glCreateShader(I)I' under the tag 'VideoRenderer'
+		 - This application logs the message 'VideoRenderer 2' under the tag 'VideoRenderer'
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.apps.NewsEnterprise.deutschezeitungen.apk
+
+	[.] Fingerprint                             
+		 - MD5: c9b81accffb751b3ad4df81668f4446b
+		 - SHA-1: 9479e38f945c76cf538b575cbdace8386853da14
+		 - SHA-256: 639928469e88da2d9dec0d1f128763ba214856a621f05a03a24adce479e3c00f
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.BROADCAST_STICKY', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

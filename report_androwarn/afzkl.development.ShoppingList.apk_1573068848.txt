@@ -1,0 +1,109 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Shopping List
+
+	[.] Application Version                     
+		 - 1.6
+
+	[.] Package Name                            
+		 - afzkl.development.ShoppingList
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '0' under the tag 'Shopping List'
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '11' under the tag 'ShoppingList'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '2' under the tag 'mobeta'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'Shoppgin List'
+		 - This application logs the message '6' under the tag 'Shopping List'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '8' under the tag 'ShoppingList'
+		 - This application logs the message '9' under the tag 'FragmentActivity'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message 'Activity Result is OK!' under the tag 'Shopping List'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Could not create dslv_state.txt' under the tag 'mobeta'
+		 - This application logs the message 'Destroying old data during upgrade' under the tag 'Shopping List'
+		 - This application logs the message 'Ljava/io/IOException;->getMessage()Ljava/lang/String;' under the tag 'mobeta'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'The context who has created the this View seems not to be an Activity. Therefore the ActionBarSlideIcon could not be instantiated' under the tag 'SlidingMenu'
+		 - This application logs the message 'Upgrading Database!' under the tag 'Shopping List'
+		 - This application logs the message 'behind INVISIBLE' under the tag 'CustomViewBehind'
+		 - This application logs the message 'changing layerType. hardware?  0' under the tag 'SlidingMenu'
+		 - This application logs the message 'file created' under the tag 'mobeta'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'queryAllShoppingLists()' under the tag 'ShoppingList'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'savedInstanceState == null' under the tag 'ShoppingList'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'setting padding!' under the tag 'SlidingMenu'
+		 - This application retrieves '' information about the 'Lafzkl/development/ShoppingList/ui/dialog/AboutDialog;->getContext()Landroid/content/Context;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Code Execution                          
+		 - This application executes a UNIX command
+
+
+[+] Apk File
+	[.] File Name                               
+		 - afzkl.development.ShoppingList.apk
+
+	[.] Fingerprint                             
+		 - MD5: 33012072ec310d21f347f8f4a17def2d
+		 - SHA-1: 0ffdd11b9fc252b0cc34c9e3b02a1b5d53335692
+		 - SHA-256: 188d49ec7bb5b241f303b545154e91513f5c07821dfe547e67059382d4d955ee
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.INTERNET',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

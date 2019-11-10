@@ -1,0 +1,36 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Código Civil 6ª Edição
+
+	[.] Application Version                     
+		 - 1.3.0
+
+	[.] Package Name                            
+		 - air.br.com.iasoft.cc2002.tablet.A2014
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.br.com.iasoft.cc2002.tablet.A2014.apk
+
+	[.] Fingerprint                             
+		 - MD5: 3f41ab886074d45108b69a6ad65b61ab
+		 - SHA-1: 3a7c1648432155492726a9e84981b5f152f0ceed
+		 - SHA-256: 58756d4f65242ea4ea4bcbd3c450a9efe919334246ba980ac06558b96f852399
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.DISABLE_KEYGUARD',  'android.permission.INTERNET',
+		   'android.permission.WAKE_LOCK']
+		 - Implied: []
+		 - Declared: []
+
+

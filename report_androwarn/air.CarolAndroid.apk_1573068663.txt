@@ -1,0 +1,49 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Kolędy
+
+	[.] Application Version                     
+		 - 2.36.0
+
+	[.] Package Name                            
+		 - air.CarolAndroid
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'Purchase verification failed: missing data.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Signature verification failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.CarolAndroid.apk
+
+	[.] Fingerprint                             
+		 - MD5: 024ee847aad193c8ee8b574bea87f0a9
+		 - SHA-1: 389841309fc835294a4667f1321f49cde33d70de
+		 - SHA-256: 00fe7af731b8a895e9d3861d31ab7477a7f0320dba1a4ae90fdb578d5084aa35
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.DISABLE_KEYGUARD',  'android.permission.INTERNET',  'android.permission.WAKE_LOCK',  'com.android.vending.BILLING']
+		 - Implied: []
+		 - Declared: []
+
+

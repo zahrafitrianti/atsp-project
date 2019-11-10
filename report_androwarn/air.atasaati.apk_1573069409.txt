@@ -1,0 +1,35 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - ATA SAATİ
+
+	[.] Application Version                     
+		 - 1.0.0
+
+	[.] Package Name                            
+		 - air.atasaati
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.atasaati.apk
+
+	[.] Fingerprint                             
+		 - MD5: 1686b6a1420bc15dd35d613c341b95b2
+		 - SHA-1: 58f8b24f8c212a16647f9d76e3ed3d10efe95808
+		 - SHA-256: 9a2272d4eae2a96830e81f5fd560e3bc5447ff87f2d94e4d19dd723c312a3fb1
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: []
+		 - Implied: []
+		 - Declared: []
+
+

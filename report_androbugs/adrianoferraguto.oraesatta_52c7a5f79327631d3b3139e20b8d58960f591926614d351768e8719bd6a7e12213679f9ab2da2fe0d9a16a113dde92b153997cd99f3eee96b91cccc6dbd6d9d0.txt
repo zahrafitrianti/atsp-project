@@ -1,0 +1,217 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: adrianoferraguto.oraesatta
+Package Version Name: 4.0.1
+Package Version Code: 9
+Min Sdk: 16
+Target Sdk: 22
+MD5   : d84310afeefa79b2c276e89b9bdc4782
+SHA1  : 22a8413cf642ca9d559e0e890af0010a20d24980
+SHA256: 3fbd7f10e4b91a267f6b0d76259dbe664e8e4081a807cb1f4828fe0f7b21215a
+SHA512: edf2eb7d69b27f8e02c9acba9889df1f83e327666980c5bab0ac676b9f9c3f754059450e770e957dc1ff581cd65b1e1455ea959e34368a11561165ab596adde7
+Analyze Signature: 52c7a5f79327631d3b3139e20b8d58960f591926614d351768e8719bd6a7e12213679f9ab2da2fe0d9a16a113dde92b153997cd99f3eee96b91cccc6dbd6d9d0
+------------------------------------------------------------------------------------------------
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:8):
+               http://%s/%s
+                   => Lcom/facebook/react/devsupport/DevServerHelper;->createResourceURL(Ljava/lang/String;
+                    Ljava/lang/String;)Ljava/lang/String;
+               http://%s/%s.bundle?platform=android&dev=%s&hot=%s&minify=%s
+                   => Lcom/facebook/react/devsupport/DevServerHelper;->createBundleURL(Ljava/lang/String; Ljava/lang/String; Z Z
+                    Z)Ljava/lang/String;
+                   => Lcom/facebook/react/devsupport/DevServerHelper;->getSourceUrl(Ljava/lang/String;)Ljava/lang/String;
+                   => Lcom/facebook/react/devsupport/DevServerHelper;-><clinit>()V
+               http://%s/inspector/device?name=%s
+                   => Lcom/facebook/react/devsupport/DevServerHelper;->getInspectorDeviceUrl()Ljava/lang/String;
+               http://%s/jscheapcaptureupload
+                   => Lcom/facebook/react/devsupport/DevServerHelper;->getHeapCaptureUploadUrl()Ljava/lang/String;
+               http://%s/launch-js-devtools
+                   => Lcom/facebook/react/devsupport/DevServerHelper;->createLaunchJSDevtoolsCommandUrl()Ljava/lang/String;
+               http://%s/onchange
+                   => Lcom/facebook/react/devsupport/DevServerHelper;->createOnChangeEndpointUrl()Ljava/lang/String;
+               http://%s/status
+                   => Lcom/facebook/react/devsupport/DevServerHelper;->createPackagerStatusURL(Ljava/lang/String;)Ljava/lang/String;
+               http://www.android.com/
+                   => Lcom/facebook/soloader/SoLoader;->loadLibrary(Ljava/lang/String;)V
+[Critical] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           Found a critical WebView "addJavascriptInterface" vulnerability. This method can be used to allow JavaScript to control the host
+           application.
+           This is a powerful feature, but also presents a security risk for applications targeted to API level JELLY_BEAN(4.2) or below,
+           because JavaScript could use reflection to access an injected object's public fields. Use of this method in a WebView containing
+           untrusted content could allow an attacker to manipulate the host application in unintended ways, executing Java code with the
+           permissions of the host application.
+           Reference:
+             1."http://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface(java.lang.Object,
+           java.lang.String) "
+             2.https://labs.mwrinfosecurity.com/blog/2013/09/24/webview-addjavascriptinterface-remote-code-execution/
+             3.http://50.56.33.56/blog/?p=314
+             4.http://blog.trustlook.com/2013/09/04/alert-android-webview-addjavascriptinterface-code-execution-vulnerability/
+           Please modify the below code:
+               => Lcom/facebook/react/views/webview/ReactWebViewManager$ReactWebView;->setMessagingEnabled(Z)V (0x20) --->
+                    Lcom/facebook/react/views/webview/ReactWebViewManager$ReactWebView;->addJavascriptInterface(Ljava/lang/Object;
+                    Ljava/lang/String;)V
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lcom/facebook/common/statfs/StatFsHelper;->ensureInitialized()V (0x26) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/facebook/cache/disk/DefaultDiskStorage;->isExternal(Ljava/io/File; Lcom/facebook/cache/common/CacheErrorLogger;)Z
+                    (0x4) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning] <WebView> WebView Local File Access Attacks Checking:
+           Found "setAllowFileAccess(true)" or not set(enabled by default) in WebView. The attackers could inject malicious script into
+           WebView and exploit the opportunity to access local resources. This can be mitigated or prevented by disabling local file system
+           access. (It is enabled by default)
+           Note that this enables or disables file system access only. Assets and resources are still accessible using file:///android_asset
+           and file:///android_res.
+           The attackers can use "mWebView.loadUrl("file:///data/data/[Your_Package_Name]/[File]");" to access app's local file.
+           Reference: (1)https://labs.mwrinfosecurity.com/blog/2012/04/23/adventures-with-android-webviews/
+                      (2)http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)
+           Please add or modify "yourWebView.getSettings().setAllowFileAccess(false)" to your WebView:
+               Lcom/facebook/react/views/webview/ReactWebViewManager$ReactWebView;->callInjectedJavaScript()V
+               Lcom/facebook/react/views/webview/ReactWebViewManager;->createViewInstance(Lcom/facebook/react/uimanager/ThemedReactContext;)
+                    Landroid/webkit/WebView;
+               Lcom/facebook/react/views/webview/ReactWebViewManager;->setAllowUniversalAccessFromFileURLs(Landroid/webkit/WebView; Z)V
+               Lcom/facebook/react/views/webview/ReactWebViewManager;->setDomStorageEnabled(Landroid/webkit/WebView; Z)V
+               Lcom/facebook/react/views/webview/ReactWebViewManager;->setJavaScriptEnabled(Landroid/webkit/WebView; Z)V
+               Lcom/facebook/react/views/webview/ReactWebViewManager;->setMediaPlaybackRequiresUserAction(Landroid/webkit/WebView; Z)V
+               Lcom/facebook/react/views/webview/ReactWebViewManager;->setMixedContentMode(Landroid/webkit/WebView; Ljava/lang/String;)V
+               Lcom/facebook/react/views/webview/ReactWebViewManager;->setScalesPageToFit(Landroid/webkit/WebView; Z)V
+               Lcom/facebook/react/views/webview/ReactWebViewManager;->setSource(Landroid/webkit/WebView;
+                    Lcom/facebook/react/bridge/ReadableMap;)V
+               Lcom/facebook/react/views/webview/ReactWebViewManager;->setUserAgent(Landroid/webkit/WebView; Ljava/lang/String;)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is using Android SQLite databases but it's "NOT" suffering from SQLite Journal Information Disclosure Vulnerability.
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/facebook/common/file/FileTree;->deleteRecursively(Ljava/io/File;)Z (0x12) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/common/file/FileUtils;->mkdirs(Ljava/io/File;)V (0x1a) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/common/file/FileUtils;->rename(Ljava/io/File; Ljava/io/File;)V (0xc) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/soloader/SysUtil;->deleteOrThrow(Ljava/io/File;)V (0x0) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/soloader/SysUtil;->dumbDeleteRecursive(Ljava/io/File;)V (0x34) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/cache/disk/DefaultDiskStorage$InserterImpl;->cleanUp()Z (0x14) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/cache/disk/DefaultDiskStorage$PurgingVisitor;->postVisitDirectory(Ljava/io/File;)V (0x20) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/facebook/cache/disk/DefaultDiskStorage$PurgingVisitor;->visitFile(Ljava/io/File;)V (0x14) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/facebook/cache/disk/DefaultDiskStorage;->doRemove(Ljava/io/File;)J (0x1a) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/react/modules/camera/ImageEditingManager$CleanTask;->cleanDirectory(Ljava/io/File;)V (0x22) --->
+                    Ljava/io/File;->delete()Z
+               => Lokhttp3/internal/io/FileSystem$1;->delete(Ljava/io/File;)V (0x0) ---> Ljava/io/File;->delete()Z
+               => Lokhttp3/internal/io/FileSystem$1;->deleteContents(Ljava/io/File;)V (0x5c) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/cache/disk/DiskStorageCache;->maybeDeleteSharedPreferencesFile(Landroid/content/Context;
+                    Ljava/lang/String;)V (0xa6) ---> Ljava/io/File;->delete()Z
+               => Lcom/facebook/soloader/UnpackingSoSource;->extractDso(Lcom/facebook/soloader/UnpackingSoSource$InputDso; [B)V (0x128) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/facebook/react/devsupport/JSCHeapCapture;->captureHeap(Ljava/lang/String;
+                    Lcom/facebook/react/devsupport/JSCHeapCapture$CaptureCallback;)V (0x52) ---> Ljava/io/File;->delete()Z
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" because your set minSdk >= 11.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info]  Dynamic Code Loading:
+           No dynamic code loading(DexClassLoader) found.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <Signature><Hacker> Getting Signature Code Checking:
+           Did not detect this app is checking the signature in the code.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest Exported Components Checking:
+           No exported components(except for Launcher) for receiving Android or outside applications' actions (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting IMEI and Device ID:
+           Did not detect this app is getting the "device id(IMEI)" by "TelephonyManager.getDeviceId()" approach.
+[Info] <Sensitive_Information> Getting ANDROID_ID:
+           Did not detect this app is getting the 64-bit number "Settings.Secure.ANDROID_ID".
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+[Info] <WebView> WebView Potential XSS Attacks Checking:
+           Did not detect "setJavaScriptEnabled(true)" in WebView.
+------------------------------------------------------------
+AndroBugs analyzing time: 4.824869 secs
+Total elapsed time: 21.157671 secs

@@ -1,0 +1,191 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: ac.robinson.mediaphone
+Package Version Name: 1.4.2
+Package Version Code: 25
+Min Sdk: 9
+Target Sdk: 26
+MD5   : c2f4ac63b31256dace17e359b0ec215b
+SHA1  : b923cd8b140333d949eee231a4dec4566ce92f5e
+SHA256: d92585ba9d245653a54cb36c1c579433d99ac4f9c3a548604d27816e3cfafde2
+SHA512: 62c173a71fffdd2a3cad20a3655c5a2c4b00e61e0b0b20dd7cd1b5b7e0b624e02e8cf4e197f888ed65a949e5888e3f2a2daf468d3b6b92bb95761a2fcd3eef7b
+Analyze Signature: 2c663f72b02a2f1e971fec0d477f6d22df7e544d2f5d88ddabcc3b1fe02cd7e920792bea549890587eca98032902e3479cd537bd4d1990c71cb80e2021c98afe
+------------------------------------------------------------------------------------------------
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:2):
+               http://www.apple.com/quicktime/resources/smilextensions
+                   => Lac/robinson/mediautilities/SMILUtilities;->generateNarrativeSMIL(Landroid/content/res/Resources; Ljava/io/File;
+                    Ljava/util/ArrayList; Ljava/util/Map;)Ljava/util/ArrayList;
+               http://xmlpull.org/v1/doc/features.html#indent-output
+                   => Lac/robinson/mediautilities/SMILUtilities;->generateNarrativeSMIL(Landroid/content/res/Resources; Ljava/io/File;
+                    Ljava/util/ArrayList; Ljava/util/Map;)Ljava/util/ArrayList;
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lac/robinson/mediaphone/activity/PreferencesActivity$1;->onPreferenceClick(Landroid/preference/Preference;)Z (0xf8) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lac/robinson/mediaphone/provider/UpgradeManager;->upgradeApplication(Landroid/content/Context;)V (0x268) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is using Android SQLite databases.
+           Prior to Android 4.0, Android has SQLite Journal Information Disclosure Vulnerability.
+           But it can only be solved by users upgrading to Android > 4.0 and YOU CANNOT SOLVE IT BY YOURSELF (But you can use encrypt your
+           databases and Journals by "SQLCipher" or other libs).
+           Proof-Of-Concept Reference:
+           (1) http://blog.watchfire.com/files/androidsqlitejournal.pdf
+           (2) http://www.youtube.com/watch?v=oCXLHjmH5rY
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lac/robinson/mediaphone/MediaPhoneActivity;->processIncomingFiles(Landroid/os/Message;)V (0x5c) --->
+                    Ljava/io/File;->delete()Z
+               => Lac/robinson/mediaphone/MediaPhoneActivity$13;->run()V (0xf6) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/mediaphone/activity/AudioActivity$5;->run()V (0xa2) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/mediaphone/activity/AudioActivity$5;->run()V (0xac) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/mediaphone/importing/BluetoothObserver;->onEvent(I Ljava/lang/String;)V (0x24e) --->
+                    Ljava/io/File;->delete()Z
+               => Lac/robinson/mediaphone/importing/ImportedFileParser;->importHTMLNarrative(Landroid/content/ContentResolver;
+                    Ljava/io/File; I)Ljava/util/ArrayList; (0x18) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/mediaphone/importing/ImportedFileParser;->importNarrativeFrame(Landroid/content/res/Resources;
+                    Landroid/content/ContentResolver; Lac/robinson/mediautilities/FrameMediaContainer;)V (0x144) --->
+                    Ljava/io/File;->delete()Z
+               => Lac/robinson/mediaphone/importing/ImportedFileParser;->importNarrativeFrame(Landroid/content/res/Resources;
+                    Landroid/content/ContentResolver; Lac/robinson/mediautilities/FrameMediaContainer;)V (0x220) --->
+                    Ljava/io/File;->delete()Z
+               => Lac/robinson/mediaphone/importing/ImportedFileParser;->importNarrativeFrame(Landroid/content/res/Resources;
+                    Landroid/content/ContentResolver; Lac/robinson/mediautilities/FrameMediaContainer;)V (0x2e4) --->
+                    Ljava/io/File;->delete()Z
+               => Lac/robinson/mediaphone/importing/ImportedFileParser;->importSMILNarrative(Landroid/content/ContentResolver;
+                    Ljava/io/File; I)Ljava/util/ArrayList; (0x6c) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/mediaphone/importing/ImportedFileParser;->importSMILNarrative(Landroid/content/ContentResolver;
+                    Ljava/io/File; I)Ljava/util/ArrayList; (0x72) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/mediaphone/importing/ImportedFileParser;->importSMILNarrative(Landroid/content/ContentResolver;
+                    Ljava/io/File; I)Ljava/util/ArrayList; (0xcc) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/mediautilities/MOVUtilities;->addNarrativeAudioAsSegmentedTrack(Ljava/util/ArrayList; Ljava/io/File;
+                    Lac/robinson/mov/JPEGMovWriter;)Ljava/util/ArrayList; (0x632) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/mediautilities/MOVUtilities;->addNarrativeAudioAsSegmentedTrack(Ljava/util/ArrayList; Ljava/io/File;
+                    Lac/robinson/mov/JPEGMovWriter;)Ljava/util/ArrayList; (0x6e2) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/mediautilities/MOVUtilities;->addNarrativeAudioAsSegmentedTrack(Ljava/util/ArrayList; Ljava/io/File;
+                    Lac/robinson/mov/JPEGMovWriter;)Ljava/util/ArrayList; (0x73c) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/mediautilities/MOVUtilities;->generateNarrativeMOV(Landroid/content/res/Resources; Ljava/io/File;
+                    Ljava/util/ArrayList; Ljava/util/Map;)Ljava/util/ArrayList; (0x448) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/mediautilities/SMILUtilities;->getSMILFrameList(Ljava/io/File; I Z I Z)Ljava/util/ArrayList; (0x27a) --->
+                    Ljava/io/File;->delete()Z
+               => Lac/robinson/util/BitmapUtilities;->saveJPEGToJPEG([B Ljava/io/File; Z)Z (0x2e) ---> Ljava/io/File;->delete()Z
+               => Lac/robinson/util/IOUtilities;->deleteRecursive(Ljava/io/File;)Z (0x30) ---> Ljava/io/File;->delete()Z
+[Notice]  Native Library Loading Checking:
+           Native library loading codes(System.loadLibrary(...)) found:
+               [libopencore-amrnb-wrapper.so]
+               => Lac/robinson/mediautilities/MediaUtilities;-><clinit>()V (0x10) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" you're not using it.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info]  Dynamic Code Loading:
+           No dynamic code loading(DexClassLoader) found.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <Signature><Hacker> Getting Signature Code Checking:
+           Did not detect this app is checking the signature in the code.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest Exported Components Checking:
+           No exported components(except for Launcher) for receiving Android or outside applications' actions (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting IMEI and Device ID:
+           Did not detect this app is getting the "device id(IMEI)" by "TelephonyManager.getDeviceId()" approach.
+[Info] <Sensitive_Information> Getting ANDROID_ID:
+           Did not detect this app is getting the 64-bit number "Settings.Secure.ANDROID_ID".
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           No HTTP-related connection codes found.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+[Info] <WebView> WebView Local File Access Attacks Checking:
+           Did not find potentially critical local file access settings.
+[Info] <WebView> WebView Potential XSS Attacks Checking:
+           Did not detect "setJavaScriptEnabled(true)" in WebView.
+[Info] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           WebView addJavascriptInterface vulnerabilities not found.
+------------------------------------------------------------
+AndroBugs analyzing time: 3.374766 secs
+Total elapsed time: 27.57782 secs

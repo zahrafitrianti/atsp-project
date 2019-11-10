@@ -1,0 +1,108 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - CHESSMASTER Free
+
+	[.] Application Version                     
+		 - 1.1
+
+	[.] Package Name                            
+		 - air.agara.games.ChessmasterFree
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'AndroidWebView'
+		 - This application logs the message '2' under the tag 'Lc/m/x/a/iab/p;->d()Z'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '2' under the tag '[RBExtension]'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '4' under the tag '2'
+		 - This application logs the message '5' under the tag '[IABExtension]'
+		 - This application logs the message '7' under the tag 'VibrationVibrateFunction'
+		 - This application logs the message '7' under the tag '[RBExtension]'
+		 - This application logs the message 'Amazon custom scheme is not available here.' under the tag '[RBExtension]'
+		 - This application logs the message 'Base64 decoding failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Billing already initalized.' under the tag '[IABExtension]'
+		 - This application logs the message 'Boot' under the tag '[CMR]'
+		 - This application logs the message 'Could not discover AIR container.' under the tag '3'
+		 - This application logs the message 'Exception hooking AIR container.' under the tag 'Could not discover AIR container.'
+		 - This application logs the message 'Failed parsing extras' under the tag '0'
+		 - This application logs the message 'IAB.init' under the tag '[IABExtension]'
+		 - This application logs the message 'Invalid key specification.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Is kindle' under the tag '[RBExtension]'
+		 - This application logs the message 'Landroid/content/Intent;->getExtras()Landroid/os/Bundle;' under the tag 'Lorg/json/JSONObject;-><init>()V'
+		 - This application logs the message 'Landroid/content/Intent;->getExtras()Landroid/os/Bundle;' under the tag 'v4'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'VibrationVibrateFunction'
+		 - This application logs the message 'NOT supported' under the tag 'VibrationSupportedFunction'
+		 - This application logs the message 'No Vibrator available.' under the tag '1'
+		 - This application logs the message 'NoSuchAlgorithmException.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Not kindle' under the tag '[RBExtension]'
+		 - This application logs the message 'Notify status icon resource not valid.' under the tag 'No embedded icon res.'
+		 - This application logs the message 'Purchase->Update' under the tag 'Lc/m/x/a/iab/p;->d()Z'
+		 - This application logs the message 'Receive' under the tag '[CMR]'
+		 - This application logs the message 'Signature exception.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Signature verification failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Start Service Connection..' under the tag '[IABExtension]'
+		 - This application logs the message 'Supported' under the tag 'VibrationSupportedFunction'
+		 - This application logs the message 'Thread Exception' under the tag '[RBExtension]'
+		 - This application logs the message 'Using amazon custom scheme' under the tag '[RBExtension]'
+		 - This application logs the message 'call' under the tag 'VibrationInitNativeCodeFunction'
+		 - This application logs the message 'call' under the tag 'VibrationSupportedFunction'
+		 - This application logs the message 'call' under the tag 'VibrationVibrateFunction'
+		 - This application logs the message 'constructor' under the tag 'VibrationExtensionContext'
+		 - This application logs the message 'context disposal' under the tag '[IABExtension]'
+		 - This application logs the message 'createContext' under the tag 'VibrationExtension'
+		 - This application logs the message 'dispatch queue.' under the tag 'Lcom/milkmangames/extensions/android/coremobile/c;->c(Ljava/lang/String;)V'
+		 - This application logs the message 'dispose' under the tag 'VibrationExtension'
+		 - This application logs the message 'dispose' under the tag 'VibrationExtensionContext'
+		 - This application logs the message 'failed onReceive context initializer.' under the tag '[CMR]'
+		 - This application logs the message 'fg LOCAL_NOTIFICATION_RECEIVED exit bg' under the tag '1'
+		 - This application logs the message 'fg LOCAL_NOTIFICATION_RECEIVED exit' under the tag '1'
+		 - This application logs the message 'fg' under the tag '1'
+		 - This application logs the message 'getFunctions' under the tag 'VibrationExtensionContext'
+		 - This application logs the message 'initialize' under the tag 'VibrationExtension'
+		 - This application logs the message 'set fg' under the tag '20000'
+		 - This application logs the message 'signature does not match data.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/milkmangames/extensions/android/a;->getActivity()Landroid/app/Activity;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+	[.] Code Execution                          
+		 - This application executes a UNIX command containing this argument: 'su'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.agara.games.ChessmasterFree.apk
+
+	[.] Fingerprint                             
+		 - MD5: 720747f4acd4ce31dcf896986e5bba8f
+		 - SHA-1: a02994f61f5d725f5db44996fa65cbcd0d3d0fe2
+		 - SHA-256: e9b4b7be0525c8a19bd3b4720e03dcd88f82967141e23851d872f15cf0c9854f
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET',  'android.permission.RECEIVE_BOOT_COMPLETED',
+		   'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',  'com.android.vending.BILLING']
+		 - Implied: []
+		 - Declared: []
+
+

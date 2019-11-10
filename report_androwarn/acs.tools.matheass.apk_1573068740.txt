@@ -1,0 +1,48 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 1x1 Mathe Profi
+
+	[.] Application Version                     
+		 - 1.21
+
+	[.] Package Name                            
+		 - acs.tools.matheass
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'onCreate' under the tag ''
+		 - This application logs the message 'onUpgrade' under the tag ''
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - acs.tools.matheass.apk
+
+	[.] Fingerprint                             
+		 - MD5: 050db7c0cb775bff97377e8f814c862b
+		 - SHA-1: a5e1f76acd4d4ad9d4e610f081d303760ec52b40
+		 - SHA-256: 2d224eeeef83cb81d16375feb918fa88686df8da14a2c886ac082b17820c4bd2
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

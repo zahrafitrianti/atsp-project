@@ -1,0 +1,47 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - BREAD
+
+	[.] Application Version                     
+		 - 0.1
+
+	[.] Package Name                            
+		 - air.air.Bread
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.air.Bread.apk
+
+	[.] Fingerprint                             
+		 - MD5: 144380b7f38a1592a60f24a54dd72e4e
+		 - SHA-1: a4f8cca392f9f7e58ce447fc52a613d7767d3aea
+		 - SHA-256: c0657b8c354569eddeec2a401d38425aa9be9b81ee04bdfa3364e779aad363c1
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

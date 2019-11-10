@@ -1,0 +1,54 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Amazing Zhus
+
+	[.] Application Version                     
+		 - 1.0.5
+
+	[.] Package Name                            
+		 - air.com.amazingzhus.amazingzhus
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '3' under the tag 'AdobeAIRMainActivity'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.com.amazingzhus.amazingzhus.apk
+
+	[.] Fingerprint                             
+		 - MD5: 467082429937eb68c3919e61f4eed942
+		 - SHA-1: 6269e54c6921ec607ff30edd652158076ba3e396
+		 - SHA-256: eac29a4c753f272604834d35aba41d87c282dc394b21893dc085f6354654c59a
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

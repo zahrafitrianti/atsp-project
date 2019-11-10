@@ -1,0 +1,83 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - ChiralCube
+
+	[.] Application Version                     
+		 - 0.0.2
+
+	[.] Package Name                            
+		 - air.ChiralCube
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'MetadataBundle'
+		 - This application logs the message '2' under the tag 'Asserts'
+		 - This application logs the message '2' under the tag 'EventCallback'
+		 - This application logs the message '2' under the tag 'LocationClientImpl'
+		 - This application logs the message '3' under the tag 'GAV3'
+		 - This application logs the message '3' under the tag 'GmsClient'
+		 - This application logs the message '3' under the tag 'GmsClientEvents'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '6' under the tag 'DataHolder'
+		 - This application logs the message 'Attempt to compare invalid DriveId detected. Has local storage been cleared?' under the tag 'DriveId'
+		 - This application logs the message 'GooglePlayServicesUtil 2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'Lcom/google/android/gms/common/GooglePlayServicesUtil;->t(Landroid/content/Context;)V' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Lcom/google/android/gms/internal/eh$b;->ec()V' under the tag 'GmsClient'
+		 - This application logs the message 'Ljava/util/concurrent/locks/Lock;->unlock()V' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Making Creator statically' under the tag 'Lcom/google/android/gms/maps/internal/q;->ha()Z'
+		 - This application logs the message 'Received a location in client after calling removeLocationUpdates.' under the tag 'LocationClientHelper'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'X509 GooglePlayServicesUtil Package has more than one signature.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'You must supply a resource ID for a TextView' under the tag 'DataBufferAdapter'
+		 - This application logs the message 'error getBoolean' under the tag 'ane'
+		 - This application logs the message 'error getInt' under the tag 'ane'
+		 - This application logs the message 'error getString' under the tag 'ane'
+		 - This application logs the message 'onAddGeofenceResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByPendingIntentResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByRequestIdsResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'service died' under the tag 'AppStateClient'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'unknown message in LocationHandler.handleMessage' under the tag 'LocationClientHelper'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_PROVIDERS, GET_RECEIVERS, GET_SERVICES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;'
+		   application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.google.android.apps.bazaar' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.ChiralCube.apk
+
+	[.] Fingerprint                             
+		 - MD5: 957c74257108548bc76bc4e5df87a68c
+		 - SHA-1: 12841c04a2253156d0073141a55a88f9c2a66dd9
+		 - SHA-256: 41e1bf54d9f0ca9aea216704b1c6a4c3e055fbfbd8a48acc12b5c2dcfcedf1a6
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

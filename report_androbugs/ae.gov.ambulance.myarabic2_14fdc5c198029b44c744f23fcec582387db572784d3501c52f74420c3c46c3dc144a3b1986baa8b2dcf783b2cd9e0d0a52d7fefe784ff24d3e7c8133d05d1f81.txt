@@ -1,0 +1,192 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: ae.gov.ambulance.myarabic2
+Package Version Name: 2.3.0
+Package Version Code: 203002
+Min Sdk: 14
+Target Sdk: 22
+MD5   : 18e78c40c13ac708ce88410e1f803e91
+SHA1  : 535139f02116c5e1ec57a3e4d3585fd98fa1640d
+SHA256: e10fa44e8a2b9cff46996db78acfcf1183f39b9d0aecebc9d96f37a24b01fcd7
+SHA512: 4a3b61e5276fa2e78082f0febbb19c0f44c17eae102ee17a98fd369d7bebd5dc3eec3834c4a7f0d58f7b8fe6c009f9dc13ff7a1769270611bb3b543e1ec58ec1
+Analyze Signature: 14fdc5c198029b44c744f23fcec582387db572784d3501c52f74420c3c46c3dc144a3b1986baa8b2dcf783b2cd9e0d0a52d7fefe784ff24d3e7c8133d05d1f81
+------------------------------------------------------------------------------------------------
+[Critical] <Command> Runtime Command Checking:
+           This app is using critical function 'Runtime.getRuntime().exec("...")'.
+           Please confirm these following code secions are not harmful:
+               => Lorg/xwalk/core/internal/XWalkViewDelegate;-><clinit>()V (0x86) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+[Critical] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           Found a critical WebView "addJavascriptInterface" vulnerability. This method can be used to allow JavaScript to control the host
+           application.
+           This is a powerful feature, but also presents a security risk for applications targeted to API level JELLY_BEAN(4.2) or below,
+           because JavaScript could use reflection to access an injected object's public fields. Use of this method in a WebView containing
+           untrusted content could allow an attacker to manipulate the host application in unintended ways, executing Java code with the
+           permissions of the host application.
+           Reference:
+             1."http://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface(java.lang.Object,
+           java.lang.String) "
+             2.https://labs.mwrinfosecurity.com/blog/2013/09/24/webview-addjavascriptinterface-remote-code-execution/
+             3.http://50.56.33.56/blog/?p=314
+             4.http://blog.trustlook.com/2013/09/04/alert-android-webview-addjavascriptinterface-code-execution-vulnerability/
+           Please modify the below code:
+               => Lorg/crosswalk/engine/XWalkWebViewEngine;->exposeJsInterface(Lorg/xwalk/core/XWalkView;
+                    Lorg/apache/cordova/CordovaBridge;)V (0xe) ---> Lorg/xwalk/core/XWalkView;->addJavascriptInterface(Ljava/lang/Object;
+                    Ljava/lang/String;)V
+               => Lorg/chromium/content/browser/accessibility/AccessibilityInjector;->addAccessibilityApis()V (0x3c) --->
+                    Lorg/chromium/content/browser/ContentViewCore;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/chromium/content/browser/accessibility/AccessibilityInjector;->addAccessibilityApis()V (0x6c) --->
+                    Lorg/chromium/content/browser/ContentViewCore;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/chromium/content/browser/accessibility/JellyBeanAccessibilityInjector;->addAccessibilityApis()V (0x3e) --->
+                    Lorg/chromium/content/browser/ContentViewCore;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/xwalk/core/internal/XWalkViewInternal;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V (0x14) --->
+                    Lorg/xwalk/core/internal/XWalkContent;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lorg/xwalk/core/internal/XWalkViewBridge;->addJavascriptInterfaceSuper(Ljava/lang/Object; Ljava/lang/String;)V (0x0) --->
+                    Lorg/xwalk/core/internal/XWalkViewInternal;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lorg/chromium/base/PathUtils;->getExternalStorageDirectory()Ljava/lang/String; (0x0) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/xwalk/core/internal/XWalkPathHelper;->initialize()V (0xe) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/xwalk/core/internal/extension/api/device_capabilities/DeviceCapabilitiesStorage;->initStorageList()V (0xbe) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning]  Codes for Sending SMS:
+           This app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage):
+               => Lorg/xwalk/core/internal/extension/api/messaging/MessagingSmsManager;->onSmsSend(I Lorg/json/JSONObject;)V (0x13e) --->
+                    Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lorg/chromium/base/ResourceExtractor;->deleteFiles()V (0x22) ---> Ljava/io/File;->delete()Z
+               => Lorg/chromium/base/ResourceExtractor;->deleteFiles()V (0x88) ---> Ljava/io/File;->delete()Z
+               => Lorg/chromium/base/ResourceExtractor;->deleteFiles()V (0xee) ---> Ljava/io/File;->delete()Z
+               => Lorg/chromium/base/ResourceExtractor;->deleteFiles()V (0x15c) ---> Ljava/io/File;->delete()Z
+               => Lorg/chromium/base/library_loader/LibraryLoaderHelper;->delete(Ljava/io/File;)V (0x0) ---> Ljava/io/File;->delete()Z
+               => Lorg/chromium/base/library_loader/LibraryLoaderHelper;->unpackLibraryFromZipFile(Ljava/util/zip/ZipFile;
+                    Ljava/util/zip/ZipEntry; Ljava/io/File;)V (0x4c) ---> Ljava/io/File;->delete()Z
+               => Lorg/chromium/media/MediaPlayerBridge$LoadDataUriTask;->deleteFile()V (0xe) ---> Ljava/io/File;->delete()Z
+               => Lorg/xwalk/core/internal/XWalkViewInternal;->deleteImageFile()Z (0x40) ---> Ljava/io/File;->delete()Z
+               => Lnl/xservices/plugins/SocialSharing;->cleanupOldFiles(Ljava/io/File;)V (0x14) ---> Ljava/io/File;->delete()Z
+[Notice] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Found codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml:
+               => Lorg/crosswalk/engine/XWalkCordovaView;->setGlobalPrefs (Landroid/content/Context;
+                    Lorg/apache/cordova/CordovaPreferences;)Landroid/content/Context;
+[Notice]  Native Library Loading Checking:
+           Native library loading codes(System.loadLibrary(...)) found:
+               [libchromium_android_linker.so]
+               => Lorg/chromium/base/library_loader/Linker;->ensureInitializedLocked()V (0x40) --->
+                    Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libchromium_android_linker.cr.so]
+               => Lorg/chromium/base/library_loader/Linker;->ensureInitializedLocked()V (0xb4) --->
+                    Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" because your set minSdk >= 11.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is "NOT" using Android SQLite databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info]  Dynamic Code Loading:
+           No dynamic code loading(DexClassLoader) found.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <Signature><Hacker> Getting Signature Code Checking:
+           Did not detect this app is checking the signature in the code.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest Exported Components Checking:
+           No exported components(except for Launcher) for receiving Android or outside applications' actions (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting IMEI and Device ID:
+           Did not detect this app is getting the "device id(IMEI)" by "TelephonyManager.getDeviceId()" approach.
+[Info] <Sensitive_Information> Getting ANDROID_ID:
+           Did not detect this app is getting the 64-bit number "Settings.Secure.ANDROID_ID".
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Connection Checking:
+           Did not discover urls that are not under SSL (Notice: if you encrypt the url string, we can not discover that).
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+[Info] <WebView> WebView Local File Access Attacks Checking:
+           Did not find potentially critical local file access settings.
+[Info] <WebView> WebView Potential XSS Attacks Checking:
+           Did not detect "setJavaScriptEnabled(true)" in WebView.
+------------------------------------------------------------
+AndroBugs analyzing time: 1.935887 secs
+Total elapsed time: 7.349108 secs

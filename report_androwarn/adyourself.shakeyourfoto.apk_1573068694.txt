@@ -1,0 +1,167 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Shake Your Photo
+
+	[.] Application Version                     
+		 - 1.2
+
+	[.] Package Name                            
+		 - adyourself.shakeyourfoto
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is running; attempting to cancel' under the tag 'LoaderManager'
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load canceled -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load canceled -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'Landroid/support/v4/widget/SwipeRefreshLayout;->canChildScrollUp()Z'
+		 - This application logs the message '0' under the tag 'Ljava/lang/Object;->getClass()Ljava/lang/Class;'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'Ladyourself/shakeyourfoto/MainActivity;->access$000()Ljava/lang/String;'
+		 - This application logs the message '10' under the tag 'NotifManCompat'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'android.support.v4.speech.tts'
+		 - This application logs the message '15' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '2' under the tag 'NestedScrollView'
+		 - This application logs the message '2' under the tag 'NotifManCompat'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '21' under the tag 'Ljava/util/List;->size()I'
+		 - This application logs the message '3' under the tag 'ContextCompat'
+		 - This application logs the message '3' under the tag 'DocumentFile'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'Ladyourself/shakeyourfoto/MainActivity;->access$000()Ljava/lang/String;'
+		 - This application logs the message '3' under the tag 'Ljava/util/Set;->iterator()Ljava/util/Iterator;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '3' under the tag 'MediaBrowserServiceCompat'
+		 - This application logs the message '3' under the tag 'MediaControllerCompat'
+		 - This application logs the message '3' under the tag 'NotifManCompat 5'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '3' under the tag 'RoundedBitmapDrawableFactory'
+		 - This application logs the message '3' under the tag 'TextViewCompatDonut'
+		 - This application logs the message '4' under the tag 'DocumentFile'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'Ladyourself/shakeyourfoto/MainActivity;->access$000()Ljava/lang/String;'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '4' under the tag 'MediaBrowserServiceCompat'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag 'Rating'
+		 - This application logs the message '4' under the tag 'TextViewCompatDonut'
+		 - This application logs the message '5' under the tag 'DocumentFile'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'ListPopupWindow'
+		 - This application logs the message '5' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '5' under the tag 'MediaBrowserServiceCompat'
+		 - This application logs the message '5' under the tag 'NestedScrollView'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'FragmentActivity'
+		 - This application logs the message '6' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '6' under the tag 'MediaBrowserServiceCompat'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '7' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '8' under the tag 'DocumentFile'
+		 - This application logs the message '8' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Cannot programmatically select non-user route because the platform is missing the selectRouteInt() method.  Media routing may not work.' under the tag
+		   'MediaRouterJellybean'
+		 - This application logs the message 'Cannot scan for wifi displays because the DisplayManager.scanWifiDisplays() method is not available on this device.' under the tag 'MediaRouterJellybeanMr1'
+		 - This application logs the message 'Could not call getMaxAvailableHeightMethod(View, int, boolean) on PopupWindow. Using the public version.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method getMaxAvailableHeight(View, int, boolean) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find voice search activity' under the tag 'SearchView'
+		 - This application logs the message 'Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.'
+		   under the tag 'TwilightManager'
+		 - This application logs the message 'DrawerToggle may not show up because NavigationIcon is not visible. You may need to call actionbar.setDisplayHomeAsUpEnabled(true);' under the tag
+		   'ActionBarDrawerToggle'
+		 - This application logs the message 'Error creating media file, check storage permissions: ' under the tag 'Ladyourself/shakeyourfoto/MainActivity;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'Got ACTION_MOVE event but have an invalid active pointer id.' under the tag '4'
+		 - This application logs the message 'Got ACTION_POINTER_DOWN event but have an invalid action index.' under the tag '0'
+		 - This application logs the message 'Invalid percentage-based rating value' under the tag 'Rating'
+		 - This application logs the message 'Landroid/content/pm/PackageManager$NameNotFoundException;->toString()Ljava/lang/String;' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Landroid/support/v7/view/SupportMenuInflater;->access$500()[Ljava/lang/Class;' under the tag 'SupportMenuInflater'
+		 - This application logs the message 'Landroid/support/v7/widget/DecorContentParent;->hideOverflowMenu()Z' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'Ljava/io/File;->getPath()Ljava/lang/String;' under the tag '0'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;' under the tag 'DrawableCompatJellybeanMr1 DrawableCompatJellybeanMr1'
+		 - This application logs the message 'Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;' under the tag 'DrawableCompatJellybeanMr1'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'MediaBrowserCompat...' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Mutated drawable is not the same instance as the input.' under the tag 'TintManager'
+		 - This application logs the message 'Not connected, unable to retrieve the MediaItem.' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'Remote error getting media item.' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Trying to set out of range star-based rating' under the tag 'Rating'
+		 - This application logs the message 'Unable to register media button event receiver with PendingIntent, falling back to ComponentName.' under the tag 'MediaSessionCompatApi18'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR_OVERLAY id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'failed to create directory' under the tag 'ShakeYourPhoto'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'nie ma' under the tag 'Ladyourself/shakeyourfoto/MainActivity;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'wi now take picture' under the tag 'Ladyourself/shakeyourfoto/MainActivity;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'will now call finish()' under the tag 'Ladyourself/shakeyourfoto/MainActivity;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'will now release camera' under the tag 'Ladyourself/shakeyourfoto/MainActivity;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'will now take picture' under the tag 'Landroid/view/View;->getId()I'
+		 - This application logs the message 'yyyyMMdd_HHmmss zapisuje img' under the tag 'Ljava/text/SimpleDateFormat;'
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+
+[+] Apk File
+	[.] File Name                               
+		 - adyourself.shakeyourfoto.apk
+
+	[.] Fingerprint                             
+		 - MD5: 89fe6bf66d51f7727498705d2af0e48a
+		 - SHA-1: eecbe7998e5ae091ab1162e0c376909999fe5677
+		 - SHA-256: 68cac3bebc12343ae773b2ce9e9adc7830a381f9dcb3a9f2e26ef2d6c5047b56
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.CAMERA', 'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

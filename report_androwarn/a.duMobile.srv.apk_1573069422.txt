@@ -1,0 +1,112 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - S R V
+
+	[.] Application Version                     
+		 - 1.3
+
+	[.] Package Name                            
+		 - a.duMobile.srv
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '0' under the tag 'Landroid/view/MotionEvent;->getY()F'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'NotifManCompat'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'NotifManCompat'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '3' under the tag 'Erro'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'Ljava/util/Set;->iterator()Ljava/util/Iterator;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'NotifManCompat 5'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'ListPopupWindow'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'ActionBarActivityDelegate'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'Erro na conexão'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '7' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '8' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '9' under the tag 'FragmentActivity'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Aberta' under the tag 'Conexão'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Could not find voice search activity' under the tag 'SearchView'
+		 - This application logs the message 'Got ACTION_MOVE event but have an invalid active pointer id.' under the tag '4'
+		 - This application logs the message 'Landroid/content/pm/PackageManager$NameNotFoundException;->toString()Ljava/lang/String;' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Landroid/support/v7/internal/view/SupportMenuInflater;->access$500()[Ljava/lang/Class;' under the tag 'SupportMenuInflater'
+		 - This application logs the message 'Landroid/view/MotionEvent;->getY()F' under the tag '1'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'ErroCliente'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/sql/SQLException;->getMessage()Ljava/lang/String;' under the tag '0'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Lnet/sourceforge/jtds/jdbc/ConnectionJDBC2;->getSocketKeepAlive()Z' on the
+		   'Lnet/sourceforge/jtds/jdbc/ConnectionJDBC2;->getSocketKeepAlive()Z' port
+
+	[.] Code Execution                          
+		 - This application loads a native library: 'ntlmauth'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - a.duMobile.srv.apk
+
+	[.] Fingerprint                             
+		 - MD5: 967feb887d1880ba2bda60d899e8bbc1
+		 - SHA-1: 459b7d5938e8ea8d239d47fa3c65f0ddb1f79346
+		 - SHA-256: e3e639d02a5ae8cc9464626ec1fec1d44c96a8bccef7735a62a105266cd5b82c
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

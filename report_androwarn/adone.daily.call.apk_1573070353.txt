@@ -1,0 +1,46 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 데일리무료국제
+
+	[.] Application Version                     
+		 - 1.4
+
+	[.] Package Name                            
+		 - adone.daily.call
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+
+[+] Apk File
+	[.] File Name                               
+		 - adone.daily.call.apk
+
+	[.] Fingerprint                             
+		 - MD5: 36ad5beb7ad4589b1a60677a293d6eef
+		 - SHA-1: 7ec0ba95677e80b8b8c4fba38cd7a5010f6e082c
+		 - SHA-256: d52de88b383e11f0a082fe2a1924005924f5271d7f78f751434b89f8f282b08a
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.CALL_PHONE',  'android.permission.INTERNET',  'android.permission.READ_CONTACTS',  'android.permission.READ_PHONE_STATE',  'android.permission.SIM_STATE_READY',
+		   'android.permission.WRITE_CONTACTS']
+		 - Implied: [['android.permission.READ_CALL_LOG', None],  ['android.permission.WRITE_CALL_LOG', None]]
+		 - Declared: []
+
+

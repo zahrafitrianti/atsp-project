@@ -1,0 +1,536 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: air.ArabicLetterBox
+Package Version Name: 2.6
+Package Version Code: 1000260
+Min Sdk: 8
+MD5   : e5a928648f59c778f6b0887ab4cec90a
+SHA1  : 03d82dbd8debd348bd53ca2637e737bd908a8320
+SHA256: bb5c4871db4927aa628d1a212c4af923f3178037bdf9669f833b89e8195340c8
+SHA512: 01994b2b8cf4888b977f49e99b18608b9501e8f80ada52f8c37b4f405724d5439d33c50f4fb520a6d83f2293e6517126d6e5a4f9190684921bb18777fa277169
+Analyze Signature: 267c14879a19655d085b802de9d7e811a73d71a5e26a3212a197a4f627f8e2ecbcb5d95b25525dfc660620e684a806696c1178d6a5fb74ee447e6c8d206b4e84
+------------------------------------------------------------------------------------------------
+[Critical] <Command> Runtime Command Checking:
+           This app is using critical function 'Runtime.getRuntime().exec("...")'.
+           Please confirm these following code secions are not harmful:
+               => Lcom/openfeint/internal/Util;->run(Ljava/lang/String;)V (0x8) --->
+                    Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+[Critical] <Debug> Android Debug Mode Checking:
+           DEBUG mode is ON(android:debuggable="true") in AndroidManifest.xml. This is very dangerous. The attackers will be able to sniffer
+           the debug messages by Logcat. Please disable the DEBUG mode if it is a released application.
+[Critical]  App Sandbox Permission Checking:
+           Security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found (Please check:
+           https://www.owasp.org/index.php/Mobile_Top_10_2014-M2):
+               [getDir]
+               => Lcom/papaya/si/B;->prepareCacheDir()V (0x7e) ---> Landroid/content/Context;->getDir(Ljava/lang/String; I)Ljava/io/File;
+               --------------------------------------------------
+               [openFileOutput]
+               => Lcom/openfeint/internal/SyncedStore;->save()V (0x20) ---> Landroid/content/Context;->openFileOutput(Ljava/lang/String;
+                    I)Ljava/io/FileOutputStream;
+               --------------------------------------------------
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:14):
+               http://cdn.superrewards-offers.com/img/offerwall/v2/images/off_image_free.png
+                   => Lcom/adknowledge/superrewards/model/SROffer;-><init>()V
+                   => Lcom/adknowledge/superrewards/model/SROffer;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+                   => Lcom/adknowledge/superrewards/model/SROffer;->setFreeImage()V
+               http://cdn.superrewards-offers.com/img/offerwall/v2/images/off_image_purchase.png
+                   => Lcom/adknowledge/superrewards/model/SROffer;-><init>()V
+                   => Lcom/adknowledge/superrewards/model/SROffer;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+               http://corona.papayamobile.com:8080/
+                   => Lcom/papaya/si/v;-><clinit>()V
+               http://data.flurry.com/aar.do
+                   => Lcom/flurry/android/FlurryAgent;-><clinit>()V
+               http://i.w.inmobi.com/showad.asm
+                   => Lcom/inmobi/androidsdk/impl/InMobiAdView;->fetchAndDisplayAd()Z
+               http://i.w.sandbox.inmobi.com/showad.asm
+                   => Lcom/inmobi/androidsdk/impl/InMobiAdView;->fetchAndDisplayAd()Z
+               http://ia-test.inner-active.mobi:8080/simpleM2M/
+                   => Lcom/inneractive/api/ads/InneractiveAdView;-><clinit>()V
+               http://papayamobile.com/a/mr?_l=amazon&p=
+                   => Lcom/papaya/si/bb;->openExternalUri(Landroid/content/Context; Ljava/lang/String;)Z
+               http://pay01.zong.com/zongpay
+                   => Lzongfuscated/w;->a(Ljava/io/InputStream;)Lcom/zong/android/engine/xml/pojo/lookup/ZongPricePoint;
+               http://super.kitnmedia.com/mobile/rpc
+                   => Lcom/adknowledge/superrewards/web/SRRequest;-><init>(Lorg/apache/http/impl/client/DefaultHttpClient;)V
+               http://wv.inner-active.mobi/simpleM2M/
+                   => Lcom/inneractive/api/ads/InneractiveAdView;-><clinit>()V
+               http://wv.inner-active.mobi/simpleM2M/inneractive-skip
+                   => Lcom/inneractive/api/ads/InneractiveAdView$IAwebViewClient;->shouldOverrideUrlLoading(Landroid/webkit/WebView;
+                    Ljava/lang/String;)Z
+                   => Lcom/inneractive/api/ads/InneractiveAdView;-><init>(Landroid/content/Context; Landroid/util/AttributeSet; I)V
+                   => Lcom/inneractive/api/ads/InneractiveAdView;-><init>(Landroid/content/Context; Ljava/lang/String; B I
+                    Ljava/util/Hashtable;)V
+                   => Lcom/inneractive/api/ads/InneractiveAdView;-><init>(Landroid/content/Context; Ljava/lang/String; B I)V
+               http://www.anscamobile.com/corona/?utm_source=corona-sdk&utm_medium=corona-sdk&utm_campaign=trial-popup
+                   => Lcom/ansca/corona/Controller$11;->onClick(Landroid/content/DialogInterface; I)V
+               http://www.srpoints.com
+                   => Lcom/adknowledge/superrewards/ui/activities/SRWebViewActivity;->onCreate(Landroid/os/Bundle;)V
+                   =>
+                    Lcom/adknowledge/superrewards/ui/activities/SRPaymentMethodsActivity$PaymentMethodsTask;->onPostExecute(Ljava/lang/Void;
+                    )V
+[Critical] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           Found a critical WebView "addJavascriptInterface" vulnerability. This method can be used to allow JavaScript to control the host
+           application.
+           This is a powerful feature, but also presents a security risk for applications targeted to API level JELLY_BEAN(4.2) or below,
+           because JavaScript could use reflection to access an injected object's public fields. Use of this method in a WebView containing
+           untrusted content could allow an attacker to manipulate the host application in unintended ways, executing Java code with the
+           permissions of the host application.
+           Reference:
+             1."http://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface(java.lang.Object,
+           java.lang.String) "
+             2.https://labs.mwrinfosecurity.com/blog/2013/09/24/webview-addjavascriptinterface-remote-code-execution/
+             3.http://50.56.33.56/blog/?p=314
+             4.http://blog.trustlook.com/2013/09/04/alert-android-webview-addjavascriptinterface-code-execution-vulnerability/
+           Please modify the below code:
+               => Lcom/papaya/si/bk;->setupHooks()V (0x94) ---> Lcom/papaya/si/bk;->addJavascriptInterface(Ljava/lang/Object;
+                    Ljava/lang/String;)V
+               => Lcom/openfeint/internal/ui/WebNav;->onCreate(Landroid/os/Bundle;)V (0x13e) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/openfeint/internal/ui/NativeBrowser;->onCreate(Landroid/os/Bundle;)V (0x54) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/papaya/web/ExternalWebActivity;->onCreate(Landroid/os/Bundle;)V (0xd2) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+               => Lcom/zong/android/engine/web/ZongWebView;->onCreate(Landroid/os/Bundle;)V (0xd0) --->
+                    Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lcom/inmobi/androidsdk/impl/MemoryStatus;->getTotalExternalMemorySize()J (0x12) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/openfeint/internal/Util;->moveWebCache(Landroid/content/Context;)V (0x4c) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/openfeint/internal/db/DB;->createDB(Landroid/content/Context;)V (0x34) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/openfeint/internal/db/DB;->removeDB(Landroid/content/Context;)Z (0x3a) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/openfeint/internal/ui/WebViewCache;->updateExternalStorageState()V (0x3a) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/papaya/si/B;->prepareCacheDir()V (0x10) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/papaya/si/ba;->checkFreeSpace(Landroid/content/Context;)V (0x46) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/papaya/si/ba;->initialize(Landroid/content/Context;)V (0xaa) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/papaya/si/bb;->startCameraActivity(Landroid/app/Activity; I)V (0x22) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning]  AndroidManifest Exported Components Checking:
+           Found "exported" components(except for Launcher) for receiving outside applications' actions (AndroidManifest.xml).
+           These components can be initilized by other apps. You should add or modify the attribute to [exported="false"] if you don't want
+           to.
+           You can also protect it with a customized permission with "signature" or higher protectionLevel and specify in
+           "android:permission" attribute.
+                 activity => com.zong.android.engine.web.ZongWebView
+[Warning] <Sensitive_Information> Getting IMEI and Device ID:
+           This app has code getting the "device id(IMEI)" but there are problems with this "TelephonyManager.getDeviceId()" approach.
+           1.Non-phones: Wifi-only devices or music players that don't have telephony hardware just don't have this kind of unique
+           identifier.
+           2.Persistence: On devices which do have this, it persists across device data wipes and factory resets. It's not clear at all if,
+           in this situation, your app should regard this as the same device.
+           3.Privilege:It requires READ_PHONE_STATE permission, which is irritating if you don't otherwise use or need telephony.
+           4.Bugs: We have seen a few instances of production phones for which the implementation is buggy and returns garbage, for example
+           zeros or asterisks.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/adknowledge/superrewards/Utils;->getDeviceUID(Landroid/content/Context;)Ljava/lang/String; (0x10) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/adknowledge/superrewards/tracking/SRAppInstallTracker;-><init>(Landroid/content/Context; Ljava/lang/String;)V (0x34)
+                    ---> Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/adknowledge/superrewards/tracking/SRAppInstallTracker;->set()V (0x14) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/ansca/corona/Controller;->getUniqueIdentifier()Ljava/lang/String; (0x3a) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/ansca/corona/Controller;->getUniqueIdentifier()Ljava/lang/String; (0x46) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/inneractive/api/ads/InneractiveAdView;->getDeviceID()Ljava/lang/String; (0x3e) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/papaya/si/aV;->getTelephonyInfo(Lorg/json/JSONObject; Landroid/content/Context;)Lorg/json/JSONObject; (0x22) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/papaya/si/ba;->getTelephonyInfo(Lorg/json/JSONObject; Landroid/content/Context;)Lorg/json/JSONObject; (0x22) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/papaya/si/ba;->initialize(Landroid/content/Context;)V (0x12) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/zong/android/engine/provider/PhoneState;-><init>(Landroid/telephony/TelephonyManager;)V (0x6) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/adknowledge/superrewards/tracking/SRAppInstallTracker;-><init>(Landroid/content/Context; Ljava/lang/String;)V (0x7a)
+                    ---> Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;
+                    Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/adknowledge/superrewards/tracking/SRAppInstallTracker;->set()V (0x44) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/ansca/corona/Controller;->getUniqueIdentifier()Ljava/lang/String; (0x74) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/inmobi/androidsdk/impl/UserInfo;->getUserId()Ljava/lang/String; (0x16) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/openfeint/internal/OpenFeintInternal;->findUDID()Ljava/lang/String; (0x14) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/papaya/si/aV;->getDeviceID(Landroid/content/Context;)Ljava/lang/String; (0x16) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/papaya/si/ba;->initialize(Landroid/content/Context;)V (0x36) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/papaya/si/bb;->getDeviceID(Landroid/content/Context;)Ljava/lang/String; (0xc) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+[Warning]  Codes for Sending SMS:
+           This app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage):
+               => Lcom/zong/android/engine/sms/a;->a(Ljava/lang/String; Ljava/lang/String;)V (0x20) --->
+                    Landroid/telephony/SmsManager;->sendTextMessage(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Landroid/app/PendingIntent; Landroid/app/PendingIntent;)V
+[Warning] <WebView> WebView Local File Access Attacks Checking:
+           Found "setAllowFileAccess(true)" or not set(enabled by default) in WebView. The attackers could inject malicious script into
+           WebView and exploit the opportunity to access local resources. This can be mitigated or prevented by disabling local file system
+           access. (It is enabled by default)
+           Note that this enables or disables file system access only. Assets and resources are still accessible using file:///android_asset
+           and file:///android_res.
+           The attackers can use "mWebView.loadUrl("file:///data/data/[Your_Package_Name]/[File]");" to access app's local file.
+           Reference: (1)https://labs.mwrinfosecurity.com/blog/2012/04/23/adventures-with-android-webviews/
+                      (2)http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)
+           Please add or modify "yourWebView.getSettings().setAllowFileAccess(false)" to your WebView:
+               Lcom/adknowledge/superrewards/ui/activities/SRWebViewActivity;->onCreate(Landroid/os/Bundle;)V
+               Lcom/ansca/corona/ViewManager$19;->run()V
+               Lcom/facebook/android/FbDialog;->setUpWebView(I)V
+               Lcom/inmobi/androidsdk/impl/InMobiAdView;->initializeWebView()Landroid/webkit/WebView;
+               Lcom/inmobi/androidsdk/impl/UserInfo;->setPhoneDefaultUserAgent(Landroid/content/Context;)V
+               Lcom/inneractive/api/ads/InneractiveAdView;->displayAd(Landroid/content/Context;)V
+               Lcom/openfeint/internal/ui/NativeBrowser;->onCreate(Landroid/os/Bundle;)V
+               Lcom/openfeint/internal/ui/WebNav;->onCreate(Landroid/os/Bundle;)V
+               Lcom/papaya/si/bk;->setupHooks()V
+               Lcom/papaya/web/ExternalWebActivity;->onCreate(Landroid/os/Bundle;)V
+               Lcom/zong/android/engine/web/ZongWebView;->onCreate(Landroid/os/Bundle;)V
+[Warning] <WebView> WebView Potential XSS Attacks Checking:
+           Found "setJavaScriptEnabled(true)" in WebView, which could exposed to potential XSS attacks. Please check the web page code
+           carefully and sanitize the output:
+               => Lcom/adknowledge/superrewards/ui/activities/SRWebViewActivity;->onCreate(Landroid/os/Bundle;)V (0x2c) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/ansca/corona/ViewManager$19;->run()V (0x28) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/facebook/android/FbDialog;->setUpWebView(I)V (0x62) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/inmobi/androidsdk/impl/InMobiAdView;->initializeWebView()Landroid/webkit/WebView; (0x4e) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/inneractive/api/ads/InneractiveAdView;->displayAd(Landroid/content/Context;)V (0x1c) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/openfeint/internal/ui/WebNav;->onCreate(Landroid/os/Bundle;)V (0x28) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/openfeint/internal/ui/NativeBrowser;->onCreate(Landroid/os/Bundle;)V (0x3c) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/papaya/si/bk;->setupHooks()V (0x40) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/papaya/web/ExternalWebActivity;->onCreate(Landroid/os/Bundle;)V (0x94) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/zong/android/engine/web/ZongWebView;->onCreate(Landroid/os/Bundle;)V (0x86) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is using Android SQLite databases.
+           Prior to Android 4.0, Android has SQLite Journal Information Disclosure Vulnerability.
+           But it can only be solved by users upgrading to Android > 4.0 and YOU CANNOT SOLVE IT BY YOURSELF (But you can use encrypt your
+           databases and Journals by "SQLCipher" or other libs).
+           Proof-Of-Concept Reference:
+           (1) http://blog.watchfire.com/files/androidsqlitejournal.pdf
+           (2) http://www.youtube.com/watch?v=oCXLHjmH5rY
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/ansca/corona/CameraActivity;->clearCachedPhotos(Landroid/content/Context;)V (0x16) ---> Ljava/io/File;->delete()Z
+               => Lcom/ansca/corona/CoronaActivity;->deleteDirectoryTree(Ljava/io/File;)V (0x2c) ---> Ljava/io/File;->delete()Z
+               => Lcom/flurry/android/FlurryAgent;->a(Landroid/content/Context; Ljava/lang/String;)V (0x270) ---> Ljava/io/File;->delete()Z
+               => Lcom/openfeint/internal/Util;->deleteFiles(Ljava/io/File;)V (0x38) ---> Ljava/io/File;->delete()Z
+               => Lcom/openfeint/internal/db/DB;->removeDB(Landroid/content/Context;)Z (0x18) ---> Ljava/io/File;->delete()Z
+               => Lcom/openfeint/internal/db/DB;->removeDB(Landroid/content/Context;)Z (0x50) ---> Ljava/io/File;->delete()Z
+               => Lcom/openfeint/internal/db/DB;->removeDB(Landroid/content/Context;)Z (0x66) ---> Ljava/io/File;->delete()Z
+               => Lcom/openfeint/internal/ui/WebViewCache;->deleteAll()V (0x30) ---> Ljava/io/File;->delete()Z
+               => Lcom/papaya/si/aK;->remove()Z (0xc) ---> Ljava/io/File;->delete()Z
+               => Lcom/papaya/si/aU;->deleteFile(Ljava/io/File;)Z (0x22) ---> Ljava/io/File;->delete()Z
+               => Lcom/papaya/si/aU;->deleteFileOrDir(Ljava/io/File;)Z (0x20) ---> Ljava/io/File;->delete()Z
+               => Lcom/papaya/si/aU;->deleteFileOrDir(Ljava/io/File;)Z (0x44) ---> Ljava/io/File;->delete()Z
+               => Lcom/papaya/si/aU;->deleteFileOrDir(Ljava/io/File;)Z (0x7c) ---> Ljava/io/File;->delete()Z
+               => Lcom/papaya/si/ba;->initialize(Landroid/content/Context;)V (0xc8) ---> Ljava/io/File;->delete()Z
+               => Lcom/papaya/si/ba;->initialize(Landroid/content/Context;)V (0xe0) ---> Ljava/io/File;->delete()Z
+               => Lcom/papaya/si/bb;->getCameraBitmap(Landroid/app/Activity; Landroid/content/Intent; I I Z)Landroid/graphics/Bitmap; (0x2c)
+                    ---> Ljava/io/File;->delete()Z
+[Notice] <Signature><Hacker> Getting Signature Code Checking:
+           This app has code checking the package signature in the code. It might be used to check for whether the app is hacked by the
+           attackers.
+               => Lcom/facebook/android/Facebook;->validateAppSignatureForIntent(Landroid/app/Activity; Landroid/content/Intent;)Z (0x2e)
+                    ---> Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+[Notice]  HttpURLConnection Android Bug Checking:
+           You're using "HttpURLConnection". Prior to Android 2.2 (Froyo), "HttpURLConnection" had some frustrating bugs.
+           In particular, calling close() on a readable InputStream could poison the connection pool. Work around this by disabling
+           connection pooling.
+           Please check the reference:
+            (1)http://developer.android.com/reference/java/net/HttpURLConnection.html
+            (2)http://android-developers.blogspot.tw/2011/09/androids-http-clients.html
+               => Lcom/facebook/android/Util;->openUrl(Ljava/lang/String; Ljava/lang/String; Landroid/os/Bundle;)Ljava/lang/String; (0xda)
+                    ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/facebook/android/Util;->openUrl(Ljava/lang/String; Ljava/lang/String; Landroid/os/Bundle;)Ljava/lang/String; (0x18a)
+                    ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/facebook/android/Util;->openUrl(Ljava/lang/String; Ljava/lang/String; Landroid/os/Bundle;)Ljava/lang/String; (0x1ba)
+                    ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/facebook/android/Util;->openUrl(Ljava/lang/String; Ljava/lang/String; Landroid/os/Bundle;)Ljava/lang/String; (0x1c2)
+                    ---> Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/facebook/android/Util;->openUrl(Ljava/lang/String; Ljava/lang/String; Landroid/os/Bundle;)Ljava/lang/String; (0x1ca)
+                    ---> Ljava/net/HttpURLConnection;->setDoInput(Z)V
+               => Lcom/facebook/android/Util;->openUrl(Ljava/lang/String; Ljava/lang/String; Landroid/os/Bundle;)Ljava/lang/String; (0x1d8)
+                    ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/facebook/android/Util;->openUrl(Ljava/lang/String; Ljava/lang/String; Landroid/os/Bundle;)Ljava/lang/String; (0x1de)
+                    ---> Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/facebook/android/Util;->openUrl(Ljava/lang/String; Ljava/lang/String; Landroid/os/Bundle;)Ljava/lang/String; (0x1e8)
+                    ---> Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/facebook/android/Util;->openUrl(Ljava/lang/String; Ljava/lang/String; Landroid/os/Bundle;)Ljava/lang/String; (0x3a2)
+                    ---> Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/facebook/android/Util;->openUrl(Ljava/lang/String; Ljava/lang/String; Landroid/os/Bundle;)Ljava/lang/String; (0x3b6)
+                    ---> Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->getRedirectionURLText(Ljava/net/HttpURLConnection;
+                    Ljava/lang/String;)Ljava/lang/String; (0x4) ---> Ljava/net/HttpURLConnection;->setFollowRedirects(Z)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->getRedirectionURLText(Ljava/net/HttpURLConnection;
+                    Ljava/lang/String;)Ljava/lang/String; (0xa) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->getRedirectionURLText(Ljava/net/HttpURLConnection;
+                    Ljava/lang/String;)Ljava/lang/String; (0x1a) ---> Ljava/net/HttpURLConnection;->getURL()Ljava/net/URL;
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->getRedirectionURLText(Ljava/net/HttpURLConnection;
+                    Ljava/lang/String;)Ljava/lang/String; (0x3e) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->getRedirectionURLText(Ljava/net/HttpURLConnection;
+                    Ljava/lang/String;)Ljava/lang/String; (0x46) ---> Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->postData(Ljava/net/HttpURLConnection; Ljava/lang/String;)V (0x14)
+                    ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->postData(Ljava/net/HttpURLConnection; Ljava/lang/String;)V (0x24)
+                    ---> Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->retrieveAd(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)Lcom/inmobi/androidsdk/impl/AdUnit; (0x6) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->retrieveAd(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)Lcom/inmobi/androidsdk/impl/AdUnit; (0x26) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->retrieveAd(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)Lcom/inmobi/androidsdk/impl/AdUnit; (0x44) --->
+                    Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0x6) ---> Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0xc) ---> Ljava/net/HttpURLConnection;->setDoInput(Z)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0x12) ---> Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0x18) ---> Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0x2a) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0x44) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0x56) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0x68) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0x98) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0xa2) ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0xb0) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->setConnectionParams(Ljava/net/HttpURLConnection;
+                    Lcom/inmobi/androidsdk/impl/UserInfo;)V (0xda) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->initiateClick(Ljava/lang/String;
+                    Lcom/inmobi/androidsdk/impl/UserInfo; Ljava/util/List;)Ljava/lang/String; (0x62) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->uploadDeviceInfo(Ljava/lang/String;
+                    Lcom/inmobi/androidsdk/impl/UserInfo; Lcom/inmobi/androidsdk/impl/net/RequestResponseManager$ActionType;)V (0x20) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/inmobi/androidsdk/impl/net/RequestResponseManager;->uploadDeviceInfo(Ljava/lang/String;
+                    Lcom/inmobi/androidsdk/impl/UserInfo; Lcom/inmobi/androidsdk/impl/net/RequestResponseManager$ActionType;)V (0x34) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/inneractive/api/ads/InneractiveAdView$2;->run()V (0x40) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/inneractive/api/ads/InneractiveAdView$2;->run()V (0x4a) ---> Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/inneractive/api/ads/InneractiveAdView$2;->run()V (0x50) ---> Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/inneractive/api/ads/InneractiveAdView$2;->run()V (0x56) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/inneractive/api/ads/InneractiveAdView$2;->run()V (0x66) --->
+                    Ljava/net/HttpURLConnection;->getContentEncoding()Ljava/lang/String;
+               => Lcom/inneractive/api/ads/InneractiveAdView$2;->run()V (0x10a) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/inneractive/api/ads/InneractiveAdView$2;->run()V (0x1ba) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/inneractive/api/ads/InneractiveAdView$2;->run()V (0x218) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/inneractive/api/ads/InneractiveAdView;->getData(Ljava/net/HttpURLConnection;)[B (0x8) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/inneractive/api/ads/InneractiveAdView;->getData(Ljava/net/HttpURLConnection;)[B (0x10) --->
+                    Ljava/net/HttpURLConnection;->getContentLength()I
+               => Lcom/inneractive/api/ads/InneractiveAdView;->httpGetRaw(Ljava/lang/String;)Ljava/lang/String; (0x36) --->
+                    Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/inneractive/api/ads/InneractiveAdView;->httpGetRaw(Ljava/lang/String;)Ljava/lang/String; (0x44) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/inneractive/api/ads/InneractiveAdView;->httpGetRaw(Ljava/lang/String;)Ljava/lang/String; (0x4a) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/inneractive/api/ads/InneractiveAdView;->httpGetRaw(Ljava/lang/String;)Ljava/lang/String; (0x52) --->
+                    Ljava/net/HttpURLConnection;->getResponseMessage()Ljava/lang/String;
+               => Lcom/inneractive/api/ads/InneractiveAdView;->httpGetRaw(Ljava/lang/String;)Ljava/lang/String; (0xa8) --->
+                    Ljava/net/HttpURLConnection;->getContentEncoding()Ljava/lang/String;
+               => Lcom/inneractive/api/ads/InneractiveAdView;->httpGetRaw(Ljava/lang/String;)Ljava/lang/String; (0xb0) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x26) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x34) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x46) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x54) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x62) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x6c) --->
+                    Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x78) --->
+                    Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x82) --->
+                    Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0xf8) --->
+                    Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x106) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x122) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x154) --->
+                    Ljava/net/HttpURLConnection;->getContentLength()I
+               => Lcom/papaya/si/bf;->contentFromPOSTDict(Ljava/net/URL; Ljava/util/Map; I)[B (0x19e) --->
+                    Ljava/net/HttpURLConnection;->getContentLength()I
+               => Lcom/papaya/si/bf;->contentFromPOSTString(Ljava/net/URL; [B I)[B (0x26) --->
+                    Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/papaya/si/bf;->inputStreamFromURL(Ljava/net/URL;)Ljava/io/InputStream; (0x22) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/papaya/si/bf;->inputStreamFromURL(Ljava/net/URL;)Ljava/io/InputStream; (0x2c) --->
+                    Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/papaya/si/bf;->inputStreamFromURL(Ljava/net/URL;)Ljava/io/InputStream; (0x36) --->
+                    Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/papaya/si/bf;->inputStreamFromURL(Ljava/net/URL;)Ljava/io/InputStream; (0x3e) --->
+                    Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+               => Lcom/papaya/si/bf;->inputStreamFromURL(Ljava/net/URL;)Ljava/io/InputStream; (0x44) --->
+                    Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/papaya/si/bf;->inputStreamFromURL(Ljava/net/URL;)Ljava/io/InputStream; (0x4a) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/papaya/si/bf;->inputStreamFromURL(Ljava/net/URL;)Ljava/io/InputStream; (0x70) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/papaya/si/bj;->createConnection(Ljava/net/URL;)Ljava/net/URLConnection; (0x1e) --->
+                    Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/papaya/si/bs;->run()V (0x54) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/papaya/si/bs;->run()V (0x62) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/papaya/si/bs;->run()V (0x70) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/papaya/si/bs;->run()V (0xc2) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/papaya/si/bs;->run()V (0xd0) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/papaya/si/bs;->run()V (0xea) ---> Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/papaya/si/bs;->run()V (0x104) ---> Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/papaya/si/bs;->run()V (0x116) ---> Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/papaya/si/bs;->run()V (0x11c) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/papaya/si/bs;->run()V (0x148) ---> Ljava/net/HttpURLConnection;->getContentLength()I
+               => Lcom/papaya/si/bs;->run()V (0x206) ---> Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/papaya/si/bs;->run()V (0x22e) ---> Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/papaya/si/bs;->run()V (0x23c) ---> Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/papaya/si/bs;->run()V (0x362) ---> Ljava/net/HttpURLConnection;->getContentLength()I
+[Notice]  Native Library Loading Checking:
+           Native library loading codes(System.loadLibrary(...)) found:
+               [libopenal.so]
+               => Lcom/ansca/corona/CoronaActivity;-><clinit>()V (0x4) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libmpg123.so]
+               => Lcom/ansca/corona/CoronaActivity;-><clinit>()V (0xe) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libvorbisidec.so]
+               => Lcom/ansca/corona/CoronaActivity;-><clinit>()V (0x18) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libalmixer.so]
+               => Lcom/ansca/corona/CoronaActivity;-><clinit>()V (0x22) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libcorona.so]
+               => Lcom/ansca/corona/CoronaActivity;-><clinit>()V (0x2c) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" you're not using it.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info]  Dynamic Code Loading:
+           No dynamic code loading(DexClassLoader) found.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+------------------------------------------------------------
+AndroBugs analyzing time: 2.86187 secs
+Total elapsed time: 8.186217 secs

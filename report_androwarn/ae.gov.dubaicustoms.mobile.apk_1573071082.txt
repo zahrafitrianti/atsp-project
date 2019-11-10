@@ -1,0 +1,47 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Dubai Customs
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - ae.gov.dubaicustoms.mobile
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'onPageFinished'
+		 - This application logs the message '5' under the tag 'WEB_VIEW_CLIENT_ERROR'
+		 - This application logs the message '5' under the tag 'onLoadResource'
+		 - This application logs the message '5' under the tag 'onPageStarted'
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+
+[+] Apk File
+	[.] File Name                               
+		 - ae.gov.dubaicustoms.mobile.apk
+
+	[.] Fingerprint                             
+		 - MD5: 12c4e11049a06d015ce95e6227c2080d
+		 - SHA-1: adeafa9632d2182bfb0cf81d019012b584d6ebfc
+		 - SHA-256: a79b8c45f4364261c201e807b020514ae7f117a5f825da3db0cd6bb9a3521cc7
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

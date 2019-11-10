@@ -1,0 +1,214 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Chameleon
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - ac.robinson.chameleonnotifier
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message ' Points are coincident' under the tag 'PathParser'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '.      /\\' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.      \\/' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.     /  \\' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.     \\  /' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.     |  | ' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.     |  |' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.    /    \\' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.    \\    /' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.   / |  | \\' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.   \\ |  | /' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.' under the tag 'CrashlyticsCore'
+		 - This application logs the message '0' under the tag '-1'
+		 - This application logs the message '0' under the tag '8'
+		 - This application logs the message '0' under the tag 'FragmentActivity'
+		 - This application logs the message '0' under the tag 'FragmentManager'
+		 - This application logs the message '0' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message '0' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '1' under the tag ''
+		 - This application logs the message '1' under the tag 'BasePendingResult'
+		 - This application logs the message '1' under the tag 'CameraUtilities'
+		 - This application logs the message '1' under the tag 'GmsClient'
+		 - This application logs the message '1' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '1' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'NavUtils'
+		 - This application logs the message '1' under the tag 'NestedScrollView'
+		 - This application logs the message '1' under the tag 'TransformedResultImpl'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '2' under the tag ''
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'CameraUtilities'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'GoogleApiManager'
+		 - This application logs the message '2' under the tag 'Lac/robinson/chameleonnotifier/CameraActivity;->b()Ljava/lang/String;'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'PropertyValuesHolder'
+		 - This application logs the message '3' under the tag '2'
+		 - This application logs the message '3' under the tag 'CameraUtilities'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GoogleApiAvailability'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'OpenCV/StaticHelper'
+		 - This application logs the message '3' under the tag 'PropertyValuesHolder'
+		 - This application logs the message '3' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '3' under the tag 'UidVerifier'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message '4' under the tag 'NestedScrollView'
+		 - This application logs the message '4' under the tag 'OpenCV/StaticHelper'
+		 - This application logs the message '4' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'Lac/robinson/chameleonnotifier/CameraActivity;->b()Ljava/lang/String;'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'GAv4'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '8' under the tag 'ListPopupWindow'
+		 - This application logs the message '8' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'LocalBroadcastManager'
+		 - This application logs the message 'Activity result delivered for unknown Fragment.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Activity started without extras' under the tag 'GoogleApiActivity'
+		 - This application logs the message 'Activity started without resolution' under the tag 'GoogleApiActivity'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'AppCompatDelegate' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'Attempted to bind to a service in a STOPPED package.' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Camera motion detected' under the tag 'Lac/robinson/chameleonnotifier/CameraActivity;->b()Ljava/lang/String;'
+		 - This application logs the message 'Client %s made an invalid request %s 2' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Compass data unreliable' under the tag 'SensorsActivity'
+		 - This application logs the message 'Could not call getMaxAvailableHeightMethod(View, int, boolean) on PopupWindow. Using the public version.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method getMaxAvailableHeight(View, int, boolean) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setEpicenterBounds(Rect) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.'
+		   under the tag 'TwilightManager'
+		 - This application logs the message 'Could not invoke setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Facebook event received' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'First attempt to load libs fails' under the tag 'OpenCV/StaticHelper'
+		 - This application logs the message 'First attempt to load libs is OK' under the tag 'OpenCV/StaticHelper'
+		 - This application logs the message 'First attempt to load libs' under the tag 'OpenCV/StaticHelper'
+		 - This application logs the message 'Google Play Store is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'GoogleCertificates has been initialized already' under the tag 'GoogleCertificates'
+		 - This application logs the message 'Image analysis error (or cancelled)' under the tag 'Lac/robinson/chameleonnotifier/CameraActivity;->b()Ljava/lang/String;'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Invalid requestCode mapping in savedInstanceState.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Launching Facebook' under the tag 'v2'
+		 - This application logs the message 'Launching SMS' under the tag 'Landroid/app/PendingIntent$CanceledException;->printStackTrace()V'
+		 - This application logs the message 'Launching WhatsApp' under the tag 'Landroid/app/PendingIntent$CanceledException;->printStackTrace()V'
+		 - This application logs the message 'Lcom/google/android/gms/common/internal/k;->i()Ljava/lang/String;' under the tag 'GmsClient'
+		 - This application logs the message 'Ljava/io/IOException;->getMessage()Ljava/lang/String;' under the tag 'ProcessUtils'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'MenuItemWrapper'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'ProcessUtils'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'TransformedResultImpl'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GAv4'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GmsClient'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'WorkSourceUtil'
+		 - This application logs the message 'Ljava/util/Iterator;->next()Ljava/lang/Object;' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Loading preview snapshot image' under the tag 'Lac/robinson/chameleonnotifier/CameraActivity;->b()Ljava/lang/String;'
+		 - This application logs the message 'Multiple handlers found for this intent: %s\n Stack trace: %s 3' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Mutated drawable is not the same instance as the input.' under the tag 'AppCompatDrawableManager'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'One of the API components you attempted to connect to is not available.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'OpenCV error: Cannot load info library for OpenCV' under the tag 'OpenCV/StaticHelper'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'Received call to unregister a listener without a matching registration call.' under the tag 'GoogleApiManager'
+		 - This application logs the message 'Remote account accessor probably died' under the tag 'AccountAccessor'
+		 - This application logs the message 'Repeating Facebook event (1)' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'Repeating SMS event (1)' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'Repeating SMS event (2)' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'Repeating WhatsApp event (1)' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'Repeating WhatsApp event (2)' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'Repeating WhatsApp event (3)' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'SMS event received' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'Starting managing notifications' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'State bitmap ready' under the tag 'Lac/robinson/chameleonnotifier/CameraActivity;->b()Ljava/lang/String;'
+		 - This application logs the message 'Stopping managing notifications' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'Take picture failed' under the tag 'Lac/robinson/chameleonnotifier/CameraActivity;->b()Ljava/lang/String;'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'The current user profile is restricted and could not use authenticated features.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'The specified account could not be signed in.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'There are no handler of this intent: %s\n Stack trace: %s 2' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Trying to get library list' under the tag 'OpenCV/StaticHelper'
+		 - This application logs the message 'Trying to init OpenCV libs' under the tag 'OpenCV/StaticHelper'
+		 - This application logs the message 'Trying to load libs by dependency list' under the tag 'OpenCV/StaticHelper'
+		 - This application logs the message 'UUID.randomUUID() returned 0.' under the tag 'GAv4'
+		 - This application logs the message 'Unable to detect camera orientation - setting to 0' under the tag 'CameraUtilities'
+		 - This application logs the message 'Unable to start colour picker reset animation' under the tag 'v1'
+		 - This application logs the message 'WhatsApp event received' under the tag 'Lac/robinson/chameleonnotifier/al;->a(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR_OVERLAY id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'iCertData failed to retrive data from remote' under the tag 'GoogleCertificates'
+		 - This application logs the message 'mServiceBroker is null, client disconnected' under the tag 'GmsClient'
+		 - This application logs the message 'received deprecated onAccountValidationComplete callback, ignoring' under the tag 'GmsClient'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'service probably died' under the tag 'GmsClient'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'v0' under the tag '0'
+		 - This application logs the message 'v0' under the tag 'Landroid/support/v7/widget/cd;->i()Landroid/view/View;'
+		 - This application logs the message 'v2' under the tag 'SupportMenuInflater'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Fabric com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_RECEIVERS' information about the 'CrashlyticsCore' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES, MATCH_UNINSTALLED_PACKAGES' information about the 'Lcom/google/android/gms/common/util/d;->a(Landroid/content/Context;)Z' application installed on the
+		   system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Code Execution                          
+		 - This application loads a native library
+		 - This application loads a native library: 'opencv_info'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - ac.robinson.chameleonnotifier.apk
+
+	[.] Fingerprint                             
+		 - MD5: cdfdaba3380d0f28c0596831ebaa7dd6
+		 - SHA-1: 4fceb83a077a16cf9020627581d048e4e61059bd
+		 - SHA-256: 780412208ce45693d85ed16e948ffa1b6644657b6fa5b91da587a2a8f7657959
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.CAMERA',  'android.permission.INTERNET',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_SETTINGS']
+		 - Implied: []
+		 - Declared: []
+
+

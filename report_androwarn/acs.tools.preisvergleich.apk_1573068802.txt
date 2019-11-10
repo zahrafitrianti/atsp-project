@@ -1,0 +1,55 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - menge:preis - Die Preisvergleichs App
+
+	[.] Application Version                     
+		 - 1.2
+
+	[.] Package Name                            
+		 - acs.tools.preisvergleich
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '1' under the tag 'Preis 1'
+		 - This application logs the message '2' under the tag 'Preis 2'
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'Hallo' under the tag 'test'
+		 - This application logs the message 'on Create aufgerufen' under the tag 'Preisvergleich'
+		 - This application logs the message 'on Pause aufgerufen' under the tag 'Preisvergleich'
+		 - This application logs the message 'on Restart aufgerufen' under the tag 'Preisvergleich'
+		 - This application logs the message 'on Resume aufgerufen' under the tag 'Preisvergleich'
+		 - This application logs the message 'on Stop aufgerufen' under the tag 'Preisvergleich'
+		 - This application logs the message 'on destroy aufgerufen' under the tag 'Preisvergleich'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - acs.tools.preisvergleich.apk
+
+	[.] Fingerprint                             
+		 - MD5: 9215ec3e4e95edebe175d4701d7231d2
+		 - SHA-1: a4c0323bbedf825434cf05db4342600023fe4129
+		 - SHA-256: c84911034bedcf115fc8615f8dcc87eb89cc80dfb29f5811016d4dd063b6c379
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.INTERNET',  'android.permission.VIBRATE']
+		 - Implied: []
+		 - Declared: []
+
+

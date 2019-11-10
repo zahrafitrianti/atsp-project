@@ -1,0 +1,262 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - หมอลำ เต้ยลา
+
+	[.] Application Version                     
+		 - 11.0
+
+	[.] Package Name                            
+		 - adsindy.com.terla
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '%1$-11s %2$-12s %3$s %4$s 2' under the tag 'Picasso'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'Landroid/support/v4/widget/SwipeRefreshLayout;->canChildScrollUp()Z'
+		 - This application logs the message '' under the tag 'Ljava/lang/Object;->getClass()Ljava/lang/Class;'
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '0' under the tag 'Ljava/lang/Object;->getClass()Ljava/lang/Class;'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '0' under the tag 'ProviderInstaller'
+		 - This application logs the message '1' under the tag '0'
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '1' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '1' under the tag 'WalletClientImpl'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'NotifManCompat'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'AdsIndy'
+		 - This application logs the message '11' under the tag 'AdsInstall'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '13' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'android.support.v4.speech.tts'
+		 - This application logs the message '15' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'Asserts'
+		 - This application logs the message '2' under the tag 'FitnessSensorService'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'GmsClient'
+		 - This application logs the message '2' under the tag 'GoogleAuthUtil'
+		 - This application logs the message '2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '2' under the tag 'ImageManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'LocationClientImpl'
+		 - This application logs the message '2' under the tag 'NotifManCompat'
+		 - This application logs the message '2' under the tag 'OneTimePlayLogger'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '2' under the tag 'WearableClient'
+		 - This application logs the message '2' under the tag 'WearableLS'
+		 - This application logs the message '2' under the tag 'YouTubeAndroidPlayerAPI'
+		 - This application logs the message '3' under the tag 'ContextCompat'
+		 - This application logs the message '3' under the tag 'DataItem'
+		 - This application logs the message '3' under the tag 'DataMap'
+		 - This application logs the message '3' under the tag 'DocumentFile'
+		 - This application logs the message '3' under the tag 'FitnessSensorService'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GAV4'
+		 - This application logs the message '3' under the tag 'GmsClient'
+		 - This application logs the message '3' under the tag 'GmsClientEvents'
+		 - This application logs the message '3' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '3' under the tag 'Ljava/util/Set;->iterator()Ljava/util/Iterator;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'MediaControllerCompat'
+		 - This application logs the message '3' under the tag 'NotifManCompat 5'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '3' under the tag 'RoundedBitmapDrawableFactory'
+		 - This application logs the message '3' under the tag 'WearableClient'
+		 - This application logs the message '3' under the tag 'WearableLS'
+		 - This application logs the message '4' under the tag 'DocumentFile'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag 'ImageUtils'
+		 - This application logs the message '4' under the tag 'ListPopupWindow'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag 'Rating'
+		 - This application logs the message '4' under the tag 'WearableClient'
+		 - This application logs the message '5' under the tag 'DataHolder'
+		 - This application logs the message '5' under the tag 'DocumentFile'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '5' under the tag 'NestedScrollView'
+		 - This application logs the message '6' under the tag 'AdsIndy'
+		 - This application logs the message '6' under the tag 'AdsInstall'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'DataHolder'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '6' under the tag 'WearableClient'
+		 - This application logs the message '7' under the tag 'DataMap'
+		 - This application logs the message '7' under the tag 'Fitness'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '7' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '7' under the tag 'pix'
+		 - This application logs the message '8' under the tag 'DocumentFile'
+		 - This application logs the message '8' under the tag 'NestedScrollView'
+		 - This application logs the message '8' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '8' under the tag 'WearableClient'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Ad not loaded banner .' under the tag 'AdsIndy'
+		 - This application logs the message 'Ad not loaded banner .' under the tag 'AdsInstall'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Calling connect() while still connected, missing disconnect().' under the tag 'GmsClient'
+		 - This application logs the message 'Calling connect() while still connected, missing disconnect().' under the tag 'YouTubeClient'
+		 - This application logs the message 'Cannot programmatically select non-user route because the platform is missing the selectRouteInt() method.  Media routing may not work.' under the tag
+		   'MediaRouterJellybean'
+		 - This application logs the message 'Cannot scan for wifi displays because the DisplayManager.scanWifiDisplays() method is not available on this device.' under the tag 'MediaRouterJellybeanMr1'
+		 - This application logs the message 'Cannot set dropdown width for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Cannot set horizontal offset for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Cannot set popup background for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Cannot set vertical offset for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find package info for Google Play Services' under the tag 'Fitness'
+		 - This application logs the message 'Could not find voice search activity' under the tag 'SearchView'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'DrawerToggle may not show up because NavigationIcon is not visible. You may need to call actionbar.setDisplayHomeAsUpEnabled(true);' under the tag
+		   'ActionBarDrawerToggle'
+		 - This application logs the message 'Error creating media file, check storage permissions: ' under the tag 'ImageUtils'
+		 - This application logs the message 'Failed to get remote context' under the tag 'ProviderInstaller'
+		 - This application logs the message 'GmsClient' under the tag 'GmsClient'
+		 - This application logs the message 'Google Play Services signature invalid on Glass.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services missing when getting application info.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Invalid percentage-based rating value' under the tag 'Rating'
+		 - This application logs the message 'Landroid/content/pm/PackageManager$NameNotFoundException;->toString()Ljava/lang/String;' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Landroid/support/v7/internal/view/SupportMenuInflater;->access$500()[Ljava/lang/Class;' under the tag 'SupportMenuInflater'
+		 - This application logs the message 'Ljava/io/IOException;->getMessage()Ljava/lang/String;' under the tag 'Error: '
+		 - This application logs the message 'Ljava/io/IOException;->getMessage()Ljava/lang/String;' under the tag 'tag'
+		 - This application logs the message 'Ljava/io/StringWriter;->toString()Ljava/lang/String;' under the tag 'Picasso'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/security/KeyManagementException;->toString()Ljava/lang/String;' under the tag 'allowAllSSL'
+		 - This application logs the message 'Ljava/security/NoSuchAlgorithmException;->toString()Ljava/lang/String;' under the tag 'allowAllSSL'
+		 - This application logs the message 'Ljava/util/concurrent/locks/Lock;->unlock()V' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Ljavax/xml/parsers/ParserConfigurationException;->getMessage()Ljava/lang/String;' under the tag 'Error: '
+		 - This application logs the message 'Lorg/xml/sax/SAXException;->getMessage()Ljava/lang/String;' under the tag 'Error: '
+		 - This application logs the message 'Making Creator dynamically' under the tag 'Lcom/google/android/gms/maps/internal/u;->mL()Ljava/lang/Class;'
+		 - This application logs the message 'Making Creator statically' under the tag 'Lcom/google/android/gms/maps/internal/u;->mK()Z'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'Null pending result returned for onFullWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onMaskedWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onPreAuthorizationDetermined' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onWalletObjectsCreated' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'Received a location in client after calling removeLocationUpdates.' under the tag 'LocationClientHelper'
+		 - This application logs the message 'Received batch result' under the tag 'Fitness'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'Service was disconnected.  Will try caching.' under the tag 'PlayLoggerImpl'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Spaces are not allowed in deep-link IDs.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'Storing location at more than millisecond granularity is not supported. Extra precision is lost as the value is converted to milliseconds.' under the tag
+		   'Fitness'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'The provided deep-link ID is empty.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'There is no internet connection' under the tag 'AdGet'
+		 - This application logs the message 'There is no internet connection' under the tag 'AdsInstall'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Trying to set out of range star-based rating' under the tag 'Rating'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'Unresolved error while connecting client. Stopping auto-manage.' under the tag 'GmsSupportLifecycleFragment'
+		 - This application logs the message 'Unsupported encoding error.' under the tag 'GoogleAuthApiRequest'
+		 - This application logs the message 'WearableClientImpl.onPostInitHandler: done' under the tag 'WearableClient'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'audio' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once. Ignoring.' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once. Ignoring.' under the tag 'WalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once.Ignoring.' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once.Ignoring.' under the tag 'WalletFragment'
+		 - This application logs the message 'logger connection failed' under the tag 'OneTimePlayLogger'
+		 - This application logs the message 'onAddGeofenceResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByPendingIntentResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByRequestIdsResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'service died' under the tag 'AppStateClient'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'service died' under the tag 'YouTubeClient'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'setPopupBackgroundDrawable: incompatible spinner mode; ignoring...' under the tag 'Spinner'
+		 - This application logs the message 'unknown message in LocationHandler.handleMessage' under the tag 'LocationClientHelper'
+		 - This application logs the message 'updateMaskedWallet() was called before initialize()' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'updateMaskedWallet() was called before initialize()' under the tag 'WalletFragment'
+		 - This application logs the message 'updateMaskedWalletRequest() was called before initialize()' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'updateMaskedWalletRequest() was called before initialize()' under the tag 'WalletFragment'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/google/android/youtube/player/YouTubeIntents;->a(Landroid/content/Context;)Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_PROVIDERS, GET_RECEIVERS, GET_SERVICES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;'
+		   application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Lcom/google/android/gms/common/GooglePlayServicesUtil;->E(Landroid/content/Context;)V' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Lcom/google/android/youtube/player/internal/z;->a(Landroid/content/Context;)Ljava/lang/String;' application installed on the
+		   system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+
+[+] Apk File
+	[.] File Name                               
+		 - adsindy.com.terla.apk
+
+	[.] Fingerprint                             
+		 - MD5: 38dcd0772f6b85afcc40fb24a66923d8
+		 - SHA-1: 3dc9b76254b82c6e1375138dd796c19e86d78f78
+		 - SHA-256: 9ada509c9d2260a62342b1a8fc407cf2009218f8c5a1a36e82c366da4f88f5d1
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET',  'android.permission.READ_EXTERNAL_STORAGE',
+		   'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: []
+		 - Declared: []
+
+

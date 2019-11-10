@@ -1,0 +1,49 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Voetbal Nieuws
+
+	[.] Application Version                     
+		 - @7F06001E
+
+	[.] Package Name                            
+		 - air.apps.NewsEnterprise.voetbalnieuws
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '6' under the tag 'VideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glCreateProgram()I' under the tag 'VideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glCreateShader(I)I' under the tag 'VideoRenderer'
+		 - This application logs the message 'VideoRenderer 2' under the tag 'VideoRenderer'
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.apps.NewsEnterprise.voetbalnieuws.apk
+
+	[.] Fingerprint                             
+		 - MD5: 1ca4026794c6bd9edc7d236dfc7206d9
+		 - SHA-1: 079fe713fafde0950911d359e5160b3e893a8e1d
+		 - SHA-256: 25429a1992876b1321a11a60ac270c2cd8ce38f36cd0afbf24a16a9c95dc12d8
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.BROADCAST_STICKY', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -1,0 +1,404 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: aidapp.newsportaltamilnadu
+Package Version Name: 2.1
+Package Version Code: 3
+Min Sdk: 14
+Target Sdk: 23
+MD5   : 635ae09533db04e1206cd3c0624fa854
+SHA1  : e3756cffcf0a0d0bd6001a3dc304e44369e0d0f0
+SHA256: 0791fd9fd81b4652a113bebafb9cf25eedd1a0c51a411b17989dbaed77e433da
+SHA512: 2f14696f664bd392a92dd541e33131b94b5297b977a814a2778fa34008a36b15a754c315fc7d3bf6a0576cdcc75f5a6f7187b569da2ed6fc65bc875c8ac61957
+Analyze Signature: 6590d9bfcc2183b929e7318980ee331852cb0c4916487383f1f2f23899a8af21d984c67a6192ededbdb4902dc8353c6a9c6e0917b6485eac2fac009fab09262a
+------------------------------------------------------------------------------------------------
+[Critical]  App Sandbox Permission Checking:
+           Security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found (Please check:
+           https://www.owasp.org/index.php/Mobile_Top_10_2014-M2):
+               [getSharedPreferences]
+               => Lcom/google/android/gms/flags/impl/zzb$1;->zzvw()Landroid/content/SharedPreferences; (0xa) --->
+                    Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+               => Lcom/google/android/gms/internal/zzbr;->zzw(Landroid/content/Context;)Landroid/content/SharedPreferences; (0x6) --->
+                    Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+               --------------------------------------------------
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:75):
+               http://canadauthayan.ca/
+                   => Laidapp/newsportaltamilnadu/NextPage$75;->onClick(Landroid/view/View;)V
+               http://cheithikkovai.com/news1/
+                   => Laidapp/newsportaltamilnadu/NextPage$28;->onClick(Landroid/view/View;)V
+               http://dinasudar.co.in/dinasudar/
+                   => Laidapp/newsportaltamilnadu/NextPage$21;->onClick(Landroid/view/View;)V
+               http://eeladhesam.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$59;->onClick(Landroid/view/View;)V
+               http://epaper.theekkathir.org/
+                   => Laidapp/newsportaltamilnadu/NextPage$9;->onClick(Landroid/view/View;)V
+               http://globaltamilnews.net/
+                   => Laidapp/newsportaltamilnadu/NextPage$74;->onClick(Landroid/view/View;)V
+               http://liveday.in/
+                   => Laidapp/newsportaltamilnadu/NextPage$71;->onClick(Landroid/view/View;)V
+               http://makkalkural.net/news/
+                   => Laidapp/newsportaltamilnadu/NextPage$49;->onClick(Landroid/view/View;)V
+               http://mdmk.org.in/sangoli
+                   => Laidapp/newsportaltamilnadu/NextPage$77;->onClick(Landroid/view/View;)V
+                   => Laidapp/newsportaltamilnadu/NextPage$1;->onClick(Landroid/view/View;)V
+                   => Laidapp/newsportaltamilnadu/NextPage$79;->onClick(Landroid/view/View;)V
+               http://news.coimbatoreonline.in/Tamil
+                   => Laidapp/newsportaltamilnadu/NextPage$65;->onClick(Landroid/view/View;)V
+               http://news.tamilstar.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$12;->onClick(Landroid/view/View;)V
+               http://newstodaynet.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$33;->onClick(Landroid/view/View;)V
+               http://plus.google.com/
+                   => Lcom/google/android/gms/common/internal/zzn;-><clinit>()V
+               http://polls.oneindia.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$4;->onClick(Landroid/view/View;)V
+               http://puthu.thinnai.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$66;->onClick(Landroid/view/View;)V
+               http://spiritofchennai.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$35;->onClick(Landroid/view/View;)V
+               http://tamil.cri.cn/
+                   => Laidapp/newsportaltamilnadu/NextPage$44;->onClick(Landroid/view/View;)V
+               http://tamil.goodreturns.in/
+                   => Laidapp/newsportaltamilnadu/NextPage$69;->onClick(Landroid/view/View;)V
+               http://tamil.oneindia.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$37;->onClick(Landroid/view/View;)V
+               http://tamil.thehindu.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$8;->onClick(Landroid/view/View;)V
+               http://tamil.webdunia.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$2;->onClick(Landroid/view/View;)V
+               http://tamil24news.com/news/
+                   => Laidapp/newsportaltamilnadu/NextPage$11;->onClick(Landroid/view/View;)V
+               http://tamilkurinji.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$72;->onClick(Landroid/view/View;)V
+               http://tamilleader.org/
+                   => Laidapp/newsportaltamilnadu/NextPage$63;->onClick(Landroid/view/View;)V
+               http://timesofindia.indiatimes.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$25;->onClick(Landroid/view/View;)V
+               http://ttnnews.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$50;->onClick(Landroid/view/View;)V
+               http://viduthalai.in/
+                   => Laidapp/newsportaltamilnadu/NextPage$38;->onClick(Landroid/view/View;)V
+               http://www.appaaltamil.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$26;->onClick(Landroid/view/View;)V
+               http://www.appusami.com/index.asp
+                   => Laidapp/newsportaltamilnadu/NextPage$27;->onClick(Landroid/view/View;)V
+               http://www.athirvu.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$61;->onClick(Landroid/view/View;)V
+               http://www.bbc.com/tamil
+                   => Laidapp/newsportaltamilnadu/NextPage$16;->onClick(Landroid/view/View;)V
+               http://www.chennaionline.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$29;->onClick(Landroid/view/View;)V
+               http://www.chennaitodaynews.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$64;->onClick(Landroid/view/View;)V
+               http://www.dailythanthi.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$22;->onClick(Landroid/view/View;)V
+               http://www.daytamil.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$68;->onClick(Landroid/view/View;)V
+               http://www.dinakaran.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$23;->onClick(Landroid/view/View;)V
+               http://www.dinamalar.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$24;->onClick(Landroid/view/View;)V
+               http://www.dinamani.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$20;->onClick(Landroid/view/View;)V
+               http://www.fourtamil.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$52;->onClick(Landroid/view/View;)V
+               http://www.frontline.in/
+                   => Laidapp/newsportaltamilnadu/NextPage$32;->onClick(Landroid/view/View;)V
+               http://www.google.com
+                   => Lcom/google/android/gms/internal/zzhj$zza;-><init>(Landroid/content/Context;)V
+               http://www.jvpnews.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$67;->onClick(Landroid/view/View;)V
+               http://www.kalkionline.com/default.php
+                   => Laidapp/newsportaltamilnadu/NextPage$7;->onClick(Landroid/view/View;)V
+               http://www.koodal.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$40;->onClick(Landroid/view/View;)V
+               http://www.lotusnews.tv/
+                   => Laidapp/newsportaltamilnadu/NextPage$14;->onClick(Landroid/view/View;)V
+               http://www.maalaimalar.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$19;->onClick(Landroid/view/View;)V
+               http://www.maalaisudar.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$3;->onClick(Landroid/view/View;)V
+               http://www.paristamil.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$45;->onClick(Landroid/view/View;)V
+               http://www.ponguthamil.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$58;->onClick(Landroid/view/View;)V
+               http://www.puthinamnews.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$56;->onClick(Landroid/view/View;)V
+               http://www.seithy.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$39;->onClick(Landroid/view/View;)V
+               http://www.sify.com/news/
+                   => Laidapp/newsportaltamilnadu/NextPage$34;->onClick(Landroid/view/View;)V
+               http://www.sumanasa.com/tamilnews/
+                   => Laidapp/newsportaltamilnadu/NextPage$70;->onClick(Landroid/view/View;)V
+               http://www.tamil.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$47;->onClick(Landroid/view/View;)V
+               http://www.tamilaustralian.com.au/news/
+                   => Laidapp/newsportaltamilnadu/NextPage$76;->onClick(Landroid/view/View;)V
+               http://www.tamilcnn.org/
+                   => Laidapp/newsportaltamilnadu/NextPage$13;->onClick(Landroid/view/View;)V
+               http://www.tamildaily.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$48;->onClick(Landroid/view/View;)V
+               http://www.tamilguardian.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$10;->onClick(Landroid/view/View;)V
+               http://www.tamilmithran.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$62;->onClick(Landroid/view/View;)V
+               http://www.tamilmurasu.org/
+                   => Laidapp/newsportaltamilnadu/NextPage$17;->onClick(Landroid/view/View;)V
+               http://www.tamilnet.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$36;->onClick(Landroid/view/View;)V
+               http://www.tamilsigaram.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$42;->onClick(Landroid/view/View;)V
+               http://www.tamilwin.com/india/
+                   => Laidapp/newsportaltamilnadu/NextPage$54;->onClick(Landroid/view/View;)V
+               http://www.telonews.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$55;->onClick(Landroid/view/View;)V
+               http://www.tharavu.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$57;->onClick(Landroid/view/View;)V
+               http://www.thinaboomi.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$18;->onClick(Landroid/view/View;)V
+               http://www.thinakkathir.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$60;->onClick(Landroid/view/View;)V
+               http://www.thoothuonline.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$41;->onClick(Landroid/view/View;)V
+               http://www.tn.gov.in/acts/atoz
+                   => Laidapp/newsportaltamilnadu/NextPage$15;->onClick(Landroid/view/View;)V
+               http://www.twotamil.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$51;->onClick(Landroid/view/View;)V
+               http://www.vanakkamlondon.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$46;->onClick(Landroid/view/View;)V
+               http://www.vikatan.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$6;->onClick(Landroid/view/View;)V
+               http://www.virakesari.lk/
+                   => Laidapp/newsportaltamilnadu/NextPage$43;->onClick(Landroid/view/View;)V
+               http://www.vivegamnews.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$73;->onClick(Landroid/view/View;)V
+               http://yarl.com/
+                   => Laidapp/newsportaltamilnadu/NextPage$53;->onClick(Landroid/view/View;)V
+[Critical] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           Found a critical WebView "addJavascriptInterface" vulnerability. This method can be used to allow JavaScript to control the host
+           application.
+           This is a powerful feature, but also presents a security risk for applications targeted to API level JELLY_BEAN(4.2) or below,
+           because JavaScript could use reflection to access an injected object's public fields. Use of this method in a WebView containing
+           untrusted content could allow an attacker to manipulate the host application in unintended ways, executing Java code with the
+           permissions of the host application.
+           Reference:
+             1."http://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface(java.lang.Object,
+           java.lang.String) "
+             2.https://labs.mwrinfosecurity.com/blog/2013/09/24/webview-addjavascriptinterface-remote-code-execution/
+             3.http://50.56.33.56/blog/?p=314
+             4.http://blog.trustlook.com/2013/09/04/alert-android-webview-addjavascriptinterface-code-execution-vulnerability/
+           Please modify the below code:
+               => Lcom/google/android/gms/internal/zzjt;-><init>(Lcom/google/android/gms/internal/zzjt$zza;
+                    Lcom/google/android/gms/ads/internal/client/AdSizeParcel; Z Z Lcom/google/android/gms/internal/zzan;
+                    Lcom/google/android/gms/ads/internal/util/client/VersionInfoParcel; Lcom/google/android/gms/internal/zzcb;
+                    Lcom/google/android/gms/ads/internal/zzd;)V (0xfa) --->
+                    Lcom/google/android/gms/internal/zzjt;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+[Warning]  Dynamic Code Loading:
+           Dynamic code loading(DexClassLoader) found:
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0xae) --->
+                    Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0xc4) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0xdc) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0xf4) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x10c) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x124) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x13c) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x154) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x16c) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x184) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x19c) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x1bc) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x1dc) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x1fc) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lcom/google/android/gms/internal/zzbv;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/util/Map;)V (0x70) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning]  AndroidManifest Exported Components Checking:
+           Found "exported" components(except for Launcher) for receiving outside applications' actions (AndroidManifest.xml).
+           These components can be initilized by other apps. You should add or modify the attribute to [exported="false"] if you don't want
+           to.
+           You can also protect it with a customized permission with "signature" or higher protectionLevel and specify in
+           "android:permission" attribute.
+                 activity => aidapp.newsportaltamilnadu.NextPage
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/google/android/gms/ads/internal/util/client/zza;->zzT(Landroid/content/Context;)Ljava/lang/String; (0x30) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+[Warning] <WebView> WebView Local File Access Attacks Checking:
+           Found "setAllowFileAccess(true)" or not set(enabled by default) in WebView. The attackers could inject malicious script into
+           WebView and exploit the opportunity to access local resources. This can be mitigated or prevented by disabling local file system
+           access. (It is enabled by default)
+           Note that this enables or disables file system access only. Assets and resources are still accessible using file:///android_asset
+           and file:///android_res.
+           The attackers can use "mWebView.loadUrl("file:///data/data/[Your_Package_Name]/[File]");" to access app's local file.
+           Reference: (1)https://labs.mwrinfosecurity.com/blog/2012/04/23/adventures-with-android-webviews/
+                      (2)http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)
+           Please add or modify "yourWebView.getSettings().setAllowFileAccess(false)" to your WebView:
+               Lcom/google/android/gms/internal/zzbf$2;->run()V
+               Lcom/google/android/gms/internal/zzgb;->zzfR()Landroid/webkit/WebView;
+               Lcom/google/android/gms/internal/zzir;->zzK(Landroid/content/Context;)Ljava/lang/String;
+               Lcom/google/android/gms/internal/zzir;->zza(Landroid/content/Context; Ljava/lang/String; Landroid/webkit/WebSettings;)V
+               Lcom/google/android/gms/internal/zzis$zzb;->zza(Landroid/content/Context; Landroid/webkit/WebSettings;)Z
+               Lcom/google/android/gms/internal/zzis$zzd;->getDefaultUserAgent(Landroid/content/Context;)Ljava/lang/String;
+               Lcom/google/android/gms/internal/zzis$zzd;->zza(Landroid/content/Context; Landroid/webkit/WebSettings;)Z
+               Lcom/google/android/gms/internal/zzis$zzf;->zza(Landroid/content/Context; Landroid/webkit/WebSettings;)Z
+[Warning] <WebView> WebView Potential XSS Attacks Checking:
+           Found "setJavaScriptEnabled(true)" in WebView, which could exposed to potential XSS attacks. Please check the web page code
+           carefully and sanitize the output:
+               => Lcom/google/android/gms/internal/zzgb;->zzfR()Landroid/webkit/WebView; (0x18) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/google/android/gms/internal/zzjt;-><init>(Lcom/google/android/gms/internal/zzjt$zza;
+                    Lcom/google/android/gms/ads/internal/client/AdSizeParcel; Z Z Lcom/google/android/gms/internal/zzan;
+                    Lcom/google/android/gms/ads/internal/util/client/VersionInfoParcel; Lcom/google/android/gms/internal/zzcb;
+                    Lcom/google/android/gms/ads/internal/zzd;)V (0x82) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is using Android SQLite databases.
+           Prior to Android 4.0, Android has SQLite Journal Information Disclosure Vulnerability.
+           But it can only be solved by users upgrading to Android > 4.0 and YOU CANNOT SOLVE IT BY YOURSELF (But you can use encrypt your
+           databases and Journals by "SQLCipher" or other libs).
+           Proof-Of-Concept Reference:
+           (1) http://blog.watchfire.com/files/androidsqlitejournal.pdf
+           (2) http://www.youtube.com/watch?v=oCXLHjmH5rY
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/google/android/gms/internal/zzv;->zzc(I)V (0x86) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzv;->remove(Ljava/lang/String;)V (0xa) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzv;->zza()V (0xb4) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzv;->zza(Ljava/lang/String; Lcom/google/android/gms/internal/zzb$zza;)V (0x68) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x460) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x480) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x492) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzal;->zzm(Landroid/content/Context;)V (0x4b2) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzdu;->zzU(Ljava/lang/String;)Z (0x310) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzdu;->zzeb()Z (0x6a) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzdu;->zzeb()Z (0x86) ---> Ljava/io/File;->delete()Z
+[Notice] <Signature><Hacker> Getting Signature Code Checking:
+           This app has code checking the package signature in the code. It might be used to check for whether the app is hacked by the
+           attackers.
+               => Lcom/google/android/gms/common/zze;->isGooglePlayServicesAvailable(Landroid/content/Context;)I (0x54) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/google/android/gms/common/zze;->zzb(Landroid/content/pm/PackageManager;)Z (0x1c) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/google/android/gms/common/zze;->zzf(Landroid/content/Context; I)Z (0x24) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" because your set minSdk >= 11.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting IMEI and Device ID:
+           Did not detect this app is getting the "device id(IMEI)" by "TelephonyManager.getDeviceId()" approach.
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+------------------------------------------------------------
+AndroBugs analyzing time: 7.761319 secs
+Total elapsed time: 24.515769 secs

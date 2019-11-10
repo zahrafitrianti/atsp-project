@@ -1,0 +1,100 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Cindy's Cake Maker Lite
+
+	[.] Application Version                     
+		 - 1.5
+
+	[.] Package Name                            
+		 - air.cindycakemakerlite
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the phone's current state
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message ' 3' under the tag 'Lcom/directtap/c;->d(Ljava/lang/String;)Ljava/lang/String;'
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'MetadataBundle'
+		 - This application logs the message '10' under the tag 'Lcom/adobe/fre/FREContext;->getActivity()Landroid/app/Activity;'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'Asserts'
+		 - This application logs the message '2' under the tag 'EventCallback'
+		 - This application logs the message '2' under the tag 'LocationClientImpl'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '3' under the tag 'GAV3'
+		 - This application logs the message '3' under the tag 'GmsClient'
+		 - This application logs the message '3' under the tag 'GmsClientEvents'
+		 - This application logs the message '3' under the tag '_debug_only '
+		 - This application logs the message '3' under the tag 'call DirectTapDismissFullScreen'
+		 - This application logs the message '3' under the tag 'call DirectTapTapAd '
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag 'Lcom/directtap/air/functions/DirectTapGetAds$1;'
+		 - This application logs the message '6' under the tag 'DataHolder'
+		 - This application logs the message '8' under the tag 'Lcom/adobe/fre/FREContext;->getActivity()Landroid/app/Activity;'
+		 - This application logs the message 'Attempt to compare invalid DriveId detected. Has local storage been cleared?' under the tag 'DriveId'
+		 - This application logs the message 'DirectTapShowFullScreen is called with a listener' under the tag 'v0'
+		 - This application logs the message 'GooglePlayServicesUtil 2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'Lcom/adobe/fre/FREContext;->getActivity()Landroid/app/Activity;' under the tag 'Lcom/directtap/DirectTap$FinishScreen;'
+		 - This application logs the message 'Lcom/google/android/gms/common/GooglePlayServicesUtil;->t(Landroid/content/Context;)V' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Lcom/google/android/gms/internal/eh$b;->ec()V' under the tag 'GmsClient'
+		 - This application logs the message 'Ljava/util/concurrent/locks/Lock;->unlock()V' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Making Creator statically' under the tag 'Lcom/google/android/gms/maps/internal/q;->ha()Z'
+		 - This application logs the message 'Received a location in client after calling removeLocationUpdates.' under the tag 'LocationClientHelper'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'X509 GooglePlayServicesUtil Package has more than one signature.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'You must supply a resource ID for a TextView' under the tag 'DataBufferAdapter'
+		 - This application logs the message 'onAddGeofenceResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByPendingIntentResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByRequestIdsResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'service died' under the tag 'AppStateClient'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'unknown message in LocationHandler.handleMessage' under the tag 'LocationClientHelper'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_PROVIDERS, GET_RECEIVERS, GET_SERVICES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;'
+		   application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.google.android.apps.bazaar' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.cindycakemakerlite.apk
+
+	[.] Fingerprint                             
+		 - MD5: 04ca0b7ab1a08b8ee7d6e82eeb12baf2
+		 - SHA-1: 7798930a0d0cccedb59e9b31f4779419dfc124ba
+		 - SHA-256: cb62fb95adb5c08a2c50b9861dde7c038359e45f13eeaafbeaf48f7e9964f52c
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET', 'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

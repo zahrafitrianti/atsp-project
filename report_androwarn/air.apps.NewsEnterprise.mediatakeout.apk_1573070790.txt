@@ -1,0 +1,49 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Mediatakeout
+
+	[.] Application Version                     
+		 - @7F06001E
+
+	[.] Package Name                            
+		 - air.apps.NewsEnterprise.mediatakeout
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '6' under the tag 'VideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glCreateProgram()I' under the tag 'VideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glCreateShader(I)I' under the tag 'VideoRenderer'
+		 - This application logs the message 'VideoRenderer 2' under the tag 'VideoRenderer'
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.apps.NewsEnterprise.mediatakeout.apk
+
+	[.] Fingerprint                             
+		 - MD5: f23d2a74f30d4de6c2b94e741e470fd6
+		 - SHA-1: a437e36b0e1f3d3351c6c375bd99111e248065f8
+		 - SHA-256: 59a29290299063410d19c7f2e4fa4c54aed84a5e2bc3dfc6b88e6a208e0d267c
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.BROADCAST_STICKY', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

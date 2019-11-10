@@ -1,0 +1,271 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - SMS Templates App
+
+	[.] Application Version                     
+		 - 2.0
+
+	[.] Package Name                            
+		 - afkari.io.kalimathobei
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'GoogleApiClientConnecting'
+		 - This application logs the message '' under the tag 'Ljava/lang/Object;->getClass()Ljava/lang/Class;'
+		 - This application logs the message '0' under the tag 'CameraSource'
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'GcmNetworkManager'
+		 - This application logs the message '0' under the tag 'GcmNotification'
+		 - This application logs the message '0' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '0' under the tag 'InstanceID/Store'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '0' under the tag 'ProviderInstaller'
+		 - This application logs the message '0' under the tag 'WearableClient'
+		 - This application logs the message '1' under the tag ''
+		 - This application logs the message '1' under the tag 'AppInviteReferral'
+		 - This application logs the message '1' under the tag 'FocusingProcessor'
+		 - This application logs the message '1' under the tag 'GcmListenerService'
+		 - This application logs the message '1' under the tag 'GmsClient'
+		 - This application logs the message '1' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '1' under the tag 'InstanceID'
+		 - This application logs the message '1' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '1' under the tag 'SearchIndex'
+		 - This application logs the message '1' under the tag 'WearableClient'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag ''
+		 - This application logs the message '2' under the tag '--: VALUE :--'
+		 - This application logs the message '2' under the tag '1'
+		 - This application logs the message '2' under the tag 'Asserts'
+		 - This application logs the message '2' under the tag 'BackStackEntry'
+		 - This application logs the message '2' under the tag 'BasePendingResult'
+		 - This application logs the message '2' under the tag 'ChannelEventParcelable'
+		 - This application logs the message '2' under the tag 'ChannelOutputStream'
+		 - This application logs the message '2' under the tag 'DataItem'
+		 - This application logs the message '2' under the tag 'FitnessSensorService'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'GAv4'
+		 - This application logs the message '2' under the tag 'GcmTaskService'
+		 - This application logs the message '2' under the tag 'GmsClient'
+		 - This application logs the message '2' under the tag 'GmsClientEvents'
+		 - This application logs the message '2' under the tag 'GoogleApiClientConnecting'
+		 - This application logs the message '2' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message '2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '2' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '2' under the tag 'ImageManager'
+		 - This application logs the message '2' under the tag 'InstanceID'
+		 - This application logs the message '2' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '2' under the tag 'Lcom/google/android/gms/internal/zzlr;->isInitialized()Z'
+		 - This application logs the message '2' under the tag 'Lcom/google/android/gms/internal/zzmx;->zzqx()Z'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'OneTimePlayLogger'
+		 - This application logs the message '2' under the tag 'SearchAuth'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '2' under the tag 'Volley'
+		 - This application logs the message '2' under the tag 'WalletClientImpl'
+		 - This application logs the message '2' under the tag 'WearableClient'
+		 - This application logs the message '2' under the tag 'WearableLS'
+		 - This application logs the message '3' under the tag '2'
+		 - This application logs the message '3' under the tag 'DataItem'
+		 - This application logs the message '3' under the tag 'DataMap'
+		 - This application logs the message '3' under the tag 'FitnessSensorService'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GcmNotification'
+		 - This application logs the message '3' under the tag 'GcmTaskService'
+		 - This application logs the message '3' under the tag 'GmsClient'
+		 - This application logs the message '3' under the tag 'GmsClientEvents'
+		 - This application logs the message '3' under the tag 'GoogleApiAvailability'
+		 - This application logs the message '3' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '3' under the tag 'InstanceID'
+		 - This application logs the message '3' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '3' under the tag 'InstanceID/Store'
+		 - This application logs the message '3' under the tag 'Landroid/content/Intent;->getAction()Ljava/lang/String;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'SearchAuth'
+		 - This application logs the message '3' under the tag 'WearableClient'
+		 - This application logs the message '3' under the tag 'WearableLS'
+		 - This application logs the message '3' under the tag 'WorkSourceUtil'
+		 - This application logs the message '3' under the tag 'error InstanceID/Rpc InstanceID/Rpc'
+		 - This application logs the message '4' under the tag 'FragmentActivity'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'WearableClient'
+		 - This application logs the message '5' under the tag ''
+		 - This application logs the message '5' under the tag 'BackStackEntry'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'GAv4'
+		 - This application logs the message '5' under the tag 'InstanceID'
+		 - This application logs the message '6' under the tag 'BackStackEntry'
+		 - This application logs the message '6' under the tag 'DataHolder'
+		 - This application logs the message '6' under the tag 'GAv4'
+		 - This application logs the message '6' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '6' under the tag 'SafeDataBufferRef'
+		 - This application logs the message '7' under the tag 'DataHolder'
+		 - This application logs the message '7' under the tag 'DataMap'
+		 - This application logs the message '7' under the tag 'Fitness'
+		 - This application logs the message '7' under the tag 'FragmentManager'
+		 - This application logs the message '7' under the tag 'WearableClient'
+		 - This application logs the message '8' under the tag 'WearableClient'
+		 - This application logs the message '9' under the tag 'FragmentActivity'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'App restored, clearing state' under the tag 'InstanceID/Store'
+		 - This application logs the message 'Attempted to bind to a service in a STOPPED package.' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Binder call returned null.' under the tag 'GoogleAuthUtil'
+		 - This application logs the message 'Both Google Play Services and legacy GSF package are missing' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Channel.receiveFile used with non-file URI' under the tag 'WearableClient'
+		 - This application logs the message 'Channel.sendFile used with non-file URI' under the tag 'WearableClient'
+		 - This application logs the message 'ClearTokenImpl started' under the tag 'SearchAuth'
+		 - This application logs the message 'ClearTokenImpl success' under the tag 'SearchAuth'
+		 - This application logs the message 'Client %s made an invalid request %s 2' under the tag 'ConnectionTracker'
+		 - This application logs the message 'ConnectionTracker' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Constructing a Task object using a parcel.' under the tag 'Task'
+		 - This application logs the message 'Could not find package info for Google Play Services' under the tag 'Fitness'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Dropping invalid message' under the tag 'GCM'
+		 - This application logs the message 'Dropping invalid message' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Event buffer full, flushing' under the tag '2'
+		 - This application logs the message 'Executing receiveFileFromChannelTask' under the tag 'WearableClient'
+		 - This application logs the message 'Executing sendFileToChannelTask' under the tag 'WearableClient'
+		 - This application logs the message 'FaceDetector was not released with FaceDetector.release()' under the tag 'FaceDetector'
+		 - This application logs the message 'Failed to get remote context' under the tag 'ProviderInstaller'
+		 - This application logs the message 'Failed to resolve REGISTER intent, falling back' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Failed to send ping response' under the tag 'InstanceID'
+		 - This application logs the message 'FragmentManager' under the tag 'FragmentManager'
+		 - This application logs the message 'Frame processing thread interrupted on release.' under the tag 'CameraSource'
+		 - This application logs the message 'GetGoogleNowAuthImpl started' under the tag 'SearchAuth'
+		 - This application logs the message 'GetGoogleNowAuthImpl success' under the tag 'SearchAuth'
+		 - This application logs the message 'Google Play Store is neither installed nor updating.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'GoogleApiClient received too many callbacks for the given step. Clients may be in an unexpected state; GoogleApiClient will now disconnect.' under the tag
+		   'GoogleApiClientConnecting'
+		 - This application logs the message 'Ignoring onFullWalletLoaded, Activity has gone' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Ignoring onIsNewUserDetermined, Activity has gone' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Ignoring onMaskedWalletLoaded, Activity has gone' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Ignoring onPreAuthorizationDetermined, Activity has gone' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Ignoring onWalletObjectsCreated, Activity has gone' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Lcom/google/android/gms/internal/zzli;->zzog()Ljava/lang/String;' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Making Creator dynamically' under the tag 'Lcom/google/android/gms/maps/internal/zzy;->zzxW()Ljava/lang/Class;'
+		 - This application logs the message 'Making Creator statically' under the tag 'Lcom/google/android/gms/maps/internal/zzy;->zzxV()Z'
+		 - This application logs the message 'Messenger failed, fallback to startService' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Multiple handlers found for this intent: %s\n Stack trace: %s 3' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Native face detector is now available.' under the tag 'FaceDetectorHandle'
+		 - This application logs the message 'Native face detector not yet available.  Reverting to no-op detection.' under the tag 'FaceDetectorHandle'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'No preview sizes have a corresponding same-aspect-ratio picture size' under the tag 'CameraSource'
+		 - This application logs the message 'Null pending result returned for onFullWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onIsNewUserDetermined' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onMaskedWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onPreAuthorizationDetermined' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onWalletObjectsCreated' under the tag 'WalletClientImpl'
+		 - This application logs the message 'One of the API components you attempted to connect to is not available.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message 'Received a data in client after calling removeLocationUpdates.' under the tag 'LocationClientHelper'
+		 - This application logs the message 'Received a location in client after calling removeLocationUpdates.' under the tag 'LocationClientHelper'
+		 - This application logs the message 'Received batch result' under the tag 'Fitness'
+		 - This application logs the message 'Register result in service ' under the tag '4'
+		 - This application logs the message 'Remote account accessor probably died' under the tag 'AccountAccessor'
+		 - This application logs the message 'Remote service probably died when authAccount is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when clearAccountFromSessionStore is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when resolveAccount is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when saveDefaultAccount is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Service was disconnected.  Will try caching.' under the tag 'PlayLoggerImpl'
+		 - This application logs the message 'Showing notification' under the tag 'GcmNotification'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Skipping gmscore version check' under the tag 'Ads'
+		 - This application logs the message 'Spaces are not allowed in deep-link IDs.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'Storing location at more than millisecond granularity is not supported. Extra precision is lost as the value is converted to milliseconds.' under the tag
+		   'Fitness'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'The provided deep-link ID is empty.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'The specified account could not be signed in.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'There are no handler of this intent: %s\n Stack trace: %s 2' under the tag 'ConnectionTracker'
+		 - This application logs the message 'UUID.randomUUID() returned 0.' under the tag 'GAv4'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'Unexpected call to onAddGeofencesResult' under the tag 'LocationClientImpl'
+		 - This application logs the message 'Unexpected call to onRemoveGeofencesByPendingIntentResult' under the tag 'LocationClientImpl'
+		 - This application logs the message 'Unexpected call to onRemoveGeofencesByRequestIdsResult' under the tag 'LocationClientImpl'
+		 - This application logs the message 'Unexpected error, device missing required alghorithms' under the tag 'InstanceID'
+		 - This application logs the message 'Unexpected response: null' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Unresolved error while connecting client. Stopping auto-manage.' under the tag 'GmsSupportLifecycleFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once. Ignoring.' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once. Ignoring.' under the tag 'WalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once.Ignoring.' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once.Ignoring.' under the tag 'WalletFragment'
+		 - This application logs the message 'logger connection failed' under the tag 'OneTimePlayLogger'
+		 - This application logs the message 'onAddGeofenceResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'placeEstimator cannot be null 6' under the tag '1'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'service probably died' under the tag 'GmsClient'
+		 - This application logs the message 'unknown message in LocationHandler.handleMessage' under the tag 'LocationClientHelper'
+		 - This application logs the message 'updateMaskedWallet() was called before initialize()' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'updateMaskedWallet() was called before initialize()' under the tag 'WalletFragment'
+		 - This application logs the message 'updateMaskedWalletRequest() was called before initialize()' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'updateMaskedWalletRequest() was called before initialize()' under the tag 'WalletFragment'
+		 - This application logs the message 'v0' under the tag '3'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/google/android/gms/common/GooglePlayServicesUtil;->zzad(Landroid/content/Context;)V' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/google/android/gms/gcm/GoogleCloudMessaging;->zzaA(Landroid/content/Context;)Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/google/android/gms/measurement/internal/zzn;->getContext()Landroid/content/Context;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Lcom/google/android/gms/measurement/internal/zzn;->getContext()Landroid/content/Context;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES, MATCH_UNINSTALLED_PACKAGES' information about the 'Lcom/google/android/gms/internal/zzml;->zzan(Landroid/content/Context;)Z' application installed on
+		   the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+
+[+] Apk File
+	[.] File Name                               
+		 - afkari.io.kalimathobei.apk
+
+	[.] Fingerprint                             
+		 - MD5: 041bb286a8e8ac7a03fb2618c4961b14
+		 - SHA-1: 5c95492264a8ad56a8e7903752da2c2f650a19ab
+		 - SHA-256: 21e651927c0d0eaa7cea1394f59ac8b0fc184bee3144c61c3769f1b55f2a526c
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -1,0 +1,60 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Cut-it
+
+	[.] Application Version                     
+		 - 0.25
+
+	[.] Package Name                            
+		 - air.air.monsterbraingames.cutit
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'AndroidWebView'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message 'Base64 decoding failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Invalid key specification.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'NoSuchAlgorithmException.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Purchase verification failed: missing data.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Signature exception.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Signature verification failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.air.monsterbraingames.cutit.apk
+
+	[.] Fingerprint                             
+		 - MD5: c7c66ebdd5e630f5b47de02da0a8f3f0
+		 - SHA-1: 114aa228c9b30d523774373846f915c5c1bb19dd
+		 - SHA-256: 98fac80837dfaa827635a26e3c462ddc91532b745a1966a928562b582a963f8a
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET', 'com.android.vending.BILLING']
+		 - Implied: []
+		 - Declared: []
+
+

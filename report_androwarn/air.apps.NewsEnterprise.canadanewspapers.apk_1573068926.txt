@@ -1,0 +1,49 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Canada Newspapers
+
+	[.] Application Version                     
+		 - @7F06001E
+
+	[.] Package Name                            
+		 - air.apps.NewsEnterprise.canadanewspapers
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '6' under the tag 'VideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glCreateProgram()I' under the tag 'VideoRenderer'
+		 - This application logs the message 'Landroid/opengl/GLES20;->glCreateShader(I)I' under the tag 'VideoRenderer'
+		 - This application logs the message 'VideoRenderer 2' under the tag 'VideoRenderer'
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.apps.NewsEnterprise.canadanewspapers.apk
+
+	[.] Fingerprint                             
+		 - MD5: fabe8ddc67d72c09b656272f96b6df6c
+		 - SHA-1: 7d05b477b886d15345f11da56b7ecc7b81737d4a
+		 - SHA-256: b3912104ea47fa6ad9410079f2d0c554940e957426ac294bca968f84440409cd
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.BROADCAST_STICKY', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

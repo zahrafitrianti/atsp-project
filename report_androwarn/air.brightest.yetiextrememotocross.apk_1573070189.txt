@@ -1,0 +1,137 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Yeti Extreme Motocross
+
+	[.] Application Version                     
+		 - 1.0.1
+
+	[.] Package Name                            
+		 - air.brightest.yetiextrememotocross
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the phone's current state
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'MetadataBundle'
+		 - This application logs the message '1' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '1' under the tag 'WalletClientImpl'
+		 - This application logs the message '2' under the tag '0'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'AndroidWebView'
+		 - This application logs the message '2' under the tag 'Asserts'
+		 - This application logs the message '2' under the tag 'DriveEventService'
+		 - This application logs the message '2' under the tag 'EventCallback'
+		 - This application logs the message '2' under the tag 'GmsClient'
+		 - This application logs the message '2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '2' under the tag 'ImageManager'
+		 - This application logs the message '2' under the tag 'LocationClientImpl'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '2' under the tag 'WearableLS'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '3' under the tag 'DataItem'
+		 - This application logs the message '3' under the tag 'GAV4'
+		 - This application logs the message '3' under the tag 'GmsClient'
+		 - This application logs the message '3' under the tag 'GmsClientEvents'
+		 - This application logs the message '3' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '3' under the tag 'WearableLS'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag 'Lcom/google/android/gms/drive/events/DriveEvent;->getType()I'
+		 - This application logs the message '5' under the tag 'DataHolder'
+		 - This application logs the message '6' under the tag 'DataHolder'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Attempt to compare invalid DriveId detected. Has local storage been cleared?' under the tag 'DriveId'
+		 - This application logs the message 'Calling connect() while still connected, missing disconnect().' under the tag 'GmsClient'
+		 - This application logs the message 'Certificate has expired.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Certificate is not yet valid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Could not generate certificate.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Could not get certificate instance.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'GmsClient' under the tag 'GmsClient'
+		 - This application logs the message 'Google Play Store is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services missing when getting application info.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Ljava/util/concurrent/locks/Lock;->unlock()V' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Making Creator dynamically' under the tag 'Lcom/google/android/gms/maps/internal/u;->iA()Ljava/lang/Class;'
+		 - This application logs the message 'Making Creator statically' under the tag 'Lcom/google/android/gms/maps/internal/u;->iz()Z'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Null pending result returned for onFullWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onMaskedWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onPreAuthorizationDetermined' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onWalletObjectsCreated' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Received a location in client after calling removeLocationUpdates.' under the tag 'LocationClientHelper'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Spaces are not allowed in deep-link IDs.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'The date of the device is not valid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'The provided deep-link ID is empty.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'You must supply a resource ID for a TextView' under the tag 'DataBufferAdapter'
+		 - This application logs the message 'error getBoolean' under the tag 'ane'
+		 - This application logs the message 'error getInt' under the tag 'ane'
+		 - This application logs the message 'error getString' under the tag 'ane'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once. Ignoring.' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once. Ignoring.' under the tag 'WalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once.Ignoring.' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once.Ignoring.' under the tag 'WalletFragment'
+		 - This application logs the message 'onAddGeofenceResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByPendingIntentResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByRequestIdsResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'service died' under the tag 'AppStateClient'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'unknown message in LocationHandler.handleMessage' under the tag 'LocationClientHelper'
+		 - This application logs the message 'updateMaskedWallet() was called before initialize()' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'updateMaskedWallet() was called before initialize()' under the tag 'WalletFragment'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_PROVIDERS, GET_RECEIVERS, GET_SERVICES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;'
+		   application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Lcom/google/android/gms/internal/gk;->y(Landroid/content/Context;)Z' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.brightest.yetiextrememotocross.apk
+
+	[.] Fingerprint                             
+		 - MD5: 12e5f2d94950d29230ab8f3b4a7708f7
+		 - SHA-1: 036c6dbe41e1ceaa98aecac5df267fef2827d086
+		 - SHA-256: 1fe8465cdeeb176572ed374f7bb75fd05c6b0e419a119a6e487dde0268e5979b
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET',  'android.permission.READ_PHONE_STATE',
+		   'android.permission.WAKE_LOCK']
+		 - Implied: []
+		 - Declared: []
+
+

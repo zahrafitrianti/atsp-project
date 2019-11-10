@@ -1,0 +1,564 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: afkari.io.kalimathobei
+Package Version Name: 2.0
+Package Version Code: 5
+Min Sdk: 8
+Target Sdk: 15
+MD5   : 041bb286a8e8ac7a03fb2618c4961b14
+SHA1  : 5c95492264a8ad56a8e7903752da2c2f650a19ab
+SHA256: 21e651927c0d0eaa7cea1394f59ac8b0fc184bee3144c61c3769f1b55f2a526c
+SHA512: c0c1eaa41b46c6d31942c34d2ba9fe13ddd256cf427806b4e5aa55abbc8e3a5e75ee67f9b5b03899534a32fde031c3771bbf7a36f92952adc91e25a6124c9809
+Analyze Signature: c9f4bdac60588bf78c82ca8a3d1bf498087942a000487b5c03281686feba2ca310700c7d901d17b3f568e15e7a7b951d16ced14b6eda9f1615559ca8780043e8
+------------------------------------------------------------------------------------------------
+[Critical]  App Sandbox Permission Checking:
+           Security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found (Please check:
+           https://www.owasp.org/index.php/Mobile_Top_10_2014-M2):
+               [getSharedPreferences]
+               => Lcom/google/android/gms/internal/zzbw;->zzv(Landroid/content/Context;)Landroid/content/SharedPreferences; (0x6) --->
+                    Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+               --------------------------------------------------
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:2):
+               http://plus.google.com/
+                   => Lcom/google/android/gms/common/internal/zzn;-><clinit>()V
+               http://www.google.com
+                   => Lcom/google/android/gms/internal/zzgy$zza;-><init>(Landroid/content/Context;)V
+[Critical] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           Found a critical WebView "addJavascriptInterface" vulnerability. This method can be used to allow JavaScript to control the host
+           application.
+           This is a powerful feature, but also presents a security risk for applications targeted to API level JELLY_BEAN(4.2) or below,
+           because JavaScript could use reflection to access an injected object's public fields. Use of this method in a WebView containing
+           untrusted content could allow an attacker to manipulate the host application in unintended ways, executing Java code with the
+           permissions of the host application.
+           Reference:
+             1."http://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface(java.lang.Object,
+           java.lang.String) "
+             2.https://labs.mwrinfosecurity.com/blog/2013/09/24/webview-addjavascriptinterface-remote-code-execution/
+             3.http://50.56.33.56/blog/?p=314
+             4.http://blog.trustlook.com/2013/09/04/alert-android-webview-addjavascriptinterface-code-execution-vulnerability/
+           Please modify the below code:
+               => Lcom/google/android/gms/internal/zzjd;-><init>(Lcom/google/android/gms/internal/zzjd$zza;
+                    Lcom/google/android/gms/ads/internal/client/AdSizeParcel; Z Z Lcom/google/android/gms/internal/zzan;
+                    Lcom/google/android/gms/ads/internal/util/client/VersionInfoParcel; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/ads/internal/zzd;)V (0xf4) --->
+                    Lcom/google/android/gms/internal/zzjd;->addJavascriptInterface(Ljava/lang/Object; Ljava/lang/String;)V
+[Warning]  Dynamic Code Loading:
+           Dynamic code loading(DexClassLoader) found:
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0xae) --->
+                    Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/ClassLoader;)V
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0xc4) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0xdc) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0xf4) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x10c) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x124) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x13c) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x154) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x16c) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x184) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x19c) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x1bc) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x1dc) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x1fc) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lcom/google/android/gms/internal/zzca;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;
+                    Ljava/util/Map;)V (0x70) ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/google/android/gms/ads/internal/util/client/zza;->zzQ(Landroid/content/Context;)Ljava/lang/String; (0x30) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/android/gms/fitness/data/Device;->zzat(Landroid/content/Context;)Ljava/lang/String; (0xc) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/android/gms/tagmanager/zzaa;->zzaP(Landroid/content/Context;)Ljava/lang/String; (0xc) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/android/gms/tagmanager/zzbk;->zzaP(Landroid/content/Context;)Ljava/lang/String; (0xc) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+[Warning] <WebView> WebView Local File Access Attacks Checking:
+           Found "setAllowFileAccess(true)" or not set(enabled by default) in WebView. The attackers could inject malicious script into
+           WebView and exploit the opportunity to access local resources. This can be mitigated or prevented by disabling local file system
+           access. (It is enabled by default)
+           Note that this enables or disables file system access only. Assets and resources are still accessible using file:///android_asset
+           and file:///android_res.
+           The attackers can use "mWebView.loadUrl("file:///data/data/[Your_Package_Name]/[File]");" to access app's local file.
+           Reference: (1)https://labs.mwrinfosecurity.com/blog/2012/04/23/adventures-with-android-webviews/
+                      (2)http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)
+           Please add or modify "yourWebView.getSettings().setAllowFileAccess(false)" to your WebView:
+               Lcom/google/android/gms/internal/zzbk$2;->run()V
+               Lcom/google/android/gms/internal/zzfq;->zzfh()Landroid/webkit/WebView;
+               Lcom/google/android/gms/internal/zzid;->zzJ(Landroid/content/Context;)Ljava/lang/String;
+               Lcom/google/android/gms/internal/zzid;->zza(Landroid/content/Context; Ljava/lang/String; Landroid/webkit/WebSettings;)V
+               Lcom/google/android/gms/internal/zzie$zzb;->zza(Landroid/content/Context; Landroid/webkit/WebSettings;)Z
+               Lcom/google/android/gms/internal/zzie$zzd;->getDefaultUserAgent(Landroid/content/Context;)Ljava/lang/String;
+               Lcom/google/android/gms/internal/zzie$zzd;->zza(Landroid/content/Context; Landroid/webkit/WebSettings;)Z
+               Lcom/google/android/gms/internal/zzjd;-><init>(Lcom/google/android/gms/internal/zzjd$zza;
+                    Lcom/google/android/gms/ads/internal/client/AdSizeParcel; Z Z Lcom/google/android/gms/internal/zzan;
+                    Lcom/google/android/gms/ads/internal/util/client/VersionInfoParcel; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/ads/internal/zzd;)V
+[Warning] <WebView> WebView Potential XSS Attacks Checking:
+           Found "setJavaScriptEnabled(true)" in WebView, which could exposed to potential XSS attacks. Please check the web page code
+           carefully and sanitize the output:
+               => Lcom/google/android/gms/internal/zzfq;->zzfh()Landroid/webkit/WebView; (0x18) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/google/android/gms/internal/zzjd;-><init>(Lcom/google/android/gms/internal/zzjd$zza;
+                    Lcom/google/android/gms/ads/internal/client/AdSizeParcel; Z Z Lcom/google/android/gms/internal/zzan;
+                    Lcom/google/android/gms/ads/internal/util/client/VersionInfoParcel; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/ads/internal/zzd;)V (0x7c) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is using Android SQLite databases.
+           Prior to Android 4.0, Android has SQLite Journal Information Disclosure Vulnerability.
+           But it can only be solved by users upgrading to Android > 4.0 and YOU CANNOT SOLVE IT BY YOURSELF (But you can use encrypt your
+           databases and Journals by "SQLCipher" or other libs).
+           Proof-Of-Concept Reference:
+           (1) http://blog.watchfire.com/files/androidsqlitejournal.pdf
+           (2) http://www.youtube.com/watch?v=oCXLHjmH5rY
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/google/android/gms/analytics/internal/zzj$zza;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase; (0x7a)
+                    ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/measurement/internal/zzd$zza;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+                    (0x98) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/tagmanager/zzby$zzb;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase; (0x9e) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/tagmanager/zzw$zza;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase; (0x32) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/common/data/BitmapTeleporter;->zzot()Ljava/io/FileOutputStream; (0x46) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzv;->zzc(I)V (0x86) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzv;->remove(Ljava/lang/String;)V (0xa) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzv;->zza()V (0xb4) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzv;->zza(Ljava/lang/String; Lcom/google/android/gms/internal/zzb$zza;)V (0x68) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x460) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x480) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x492) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzal;->zzl(Landroid/content/Context;)V (0x4b2) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzdy;->zzab(Ljava/lang/String;)Z (0x2f8) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzdy;->zzdL()Z (0x6a) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzdy;->zzdL()Z (0x86) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/tagmanager/zzcn;->zzc(Lcom/google/android/gms/internal/zzqz$zza;)Z (0x54) --->
+                    Ljava/io/File;->delete()Z
+[Notice] <Hacker> APK Installing Source Checking:
+           This app has code checking APK installer sources(e.g. from Google Play, from Amazon, etc.). It might be used to check for whether
+           the app is hacked by the attackers.
+               => Lcom/google/android/gms/measurement/zzg;->zzyr()Lcom/google/android/gms/internal/zzpb; (0x3a) --->
+                    Landroid/content/pm/PackageManager;->getInstallerPackageName(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/android/gms/measurement/internal/zzn;->zzhR()V (0x28) --->
+                    Landroid/content/pm/PackageManager;->getInstallerPackageName(Ljava/lang/String;)Ljava/lang/String;
+[Notice] <Signature><Hacker> Getting Signature Code Checking:
+           This app has code checking the package signature in the code. It might be used to check for whether the app is hacked by the
+           attackers.
+               => Lcom/google/android/gms/common/GooglePlayServicesUtil;->isGooglePlayServicesAvailable(Landroid/content/Context;)I (0x54)
+                    ---> Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/google/android/gms/common/GooglePlayServicesUtil;->zzb(Landroid/content/pm/PackageManager;)Z (0x1c) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/google/android/gms/common/zzd;->zzb(Landroid/content/pm/PackageManager; Ljava/lang/String;)Z (0x4) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/google/android/gms/measurement/internal/zzn;->zzhR()V (0xba) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/google/android/gms/measurement/internal/zzn;->zzzJ()Z (0x24) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+[Notice]  HttpURLConnection Android Bug Checking:
+           You're using "HttpURLConnection". Prior to Android 2.2 (Froyo), "HttpURLConnection" had some frustrating bugs.
+           In particular, calling close() on a readable InputStream could poison the connection pool. Work around this by disabling
+           connection pooling.
+           Please check the reference:
+            (1)http://developer.android.com/reference/java/net/HttpURLConnection.html
+            (2)http://android-developers.blogspot.tw/2011/09/androids-http-clients.html
+               => Lcom/google/android/gms/internal/zzid;->zza(Landroid/content/Context; Ljava/lang/String; Z Ljava/net/HttpURLConnection;
+                    Ljava/lang/String;)V (0x6) ---> Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/google/android/gms/internal/zzid;->zza(Landroid/content/Context; Ljava/lang/String; Z Ljava/net/HttpURLConnection;
+                    Ljava/lang/String;)V (0xc) ---> Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+               => Lcom/google/android/gms/internal/zzid;->zza(Landroid/content/Context; Ljava/lang/String; Z Ljava/net/HttpURLConnection;
+                    Ljava/lang/String;)V (0x12) ---> Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/google/android/gms/internal/zzid;->zza(Landroid/content/Context; Ljava/lang/String; Z Ljava/net/HttpURLConnection;
+                    Ljava/lang/String;)V (0x1c) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;
+                    Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzid;->zza(Landroid/content/Context; Ljava/lang/String; Z Ljava/net/HttpURLConnection;
+                    Ljava/lang/String;)V (0x24) ---> Ljava/net/HttpURLConnection;->setUseCaches(Z)V
+               => Lcom/google/android/gms/internal/zzid;->zza(Landroid/content/Context; Ljava/lang/String; Z Ljava/net/HttpURLConnection;
+                    Z)V (0x6) ---> Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/google/android/gms/internal/zzid;->zza(Landroid/content/Context; Ljava/lang/String; Z Ljava/net/HttpURLConnection;
+                    Z)V (0xc) ---> Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+               => Lcom/google/android/gms/internal/zzid;->zza(Landroid/content/Context; Ljava/lang/String; Z Ljava/net/HttpURLConnection;
+                    Z)V (0x12) ---> Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/google/android/gms/internal/zzid;->zza(Landroid/content/Context; Ljava/lang/String; Z Ljava/net/HttpURLConnection;
+                    Z)V (0x24) ---> Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzid;->zza(Landroid/content/Context; Ljava/lang/String; Z Ljava/net/HttpURLConnection;
+                    Z)V (0x2a) ---> Ljava/net/HttpURLConnection;->setUseCaches(Z)V
+               => Lcom/google/android/gms/measurement/internal/zzq$zzc;->run()V (0x38) ---> Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/google/android/gms/measurement/internal/zzq$zzc;->run()V (0x46) --->
+                    Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/google/android/gms/measurement/internal/zzq$zzc;->run()V (0x4e) --->
+                    Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
+               => Lcom/google/android/gms/measurement/internal/zzq$zzc;->run()V (0x54) ---> Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/google/android/gms/measurement/internal/zzq$zzc;->run()V (0x5a) --->
+                    Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/google/android/gms/measurement/internal/zzq$zzc;->run()V (0x70) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/measurement/internal/zzq$zzc;->run()V (0x92) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/measurement/internal/zzq$zzc;->run()V (0xf4) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/measurement/internal/zzq$zzc;->run()V (0x158) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzdl;->zza(Lcom/google/android/gms/internal/zzdl$zzb;)Lcom/google/android/gms/internal/zz
+                    dl$zzc; (0x6c) ---> Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzdl;->zza(Lcom/google/android/gms/internal/zzdl$zzb;)Lcom/google/android/gms/internal/zz
+                    dl$zzc; (0xa2) ---> Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/google/android/gms/internal/zzdl;->zza(Lcom/google/android/gms/internal/zzdl$zzb;)Lcom/google/android/gms/internal/zz
+                    dl$zzc; (0xba) ---> Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
+               => Lcom/google/android/gms/internal/zzdl;->zza(Lcom/google/android/gms/internal/zzdl$zzb;)Lcom/google/android/gms/internal/zz
+                    dl$zzc; (0xc4) ---> Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/google/android/gms/internal/zzdl;->zza(Lcom/google/android/gms/internal/zzdl$zzb;)Lcom/google/android/gms/internal/zz
+                    dl$zzc; (0xe8) ---> Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;
+               => Lcom/google/android/gms/internal/zzdl;->zza(Lcom/google/android/gms/internal/zzdl$zzb;)Lcom/google/android/gms/internal/zz
+                    dl$zzc; (0xf4) ---> Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;
+               => Lcom/google/android/gms/internal/zzdl;->zza(Lcom/google/android/gms/internal/zzdl$zzb;)Lcom/google/android/gms/internal/zz
+                    dl$zzc; (0x17a) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/internal/zzdl;->zza(Lcom/google/android/gms/internal/zzdl$zzb;)Lcom/google/android/gms/internal/zz
+                    dl$zzc; (0x18e) ---> Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/google/android/gms/internal/zzre;->zzd(Ljava/net/HttpURLConnection;)Ljava/io/InputStream; (0x0) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/internal/zzre;->zzd(Ljava/net/HttpURLConnection;)Ljava/io/InputStream; (0x10) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/google/android/gms/internal/zzre;->zze(Ljava/net/HttpURLConnection;)V (0x4) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzre;->zzfu(Ljava/lang/String;)Ljava/net/HttpURLConnection; (0x1a) --->
+                    Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/google/android/gms/internal/zzre;->zzfu(Ljava/lang/String;)Ljava/net/HttpURLConnection; (0x20) --->
+                    Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/URL;
+                    Lcom/google/android/gms/internal/zzk;)Ljava/net/HttpURLConnection; (0x10) --->
+                    Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/URL;
+                    Lcom/google/android/gms/internal/zzk;)Ljava/net/HttpURLConnection; (0x16) --->
+                    Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/URL;
+                    Lcom/google/android/gms/internal/zzk;)Ljava/net/HttpURLConnection; (0x1e) --->
+                    Ljava/net/HttpURLConnection;->setUseCaches(Z)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/URL;
+                    Lcom/google/android/gms/internal/zzk;)Ljava/net/HttpURLConnection; (0x26) --->
+                    Ljava/net/HttpURLConnection;->setDoInput(Z)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection;)Lorg/apache/http/HttpEntity; (0xa) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection;)Lorg/apache/http/HttpEntity; (0x18) --->
+                    Ljava/net/HttpURLConnection;->getContentLength()I
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection;)Lorg/apache/http/HttpEntity; (0x28) --->
+                    Ljava/net/HttpURLConnection;->getContentEncoding()Ljava/lang/String;
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection;)Lorg/apache/http/HttpEntity; (0x36) --->
+                    Ljava/net/HttpURLConnection;->getContentType()Ljava/lang/String;
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection;)Lorg/apache/http/HttpEntity; (0x48) --->
+                    Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0x2c)
+                    ---> Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0x36)
+                    ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0x48)
+                    ---> Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0x52)
+                    ---> Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0x72)
+                    ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0x7e)
+                    ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0x8a)
+                    ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0x9c)
+                    ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0xae)
+                    ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0xba)
+                    ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0xc6)
+                    ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0xd2)
+                    ---> Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zzb(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0xe) --->
+                    Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/google/android/gms/internal/zzz;->zzb(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0x20)
+                    ---> Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zzb(Ljava/net/HttpURLConnection; Lcom/google/android/gms/internal/zzk;)V (0x2a)
+                    ---> Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/google/android/gms/internal/zzz;->zza(Lcom/google/android/gms/internal/zzk;
+                    Ljava/util/Map;)Lorg/apache/http/HttpResponse; (0xba) --->
+                    Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzz;->zza(Lcom/google/android/gms/internal/zzk;
+                    Ljava/util/Map;)Lorg/apache/http/HttpResponse; (0xd6) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/internal/zzz;->zza(Lcom/google/android/gms/internal/zzk;
+                    Ljava/util/Map;)Lorg/apache/http/HttpResponse; (0xf8) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/internal/zzz;->zza(Lcom/google/android/gms/internal/zzk;
+                    Ljava/util/Map;)Lorg/apache/http/HttpResponse; (0x100) --->
+                    Ljava/net/HttpURLConnection;->getResponseMessage()Ljava/lang/String;
+               => Lcom/google/android/gms/internal/zzz;->zza(Lcom/google/android/gms/internal/zzk;
+                    Ljava/util/Map;)Lorg/apache/http/HttpResponse; (0x126) --->
+                    Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;
+               => Lcom/google/android/gms/analytics/internal/zzah;->zza(Ljava/net/URL; [B)I (0x4c) --->
+                    Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zza(Ljava/net/URL; [B)I (0x54) --->
+                    Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zza(Ljava/net/URL; [B)I (0x5a) --->
+                    Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zza(Ljava/net/URL; [B)I (0x60) --->
+                    Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/google/android/gms/analytics/internal/zzah;->zza(Ljava/net/URL; [B)I (0x74) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/analytics/internal/zzah;->zza(Ljava/net/URL; [B)I (0xb2) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zza(Ljava/net/URL; [B)I (0xe6) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zza(Ljava/net/URL; [B)I (0x10e) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL;)I (0x1a) --->
+                    Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL;)I (0x26) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL;)I (0x5a) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL;)I (0x74) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL;)I (0x82) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL; [B)I (0xb8) --->
+                    Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL; [B)I (0xc6) --->
+                    Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL; [B)I (0xce) --->
+                    Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL; [B)I (0xd4) --->
+                    Ljava/net/HttpURLConnection;->connect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL; [B)I (0xda) --->
+                    Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL; [B)I (0xf6) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL; [B)I (0x134) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL; [B)I (0x168) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/URL; [B)I (0x190) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzb(Ljava/net/HttpURLConnection;)V (0x2) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzc(Ljava/net/URL;)Ljava/net/HttpURLConnection; (0x26) --->
+                    Ljava/net/HttpURLConnection;->setDefaultUseCaches(Z)V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzc(Ljava/net/URL;)Ljava/net/HttpURLConnection; (0x3c) --->
+                    Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzc(Ljava/net/URL;)Ljava/net/HttpURLConnection; (0x52) --->
+                    Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzc(Ljava/net/URL;)Ljava/net/HttpURLConnection; (0x58) --->
+                    Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzc(Ljava/net/URL;)Ljava/net/HttpURLConnection; (0x66) --->
+                    Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/google/android/gms/analytics/internal/zzah;->zzc(Ljava/net/URL;)Ljava/net/HttpURLConnection; (0x6e) --->
+                    Ljava/net/HttpURLConnection;->setDoInput(Z)V
+               => Lcom/google/android/gms/internal/zzdr$zza;->zzbn()V (0xae) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/internal/zzdr$zza;->zzbn()V (0xb6) --->
+                    Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;
+               => Lcom/google/android/gms/internal/zzdr$zza;->zzbn()V (0x128) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzdr$zza;->zzbn()V (0x154) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzdr$zza;->zzbn()V (0x164) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzdy;->zzab(Ljava/lang/String;)Z (0x210) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0xae) --->
+                    Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0xee) --->
+                    Ljava/net/HttpURLConnection;->addRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x10e) --->
+                    Ljava/net/HttpURLConnection;->setDoOutput(Z)V
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x126) --->
+                    Ljava/net/HttpURLConnection;->setFixedLengthStreamingMode(I)V
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x132) --->
+                    Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x14c) --->
+                    Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x154) --->
+                    Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x17a) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x1d0) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x202) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x290) --->
+                    Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x2ba) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x300) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x356) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzgt;->zza(Lcom/google/android/gms/ads/internal/request/AdRequestInfoParcel;
+                    Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;
+                    Lcom/google/android/gms/internal/zzgx; Lcom/google/android/gms/internal/zzcg;
+                    Lcom/google/android/gms/internal/zzgs;)Lcom/google/android/gms/ads/internal/request/AdResponseParcel; (0x37a) --->
+                    Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzij;->zzbn()V (0x72) ---> Ljava/net/HttpURLConnection;->getResponseCode()I
+               => Lcom/google/android/gms/internal/zzij;->zzbn()V (0xce) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/internal/zzij;->zzbn()V (0xf6) ---> Ljava/net/HttpURLConnection;->disconnect()V
+               => Lcom/google/android/gms/measurement/internal/zzq;->zzc(Ljava/net/HttpURLConnection;)[B (0xc) --->
+                    Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
+               => Lcom/google/android/gms/measurement/internal/zzq;->zzc(Ljava/net/URL;)Ljava/net/HttpURLConnection; (0x26) --->
+                    Ljava/net/HttpURLConnection;->setDefaultUseCaches(Z)V
+               => Lcom/google/android/gms/measurement/internal/zzq;->zzc(Ljava/net/URL;)Ljava/net/HttpURLConnection; (0x3e) --->
+                    Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+               => Lcom/google/android/gms/measurement/internal/zzq;->zzc(Ljava/net/URL;)Ljava/net/HttpURLConnection; (0x56) --->
+                    Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+               => Lcom/google/android/gms/measurement/internal/zzq;->zzc(Ljava/net/URL;)Ljava/net/HttpURLConnection; (0x5c) --->
+                    Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+               => Lcom/google/android/gms/measurement/internal/zzq;->zzc(Ljava/net/URL;)Ljava/net/HttpURLConnection; (0x64) --->
+                    Ljava/net/HttpURLConnection;->setDoInput(Z)V
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" you're not using it.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest Exported Components Checking:
+           No exported components(except for Launcher) for receiving Android or outside applications' actions (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting IMEI and Device ID:
+           Did not detect this app is getting the "device id(IMEI)" by "TelephonyManager.getDeviceId()" approach.
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+------------------------------------------------------------
+AndroBugs analyzing time: 9.402451 secs
+Total elapsed time: 40.342256 secs

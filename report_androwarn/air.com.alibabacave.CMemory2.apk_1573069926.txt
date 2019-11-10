@@ -1,0 +1,113 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - CandyMemory
+
+	[.] Application Version                     
+		 - 1.0.0
+
+	[.] Package Name                            
+		 - air.com.alibabacave.CMemory2
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the SIM's serial number
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the phone's current state
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '' under the tag 'Lcom/flurry/android/v;->p()Z'
+		 - This application logs the message '10' under the tag 'com.tapfortap.DefaultWebActivityHelper'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '2' under the tag 'com.tapfortap.DiskImageCache'
+		 - This application logs the message '2' under the tag 'com.tapfortap.ImageCache'
+		 - This application logs the message '2' under the tag 'com.tapfortap.TapForTapActivity'
+		 - This application logs the message '3' under the tag 'com.tapfortap.AdView'
+		 - This application logs the message '3' under the tag 'com.tapfortap.AppWall'
+		 - This application logs the message '3' under the tag 'com.tapfortap.Interstitial'
+		 - This application logs the message '4' under the tag 'ChartBoost AdView'
+		 - This application logs the message '4' under the tag 'RevMobContext'
+		 - This application logs the message '5' under the tag 'ChartBoost AdView'
+		 - This application logs the message '5' under the tag 'com.tapfortap.TapForTap'
+		 - This application logs the message '7' under the tag 'cb'
+		 - This application logs the message '7' under the tag 'com.tapfortap.ImageCache'
+		 - This application logs the message 'Cannot initialize without a Tap for Tap API key.' under the tag 'com.tapfortap.TapForTap'
+		 - This application logs the message 'Cannot load an interstitial without a Tap for Tap API key. Call TapForTap.initialize() first.' under the tag 'com.tapfortap.Interstitial'
+		 - This application logs the message 'Cannot load the app wall without a Tap for Tap API key. Call TapForTap.initialize() first.' under the tag 'com.tapfortap.AppWall'
+		 - This application logs the message 'Chartboost context should be instance of activity' under the tag 'ChartBoost'
+		 - This application logs the message 'ERROR: cannot set a listener before calling AppWall.prepare(Context)' under the tag 'com.tapfortap.AppWall'
+		 - This application logs the message 'ERROR: cannot set a listener before calling Interstitial.prepare(Context)' under the tag 'com.tapfortap.Interstitial'
+		 - This application logs the message 'Failed to encode url' under the tag 'com.tapfortap.DefaultWebActivityHelper'
+		 - This application logs the message 'Lcom/chartboost/sdk/CBWebView;->getType()Lcom/chartboost/sdk/CBWebView$CBViewType;' under the tag 'ChartBoost AdView'
+		 - This application logs the message 'Lorg/json/JSONObject;->toString()Ljava/lang/String;' under the tag 'JSON'
+		 - This application logs the message 'Open ad link.' under the tag 'RevMobContext'
+		 - This application logs the message 'STRING' under the tag 'STRING'
+		 - This application logs the message 'Showing fullscreen. ' under the tag 'RevMobContext'
+		 - This application logs the message 'Showing fullscreen.' under the tag 'RevMobContext'
+		 - This application logs the message 'Showing popup.' under the tag 'RevMobContext'
+		 - This application logs the message 'Starting session.' under the tag 'RevMobContext'
+		 - This application logs the message 'Tap for Tap v2 switched from an app ID to an API key. Please use your API key from http://tapfortap.com/account' under the tag 'com.tapfortap.TapForTap Error
+		   Cannot initialize without a Tap for Tap API key.'
+		 - This application logs the message 'TestingMode' under the tag 'RevMobContext'
+		 - This application logs the message 'Timeout less than minimum of 10000 milliseconds' under the tag 'ChartBoost'
+		 - This application logs the message '[ERROR] Tap for Tap must be initialized, call TapForTap.initialize(contexy, api key); first.' under the tag 'com.tapfortap.AssetManager'
+		 - This application logs the message 'cb handleChartBoostRequestForInterstitial / cb 1' under the tag 'cb'
+		 - This application logs the message 'cb handleChartBoostRequestForInterstitial' under the tag 'cb'
+		 - This application logs the message 'closing interstitial ad' under the tag 'cb'
+		 - This application logs the message 'com.tapfortap.DiskImageCache 1' under the tag 'com.tapfortap.DiskImageCache'
+		 - This application logs the message 'com.tapfortap.ImageCache 1' under the tag 'com.tapfortap.ImageCache'
+		 - This application logs the message 'com.tapfortap.TapForTap Cannot initialize without a context.' under the tag 'com.tapfortap.TapForTap'
+		 - This application logs the message 'console' under the tag 'console'
+		 - This application logs the message 'create context.' under the tag 'RevMobWrapper'
+		 - This application logs the message 'createContext' under the tag 'NativeAlert'
+		 - This application logs the message 'dispose' under the tag 'NativeAlert'
+		 - This application logs the message 'error generating request!' under the tag 'ChartBoost'
+		 - This application logs the message 'getFunctions' under the tag 'ListDialogContext'
+		 - This application logs the message 'getFunctions' under the tag 'NativeAlert'
+		 - This application logs the message 'getFunctions' under the tag 'SystemProperites'
+		 - This application logs the message 'initialize' under the tag 'NativeAlert'
+		 - This application logs the message 'invalid helper class' under the tag 'com.tapfortap.TapForTapActivity'
+		 - This application logs the message 'market:// 0' under the tag 'com.tapfortap.Utils'
+		 - This application logs the message 'onCancle' under the tag 'List Dialog'
+		 - This application logs the message 'sending request click request' under the tag 'cb'
+		 - This application logs the message 'setTestingWithoutAds' under the tag 'RevMobContext'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the 'Landroid/app/Activity;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/fre/FREContext;->getActivity()Landroid/app/Activity;' application installed on the system
+		 - This application retrieves 'GET_META_DATA' information about the 'Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.com.alibabacave.CMemory2.apk
+
+	[.] Fingerprint                             
+		 - MD5: 70e123a0b20f2d7e4c57f355b4b0f9a6
+		 - SHA-1: 39fe819650d430c60b5519219919eecf100d2ba3
+		 - SHA-256: d9ac90f16207a7bfe3c74a367aea6d614978f2d735d396c3a24553a26875c567
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.INTERNET',  'android.permission.READ_PHONE_STATE',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

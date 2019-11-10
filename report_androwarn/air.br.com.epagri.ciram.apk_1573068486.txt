@@ -1,0 +1,67 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Ciram
+
+	[.] Application Version                     
+		 - 1.1
+
+	[.] Package Name                            
+		 - air.br.com.epagri.ciram
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'DatePickerDialogContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'ListDialogContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'NativeAlertContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'PickerDialogContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'ProgressContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'TextInputDialogContext'
+		 - This application logs the message 'Disposing Extension Context' under the tag 'ToastContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'DatePickerDialogContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'ListDialogContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'NativeAlertContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'PickerDialogContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'ProgressContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'TextInputDialogContext'
+		 - This application logs the message 'Registering Extension Functions' under the tag 'ToastContext'
+		 - This application logs the message 'You must supply a resource ID for a TextView' under the tag 'AbstractWheelAdapter'
+		 - This application logs the message 'onCancle' under the tag 'DatePickerDialogContext'
+		 - This application logs the message 'onCancle' under the tag 'List Dialog'
+		 - This application logs the message 'onCancle' under the tag 'PickerDialogContext'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/fre/FREContext;->getActivity()Landroid/app/Activity;' application installed on the system
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.br.com.epagri.ciram.apk
+
+	[.] Fingerprint                             
+		 - MD5: ef7abf99aa151f06565c2364197fd427
+		 - SHA-1: 3af6bd21b06148c85ac869b0502035ddc3940981
+		 - SHA-256: c72da758db64dc21588e25c4964f1506b23506397b5e2ceac1d5b1abae3f5316
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -2,6 +2,7 @@ import os
 import numpy as np
 import sys
 import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
 
 
 """
@@ -68,25 +69,33 @@ def read_file(fname):
 
 
 """
+Extract features from the output file and compute the number of occurrences
+"""
+def extract_features(output):
+	features = {}
+
+	# count the number of occurrences of each feature
+	for key, value in output.items():
+		features[key] = len([i for i in value if i])
+
+	return features
+
+
+
+"""
 Calculate score using the following formula:
 score(app) = weights[i] * features_count[i]
 Feature with the highest number of occurrences (counts) is given a higher weight to indicate importance
 """
-def calculate_scores(features):
+def calculate_scores(features_dict):
 
-	feature_count = {}
-
-	# count the number of occurrences of each feature
-	for key, value in features.items():
-		feature_count[key] = len([i for i in value if i])
-	
 	# initialize weights
-	weights = np.ones(len(features.keys()))
+	weights = np.ones(len(features_dict.keys()))
 
 	# find the feature with the highest counts
-	if feature_count.items():
-		max_feature, _ = max(feature_count.items(), key=lambda x:x[1])
-		ind = list(feature_count.keys()).index(max_feature)
+	if features_dict.items():
+		max_feature, _ = max(features_dict.items(), key=lambda x:x[1])
+		ind = list(features_dict.keys()).index(max_feature)
 	else:
 		max_feature = []
 	
@@ -94,9 +103,10 @@ def calculate_scores(features):
 	i = 0
 
 	# calculate the score
-	for key, value in feature_count.items():
-		weights[ind] = 3
-		score += weights[i] * feature_count[key]
+	for key, value in features_dict.items():
+		# weights[ind] = 0.33
+		# weights[np.arange(len(weights)) != ind] = 5
+		score += weights[i] * features_dict[key]
 		i += 1
 	
 	return score
@@ -122,21 +132,26 @@ def main():
 			output[name] = read_file(fname)
 
 			# extract features from each app
-			features = output.get(name).get('Analysis Results')
+			features = extract_features(output.get(name).get('Analysis Results'))
 
-			# calculate the scores and normalize
+			# calculate the scores
 			score = calculate_scores(features)
-			score /= len(os.listdir(directory))
 
 			# compile output to a dict object
 			app_dict['app_name'].append(name)
 			app_dict['score'].append(score)
-			app_dict['features'].append([', '.join(features.keys())])
+			app_dict['features'].append(features)
 	
+	# scale scores between 0 to 1
+	x = np.asarray(app_dict['score']).reshape(-1, 1)
+	scaler = MinMaxScaler()
+	score_scaled = scaler.fit_transform(x)
+	app_dict['score'] = np.asarray(score_scaled).flatten()
+
 	# make a dataframe and save results to csv
 	df = pd.DataFrame(app_dict)
 	print('Save results to csv...')
-	df.to_csv('./result/result_androwarn_weighted.csv', index=False)
+	df.to_csv('./result/result_androwarn_scaled.csv', index=False)
 
 if __name__ == '__main__':
    main()

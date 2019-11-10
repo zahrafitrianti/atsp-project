@@ -1,0 +1,316 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Viva Tournaments
+
+	[.] Application Version                     
+		 - 2.0.1
+
+	[.] Package Name                            
+		 - air.bg.teracomm.vivablitz
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the phone's current state
+		 - This application reads the software version number for the device, for example, the IMEI/SV for GSM phones
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '**********Could not load InMobi Ad' under the tag 'v5'
+		 - This application logs the message '**********Could not load Millennial Ad' under the tag 'v9'
+		 - This application logs the message '0' under the tag 'GET_OPERATION'
+		 - This application logs the message '0' under the tag 'Landroid/view/MotionEvent;->getY()F'
+		 - This application logs the message '0' under the tag '[GVExtension]'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '11' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '11' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '11' under the tag '[GVExtension]'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '13' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '14' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '15' under the tag '[GVExtension]'
+		 - This application logs the message '2' under the tag '4'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'AppCloudUser'
+		 - This application logs the message '2' under the tag 'FlurryAppCloudRequestManager'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'Landroid/content/Intent;'
+		 - This application logs the message '2' under the tag 'Landroid/database/Cursor;->close()V'
+		 - This application logs the message '2' under the tag 'Lcom/flurry/android/ad;->d()Ljava/lang/String;'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'Trestle'
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '2' under the tag '[GVExtension]'
+		 - This application logs the message '2' under the tag 'myNetworkListener'
+		 - This application logs the message '3' under the tag '4'
+		 - This application logs the message '3' under the tag 'AdobeAIRMainActivity'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '3' under the tag 'AppCloudUserHelper'
+		 - This application logs the message '3' under the tag 'CacheObjectManager'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '3' under the tag 'Trestle'
+		 - This application logs the message '3' under the tag 'fetchStarterNotificationFunction called before NotificationActivity was created - not supposed to happen'
+		 - This application logs the message '4' under the tag 'AppCloudUserHelper'
+		 - This application logs the message '4' under the tag 'CacheDirtyOperationsDB'
+		 - This application logs the message '4' under the tag 'CacheSyncManager'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag 'RetryPolicyChecker'
+		 - This application logs the message '4' under the tag 'Trestle'
+		 - This application logs the message '5' under the tag '5'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'Resources'
+		 - This application logs the message '5' under the tag 'SearchCache'
+		 - This application logs the message '5' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '5' under the tag '[GVExtension.FBContainer]'
+		 - This application logs the message '5' under the tag '[GVExtension]'
+		 - This application logs the message '5' under the tag '[GoViralEx.TwWeb]'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'ObserverItem'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '7' under the tag 'v2'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '8' under the tag 'VibrationVibrateFunction'
+		 - This application logs the message '9' under the tag 'FragmentActivity'
+		 - This application logs the message 'Admob Interstitial dismissed from screen.' under the tag 'Lcom/flurry/android/eo;->aV()Ljava/lang/String;'
+		 - This application logs the message 'Admob Interstitial failed to receive takeover.' under the tag 'Lcom/flurry/android/eo;->aV()Ljava/lang/String;'
+		 - This application logs the message 'Admob Interstitial leave application.' under the tag 'Lcom/flurry/android/eo;->aV()Ljava/lang/String;'
+		 - This application logs the message 'Admob Interstitial present on screen.' under the tag 'Lcom/flurry/android/eo;->aV()Ljava/lang/String;'
+		 - This application logs the message 'Admob Interstitial received takeover.' under the tag 'Lcom/flurry/android/eo;->aV()Ljava/lang/String;'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'CALLBACK ERROR!' under the tag 'ObserverItem'
+		 - This application logs the message 'CREATE' under the tag ''
+		 - This application logs the message 'CacheDirtyOperationsDB 4' under the tag 'CacheDirtyOperationsDB'
+		 - This application logs the message 'CacheSyncManager ============PENDING DATA================== CacheSyncManager ============SERVER DATA================== CacheSyncManager ============Registered
+		   Dirty Objects==================' under the tag 'CacheSyncManager'
+		 - This application logs the message 'CacheSyncManager ============PENDING DATA================== CacheSyncManager ============SERVER DATA==================' under the tag 'CacheSyncManager'
+		 - This application logs the message 'CacheSyncManager ============PENDING DATA==================' under the tag 'CacheSyncManager'
+		 - This application logs the message 'CacheSyncManager' under the tag 'v0'
+		 - This application logs the message 'CachingManager ERROR! UNKNOWN RESPONSE CODE! CachingManager OPERATION_STATUS_SUCCEEDED CachingManager OPERATION_STATUS_TIME_OUT CachingManager
+		   OPERATION_STATUS_FAILED CachingManager OPERATION_STATUS_BAD_RESPONSE' under the tag 'CachingManager'
+		 - This application logs the message 'CachingManager ERROR! UNKNOWN RESPONSE CODE! CachingManager OPERATION_STATUS_SUCCEEDED CachingManager OPERATION_STATUS_TIME_OUT CachingManager
+		   OPERATION_STATUS_FAILED' under the tag 'CachingManager'
+		 - This application logs the message 'CachingManager ERROR! UNKNOWN RESPONSE CODE! CachingManager OPERATION_STATUS_SUCCEEDED CachingManager OPERATION_STATUS_TIME_OUT' under the tag 'CachingManager'
+		 - This application logs the message 'CachingManager ERROR! UNKNOWN RESPONSE CODE! CachingManager OPERATION_STATUS_SUCCEEDED' under the tag 'CachingManager'
+		 - This application logs the message 'CachingManager ERROR! UNKNOWN RESPONSE CODE!' under the tag 'CachingManager'
+		 - This application logs the message 'Could not find AdMob AdSize that matches size' under the tag 'FlurryAgent'
+		 - This application logs the message 'Could not find InMobi AdSize that matches size' under the tag '13'
+		 - This application logs the message 'Could not find Mobclix AdSize that matches size' under the tag 'Lcom/mobclix/android/sdk/MobclixIABRectangleMAdView;'
+		 - This application logs the message 'Could not retrieve icon for calling activity' under the tag 'IntentReader'
+		 - This application logs the message 'Could not retrieve icon for calling application' under the tag 'IntentReader'
+		 - This application logs the message 'Could not retrieve label for calling application' under the tag 'IntentReader'
+		 - This application logs the message 'DISPOSE' under the tag ''
+		 - This application logs the message 'Determined InMobi AdSize as 120x600' under the tag '600'
+		 - This application logs the message 'Determined InMobi AdSize as 300x250' under the tag '15'
+		 - This application logs the message 'Determined InMobi AdSize as 320x50' under the tag '12'
+		 - This application logs the message 'Determined InMobi AdSize as 468x60' under the tag 'Lcom/inmobi/androidsdk/IMAdRequest;-><init>()V'
+		 - This application logs the message 'Determined InMobi AdSize as 728x90' under the tag 'Landroid/content/Context;->getResources()Landroid/content/res/Resources;'
+		 - This application logs the message 'Determined Millennial AdSize as %d x %d 5' under the tag '90'
+		 - This application logs the message 'Determined Mobclix AdSize as IAB_RECT' under the tag 'Lcom/mobclix/android/sdk/MobclixMMABannerXLAdView;'
+		 - This application logs the message 'Error calling dispatchFinishTemporaryDetach' under the tag 'ViewCompat'
+		 - This application logs the message 'Error calling dispatchStartTemporaryDetach' under the tag 'ViewCompat'
+		 - This application logs the message 'Error refreshing display list state' under the tag 'SlidingPaneLayout'
+		 - This application logs the message 'Error writing printed content' under the tag 'PrintHelperKitkat'
+		 - This application logs the message 'FBWrap ctor.' under the tag '[GVExtension.FBContainer]'
+		 - This application logs the message 'FBWrap oncreate.' under the tag '[GVExtension.FBContainer]'
+		 - This application logs the message 'Facebook exception while logging out' under the tag '[GVExtension]'
+		 - This application logs the message 'Failed dumping state' under the tag 'FragmentManager'
+		 - This application logs the message 'File exception logging out of facebook' under the tag '[GVExtension]'
+		 - This application logs the message 'FragmentActivity 3' under the tag 'FragmentActivity'
+		 - This application logs the message 'FragmentManager 1' under the tag 'FragmentManager'
+		 - This application logs the message 'FragmentManager 3' under the tag 'FragmentManager'
+		 - This application logs the message 'FragmentManager 4' under the tag 'FragmentManager'
+		 - This application logs the message 'FragmentManager 5' under the tag 'FragmentManager'
+		 - This application logs the message 'FragmentManager 7' under the tag 'FragmentManager'
+		 - This application logs the message 'Got ACTION_MOVE event but have an invalid active pointer id.' under the tag '7'
+		 - This application logs the message 'Got ACTION_MOVE event but have an invalid active pointer id.' under the tag 'v6'
+		 - This application logs the message 'Graph request 404 exception' under the tag '[GVExtension]'
+		 - This application logs the message 'Graph request exception' under the tag '[GVExtension]'
+		 - This application logs the message 'Graph request fb error' under the tag '[GVExtension]'
+		 - This application logs the message 'Graph request malformed url' under the tag '[GVExtension]'
+		 - This application logs the message 'INIT' under the tag ''
+		 - This application logs the message 'IO Exception logging out of facebook' under the tag '[GVExtension]'
+		 - This application logs the message 'InMobi Interstitial ad dismissed.' under the tag 'Lcom/flurry/android/dy;->d()Ljava/lang/String;'
+		 - This application logs the message 'InMobi Interstitial ad request completed.' under the tag 'Lcom/flurry/android/dy;->d()Ljava/lang/String;'
+		 - This application logs the message 'InMobi Interstitial ad shown.' under the tag 'Lcom/flurry/android/dy;->d()Ljava/lang/String;'
+		 - This application logs the message 'InMobi imAdView ad request completed.' under the tag 'Lcom/flurry/android/ad;->d()Ljava/lang/String;'
+		 - This application logs the message 'InMobi imAdView ad request failed.' under the tag 'Lcom/flurry/android/dy;->d()Ljava/lang/String;'
+		 - This application logs the message 'InMobi imAdView ad shown.' under the tag 'Lcom/flurry/android/ad;->d()Ljava/lang/String;'
+		 - This application logs the message 'InMobi imAdView dismiss ad.' under the tag 'Lcom/flurry/android/ad;->d()Ljava/lang/String;'
+		 - This application logs the message 'InMobi onLeaveApplication' under the tag 'Lcom/flurry/android/ad;->d()Ljava/lang/String;'
+		 - This application logs the message 'InMobi onLeaveApplication' under the tag 'Lcom/flurry/android/dy;->d()Ljava/lang/String;'
+		 - This application logs the message 'Jumptap AdView dismissed.' under the tag 'Lcom/flurry/android/e;->d()Ljava/lang/String;'
+		 - This application logs the message 'Jumptap AdView error.' under the tag 'Lcom/flurry/android/e;->d()Ljava/lang/String;'
+		 - This application logs the message 'Jumptap AdView focus changed.' under the tag 'Lcom/flurry/android/e;->d()Ljava/lang/String;'
+		 - This application logs the message 'Jumptap AdView new ad.' under the tag 'Lcom/flurry/android/e;->d()Ljava/lang/String;'
+		 - This application logs the message 'Jumptap AdView no ad found.' under the tag 'Lcom/flurry/android/e;->d()Ljava/lang/String;'
+		 - This application logs the message 'Jumptap Interstitial dismissed.' under the tag 'Lcom/flurry/android/fu;->d()Ljava/lang/String;'
+		 - This application logs the message 'Jumptap Interstitial error.' under the tag 'Lcom/flurry/android/fu;->d()Ljava/lang/String;'
+		 - This application logs the message 'Jumptap Interstitial focus changed.' under the tag 'Lcom/flurry/android/fu;->d()Ljava/lang/String;'
+		 - This application logs the message 'Jumptap Interstitial new ad.' under the tag 'Lcom/flurry/android/fu;->d()Ljava/lang/String;'
+		 - This application logs the message 'Jumptap Interstitial no ad found.' under the tag 'Lcom/flurry/android/fu;->d()Ljava/lang/String;'
+		 - This application logs the message 'Jumptap JtException when creating ad object.' under the tag 'Lcom/flurry/android/u;'
+		 - This application logs the message 'Landroid/content/pm/PackageManager$NameNotFoundException;->toString()Ljava/lang/String;' under the tag 'name not found'
+		 - This application logs the message 'Lcom/flurry/android/AppCloudResponse;->getResponseMessage()Ljava/lang/String;' under the tag 'Trestle'
+		 - This application logs the message 'Lcom/flurry/android/AppCloudResponse;->isSuccessful()Z' under the tag 'CacheSyncManager'
+		 - This application logs the message 'Lcom/flurry/android/AppCloudResponse;->isSuccessful()Z' under the tag 'Trestle'
+		 - This application logs the message 'Lcom/flurry/android/ad;->getResources()Landroid/content/res/Resources;' under the tag 'v0'
+		 - This application logs the message 'Lcom/flurry/android/caching/c;->h(Lcom/flurry/android/caching/ObjectOperationData;)J' under the tag 'RetryManager'
+		 - This application logs the message 'Lcom/flurry/android/fc;->getAdCreative()Lcom/flurry/android/AdCreative;' under the tag 'Lcom/flurry/android/fc;->getAdCreative()Lcom/flurry/android/AdCreative;'
+		 - This application logs the message 'Lcom/milkmangames/extensions/android/MsgWrapActivity;->getIntent()Landroid/content/Intent;' under the tag 'MSGWRAP'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'VibrationVibrateFunction'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag '[GVExtension]'
+		 - This application logs the message 'Ljava/lang/Exception;->toString()Ljava/lang/String;' under the tag '2'
+		 - This application logs the message 'Ljava/lang/Exception;->toString()Ljava/lang/String;' under the tag 'exception'
+		 - This application logs the message 'Ljava/lang/Object;->toString()Ljava/lang/String;' under the tag 'Trestle'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/security/NoSuchAlgorithmException;->toString()Ljava/lang/String;' under the tag 'no such an algorithm'
+		 - This application logs the message 'Ljava/util/Set;->iterator()Ljava/util/Iterator;' under the tag 'NotifManCompat'
+		 - This application logs the message 'LoaderManager 2' under the tag 'LoaderManager'
+		 - This application logs the message 'LoaderManager 3' under the tag 'LoaderManager'
+		 - This application logs the message 'Millennial MMAdView Interstitial failed to load ad.' under the tag 'Lcom/flurry/android/ah;->d()Ljava/lang/String;'
+		 - This application logs the message 'Millennial MMAdView Interstitial request is caching.' under the tag 'Lcom/flurry/android/ah;->d()Ljava/lang/String;'
+		 - This application logs the message 'Millennial MMAdView banner overlay launched.' under the tag 'Lcom/flurry/android/fo;->d()Ljava/lang/String;'
+		 - This application logs the message 'Millennial MMAdView banner request is caching.' under the tag 'Lcom/flurry/android/fo;->d()Ljava/lang/String;'
+		 - This application logs the message 'Millennial MMAdView failed to load ad with error: %d %s. 2' under the tag 'Lcom/flurry/android/fo;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix AdView ad clicked.' under the tag 'Lcom/flurry/android/fc;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix AdView ad failed to load.' under the tag 'Lcom/flurry/android/fc;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix AdView ad successfully loaded.' under the tag 'Lcom/flurry/android/fc;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix AdView custom ad clicked.' under the tag 'Lcom/flurry/android/fc;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix AdView loaded an open allocation ad.' under the tag 'Lcom/flurry/android/fc;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix Interstitial ad dismissed.' under the tag 'Lcom/flurry/android/bx;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix Interstitial ad failed to load.' under the tag 'Lcom/flurry/android/bx;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix Interstitial ad successfully loaded.' under the tag 'Lcom/flurry/android/bx;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix Interstitial ad successfully shown.' under the tag 'Lcom/flurry/android/bx;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix keyword callback.' under the tag 'Lcom/flurry/android/bx;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix keyword callback.' under the tag 'Lcom/flurry/android/fc;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix query callback.' under the tag 'Lcom/flurry/android/bx;->d()Ljava/lang/String;'
+		 - This application logs the message 'Mobclix query callback.' under the tag 'Lcom/flurry/android/fc;->d()Ljava/lang/String;'
+		 - This application logs the message 'NO SUCH OPERATION' under the tag 'AppCloudOperationsManager'
+		 - This application logs the message 'NOT supported' under the tag 'VibrationSupportedFunction'
+		 - This application logs the message 'NotifManCompat 0' under the tag 'NotifManCompat'
+		 - This application logs the message 'NotifManCompat 3' under the tag 'NotifManCompat'
+		 - This application logs the message 'NotifManCompat 6' under the tag 'NotifManCompat'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'Object marked to be deleted' under the tag 'CacheObjectManager'
+		 - This application logs the message 'ObserverItem schedule' under the tag 'ObserverItem'
+		 - This application logs the message 'RETRY POLICY IS NULL. DEFAULT RETRY POLICY IS LEFT' under the tag 'ObjectOperationData'
+		 - This application logs the message 'Register Object - STATE_UP_TO_DATE or default' under the tag 'CacheSyncManager'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'SearchCache ============SEARCH REQUESTS================== SearchCache ============SEARCH ITEMS==================' under the tag 'SearchCache'
+		 - This application logs the message 'SearchCache ============SEARCH REQUESTS==================' under the tag 'SearchCache'
+		 - This application logs the message 'Starting mail intent activity!' under the tag '[GVExtension]'
+		 - This application logs the message 'Starting twitter intent activity!' under the tag '[GVExtension]'
+		 - This application logs the message 'Supported' under the tag 'VibrationSupportedFunction'
+		 - This application logs the message 'THIRD_PARTY 0' under the tag '4'
+		 - This application logs the message 'TRYING TO RELOGIN WITH LAST USER!' under the tag 'FlurryAppCloudRequestManager'
+		 - This application logs the message 'There is no last logged in user' under the tag 'FlurryWallet'
+		 - This application logs the message 'TwDep on post' under the tag '[GVExtension]'
+		 - This application logs the message 'TwDep onCancel' under the tag '[GVExtension]'
+		 - This application logs the message 'TwDep onFail' under the tag '[GVExtension]'
+		 - This application logs the message 'Unable to access notification actions' under the tag 'NotificationCompat'
+		 - This application logs the message 'Unable to access notification extras' under the tag 'NotificationCompat'
+		 - This application logs the message 'Url exception logging out of facebook' under the tag '[GVExtension]'
+		 - This application logs the message 'VibrationSupportedFunction call' under the tag 'VibrationSupportedFunction'
+		 - This application logs the message 'VibrationVibrateFunction call' under the tag 'VibrationVibrateFunction'
+		 - This application logs the message '[GoViralEx.TwWeb] 10' under the tag '[GoViralEx.TwWeb]'
+		 - This application logs the message 'account already exists for email' under the tag '1'
+		 - This application logs the message 'addObserverForKey ERROR, info == null' under the tag 'ObserverItem'
+		 - This application logs the message 'call inner init' under the tag '[GVExtension]'
+		 - This application logs the message 'call' under the tag 'VibrationInitNativeCodeFunction'
+		 - This application logs the message 'cannot set local notification, not enough params' under the tag '0'
+		 - This application logs the message 'collectionName 2' under the tag '1'
+		 - This application logs the message 'connectivity 3' under the tag 'RetryManager'
+		 - This application logs the message 'constructor' under the tag 'VibrationExtensionContext'
+		 - This application logs the message 'createContext' under the tag 'VibrationExtension'
+		 - This application logs the message 'dispose' under the tag 'VibrationExtension'
+		 - This application logs the message 'dispose' under the tag 'VibrationExtensionContext'
+		 - This application logs the message 'doDebugDisplay' under the tag '[GVExtension]'
+		 - This application logs the message 'failWrite: Got exception:' under the tag 'AtomicFile'
+		 - This application logs the message 'finishWrite: Got exception:' under the tag 'AtomicFile'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'getFunctions' under the tag 'VibrationExtensionContext'
+		 - This application logs the message 'getObjectById: response = null' under the tag 'AppCloudObject'
+		 - This application logs the message 'getObjectById: response = null' under the tag 'AppCloudUser'
+		 - This application logs the message 'getUserById: response = null' under the tag 'AppCloudUser'
+		 - This application logs the message 'in ffiInit' under the tag '[GVExtension]'
+		 - This application logs the message 'initialize' under the tag 'VibrationExtension'
+		 - This application logs the message 'key 2' under the tag '1'
+		 - This application logs the message 'no email adress provided. Cannot register the device.' under the tag 'v8'
+		 - This application logs the message 'not coming from notif' under the tag '0'
+		 - This application logs the message 'objectsLocalId 2' under the tag '1'
+		 - This application logs the message 'push notifications disabled on amazon devices, ignoring local notification' under the tag '2'
+		 - This application logs the message 'push notifications disabled on amzon devices, ignoring register no email adress provided. Cannot register the device. emailAdress is null. Cannot register the
+		   device.' under the tag '1'
+		 - This application logs the message 'push notifications disabled on amzon devices, ignoring register' under the tag '1'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'stopTimerForKey ERROR, info == null' under the tag 'ObserverItem'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'text/plain twattachment android.intent.extra.STREAM image/jpeg sub_activity callback_code [GVExtension] Starting twitter intent activity! [GVExtension] Twitter
+		   intent did not allow image attachment.' under the tag '[GVExtension]'
+		 - This application logs the message 'text/plain twattachment android.intent.extra.STREAM image/jpeg sub_activity callback_code [GVExtension] Starting twitter intent activity!' under the tag
+		   '[GVExtension]'
+		 - This application logs the message 'timestamp 2' under the tag '1'
+		 - This application logs the message 'timestamp is older than current time' under the tag 'v12'
+		 - This application logs the message 'try create context' under the tag '[GVExtension]'
+		 - This application logs the message 'v2' under the tag 'ICUCompatIcs'
+		 - This application logs the message 'v2' under the tag 'TransportController'
+		 - This application logs the message 'v3' under the tag 'AsyncTask'
+		 - This application logs the message 'v3' under the tag 'ICUCompatIcs'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_CONFIGURATIONS, GET_GIDS, GET_PERMISSIONS, GET_PROVIDERS, GET_RECEIVERS, GET_SIGNATURES, GET_SERVICES' information about the
+		   'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'doDebugDisplay ' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application sends an SMS message 'v2' to the 'v2' phone number
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.bg.teracomm.vivablitz.apk
+
+	[.] Fingerprint                             
+		 - MD5: 2eac763d6f8ff931d0de28ee6f5a9d34
+		 - SHA-1: 427d9457262b17e4199085aa3e3936d908b08431
+		 - SHA-256: e9b0e792fcdebc6f4d6798b7286cab04280e81518260ab16fc5be8f5e7127e10
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['air.bg.teracomm.vivablitz.permission.C2D_MESSAGE',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.DISABLE_KEYGUARD',
+		   'android.permission.INTERNET',  'android.permission.READ_PHONE_STATE',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.SEND_SMS',  'android.permission.VIBRATE',
+		   'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE',  'com.google.android.c2dm.permission.RECEIVE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: ['air.bg.teracomm.vivablitz.permission.C2D_MESSAGE']
+
+

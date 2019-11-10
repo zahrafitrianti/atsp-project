@@ -1,0 +1,36 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Código Civil 5ª Edição
+
+	[.] Application Version                     
+		 - 1.3.0
+
+	[.] Package Name                            
+		 - air.br.com.cc2002.tablet.free.A2013
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.br.com.cc2002.tablet.free.A2013.apk
+
+	[.] Fingerprint                             
+		 - MD5: 35ad488478da999eafe7b3fbb205d8c8
+		 - SHA-1: 0f1b751b96a9db476f2ac06bcf7fd7c46c0e97f2
+		 - SHA-256: 22329df26dbbcca6d61cb90de51c9f2ca552e870d1c7519e7efdf45ca7744459
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.DISABLE_KEYGUARD',  'android.permission.INTERNET',
+		   'android.permission.WAKE_LOCK']
+		 - Implied: []
+		 - Declared: []
+
+

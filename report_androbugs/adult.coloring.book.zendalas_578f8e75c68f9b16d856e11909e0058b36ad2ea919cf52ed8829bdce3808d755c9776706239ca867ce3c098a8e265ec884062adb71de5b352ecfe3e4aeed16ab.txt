@@ -1,0 +1,269 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: adult.coloring.book.zendalas
+Package Version Name: 1.0.1
+Package Version Code: 2
+Min Sdk: 10
+Target Sdk: 23
+MD5   : f90424d70feffb13fcd89cc8f98bd466
+SHA1  : 3b8ad8a19fc050e72c68ff5333935d2292c955ee
+SHA256: 784c30b1f626417156c814830e27586039156fa50943f6109aaca8e7af6c60d0
+SHA512: 44a84a1a763bc09fd6ebe02ea9bf7e31330f16f8794d209198e3768d6d305db79f8496fe16da17cf4a648e55470ac0d082eddd0f63a6d95290666df724dda755
+Analyze Signature: 578f8e75c68f9b16d856e11909e0058b36ad2ea919cf52ed8829bdce3808d755c9776706239ca867ce3c098a8e265ec884062adb71de5b352ecfe3e4aeed16ab
+------------------------------------------------------------------------------------------------
+[Critical] <Hacker> Base64 String Encryption:
+           Found Base64 encoding "String(s)" (Total: 1). We cannot guarantee all of the Strings are Base64 encoding and also we will not
+           show you the decoded binary file:
+               com.android.vending.licensing.ILicensingService
+                   ->Original Encoding String: Y29tLmFuZHJvaWQudmVuZGluZy5saWNlbnNpbmcuSUxpY2Vuc2luZ1NlcnZpY2U=
+                   ->From class: Lcom/google/android/vending/licensing/LicenseChecker;->checkAccess(Lcom/google/android/vending/licensing/Li
+                    censeCheckerCallback; Z)V
+[Critical]  AndroidManifest ContentProvider Exported Checking:
+           Found "exported" ContentProvider, allowing any other app on the device to access it (AndroidManifest.xml). You should modify the
+           attribute to [exported="false"] or set at least "signature" protectionalLevel permission if you don't want to.
+           Vulnerable ContentProvider Case Example:
+             (1)https://www.nowsecure.com/mobile-security/ebay-android-content-provider-injection-vulnerability.html
+             (2)http://blog.trustlook.com/2013/10/23/ebay-android-content-provider-information-disclosure-vulnerability/
+             (3)http://www.wooyun.org/bugs/wooyun-2010-039169
+                 provider => com.ansca.corona.storage.FileContentProvider
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:4):
+               http://developer.android.com/guide/topics/security/permissions.html#permission-groups
+                   => Lcom/ansca/corona/Controller$10$1;->onClick(Landroid/content/DialogInterface; I)V
+               http://maps.googleapis.com/maps/api/geocode/json?address=
+                   => Lcom/ansca/corona/NativeToJavaBridge;->getLocationFromName(Ljava/lang/String;)Landroid/location/Location;
+               http://www.amazon.com/gp/mas/dl/android?p=
+                   => Lcom/ansca/corona/CoronaShowApiHandler;->showAppStoreWindow(Ljava/util/HashMap;)Z
+               http://www.coronalabs.com/products/corona-sdk/?utm_source=corona-sdk&utm_medium=corona-sdk&utm_campaign=trial-popup
+                   => Lcom/ansca/corona/Controller$6$1;->onClick(Landroid/content/DialogInterface; I)V
+[Critical] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           Found a critical WebView "addJavascriptInterface" vulnerability. This method can be used to allow JavaScript to control the host
+           application.
+           This is a powerful feature, but also presents a security risk for applications targeted to API level JELLY_BEAN(4.2) or below,
+           because JavaScript could use reflection to access an injected object's public fields. Use of this method in a WebView containing
+           untrusted content could allow an attacker to manipulate the host application in unintended ways, executing Java code with the
+           permissions of the host application.
+           Reference:
+             1."http://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface(java.lang.Object,
+           java.lang.String) "
+             2.https://labs.mwrinfosecurity.com/blog/2013/09/24/webview-addjavascriptinterface-remote-code-execution/
+             3.http://50.56.33.56/blog/?p=314
+             4.http://blog.trustlook.com/2013/09/04/alert-android-webview-addjavascriptinterface-code-execution-vulnerability/
+           Please modify the below code:
+               => Lcom/ansca/corona/maps/MapView;-><init>(Landroid/content/Context; Lcom/ansca/corona/CoronaRuntime;
+                    Lcom/ansca/corona/Controller;)V (0x2ca) ---> Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;
+                    Ljava/lang/String;)V
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => LCoronaProvider/licensing/google/LuaLoader$GetAvailableExternalSpaceWrapper;->invoke(Lcom/naef/jnlua/LuaState;)I (0x4)
+                    ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => LCoronaProvider/licensing/google/LuaLoader$GetAvailableExternalSpaceWrapper;->invoke(Lcom/naef/jnlua/LuaState;)I (0x5c)
+                    ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/ansca/corona/storage/FileServices;->getExpansionFileDirectory()Ljava/io/File; (0x2) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lnetwork/NetworkRequest$NetworkRequestParameters;->extractRequestParameters(Lcom/naef/jnlua/LuaState;)Z (0x84c) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning] <Sensitive_Information> Getting IMEI and Device ID:
+           This app has code getting the "device id(IMEI)" but there are problems with this "TelephonyManager.getDeviceId()" approach.
+           1.Non-phones: Wifi-only devices or music players that don't have telephony hardware just don't have this kind of unique
+           identifier.
+           2.Persistence: On devices which do have this, it persists across device data wipes and factory resets. It's not clear at all if,
+           in this situation, your app should regard this as the same device.
+           3.Privilege:It requires READ_PHONE_STATE permission, which is irritating if you don't otherwise use or need telephony.
+           4.Bugs: We have seen a few instances of production phones for which the implementation is buggy and returns garbage, for example
+           zeros or asterisks.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/ansca/corona/Controller;->GetHardwareIdentifier()Ljava/lang/String; (0x32) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+               => Lcom/ansca/corona/Controller;->GetHardwareIdentifier()Ljava/lang/String; (0x3e) --->
+                    Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => LCoronaProvider/ads/admob/AdMobAd;->getDeviceId()Ljava/lang/String; (0x1c) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => LCoronaProvider/licensing/google/LuaLoader;->initLicenseChecker(Ljava/lang/String; Ljava/lang/String;)Z (0x26) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lcom/ansca/corona/Controller;->GetOSIdentifier()Ljava/lang/String; (0x1a) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+[Warning] <WebView> WebView Local File Access Attacks Checking:
+           Found "setAllowFileAccess(true)" or not set(enabled by default) in WebView. The attackers could inject malicious script into
+           WebView and exploit the opportunity to access local resources. This can be mitigated or prevented by disabling local file system
+           access. (It is enabled by default)
+           Note that this enables or disables file system access only. Assets and resources are still accessible using file:///android_asset
+           and file:///android_res.
+           The attackers can use "mWebView.loadUrl("file:///data/data/[Your_Package_Name]/[File]");" to access app's local file.
+           Reference: (1)https://labs.mwrinfosecurity.com/blog/2012/04/23/adventures-with-android-webviews/
+                      (2)http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)
+           Please add or modify "yourWebView.getSettings().setAllowFileAccess(false)" to your WebView:
+               Lcom/ansca/corona/CoronaWebView$ApiLevel21;->setMixedContentModeToAlwaysAllowFor(Landroid/webkit/WebSettings;)V
+               Lcom/ansca/corona/CoronaWebView;-><init>(Landroid/content/Context; Lcom/ansca/corona/CoronaRuntime;)V
+               Lcom/ansca/corona/maps/MapView;-><init>(Landroid/content/Context; Lcom/ansca/corona/CoronaRuntime;
+                    Lcom/ansca/corona/Controller;)V
+               Lcom/google/android/gms/internal/co;->a(Landroid/content/Context; Ljava/lang/String; Landroid/webkit/WebSettings;)V
+               Lcom/google/android/gms/internal/co;->j(Landroid/content/Context;)Ljava/lang/String;
+               Lcom/google/android/gms/internal/cw;-><init>(Lcom/google/android/gms/internal/cw$a; Lcom/google/android/gms/internal/x; Z Z
+                    Lcom/google/android/gms/internal/h; Lcom/google/android/gms/internal/cu;)V
+[Warning] <WebView> WebView Potential XSS Attacks Checking:
+           Found "setJavaScriptEnabled(true)" in WebView, which could exposed to potential XSS attacks. Please check the web page code
+           carefully and sanitize the output:
+               => Lcom/ansca/corona/CoronaWebView;-><init>(Landroid/content/Context; Lcom/ansca/corona/CoronaRuntime;)V (0x52) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/ansca/corona/maps/MapView;-><init>(Landroid/content/Context; Lcom/ansca/corona/CoronaRuntime;
+                    Lcom/ansca/corona/Controller;)V (0x1ba) ---> Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+               => Lcom/google/android/gms/internal/cw;-><init>(Lcom/google/android/gms/internal/cw$a; Lcom/google/android/gms/internal/x; Z
+                    Z Lcom/google/android/gms/internal/h; Lcom/google/android/gms/internal/cu;)V (0x3e) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/ansca/corona/AudioRecorder$WavRecorder;->overwriteData(Ljava/lang/String; J)V (0x10e) ---> Ljava/io/File;->delete()Z
+               => Lcom/ansca/corona/AudioRecorder$WavRecorder;->writeAudioDataToFile()V (0x142) ---> Ljava/io/File;->delete()Z
+               => Lcom/ansca/corona/AudioRecorder;->startRecording()V (0x48) ---> Ljava/io/File;->delete()Z
+               => Lcom/ansca/corona/CameraActivity;->clearCachedPhotos(Landroid/content/Context;)V (0x16) ---> Ljava/io/File;->delete()Z
+               => Lcom/ansca/corona/CoronaEnvironment;->deleteDirectoryTree(Ljava/io/File;)V (0x2c) ---> Ljava/io/File;->delete()Z
+               => Lcom/ansca/corona/notifications/NotificationServices;->saveSettings(Lcom/ansca/corona/notifications/NotificationSettingsCo
+                    llection;)V (0x56) ---> Ljava/io/File;->delete()Z
+               => Lcom/ansca/corona/storage/FileServices;->copyFile(Ljava/io/File; Ljava/io/File;)Z (0xb2) ---> Ljava/io/File;->delete()Z
+               => Lcom/ansca/corona/storage/FileServices;->copyFile(Ljava/io/File; Ljava/io/File;)Z (0xdc) ---> Ljava/io/File;->delete()Z
+               => Lcom/ansca/corona/storage/FileServices;->copyFile(Ljava/io/File; Ljava/io/File;)Z (0xfe) ---> Ljava/io/File;->delete()Z
+               => Lcom/ansca/corona/storage/FileServices;->moveFile(Ljava/io/File; Ljava/io/File;)Z (0x2e) ---> Ljava/io/File;->delete()Z
+               => Lnetwork/NetworkRequest$AsyncNetworkRequestRunnable;->run()V (0x1a48) ---> Ljava/io/File;->delete()Z
+               => Lnetwork/NetworkRequest$AsyncNetworkRequestRunnable;->run()V (0x1b98) ---> Ljava/io/File;->delete()Z
+               => Lnetwork/NetworkRequest$AsyncNetworkRequestRunnable;->run()V (0x1c26) ---> Ljava/io/File;->delete()Z
+               => Lnetwork/NetworkRequest$AsyncNetworkRequestRunnable;->run()V (0x1cd8) ---> Ljava/io/File;->delete()Z
+[Notice] <Hacker> APK Installing Source Checking:
+           This app has code checking APK installer sources(e.g. from Google Play, from Amazon, etc.). It might be used to check for whether
+           the app is hacked by the attackers.
+               => Lcom/ansca/corona/purchasing/StoreServices;->getStoreApplicationWasPurchasedFrom()Ljava/lang/String; (0x1e) --->
+                    Landroid/content/pm/PackageManager;->getInstallerPackageName(Ljava/lang/String;)Ljava/lang/String;
+[Notice] <Signature><Hacker> Getting Signature Code Checking:
+           This app has code checking the package signature in the code. It might be used to check for whether the app is hacked by the
+           attackers.
+               => Lcom/google/android/gms/common/GooglePlayServicesUtil;->isGooglePlayServicesAvailable(Landroid/content/Context;)I (0x68)
+                    ---> Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/google/android/gms/common/GooglePlayServicesUtil;->isGooglePlayServicesAvailable(Landroid/content/Context;)I (0xb4)
+                    ---> Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/google/android/gms/common/GooglePlayServicesUtil;->o(Landroid/content/Context;)Z (0x22) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+[Notice]  Native Library Loading Checking:
+           Native library loading codes(System.loadLibrary(...)) found:
+               [liblua.so]
+               => Lcom/ansca/corona/JavaToNativeShim;-><clinit>()V (0x6) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libjnlua5.1.so]
+               => Lcom/ansca/corona/JavaToNativeShim;-><clinit>()V (0x12) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libopenal.so]
+               => Lcom/ansca/corona/JavaToNativeShim;-><clinit>()V (0x1e) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libmpg123.so]
+               => Lcom/ansca/corona/JavaToNativeShim;-><clinit>()V (0x2a) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libalmixer.so]
+               => Lcom/ansca/corona/JavaToNativeShim;-><clinit>()V (0x36) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libcorona.so]
+               => Lcom/ansca/corona/JavaToNativeShim;-><clinit>()V (0x42) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+               [libjnlua5.1.so]
+               => Lcom/naef/jnlua/NativeSupport$DefaultLoader;->load()V (0x6) ---> Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+[Notice]  AndroidManifest Exported Components Checking 2:
+           Found "exported" components(except for Launcher) for receiving Google's "Android" actions (AndroidManifest.xml):
+                 receiver => com.ansca.corona.SystemStartupBroadcastReceiver
+                 receiver => com.ansca.corona.purchasing.GoogleStoreBroadcastReceiver
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" you're not using it.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is "NOT" using Android SQLite databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info]  Dynamic Code Loading:
+           No dynamic code loading(DexClassLoader) found.
+[Info] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           Did not detect the vulnerability of "Fragment" dynamically loading into "PreferenceActivity" or "SherlockPreferenceActivity"
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+------------------------------------------------------------
+AndroBugs analyzing time: 2.855765 secs
+Total elapsed time: 10.080189 secs

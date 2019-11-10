@@ -1,0 +1,42 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - AC Omonoia Nicosia
+
+	[.] Application Version                     
+		 - 1.5.3
+
+	[.] Package Name                            
+		 - ac.omonoia.nic
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '11' under the tag 'C2DM'
+		 - This application logs the message '3' under the tag 'C2DM'
+		 - This application logs the message '5' under the tag 'C2DM'
+		 - This application logs the message 'got here!' under the tag 'C2DMReceiver-onUnregistered'
+		 - This application logs the message 'payload 12' under the tag 'C2DMReceiver'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - ac.omonoia.nic.apk
+
+	[.] Fingerprint                             
+		 - MD5: 865eb87e226c73ddfdef6103eab7b839
+		 - SHA-1: 1207bc3e28ce0239dd4b1974b711f5ffd791d011
+		 - SHA-256: dac8e2c59eea9cdc1cbc8608d2e46d196b4100a91bb7107bce18022888cfa6ad
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['ac.omonoia.nic.permission.C2D_MESSAGE',  'android.permission.GET_TASKS',  'android.permission.INTERNET',  'android.permission.WAKE_LOCK',  'com.google.android.c2dm.permission.RECEIVE']
+		 - Implied: []
+		 - Declared: ['ac.omonoia.nic.permission.C2D_MESSAGE']
+
+

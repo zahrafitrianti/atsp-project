@@ -1,0 +1,46 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - PassPal
+
+	[.] Application Version                     
+		 - 2.1
+
+	[.] Package Name                            
+		 - afk.passpal.free
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '3' under the tag 'ICON RESID'
+		 - This application logs the message '6' under the tag 'Icon Position Number: '
+		 - This application retrieves '' information about the 'Lafk/passpal/free/About;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lafk/passpal/free/Login;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW 0' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - afk.passpal.free.apk
+
+	[.] Fingerprint                             
+		 - MD5: 33db495e320e51c70fbea2a845318da5
+		 - SHA-1: 85045e07f3dfbe512d0c5d02091b0705d7e1cc47
+		 - SHA-256: 408933f54267b267c144d96ba7cbfb44da47ed603277a041ea10695bb1e3bbff
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

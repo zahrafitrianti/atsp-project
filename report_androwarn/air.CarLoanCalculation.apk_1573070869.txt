@@ -1,0 +1,35 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Car Loan Calculation
+
+	[.] Application Version                     
+		 - 1.0.1
+
+	[.] Package Name                            
+		 - air.CarLoanCalculation
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.CarLoanCalculation.apk
+
+	[.] Fingerprint                             
+		 - MD5: 983fb5c15ccaf05a622f06d20cdaf781
+		 - SHA-1: 2ff82f5ec9f6de75ad53e5ea96673940653a96f7
+		 - SHA-256: 56d531188d6f067cfa8bbd389f74719a2aa814c06c0a6d6611af41e3698cb50f
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

@@ -1,0 +1,52 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Shapes for Kids
+
+	[.] Application Version                     
+		 - 0.3
+
+	[.] Package Name                            
+		 - air.air.flexshapes
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'GoogleAdsAssertion 3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'error getBoolean' under the tag 'ane'
+		 - This application logs the message 'error getInt' under the tag 'ane'
+		 - This application logs the message 'error getString' under the tag 'ane'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.air.flexshapes.apk
+
+	[.] Fingerprint                             
+		 - MD5: 380b6cbb358a9299e36a4225549b795c
+		 - SHA-1: 9ae30467af67eeb7d633decd37329cd3a0dc5743
+		 - SHA-256: 6eac10bd4c5929ffd8fccd9d05b3934641f860a0f71e211874e94843a4c2c797
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

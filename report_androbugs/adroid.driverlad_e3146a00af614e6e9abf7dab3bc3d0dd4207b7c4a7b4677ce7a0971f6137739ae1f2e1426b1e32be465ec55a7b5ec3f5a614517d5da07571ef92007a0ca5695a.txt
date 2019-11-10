@@ -1,0 +1,315 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: adroid.driverlad
+Package Version Name: 4.6
+Package Version Code: 46
+Min Sdk: 10
+Target Sdk: 10
+MD5   : ac2a796db41d01a9dad57701d79f9bf2
+SHA1  : c56efd074ad2a237b2d27f37338144a3d801ad12
+SHA256: 6dcb5b0e85191bb96e3bf5b8a92f81d225c6c5550c3ac2136c37130d40129509
+SHA512: 8b22c3dd03417adbb8c5ef30a0cfa4d293c0cedeccf38eb2fa80d7417e14bc3701eb47c2e84691cda4446ee7015636a430a87a85788b75ae3c551fa9327a6af4
+Analyze Signature: e3146a00af614e6e9abf7dab3bc3d0dd4207b7c4a7b4677ce7a0971f6137739ae1f2e1426b1e32be465ec55a7b5ec3f5a614517d5da07571ef92007a0ca5695a
+------------------------------------------------------------------------------------------------
+[Critical] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           'Fragment' or 'Fragment for ActionbarSherlock' has a severe vulnerability prior to Android 4.4 (API 19).
+           Please check:
+           (1)http://developer.android.com/reference/android/os/Build.VERSION_CODES.html#KITKAT
+           (2)http://developer.android.com/reference/android/preference/PreferenceActivity.html#isValidFragment(java.lang.String)
+           (3)http://stackoverflow.com/questions/19973034/isvalidfragment-android-api-19
+           (4)http://securityintelligence.com/new-vulnerability-android-framework-fragment-injection/
+           (5)http://securityintelligence.com/wp-content/uploads/2013/12/android-collapses-into-fragments.pdf
+           (6)https://cureblog.de/2013/11/cve-2013-6271-remove-device-locks-from-android-phone/
+               These "PreferenceActivity" classes may be vulnerable because they do not override 'isValidFragment' method (If you do not
+                    load any fragment in the PreferenceActivity, please still override 'isValidFragment' method and only return "false" to
+                    secure your app in the future changes) :
+                   Ladroid/driverlad/OptionsActivity;
+               All of the potential vulnerable "fragment":
+                   Lcom/google/android/gms/internal/zzaay;
+                   Lcom/google/android/gms/internal/zzabm;
+[Critical]  App Sandbox Permission Checking:
+           Security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found (Please check:
+           https://www.owasp.org/index.php/Mobile_Top_10_2014-M2):
+               [getSharedPreferences]
+               => Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->getAdvertisingIdInfo(Landroid/content/Context;)Lcom/google/an
+                    droid/gms/ads/identifier/AdvertisingIdClient$Info; (0x18) --->
+                    Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+               => Lcom/google/android/gms/flags/impl/zzb$1;->zzCU()Landroid/content/SharedPreferences; (0xa) --->
+                    Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+               --------------------------------------------------
+[Critical] <Implicit_Intent> Implicit Service Checking:
+           To ensure your app is secure, always use an explicit intent when starting a Service and DO NOT declare intent filters for your
+           services. Using an implicit intent to start a service is a security hazard because you cannot be certain what service will
+           respond to the intent, and the user cannot see which service starts.
+           Reference: http://developer.android.com/guide/components/intents-filters.html#Types
+               => com.google.firebase.messaging.FirebaseMessagingService
+               => com.google.firebase.iid.FirebaseInstanceIdService
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:35):
+               http://1.{domain}/maptile/2.1/maptile/newest/
+                   => Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;-><clinit>()V
+               http://2.{domain}/maptile/2.1/maptile/newest/
+                   => Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;-><clinit>()V
+               http://3.{domain}/maptile/2.1/maptile/newest/
+                   => Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;-><clinit>()V
+               http://4.{domain}/maptile/2.1/maptile/newest/
+                   => Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;-><clinit>()V
+               http://a.tile.cloudmade.com/%s/%d/%d/%d/%d/%d%s?token=%s
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://a.tile.openstreetmap.org/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://a.tiles.wmflabs.org/hikebike/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://api.geonames.org/findNearbyWikipediaJSON?
+                   => Lorg/osmdroid/bonuspack/location/GeoNamesPOIProvider;->getUrlCloseTo(Lorg/osmdroid/util/GeoPoint; I
+                    D)Ljava/lang/String;
+               http://api.geonames.org/wikipediaBoundingBoxJSON?
+                   => Lorg/osmdroid/bonuspack/location/GeoNamesPOIProvider;->getUrlInside(Lorg/osmdroid/util/BoundingBox;
+                    I)Ljava/lang/String;
+               http://api.tiles.mapbox.com/v4/
+                   => Lorg/osmdroid/tileprovider/tilesource/MapQuestTileSource;-><clinit>()V
+                   => Lorg/osmdroid/tileprovider/tilesource/MapBoxTileSource;-><clinit>()V
+               http://auth.cloudmade.com/token/
+                   => Lorg/osmdroid/tileprovider/util/CloudmadeUtil;->getCloudmadeToken()Ljava/lang/String;
+               http://b.tile.cloudmade.com/%s/%d/%d/%d/%d/%d%s?token=%s
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://b.tile.openstreetmap.org/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://b.tiles.wmflabs.org/hikebike/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://c.tile.cloudmade.com/%s/%d/%d/%d/%d/%d%s?token=%s
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://c.tile.openstreetmap.org/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://c.tiles.wmflabs.org/hikebike/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://dev.virtualearth.net/REST/V1/Imagery/Metadata/%s?mapVersion=v1&output=json&key=%s
+                   => Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->getMetaData()Lorg/osmdroid/tileprovider/tilesource/bing
+                    /ImageryMetaDataResource;
+               http://localhost
+                   => Lorg/osmdroid/tileprovider/tilesource/FileBasedTileSource;->getSource(Ljava/lang/String;)Lorg/osmdroid/tileprovider/ti
+                    lesource/ITileSource;
+               http://maps.googleapis.com/maps/api/directions/xml?
+                   => Lorg/osmdroid/bonuspack/routing/GoogleRoadManager;->getUrl(Ljava/util/ArrayList; Z)Ljava/lang/String;
+               http://nominatim.openstreetmap.org/
+                   => Lorg/osmdroid/bonuspack/location/GeocoderNominatim;-><init>(Ljava/util/Locale; Ljava/lang/String;)V
+                   => Lorg/osmdroid/bonuspack/location/NominatimPOIProvider;-><init>(Ljava/lang/String;)V
+               http://open.mapquestapi.com/guidance/v1/route?
+                   => Lorg/osmdroid/bonuspack/routing/MapQuestRoadManager;->getUrl(Ljava/util/ArrayList;)Ljava/lang/String;
+               http://openptmap.org/tiles/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://overlay.openstreetmap.nl/basemap/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://overlay.openstreetmap.nl/openfietskaart-overlay/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://overlay.openstreetmap.nl/roads/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://overpass-api.de/api/interpreter
+                   => Lorg/osmdroid/bonuspack/location/OverpassAPIProvider;-><init>()V
+               http://picasaweb.google.com/data/feed/api/all?
+                   => Lorg/osmdroid/bonuspack/location/PicasaPOIProvider;->getUrlInside(Lorg/osmdroid/util/BoundingBox; I
+                    Ljava/lang/String;)Ljava/lang/String;
+               http://plus.google.com/
+                   => Lcom/google/android/gms/common/internal/zzp;-><clinit>()V
+               http://router.project-osrm.org/route/v1/driving/
+                   => Lorg/osmdroid/bonuspack/routing/OSRMRoadManager;-><init>(Landroid/content/Context;)V
+               http://schemas.google.com/photos/2007#canonical
+                   => Lorg/osmdroid/bonuspack/location/PicasaXMLHandler;->startElement(Ljava/lang/String; Ljava/lang/String;
+                    Ljava/lang/String; Lorg/xml/sax/Attributes;)V
+               http://tiles.openseamap.org/seamark/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://wms.chartbundle.com/tms/v1.0/enrh/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://wms.chartbundle.com/tms/v1.0/enrl/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+               http://wms.chartbundle.com/tms/v1.0/wac/
+                   => Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;-><clinit>()V
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lorg/osmdroid/bonuspack/kml/KmlDocument;->getDefaultPathForAndroid(Ljava/lang/String;)Ljava/io/File; (0x4) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/osmdroid/tileprovider/util/StorageUtils;->getAllStorageLocations()Ljava/util/Map; (0x3de) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/osmdroid/tileprovider/util/StorageUtils;->getAllStorageLocations()Ljava/util/Map; (0x3f8) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/osmdroid/tileprovider/util/StorageUtils;->getAllStorageLocations()Ljava/util/Map; (0x418) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/osmdroid/tileprovider/util/StorageUtils;->getAllStorageLocationsRevised()Ljava/util/Set; (0x108) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/osmdroid/tileprovider/util/StorageUtils;->getAllStorageLocationsRevised()Ljava/util/Set; (0x114) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/osmdroid/tileprovider/util/StorageUtils;->getSdCardPath()Ljava/lang/String; (0xa) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/osmdroid/tileprovider/util/StorageUtils;->getStorage()Ljava/io/File; (0x7a) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/osmdroid/tileprovider/util/StorageUtils;->getStorageList()Ljava/util/List; (0x18) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lorg/osmdroid/tileprovider/util/StorageUtils;->getStorageList()Ljava/util/List; (0x24) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning]  AndroidManifest Exported Components Checking:
+           Found "exported" components(except for Launcher) for receiving outside applications' actions (AndroidManifest.xml).
+           These components can be initilized by other apps. You should add or modify the attribute to [exported="false"] if you don't want
+           to.
+           You can also protect it with a customized permission with "signature" or higher protectionLevel and specify in
+           "android:permission" attribute.
+                  service => com.google.firebase.messaging.FirebaseMessagingService
+                  service => com.google.firebase.iid.FirebaseInstanceIdService
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/google/android/gms/internal/zzatp;->zza(Lcom/google/android/gms/internal/zzasx;
+                    Lcom/google/android/gms/internal/zzasq;)V (0x30e) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+               => Lorg/osmdroid/tileprovider/util/CloudmadeUtil;->retrieveCloudmadeKey(Landroid/content/Context;)V (0xc) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is using Android SQLite databases.
+           Prior to Android 4.0, Android has SQLite Journal Information Disclosure Vulnerability.
+           But it can only be solved by users upgrading to Android > 4.0 and YOU CANNOT SOLVE IT BY YOURSELF (But you can use encrypt your
+           databases and Journals by "SQLCipher" or other libs).
+           Proof-Of-Concept Reference:
+           (1) http://blog.watchfire.com/files/androidsqlitejournal.pdf
+           (2) http://www.youtube.com/watch?v=oCXLHjmH5rY
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/google/android/gms/internal/zzasu$zzc;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase; (0x98) --->
+                    Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzatg$zza;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase; (0x60) --->
+                    Ljava/io/File;->delete()Z
+               => Lorg/osmdroid/tileprovider/util/StorageUtils$StorageInfo;-><init>(Ljava/lang/String; Z Z I)V (0x98) --->
+                    Ljava/io/File;->delete()Z
+               => Lorg/osmdroid/tileprovider/util/StorageUtils;->isWritable(Ljava/io/File;)Z (0x9e) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzv;->zzc(I)V (0x86) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzv;->initialize()V (0xb0) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzv;->remove(Ljava/lang/String;)V (0xa) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/android/gms/internal/zzv;->zza(Ljava/lang/String; Lcom/google/android/gms/internal/zzb$zza;)V (0x68) --->
+                    Ljava/io/File;->delete()Z
+               => Lokhttp3/internal/io/FileSystem$1;->delete(Ljava/io/File;)V (0x0) ---> Ljava/io/File;->delete()Z
+               => Lokhttp3/internal/io/FileSystem$1;->deleteContents(Ljava/io/File;)V (0x5c) ---> Ljava/io/File;->delete()Z
+               => Lorg/osmdroid/tileprovider/modules/SqlTileWriter;->importFromFileCache(Z)[I (0x49c) ---> Ljava/io/File;->delete()Z
+               => Lorg/osmdroid/tileprovider/modules/SqlTileWriter;->importFromFileCache(Z)[I (0x570) ---> Ljava/io/File;->delete()Z
+               => Lorg/osmdroid/tileprovider/modules/SqlTileWriter;->importFromFileCache(Z)[I (0x5de) ---> Ljava/io/File;->delete()Z
+               => Lorg/osmdroid/tileprovider/modules/SqlTileWriter;->importFromFileCache(Z)[I (0x64c) ---> Ljava/io/File;->delete()Z
+               => Lorg/osmdroid/tileprovider/modules/TileWriter;->cutCurrentCache()V (0x102) ---> Ljava/io/File;->delete()Z
+               => Lorg/osmdroid/tileprovider/modules/TileWriter;->remove(Lorg/osmdroid/tileprovider/tilesource/ITileSource;
+                    Lorg/osmdroid/tileprovider/MapTile;)Z (0x54) ---> Ljava/io/File;->delete()Z
+               => Lorg/osmdroid/tileprovider/tilesource/BitmapTileSourceBase;->getDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Dra
+                    wable; (0x96) ---> Ljava/io/File;->delete()Z
+[Notice] <Hacker> APK Installing Source Checking:
+           This app has code checking APK installer sources(e.g. from Google Play, from Amazon, etc.). It might be used to check for whether
+           the app is hacked by the attackers.
+               => Lcom/google/android/gms/internal/zzatf;->zzmr()V (0x146) --->
+                    Landroid/content/pm/PackageManager;->getInstallerPackageName(Ljava/lang/String;)Ljava/lang/String;
+[Notice] <Signature><Hacker> Getting Signature Code Checking:
+           This app has code checking the package signature in the code. It might be used to check for whether the app is hacked by the
+           attackers.
+               => Lcom/google/android/gms/common/util/zzx;->zzf(Landroid/content/Context; I)Z (0x24) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+               => Lcom/google/android/gms/common/zze;->isGooglePlayServicesAvailable(Landroid/content/Context;)I (0x78) --->
+                    Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" you're not using it.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info]  Dynamic Code Loading:
+           No dynamic code loading(DexClassLoader) found.
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting IMEI and Device ID:
+           Did not detect this app is getting the "device id(IMEI)" by "TelephonyManager.getDeviceId()" approach.
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+[Info] <WebView> WebView Local File Access Attacks Checking:
+           Did not find potentially critical local file access settings.
+[Info] <WebView> WebView Potential XSS Attacks Checking:
+           Did not detect "setJavaScriptEnabled(true)" in WebView.
+[Info] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           WebView addJavascriptInterface vulnerabilities not found.
+------------------------------------------------------------
+AndroBugs analyzing time: 5.503964 secs
+Total elapsed time: 21.334725 secs

@@ -1,0 +1,52 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Aqua Memory for kids
+
+	[.] Application Version                     
+		 - 0.2
+
+	[.] Package Name                            
+		 - air.air.it.aquacode.memory.AquaMemory
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'GoogleAdsAssertion 3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'error getBoolean' under the tag 'ane'
+		 - This application logs the message 'error getInt' under the tag 'ane'
+		 - This application logs the message 'error getString' under the tag 'ane'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.air.it.aquacode.memory.AquaMemory.apk
+
+	[.] Fingerprint                             
+		 - MD5: 04f80c71e4adb5803728deddb8ba3c7c
+		 - SHA-1: 671dd70eed80c57fdd76260cc66c1ad36eb4ec64
+		 - SHA-256: 20d96757607af7a73f762e7b07b00e5b3e24808a69fcb8760767199dc5f35154
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

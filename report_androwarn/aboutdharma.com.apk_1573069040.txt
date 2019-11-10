@@ -1,0 +1,453 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - भारतीय धर्म, संस्कृति और दर्शन
+
+	[.] Application Version                     
+		 - 1.7
+
+	[.] Package Name                            
+		 - aboutdharma.com
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the ISO country code equivalent for the SIM provider's country code
+		 - This application reads the ISO country code equivalent of the current registered operator's MCC (Mobile Country Code)
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the constant indicating the state of the device SIM card
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone number string for line 1, for example, the MSISDN for a GSM phone
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is running; attempting to cancel' under the tag 'LoaderManager'
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load canceled -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load canceled -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message ' has multidex support 1' under the tag 'MultiDex'
+		 - This application logs the message '%1$-11s %2$-12s %3$s %4$s 2' under the tag 'Picasso'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'GoogleApiClientConnecting'
+		 - This application logs the message '' under the tag 'Lcom/mapbox/mapboxsdk/views/MapView;->getContext()Landroid/content/Context;'
+		 - This application logs the message '0' under the tag 'Browser'
+		 - This application logs the message '0' under the tag 'ClearcutLoggerApiImpl'
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'DocumentFile'
+		 - This application logs the message '0' under the tag 'EnvironmentCompat'
+		 - This application logs the message '0' under the tag 'FragmentManager'
+		 - This application logs the message '0' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '0' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '0' under the tag 'Lcom/flurry/sdk/w;->K()Ljava/lang/String;'
+		 - This application logs the message '0' under the tag 'LoaderManager'
+		 - This application logs the message '0' under the tag 'MapTileCache'
+		 - This application logs the message '0' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '0' under the tag 'MediaControllerCompat'
+		 - This application logs the message '0' under the tag 'MultiDex'
+		 - This application logs the message '0' under the tag 'NotifManCompat'
+		 - This application logs the message '0' under the tag 'ProviderInstaller'
+		 - This application logs the message '0' under the tag 'RecyclerView'
+		 - This application logs the message '0' under the tag 'SubripParser'
+		 - This application logs the message '0' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '0' under the tag 'ThreadUtil'
+		 - This application logs the message '0' under the tag 'TileJsonTileLayer'
+		 - This application logs the message '0' under the tag 'TilesOverlay'
+		 - This application logs the message '0' under the tag 'UserLocationOverlay'
+		 - This application logs the message '0' under the tag 'vCard'
+		 - This application logs the message '1' under the tag 'BitmapUtils'
+		 - This application logs the message '1' under the tag 'CodecSpecificDataUtil'
+		 - This application logs the message '1' under the tag 'FragmentManager'
+		 - This application logs the message '1' under the tag 'GAv4'
+		 - This application logs the message '1' under the tag 'GmsClient'
+		 - This application logs the message '1' under the tag 'GoogleApiClientConnecting'
+		 - This application logs the message '1' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '1' under the tag 'H265Reader'
+		 - This application logs the message '1' under the tag 'LinearLayoutManager'
+		 - This application logs the message '1' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'MediaBrowserServiceCompat'
+		 - This application logs the message '1' under the tag 'MultiDex'
+		 - This application logs the message '1' under the tag 'NavUtils'
+		 - This application logs the message '1' under the tag 'NestedScrollView'
+		 - This application logs the message '1' under the tag 'PsshAtomUtil'
+		 - This application logs the message '1' under the tag 'TileJsonTileLayer'
+		 - This application logs the message '1' under the tag 'WebSourceTileLayer'
+		 - This application logs the message '1' under the tag 'WebvttCueParser'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '11' under the tag 'MultiDex'
+		 - This application logs the message '12' under the tag 'TilesOverlay'
+		 - This application logs the message '13' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '14' under the tag 'android.support.v4.speech.tts'
+		 - This application logs the message '2' under the tag ''
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'Asserts'
+		 - This application logs the message '2' under the tag 'AsyncListUtil'
+		 - This application logs the message '2' under the tag 'AtomicFile'
+		 - This application logs the message '2' under the tag 'BasePendingResult'
+		 - This application logs the message '2' under the tag 'CacheableBitmapDrawable'
+		 - This application logs the message '2' under the tag 'DashChunkSource'
+		 - This application logs the message '2' under the tag 'FragmentActivity'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'GACStateManager'
+		 - This application logs the message '2' under the tag 'GmsClient'
+		 - This application logs the message '2' under the tag 'GmsClientEvents'
+		 - This application logs the message '2' under the tag 'GmsSupportLifecycleFrag'
+		 - This application logs the message '2' under the tag 'GoogleApiClientConnecting'
+		 - This application logs the message '2' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message '2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '2' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '2' under the tag 'ImageManager'
+		 - This application logs the message '2' under the tag 'Lcom/google/android/gms/internal/zzlz;->isInitialized()Z'
+		 - This application logs the message '2' under the tag 'Lcom/google/android/gms/internal/zzne;->zzsg()Z'
+		 - This application logs the message '2' under the tag 'LinearLayoutManager#LayoutState'
+		 - This application logs the message '2' under the tag 'Ljava/util/List;->size()I'
+		 - This application logs the message '2' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '2' under the tag 'MediaBrowserServiceCompat'
+		 - This application logs the message '2' under the tag 'MultiDex'
+		 - This application logs the message '2' under the tag 'NativeMemoryChunk'
+		 - This application logs the message '2' under the tag 'NotifManCompat'
+		 - This application logs the message '2' under the tag 'PropertyValuesHolder'
+		 - This application logs the message '2' under the tag 'PsshAtomUtil'
+		 - This application logs the message '2' under the tag 'RecyclerView'
+		 - This application logs the message '2' under the tag 'TextViewCompatDonut'
+		 - This application logs the message '2' under the tag 'ThreadUtil'
+		 - This application logs the message '2' under the tag 'TileJsonTileLayer'
+		 - This application logs the message '2' under the tag 'TransformedResultImpl'
+		 - This application logs the message '2' under the tag 'TsExtractor'
+		 - This application logs the message '2' under the tag 'Volley'
+		 - This application logs the message '2' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '2' under the tag 'WebvttCueBuilder'
+		 - This application logs the message '21' under the tag 'MediaSessionCompat'
+		 - This application logs the message '3' under the tag '0'
+		 - This application logs the message '3' under the tag '2'
+		 - This application logs the message '3' under the tag '3'
+		 - This application logs the message '3' under the tag 'AsyncListUtil'
+		 - This application logs the message '3' under the tag 'ContextCompat'
+		 - This application logs the message '3' under the tag 'DataHolder'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GmsSupportLifecycleFrag 4'
+		 - This application logs the message '3' under the tag 'GmsSupportLifecycleFrag'
+		 - This application logs the message '3' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '3' under the tag 'Lcom/flurry/sdk/w;->K()Ljava/lang/String;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '3' under the tag 'MediaBrowserServiceCompat'
+		 - This application logs the message '3' under the tag 'MultiDex'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '3' under the tag 'PropertyValuesHolder'
+		 - This application logs the message '3' under the tag 'RecyclerView'
+		 - This application logs the message '3' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '3' under the tag 'TransformedResultImpl'
+		 - This application logs the message '3' under the tag 'TsExtractor'
+		 - This application logs the message '3' under the tag 'View'
+		 - This application logs the message '3' under the tag 'WebvttCueParser'
+		 - This application logs the message '3' under the tag 'http '
+		 - This application logs the message '3' under the tag 'vCard'
+		 - This application logs the message '4' under the tag '-1'
+		 - This application logs the message '4' under the tag '4'
+		 - This application logs the message '4' under the tag 'DefaultHttpDataSource'
+		 - This application logs the message '4' under the tag 'FBAudienceNetworkLog'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'GAv4'
+		 - This application logs the message '4' under the tag 'GeoJSONLayer'
+		 - This application logs the message '4' under the tag 'GmsClient'
+		 - This application logs the message '4' under the tag 'HlsChunkSource'
+		 - This application logs the message '4' under the tag 'LinearLayoutManager'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'MapTileCache'
+		 - This application logs the message '4' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '4' under the tag 'MultiDex'
+		 - This application logs the message '4' under the tag 'NestedScrollView'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag 'OneTimePlayLogger'
+		 - This application logs the message '4' under the tag 'Rating'
+		 - This application logs the message '4' under the tag 'TextViewCompatDonut'
+		 - This application logs the message '4' under the tag 'ViewPager'
+		 - This application logs the message '5' under the tag 'AsyncListUtil'
+		 - This application logs the message '5' under the tag 'DefaultHttpDataSource'
+		 - This application logs the message '5' under the tag 'DocumentFile'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'GmsClientEvents'
+		 - This application logs the message '5' under the tag 'GoogleApiAvailability'
+		 - This application logs the message '5' under the tag 'IdProvider'
+		 - This application logs the message '5' under the tag 'ListPopupWindow'
+		 - This application logs the message '5' under the tag 'LoaderManager'
+		 - This application logs the message '5' under the tag 'MapTileCache'
+		 - This application logs the message '5' under the tag 'MediaBrowserCompat'
+		 - This application logs the message '5' under the tag 'MediaCodecUtil'
+		 - This application logs the message '5' under the tag 'MultiDex'
+		 - This application logs the message '5' under the tag 'NativeMemoryChunk'
+		 - This application logs the message '5' under the tag 'NotifManCompat'
+		 - This application logs the message '5' under the tag 'RecyclerView'
+		 - This application logs the message '5' under the tag 'RoundedBitmapDrawableFactory'
+		 - This application logs the message '5' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '5' under the tag 'ViewPager'
+		 - This application logs the message '5' under the tag 'WebvttCueParser'
+		 - This application logs the message '5' under the tag 'WorkSourceUtil'
+		 - This application logs the message '6' under the tag '6'
+		 - This application logs the message '6' under the tag 'BitmapMemoryLruCache'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'GAv4'
+		 - This application logs the message '6' under the tag 'GridLayoutManager'
+		 - This application logs the message '7' under the tag 'ExoPlayerImplInternal'
+		 - This application logs the message '7' under the tag 'FragmentManager'
+		 - This application logs the message '7' under the tag 'TtmlParser'
+		 - This application logs the message '7' under the tag 'v2'
+		 - This application logs the message '7' under the tag 'vCard'
+		 - This application logs the message '8' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'MultiDex'
+		 - This application logs the message '9' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '9' under the tag 'TtmlParser'
+		 - This application logs the message '==============' under the tag 'LinearLayoutManager'
+		 - This application logs the message 'ActionBarDrawerToggleHoneycomb' under the tag 'ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'AppCompatDelegate' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'Attempted to bind to a service in a STOPPED package.' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Attempted to call failure callbacks in CONNECTION_MODE_NONE. Callbacks should be disabled via GmsClientSupervisor' under the tag 'CompositeGAC'
+		 - This application logs the message 'Attempted to call success callbacks in CONNECTION_MODE_NONE. Callbacks should be disabled via GmsClientSupervisor' under the tag 'CompositeGAC'
+		 - This application logs the message 'Attempted to remove pending transform when no transforms are registered.' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Binder call returned null.' under the tag 'GoogleAuthUtil'
+		 - This application logs the message 'Cache bypassed due to unbounded length.' under the tag 'CacheDataSource'
+		 - This application logs the message 'Cannot fling without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot programmatically select non-user route because the platform is missing the selectRouteInt() method.  Media routing may not work.' under the tag
+		   'MediaRouterJellybean'
+		 - This application logs the message 'Cannot scan for wifi displays because the DisplayManager.scanWifiDisplays() method is not available on this device.' under the tag 'MediaRouterJellybeanMr1'
+		 - This application logs the message 'Cannot scroll to position a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot set dropdown width for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Cannot set horizontal offset for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Cannot set popup background for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Cannot set vertical offset for MODE_DIALOG, ignoring' under the tag 'Spinner'
+		 - This application logs the message 'Cannot smooth scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Clickable set to true without onClickListener' under the tag ''
+		 - This application logs the message 'Client %s made an invalid request %s 2' under the tag 'ConnectionTracker'
+		 - This application logs the message 'ConnectionTracker' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Context class loader is null. Must be running in test mode. Skip patching.' under the tag 'MultiDex'
+		 - This application logs the message 'Context is null' under the tag 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find voice search activity' under the tag 'SearchView'
+		 - This application logs the message 'Creating Memory Cache' under the tag 'BitmapLruCache.Builder'
+		 - This application logs the message 'DISPLAY_NAME is empty.' under the tag 'vCard'
+		 - This application logs the message 'Detected that extraction must be performed.' under the tag 'MultiDex'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Disk Cache Location is not write-able, disabling disk caching.' under the tag 'v2'
+		 - This application logs the message 'Disk Cache has been enabled, but no location given. Please call setDiskCacheLocation(...)' under the tag 'Luk/co/senab/bitmapcache/b;'
+		 - This application logs the message 'Does the card have the ViewToClickToExpand?' under the tag 'Landroid/animation/Animator;->start()V'
+		 - This application logs the message 'DrawerToggle may not show up because NavigationIcon is not visible. You may need to call actionbar.setDisplayHomeAsUpEnabled(true);' under the tag
+		   'ActionBarDrawerToggle'
+		 - This application logs the message 'Error retrieving ID token.' under the tag 'Appyet'
+		 - This application logs the message 'Exception in makeDexElement' under the tag 'MultiDex'
+		 - This application logs the message 'Facebook permission string array resource not found' under the tag 'com.appyet.activity.auth.AuthLoginConfig'
+		 - This application logs the message 'Failed to get remote context' under the tag 'ProviderInstaller'
+		 - This application logs the message 'Failed to remove pending transform - this may lead to memory leaks!' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Failed to send map update request because mTileRequestCompleteHandler == null' under the tag 'MapTileLayerBase'
+		 - This application logs the message 'Files were not valid zip files.  Forcing a reload.' under the tag 'MultiDex'
+		 - This application logs the message 'Flushing Disk Cache' under the tag 'Landroid/os/Process;->setThreadPriority(I)V'
+		 - This application logs the message 'GOT IT' under the tag '___'
+		 - This application logs the message 'Google Play Store is neither installed nor updating.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'GoogleAnalytics.setLogger() is deprecated. To enable debug logging, please run:\nadb shell setprop log.tag. 1' under the tag ''
+		 - This application logs the message 'GoogleApiClient received too many callbacks for the given step. Clients may be in an unexpected state; GoogleApiClient will now disconnect.' under the tag
+		   'GoogleApiClientConnecting'
+		 - This application logs the message 'Got ACTION_MOVE event but have an invalid active pointer id.' under the tag '1'
+		 - This application logs the message 'Got ACTION_POINTER_DOWN event but have an invalid action index.' under the tag '1'
+		 - This application logs the message 'Got ACTION_POINTER_DOWN event but have an invalid action index.' under the tag
+		   'Landroid/support/v4/view/MotionEventCompat;->getActionIndex(Landroid/view/MotionEvent;)I'
+		 - This application logs the message 'Init 1.5.6' under the tag 'ExoPlayerImpl'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Invalid flag is used in vCard 4.0 construction. Ignored.' under the tag 'vCard'
+		 - This application logs the message 'Invalid percentage-based rating value' under the tag 'Rating'
+		 - This application logs the message 'Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;' under the tag '1'
+		 - This application logs the message 'Landroid/database/Cursor;->getPosition()I' under the tag 'SearchView'
+		 - This application logs the message 'Lcom/google/android/gms/common/api/internal/zzj;->zzpH()Ljava/lang/String;' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Lcom/mapbox/mapboxsdk/g/c/d;->g()Ljava/lang/String;' under the tag 'TileJsonTileLayer'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'AppUtils'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'MenuItemWrapper'
+		 - This application logs the message 'Ljava/lang/Error;->getMessage()Ljava/lang/String;' under the tag 'pixel'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'pixel'
+		 - This application logs the message 'Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;' under the tag 'Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;'
+		 - This application logs the message 'Ljava/lang/Object;->getClass()Ljava/lang/Class;' under the tag '2'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/String;->length()I' under the tag 'pixel'
+		 - This application logs the message 'Logger is deprecated. To enable debug logging, please run:\nadb shell setprop log.tag. 1' under the tag ''
+		 - This application logs the message 'MediaBrowserCompat...' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Missing Token' under the tag 'MapboxUtils'
+		 - This application logs the message 'MoPubActivity not found - did you declare it in AndroidManifest.xml?' under the tag 'MoPubActivity'
+		 - This application logs the message 'MoPubErrorCode:   0' under the tag 'MoPub'
+		 - This application logs the message 'MraidActivity.class not found. Did you declare MraidActivity in your manifest?' under the tag 'MraidInterstitial'
+		 - This application logs the message 'Multiple handlers found for this intent: %s\n Stack trace: %s 3' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'No GeoJSON URL passed in. 4' under the tag 'Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z'
+		 - This application logs the message 'No adapter attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'No card model found. Please use setCard(card) to set all values.' under the tag '0'
+		 - This application logs the message 'No layout manager attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'Not connected, unable to retrieve the MediaItem.' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'One of the API components you attempted to connect to is not available.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'OutOfMemoryError rescaling cache' under the tag 'TilesOverlay'
+		 - This application logs the message 'OverlayManager handled onTouchEvent' under the tag 'Mapbox MapView'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message 'Passed over target position while smooth scrolling.' under the tag 'RecyclerView'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'RecyclerView does not support scrolling to an absolute position. Use scrollToPosition instead' under the tag 'RecyclerView'
+		 - This application logs the message 'Remote account accessor probably died' under the tag 'AccountAccessor'
+		 - This application logs the message 'Remote error getting media item.' under the tag 'MediaBrowserCompat'
+		 - This application logs the message 'Remote service probably died when clearAccountFromSessionStore is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when saveDefaultAccount is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when signIn is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'Resize clicked switch to stream mode.' under the tag 'Testing'
+		 - This application logs the message 'Service was disconnected.  Will try caching.' under the tag 'PlayLoggerImpl'
+		 - This application logs the message 'Should not use vCard 4.0 when building vCard. It is not officially published yet.' under the tag 'vCard'
+		 - This application logs the message 'Showing controller now...' under the tag 'Testing'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Skipped adaptive track (unknown media format)' under the tag 'DashChunkSource'
+		 - This application logs the message 'Skipped adaptive track (unknown media mime type)' under the tag 'DashChunkSource'
+		 - This application logs the message 'Skipped drawing subtitle cue (insufficient space)' under the tag 'CuePainter'
+		 - This application logs the message 'Skipped pssh atom (failed to extract uuid)' under the tag 'FragmentedMp4Extractor'
+		 - This application logs the message 'Skipped unsupported ContentProtection element' under the tag 'MediaPresentationDescriptionParser'
+		 - This application logs the message 'Skipping adaptive track (missing format evaluator)' under the tag 'DashChunkSource'
+		 - This application logs the message 'Smooth Scroll action is being updated too frequently. Make sure you are not changing it unless necessary' under the tag 'RecyclerView'
+		 - This application logs the message 'Spaces are not allowed in deep-link IDs.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'Start drag has been called but swiping is not enabled' under the tag 'ItemTouchHelper'
+		 - This application logs the message 'Start drag has been called with a view holder which is not a child of the RecyclerView which is controlled by this ItemTouchHelper.' under the tag
+		   'ItemTouchHelper'
+		 - This application logs the message 'Start swipe has been called but dragging is not enabled' under the tag 'ItemTouchHelper'
+		 - This application logs the message 'Start swipe has been called with a view holder which is not a child of the RecyclerView controlled by this ItemTouchHelper.' under the tag 'ItemTouchHelper'
+		 - This application logs the message 'Swipe action not enabled in this type of view' under the tag 'Lit/gmariotti/cardslib/library/a/b;->n()Z'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'The current user profile is restricted and could not use authenticated features.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'The provided deep-link ID is empty.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'The specified account could not be signed in.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'There are no handler of this intent: %s\n Stack trace: %s 2' under the tag 'ConnectionTracker'
+		 - This application logs the message 'To support smooth scrolling, you should override \nLayoutManager#computeScrollVectorForPosition.\nFalling back to instant scroll' under the tag
+		   'LinearSmoothScroller'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Trying to set out of range star-based rating' under the tag 'Rating'
+		 - This application logs the message 'UUID.randomUUID() returned 0.' under the tag 'GAv4'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'Unable to connect, GooglePlayServices is updating.' under the tag 'GmsSupportLifecycleFrag'
+		 - This application logs the message 'Unable to find connection error message resources (Did you include play-services-base and the proper proguard rules?); error dialogs may be unavailable.' under
+		   the tag 'GmsSupportLifecycleFrag'
+		 - This application logs the message 'Unable to register media button event receiver with PendingIntent, falling back to ComponentName.' under the tag 'MediaSessionCompatApi18'
+		 - This application logs the message 'Unexpected start indicator reading extended header' under the tag 'TsExtractor'
+		 - This application logs the message 'Unknown vCard version detected.' under the tag 'vCard'
+		 - This application logs the message 'Unresolved error while connecting client. Stopping auto-manage.' under the tag 'GmsSupportLifecycleFrag'
+		 - This application logs the message 'Use the charset "UTF-8" for export.' under the tag 'vCard'
+		 - This application logs the message 'Using inBitmap' under the tag '0'
+		 - This application logs the message 'VM has multidex support, MultiDex support library is disabled.' under the tag 'MultiDex'
+		 - This application logs the message 'Webview already destroyed, cannot activate' under the tag 'Lcom/facebook/ads/a/b/r;->d()Ljava/lang/String;'
+		 - This application logs the message 'Webview already destroyed, cannot send impression' under the tag 'facebookAd.sendImpression(); '
+		 - This application logs the message 'You must override onLayoutChildren(Recycler recycler, State state) ' under the tag 'RecyclerView'
+		 - This application logs the message 'You must override smoothScrollToPosition to support smooth scrolling' under the tag 'RecyclerView'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'attempt unexpected adapter type' under the tag 'Lcom/facebook/ads/a/b/a;->a()Lcom/facebook/ads/a/e/a;'
+		 - This application logs the message 'centerLatLng is not specified in XML.' under the tag 'Mapbox MapView'
+		 - This application logs the message 'checkState(). Been Displayed: %b, Displaying: %d, Caching: %d, URL: %s 4' under the tag 'CacheableBitmapDrawable'
+		 - This application logs the message 'disconnect managed GoogleApiClient' under the tag 'ClearcutLoggerApiImpl'
+		 - This application logs the message 'error reading stream from mbtiles' under the tag 'MBTilesLayer'
+		 - This application logs the message 'flush interrupted' under the tag 'ClearcutLoggerApiImpl'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'install done' under the tag 'MultiDex'
+		 - This application logs the message 'install' under the tag 'MultiDex'
+		 - This application logs the message 'internal representation of views on the screen' under the tag 'LinearLayoutManager'
+		 - This application logs the message 'loading existing secondary dex files' under the tag 'MultiDex'
+		 - This application logs the message 'logger connection failed' under the tag 'OneTimePlayLogger'
+		 - This application logs the message 'mServiceBroker is null, client disconnected' under the tag 'GmsClient'
+		 - This application logs the message 'mapid not set.' under the tag 'Mapbox MapView'
+		 - This application logs the message 'multiple values in fontSize attribute. Picking the second value for vertical font size and ignoring the first.' under the tag 'TtmlParser'
+		 - This application logs the message 'no adapter ready to start ad already started start unexpected adapter type' under the tag ''
+		 - This application logs the message 'onMeasure: More than two child views are not supported.' under the tag 'SlidingPaneLayout'
+		 - This application logs the message 'received deprecated onAccountValidationComplete callback, ignoring' under the tag 'GmsClient'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'service probably died' under the tag 'GmsClient'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'setPopupBackgroundDrawable: incompatible spinner mode; ignoring...' under the tag 'Spinner'
+		 - This application logs the message 'v0' under the tag '3'
+		 - This application logs the message 'v2' under the tag 'SupportMenuInflater'
+		 - This application logs the message 'you have not specified a ImageLoader implementation through the DrawerImageLoader.init(IDrawerImageLoader) method' under the tag 'MaterialDrawer'
+		 - This application logs the message 'zoomLevel is not specified in XML.' under the tag 'Mapbox MapView'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Fabric com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/appyet/c/l;->getActivity()Landroid/support/v4/app/FragmentActivity;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/appyet/context/ApplicationContext;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/flurry/sdk/jr;->a()Lcom/flurry/sdk/jr;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/google/android/gms/common/zze;->zzan(Landroid/content/Context;)V' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the 'Lcom/facebook/ads/a/f/m;->a(Ljava/lang/String;)Z' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_CONFIGURATIONS, GET_GIDS, GET_PERMISSIONS, GET_PROVIDERS, GET_RECEIVERS, GET_SIGNATURES, GET_SERVICES' information about the
+		   'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES, MATCH_UNINSTALLED_PACKAGES' information about the 'Lcom/google/android/gms/internal/zzmu;->zzaw(Landroid/content/Context;)Z' application installed on
+		   the system
+
+	[.] Location Lookup                         
+		 - This application reads location information from all available providers (WiFi, GPS etc.)
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address '0' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address '0' on the 'connect, resolve' port
+		 - This application opens a Socket and connects it to the remote address '2' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/UnknownServiceException;' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'timeout' on the 'N/A' port
+
+	[.] Pim Data Leakage                        
+		 - This application accesses the downloads folder
+
+	[.] Code Execution                          
+		 - This application loads a native library
+
+
+[+] Apk File
+	[.] File Name                               
+		 - aboutdharma.com.apk
+
+	[.] Fingerprint                             
+		 - MD5: fffd88c2539ecd327764aba86d796743
+		 - SHA-1: 357b5f751ff5f76aa425fb5f22eb813deb11bf98
+		 - SHA-256: 162a485ea85a6815cf3bcfc662b253f6f0dfe683acac169b599ca335dd7bca4f
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.FLASHLIGHT',  'android.permission.INTERNET',
+		   'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

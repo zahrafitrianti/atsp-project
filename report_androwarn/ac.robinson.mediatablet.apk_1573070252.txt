@@ -1,0 +1,77 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Com-Tablet
+
+	[.] Application Version                     
+		 - 1.1.6
+
+	[.] Package Name                            
+		 - ac.robinson.mediatablet
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '0' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message '0' under the tag 'MOVUtilities'
+		 - This application logs the message '0' under the tag 'SVGAndroid'
+		 - This application logs the message '0' under the tag 'ViewServer'
+		 - This application logs the message '1' under the tag 'SVGAndroid'
+		 - This application logs the message '13' under the tag 'SVGAndroid'
+		 - This application logs the message '15' under the tag 'GestureImageView'
+		 - This application logs the message '2' under the tag 'SVGAndroid'
+		 - This application logs the message '3' under the tag 'SVGAndroid'
+		 - This application logs the message '5' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message '6' under the tag 'MOVUtilities'
+		 - This application logs the message '8' under the tag 'MOVUtilities'
+		 - This application logs the message '9' under the tag 'CameraUtilities'
+		 - This application logs the message 'ActionBar not present; not configuring' under the tag 'UIUtilities'
+		 - This application logs the message 'ActionBar not present; not removing tabs' under the tag 'UIUtilities'
+		 - This application logs the message 'BAD' under the tag 'BAD'
+		 - This application logs the message 'Could not close the view server' under the tag 'ViewServer'
+		 - This application logs the message 'Could not stop all view server threads' under the tag 'ViewServer'
+		 - This application logs the message 'Error creating individual AMR audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating individual M4A audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating individual MOV audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating individual MP3 audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating individual WAV audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating segmented AMR audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating segmented M4A audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating segmented MOV audio track - combining failed' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating segmented MP3 audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error creating segmented WAV audio track - general Exception' under the tag 'MOVUtilities'
+		 - This application logs the message 'Error saving: mSaveUri == null' under the tag 'CropImage'
+		 - This application logs the message 'Lcom/bric/audio/AudioFormat;->getSampleRate()F' under the tag 'MOVUtilities'
+		 - This application logs the message 'Temporary directory not found - will warn before export' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'Thumbnail directory not found' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'Unable to create public directory' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'Unable to detect camera orientation - setting to 0' under the tag 'CameraUtilities'
+		 - This application logs the message 'Unable to get Bluetooth adapter - not supported' under the tag 'Lac/robinson/util/DebugUtilities;->getLogTag(Ljava/lang/Object;)Ljava/lang/String;'
+		 - This application logs the message 'finish!!!' under the tag 'CropImage'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+
+	[.] Code Execution                          
+		 - This application loads a native library: 'opencore-amrnb-wrapper'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - ac.robinson.mediatablet.apk
+
+	[.] Fingerprint                             
+		 - MD5: fe93afe57bc9861e0439c8abc5ec08d1
+		 - SHA-1: c5213dffa5c17a4c6ddcf30e2edbb323243c1698
+		 - SHA-256: 79f56636cf6c0255392c077ce5fa184db55c73756fb11399cc48a6a8a5aa1ef7
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.BLUETOOTH',  'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -1,0 +1,231 @@
+*************************************************************************
+**   AndroBugs Framework - Android App Security Vulnerability Scanner  **
+**                            version: 1.0.0                           **
+**     author: Yu-Cheng Lin (@AndroBugs, http://www.AndroBugs.com)     **
+**               contact: androbugs.framework@gmail.com                **
+*************************************************************************
+Platform: Android
+Package Name: afzkl.development.ShoppingList
+Package Version Name: 1.6
+Package Version Code: 7
+Min Sdk: 14
+Target Sdk: 16
+MD5   : 33012072ec310d21f347f8f4a17def2d
+SHA1  : 0ffdd11b9fc252b0cc34c9e3b02a1b5d53335692
+SHA256: 188d49ec7bb5b241f303b545154e91513f5c07821dfe547e67059382d4d955ee
+SHA512: e98b74dc2752b6f1a5ad914eef97868300a4a8aa902b24e0e91a814693fb46fa9df46410cdfdf45761aeeeadffaa68b53937ab34edd88c6ffee7fb9fe9801208
+Analyze Signature: 4d91ea5fc183df1fb94d3c526bbc426f04ca3cf1855471fc7fad6088d297dcedb05094160d20864ee38b59f7893821c45b468ef63f45e2e09882d7258d023d4c
+------------------------------------------------------------------------------------------------
+[Critical] <#BID 64208, CVE-2013-6271#> Fragment Vulnerability Checking:
+           'Fragment' or 'Fragment for ActionbarSherlock' has a severe vulnerability prior to Android 4.4 (API 19).
+           Please check:
+           (1)http://developer.android.com/reference/android/os/Build.VERSION_CODES.html#KITKAT
+           (2)http://developer.android.com/reference/android/preference/PreferenceActivity.html#isValidFragment(java.lang.String)
+           (3)http://stackoverflow.com/questions/19973034/isvalidfragment-android-api-19
+           (4)http://securityintelligence.com/new-vulnerability-android-framework-fragment-injection/
+           (5)http://securityintelligence.com/wp-content/uploads/2013/12/android-collapses-into-fragments.pdf
+           (6)https://cureblog.de/2013/11/cve-2013-6271-remove-device-locks-from-android-phone/
+               These "PreferenceActivity" classes may be vulnerable because they do not override 'isValidFragment' method (If you do not
+                    load any fragment in the PreferenceActivity, please still override 'isValidFragment' method and only return "false" to
+                    secure your app in the future changes) :
+                   Lafzkl/development/ShoppingList/ui/activity/PreferencesActivity;
+                   Lcom/jeremyfeinstein/slidingmenu/lib/app/SlidingPreferenceActivity;
+               All of the potential vulnerable "fragment":
+                   Lafzkl/development/ShoppingList/ui/fragment/AddProductFragment;
+                   Lafzkl/development/ShoppingList/ui/fragment/ShoppingListFragment;
+                   Lafzkl/development/ShoppingList/ui/fragment/SlidingMenuFragment;
+                   Lafzkl/development/ShoppingList/ui/fragment/SortFragment;
+[Critical] <SSL_Security> SSL Connection Checking:
+           URLs that are NOT under SSL (Total:8):
+               http://e.admob.com/clk?ad_loc=@gw_adlocid@&qdata=@gw_qdata@&ad_network_id=@gw_adnetid@&js=@gw_sdkver@&session_id=@gw_sessid@&
+                    seq_num=@gw_seqnum@&nr=@gw_adnetrefresh@
+                   => Lcom/google/ads/internal/d;->b(Lcom/google/ads/f; Ljava/lang/Boolean;)V
+               http://e.admob.com/imp?ad_loc=@gw_adlocid@&qdata=@gw_qdata@&ad_network_id=@gw_adnetid@&js=@gw_sdkver@&session_id=@gw_sessid@&
+                    seq_num=@gw_seqnum@&nr=@gw_adnetrefresh@&adt=@gw_adt@&aec=@gw_aec@
+                   => Lcom/google/ads/internal/d;->a(Lcom/google/ads/f; Ljava/lang/Boolean;)V
+               http://e.admob.com/nofill?ad_loc=@gw_adlocid@&qdata=@gw_qdata@&js=@gw_sdkver@&session_id=@gw_sessid@&seq_num=@gw_seqnum@&adt=
+                    @gw_adt@&aec=@gw_aec@
+                   => Lcom/google/ads/internal/d;->a(Ljava/util/List; Ljava/lang/String;)V
+               http://media.admob.com/
+                   => Lcom/google/ads/internal/c;->f()Ljava/lang/String;
+               http://media.admob.com/mraid/v1/mraid_app_banner.js
+                   => Lcom/google/ads/m$a;-><init>()V
+               http://media.admob.com/mraid/v1/mraid_app_expanded_banner.js
+                   => Lcom/google/ads/m$a;-><init>()V
+               http://media.admob.com/mraid/v1/mraid_app_interstitial.js
+                   => Lcom/google/ads/m$a;-><init>()V
+               http://www.gstatic.com/safa/
+                   => Lcom/google/ads/internal/c;->f()Ljava/lang/String;
+[Warning]  Dynamic Code Loading:
+           Dynamic code loading(DexClassLoader) found:
+               => Lcom/google/ads/ak;->f(Landroid/content/Context;)V (0xa0) ---> Ldalvik/system/DexClassLoader;-><init>(Ljava/lang/String;
+                    Ljava/lang/String; Ljava/lang/String; Ljava/lang/ClassLoader;)V
+               => Lcom/google/ads/ak;->f(Landroid/content/Context;)V (0xb6) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/ads/ak;->f(Landroid/content/Context;)V (0xce) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/ads/ak;->f(Landroid/content/Context;)V (0xe6) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/ads/ak;->f(Landroid/content/Context;)V (0xfe) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+               => Lcom/google/ads/ak;->f(Landroid/content/Context;)V (0x116) --->
+                    Ldalvik/system/DexClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+[Warning]  External Storage Accessing:
+           External storage access found (Remember DO NOT write important files to external storages):
+               => Lafzkl/development/ShoppingList/ui/dialog/FileBrowserDialog;->getFileFilter()Ljava/io/FileFilter; (0x4) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lafzkl/development/ShoppingList/ui/dialog/FileBrowserDialog;->init()V (0xc) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lafzkl/development/ShoppingList/utils/AppGratisPromoUtils;->checkProFileExists()Z (0xe) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lafzkl/development/ShoppingList/utils/AppGratisPromoUtils;->createProFileOnFileSystem()V (0xe) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lafzkl/development/ShoppingList/utils/BackupUtils;->getBackupPath()Ljava/io/File; (0x5a) --->
+                    Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+               => Lcom/mobeta/android/dslv/DragSortListView$DragSortTracker;-><init>(Lcom/mobeta/android/dslv/DragSortListView;)V (0x26)
+                    ---> Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+[Warning] <Sensitive_Information> Getting ANDROID_ID:
+           This app has code getting the 64-bit number "Settings.Secure.ANDROID_ID".
+           ANDROID_ID seems a good choice for a unique device identifier. There are downsides: First, it is not 100% reliable on releases of
+           Android prior to 2.2 (Froyo).
+           Also, there has been at least one widely-observed bug in a popular handset from a major manufacturer, where every instance has
+           the same ANDROID_ID.
+           If you want to get an unique id for the device, we suggest you use "Installation" framework in the following article.
+           Please check the reference: http://android-developers.blogspot.tw/2011/03/identifying-app-installations.html
+               => Lcom/google/ads/util/AdUtil;->a(Landroid/content/Context;)Ljava/lang/String; (0x14) --->
+                    Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+[Warning] <WebView> WebView Local File Access Attacks Checking:
+           Found "setAllowFileAccess(true)" or not set(enabled by default) in WebView. The attackers could inject malicious script into
+           WebView and exploit the opportunity to access local resources. This can be mitigated or prevented by disabling local file system
+           access. (It is enabled by default)
+           Note that this enables or disables file system access only. Assets and resources are still accessible using file:///android_asset
+           and file:///android_res.
+           The attackers can use "mWebView.loadUrl("file:///data/data/[Your_Package_Name]/[File]");" to access app's local file.
+           Reference: (1)https://labs.mwrinfosecurity.com/blog/2012/04/23/adventures-with-android-webviews/
+                      (2)http://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)
+           Please add or modify "yourWebView.getSettings().setAllowFileAccess(false)" to your WebView:
+               Lcom/google/ads/internal/AdWebView;-><init>(Lcom/google/ads/n; Lcom/google/ads/AdSize;)V
+               Lcom/google/ads/util/AdUtil;->a(Landroid/webkit/WebView;)V
+               Lcom/google/ads/util/AdUtil;->i(Landroid/content/Context;)Ljava/lang/String;
+               Lcom/google/ads/util/g;->a(Landroid/webkit/WebSettings; Lcom/google/ads/n;)V
+               Lcom/google/ads/util/h;->a(Landroid/webkit/WebSettings; Lcom/google/ads/n;)V
+[Warning] <WebView> WebView Potential XSS Attacks Checking:
+           Found "setJavaScriptEnabled(true)" in WebView, which could exposed to potential XSS attacks. Please check the web page code
+           carefully and sanitize the output:
+               => Lcom/google/ads/internal/AdWebView;-><init>(Lcom/google/ads/n; Lcom/google/ads/AdSize;)V (0x52) --->
+                    Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+[Notice]  AndroidManifest Adb Backup Checking:
+           ADB Backup is ENABLED for this app (default: ENABLED). ADB Backup is a good tool for backing up all of your files. If it's open
+           for this app, people who have your phone can copy all of the sensitive data for this app in your phone (Prerequisite: 1.Unlock
+           phone's screen 2.Open the developer mode). The sensitive data may include lifetime access token, username or password, etc.
+           Security case related to ADB Backup:
+           1.http://www.securityfocus.com/archive/1/530288/30/0/threaded
+           2.http://blog.c22.cc/advisories/cve-2013-5112-evernote-android-insecure-storage-of-pin-data-bypass-of-pin-protection/
+           3.http://nelenkov.blogspot.co.uk/2012/06/unpacking-android-backups.html
+           Reference: http://developer.android.com/guide/topics/manifest/application-element.html#allowbackup
+[Notice] <Database><#CVE-2011-3901#> Android SQLite Databases Vulnerability Checking:
+           This app is using Android SQLite databases.
+           Prior to Android 4.0, Android has SQLite Journal Information Disclosure Vulnerability.
+           But it can only be solved by users upgrading to Android > 4.0 and YOU CANNOT SOLVE IT BY YOURSELF (But you can use encrypt your
+           databases and Journals by "SQLCipher" or other libs).
+           Proof-Of-Concept Reference:
+           (1) http://blog.watchfire.com/files/androidsqlitejournal.pdf
+           (2) http://www.youtube.com/watch?v=oCXLHjmH5rY
+[Notice]  File Unsafe Delete Checking:
+           Everything you delete may be recovered by any user or attacker, especially rooted devices.
+           Please make sure do not use "file.delete()" to delete essential files.
+           Check this video: https://www.youtube.com/watch?v=tGw1fxUD-uY
+               => Lcom/google/ads/ak;->f(Landroid/content/Context;)V (0x1f8) ---> Ljava/io/File;->delete()Z
+               => Lcom/google/ads/ak;->f(Landroid/content/Context;)V (0x218) ---> Ljava/io/File;->delete()Z
+[Notice]  AndroidManifest Exported Components Checking 2:
+           Found "exported" components(except for Launcher) for receiving Google's "Android" actions (AndroidManifest.xml):
+                 activity => afzkl.development.ShoppingList.ui.activity.AddWidgetActivity
+                 receiver => afzkl.development.ShoppingList.widget.ListAppWidgetProvider
+[Info] <Command> Runtime Command Checking:
+           This app is not using critical function 'Runtime.getRuntime().exec("...")'.
+[Info] <Command> Executing "root" or System Privilege Checking:
+           Did not find codes checking "root" permission(su) or getting system permission (It's still possible we did not find out).
+[Info] <Database> SQLiteDatabase Transaction Deprecated Checking:
+           Ignore checking "SQLiteDatabase:beginTransactionNonExclusive" because your set minSdk >= 11.
+[Info] <Database> Android SQLite Databases Encryption (SQLite Encryption Extension (SEE)):
+           This app is "NOT" using SQLite Encryption Extension (SEE) on Android (http://www.sqlite.org/android) to encrypt or decrpyt
+           databases.
+[Info] <Database> Android SQLite Databases Encryption (SQLCipher):
+           This app is "NOT" using SQLCipher(http://sqlcipher.net/) to encrypt or decrpyt databases.
+[Info] <Debug> Android Debug Mode Checking:
+           DEBUG mode is OFF(android:debuggable="false") in AndroidManifest.xml.
+[Info] <Framework> Framework - MonoDroid:
+           This app is NOT using MonoDroid Framework (http://xamarin.com/android).
+[Info] <Hacker> Base64 String Encryption:
+           No encoded Base64 String or Urls found.
+[Info] <Database><Hacker> Key for Android SQLite Databases Encryption:
+           Did not find using the symmetric key(PRAGMA key) to encrypt the SQLite databases (It's still possible that it might use but we
+           did not find out).
+[Info] <Debug><Hacker> Codes for Checking Android Debug Mode:
+           Did not detect codes for checking "ApplicationInfo.FLAG_DEBUGGABLE" in AndroidManifest.xml.
+[Info] <Hacker> APK Installing Source Checking:
+           Did not detect this app checks for APK installer sources.
+[Info] <KeyStore><Hacker> KeyStore File Location:
+           Did not find any possible BKS keystores or certificate keystore file (Notice: It does not mean this app does not use keysotre):
+[Info] <KeyStore><Hacker> KeyStore Protection Checking:
+           Ignore checking KeyStore protected by password or not because you're not using KeyStore.
+[Info] <Hacker> Code Setting Preventing Screenshot Capturing:
+           Did not detect this app has code setting preventing screenshot capturing.
+[Info] <Signature><Hacker> Getting Signature Code Checking:
+           Did not detect this app is checking the signature in the code.
+[Info]  HttpURLConnection Android Bug Checking:
+           Ignore checking "http.keepAlive" because you're not using "HttpURLConnection" and min_Sdk > 8.
+[Info] <KeyStore> KeyStore Type Checking:
+           KeyStore 'BKS' type check OK
+[Info]  Google Cloud Messaging Suggestion:
+           Nothing to suggest.
+[Info] <#CVE-2013-4787#> Master Key Type I Vulnerability:
+           No Master Key Type I Vulnerability in this APK.
+[Info]  App Sandbox Permission Checking:
+           No security issues "MODE_WORLD_READABLE" or "MODE_WORLD_WRITEABLE" found on 'openOrCreateDatabase' or 'openOrCreateDatabase2' or
+           'getDir' or 'getSharedPreferences' or 'openFileOutput'
+[Info]  Native Library Loading Checking:
+           No native library loaded.
+[Info]  AndroidManifest Dangerous ProtectionLevel of Permission Checking:
+           No "dangerous" protection level customized permission found (AndroidManifest.xml).
+[Info]  AndroidManifest PermissionGroup Checking:
+           PermissionGroup in permission tag of AndroidManifest sets correctly.
+[Info] <Implicit_Intent> Implicit Service Checking:
+           No dangerous implicit service.
+[Info]  AndroidManifest "intent-filter" Settings Checking:
+           "intent-filter" of AndroidManifest.xml check OK.
+[Info]  AndroidManifest Normal ProtectionLevel of Permission Checking:
+           No default or "normal" protection level customized permission found (AndroidManifest.xml).
+[Info] <#CVE-2013-6272#> AndroidManifest Exported Lost Prefix Checking:
+           No exported components that forgot to add "android:" prefix.
+[Info]  AndroidManifest ContentProvider Exported Checking:
+           No exported "ContentProvider" found (AndroidManifest.xml).
+[Info] <Sensitive_Information> Getting IMEI and Device ID:
+           Did not detect this app is getting the "device id(IMEI)" by "TelephonyManager.getDeviceId()" approach.
+[Info]  Codes for Sending SMS:
+           Did not detect this app has code for sending SMS messages (sendDataMessage, sendMultipartTextMessage or sendTextMessage).
+[Info] <System> AndroidManifest sharedUserId Checking:
+           This app does not use "android.uid.system" sharedUserId.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Custom Classes):
+           Self-defined HOSTNAME VERIFIER checking OK.
+[Info] <SSL_Security> SSL Implementation Checking (Verifying Host Name in Fields):
+           Critical vulnerability "ALLOW_ALL_HOSTNAME_VERIFIER" field setting or "AllowAllHostnameVerifier" class instance not found.
+[Info] <SSL_Security> SSL Implementation Checking (Insecure component):
+           Did not detect SSLSocketFactory by insecure method "getInsecure".
+[Info] <SSL_Security> SSL Implementation Checking (HttpHost):
+           DEFAULT_SCHEME_NAME for HttpHost check: OK
+[Info] <SSL_Security> SSL Implementation Checking (WebViewClient for WebView):
+           Did not detect critical usage of "WebViewClient"(MITM Vulnerability).
+[Info] <SSL_Security> SSL Certificate Verification Checking:
+           Did not find vulnerable X509Certificate code.
+[Info]  Unnecessary Permission Checking:
+           Permission 'android.permission.ACCESS_MOCK_LOCATION' sets correctly.
+[Info]  Accessing the Internet Checking:
+           This app is using the Internet via HTTP protocol.
+[Info]  AndroidManifest System Use Permission Checking:
+           No system-level critical use-permission found.
+[Info] <WebView><Remote Code Execution><#CVE-2013-4710#> WebView RCE Vulnerability Checking:
+           WebView addJavascriptInterface vulnerabilities not found.
+------------------------------------------------------------
+AndroBugs analyzing time: 2.322668 secs
+Total elapsed time: 8.196481 secs

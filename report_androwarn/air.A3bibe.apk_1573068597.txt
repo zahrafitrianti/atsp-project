@@ -1,0 +1,262 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 3bibe_v1_0_6
+
+	[.] Application Version                     
+		 - 1.0.6
+
+	[.] Package Name                            
+		 - air.A3bibe
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone's current state
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message ' ' under the tag 'SHA 0'
+		 - This application logs the message ' ' under the tag 'no such an algorithm exception'
+		 - This application logs the message ' ' under the tag 'no such an algorithm'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '0' under the tag '5'
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'FragmentManager'
+		 - This application logs the message '0' under the tag 'Lcom/facebook/appevents/AppEventsLogger;->access$1300()Ljava/lang/String;'
+		 - This application logs the message '0' under the tag 'LoaderManager'
+		 - This application logs the message '0' under the tag '[GVExtension]'
+		 - This application logs the message '0' under the tag '[admobex]'
+		 - This application logs the message '1' under the tag 'FragmentManager'
+		 - This application logs the message '1' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '1' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'WalletClientImpl'
+		 - This application logs the message '1' under the tag '[GVExtension]'
+		 - This application logs the message '1' under the tag '[admobex]'
+		 - This application logs the message '10' under the tag 'FragmentManager'
+		 - This application logs the message '10' under the tag '[admobex]'
+		 - This application logs the message '11' under the tag '[GVExtension]'
+		 - This application logs the message '11' under the tag '[admobex]'
+		 - This application logs the message '13' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '2' under the tag '0'
+		 - This application logs the message '2' under the tag 'AccessTokenManager'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'Asserts'
+		 - This application logs the message '2' under the tag 'FragmentActivity'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'GmsClient'
+		 - This application logs the message '2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '2' under the tag 'ImageManager'
+		 - This application logs the message '2' under the tag 'LocationClientImpl'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '2' under the tag '[GVExtension]'
+		 - This application logs the message '2' under the tag '[admobex]'
+		 - This application logs the message '3' under the tag 'Activity'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '3' under the tag 'DataItem'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GAV4'
+		 - This application logs the message '3' under the tag 'GmsClient'
+		 - This application logs the message '3' under the tag 'GmsClientEvents'
+		 - This application logs the message '3' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '3' under the tag '[GVExtension]'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag '[GVExtension]'
+		 - This application logs the message '4' under the tag '[admobex]'
+		 - This application logs the message '5' under the tag 'DataHolder'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'LoaderManager'
+		 - This application logs the message '5' under the tag '[GVExtension]'
+		 - This application logs the message '5' under the tag '[admobex]'
+		 - This application logs the message '6' under the tag 'DataHolder'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'LoaderManager'
+		 - This application logs the message '6' under the tag '[GVExtension]'
+		 - This application logs the message '7' under the tag 'FragmentManager'
+		 - This application logs the message '7' under the tag 'LoaderManager'
+		 - This application logs the message '7' under the tag '[GVExtension]'
+		 - This application logs the message '7' under the tag '[admobex]'
+		 - This application logs the message '8' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag '[admobex]'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Already dispatched token initial.' under the tag '[GVExtension]'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Attempting to present the AppInviteDialog with an outdated Facebook app on the device' under the tag 'AppInviteDialog'
+		 - This application logs the message 'Attempting to present the Like Dialog with an outdated Facebook app on the device' under the tag 'LikeDialog'
+		 - This application logs the message 'Background.' under the tag '[admobex]'
+		 - This application logs the message 'Begin Android ShowAd Banner.' under the tag '[admobex]'
+		 - This application logs the message 'Both context and applicationId must be non-null Lcom/facebook/appevents/AppEventsLogger;->getSourceApplication()Ljava/lang/String;' under the tag ''
+		 - This application logs the message 'Call failed' under the tag '[GVExtension]'
+		 - This application logs the message 'Calling connect() while still connected, missing disconnect().' under the tag 'GmsClient'
+		 - This application logs the message 'Cannot call LoginFragment with a null calling package. This can occur if the launchMode of the caller is singleInstance.' under the tag 'LoginFragment'
+		 - This application logs the message 'Certificate has expired.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Certificate is not yet valid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Check granted--.' under the tag '[GVExtension]'
+		 - This application logs the message 'Complete graph.' under the tag '[GVExtension]'
+		 - This application logs the message 'Could not discover AIR container.' under the tag '3'
+		 - This application logs the message 'Could not generate certificate.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Could not get certificate instance.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Could not parse dimensions.' under the tag '[admobex]'
+		 - This application logs the message 'Destroy called on an active adView.  Removing from viewGroup.' under the tag '[admobex]'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'DialogException.' under the tag '[GVExtension]'
+		 - This application logs the message 'Did init fb' under the tag '[GVExtension]'
+		 - This application logs the message 'Empty deferred app link target uri!' under the tag '[GVExtension]'
+		 - This application logs the message 'Encoding failed!' under the tag '[GVExtension]'
+		 - This application logs the message 'Error parsing active ad state (thread)' under the tag '[admobex]'
+		 - This application logs the message 'Exception hooking AIR container.' under the tag 'Could not discover AIR container.'
+		 - This application logs the message 'FBDialogFinished.' under the tag '[GVExtension]'
+		 - This application logs the message 'Facebook handler ignore unrelated activityresult' under the tag '[GVExtension]'
+		 - This application logs the message 'FacebookActivity is not declared in the AndroidManifest.xml, please add com.facebook.FacebookActivity to your AndroidManifest.xml file. See
+		   https://developers.facebook.com/docs/android/getting-started for more info. FacebookActivity is not declared in the AndroidManifest.xml, please add com.facebook.FacebookActivity to your
+		   AndroidManifest.xml file. See https://developers.facebook.com/docs/android/getting-started for more info.' under the tag 'Ljava/lang/IllegalStateException;'
+		 - This application logs the message 'Fail.' under the tag '[GVExtension]'
+		 - This application logs the message 'Failed closing stream.' under the tag '[GVExtension]'
+		 - This application logs the message 'Failed parsing fb dialog return values.' under the tag '[GVExtension]'
+		 - This application logs the message 'Failed releasing image' under the tag '[GVExtension]'
+		 - This application logs the message 'Failed to write temp image stream.' under the tag '[GVExtension]'
+		 - This application logs the message 'File caching failed' under the tag '[GVExtension]'
+		 - This application logs the message 'GmsClient' under the tag 'GmsClient'
+		 - This application logs the message 'GoViral initializer-.' under the tag '[GVExtension]'
+		 - This application logs the message 'Google Play Store is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services missing when getting application info.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Got new publish permissions.' under the tag '[GVExtension]'
+		 - This application logs the message 'Got new read permissions.' under the tag '[GVExtension]'
+		 - This application logs the message 'Handler cancel' under the tag '[GVExtension]'
+		 - This application logs the message 'In data not valid' under the tag '[GVExtension]'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Interstitial has not been preloaded.' under the tag '[admobex]'
+		 - This application logs the message 'Lcom/facebook/FacebookException;->toString()Ljava/lang/String;' under the tag '[GVExtension]'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag '[GVExtension]'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/util/concurrent/locks/Lock;->unlock()V' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Login canceled' under the tag '[GVExtension]'
+		 - This application logs the message 'Login has failed.' under the tag '[GVExtension]'
+		 - This application logs the message 'Measure view.' under the tag '[admobex]'
+		 - This application logs the message 'NO DIM VIEW' under the tag '[admobex]'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'No code path should ever result in a null appCall' under the tag 'FacebookDialog'
+		 - This application logs the message 'No deferred app link data!' under the tag '[GVExtension]'
+		 - This application logs the message 'No internet permissions granted for the app, please add <uses-permission android:name="android.permission.INTERNET" /> to your AndroidManifest.xml. No internet
+		   permissions granted for the app, please add <uses-permission android:name="android.permission.INTERNET" /> to your AndroidManifest.xml.' under the tag 'Ljava/lang/IllegalStateException;'
+		 - This application logs the message 'No reauth required for this graph request.' under the tag '[GVExtension]'
+		 - This application logs the message 'Null pending result returned for onFullWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onMaskedWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onPreAuthorizationDetermined' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onWalletObjectsCreated' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Param parsing exception:' under the tag '[admobex]'
+		 - This application logs the message 'Pending graph request has failed.' under the tag '[GVExtension]'
+		 - This application logs the message 'Read bmp' under the tag '[GVExtension]'
+		 - This application logs the message 'Rebuild layout front.' under the tag '[admobex]'
+		 - This application logs the message 'Received a location in client after calling removeLocationUpdates.' under the tag 'LocationClientHelper'
+		 - This application logs the message 'Refreshed permissions for session.' under the tag '[GVExtension]'
+		 - This application logs the message 'Refreshing permissions failed.' under the tag '[GVExtension]'
+		 - This application logs the message 'Requested new publish permissions failed.' under the tag '[GVExtension]'
+		 - This application logs the message 'Requested new read permissions failed.' under the tag '[GVExtension]'
+		 - This application logs the message 'Resume->activate publish' under the tag '[GVExtension]'
+		 - This application logs the message 'Running pending publish task on token update.' under the tag '[GVExtension]'
+		 - This application logs the message 'Service exception..-.' under the tag '[GVExtension]'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Spaces are not allowed in deep-link IDs.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'The date of the device is not valid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'The provided deep-link ID is empty.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'The publish_actions permissions are missing, the share will fail unless this app was authorized to publish in another installation.' under the tag 'ShareApi'
+		 - This application logs the message 'Twitter intent did not allow image attachment.' under the tag '[GVExtension]'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'Warning: Request without access token missing application ID or client token.' under the tag '1'
+		 - This application logs the message 'Will init fb' under the tag '[GVExtension]'
+		 - This application logs the message 'auth called with open session; exit' under the tag '[GVExtension]'
+		 - This application logs the message 'call inner init' under the tag '[GVExtension]'
+		 - This application logs the message 'callback login nil token' under the tag '[GVExtension]'
+		 - This application logs the message 'callback login token initial' under the tag '[GVExtension]'
+		 - This application logs the message 'callback login with token' under the tag '[GVExtension]'
+		 - This application logs the message 'create' under the tag '[GVExtension]'
+		 - This application logs the message 'destroy called but adView is null.' under the tag '[admobex]'
+		 - This application logs the message 'doDebugDisplay' under the tag '[GVExtension]'
+		 - This application logs the message 'execute async task: %s 2' under the tag 'Lcom/facebook/FacebookSdk;->isDebugEnabled()Z'
+		 - This application logs the message 'facebook handler caught activityresult' under the tag '[GVExtension]'
+		 - This application logs the message 'handler error' under the tag '[GVExtension]'
+		 - This application logs the message 'inData' under the tag '[GVExtension]'
+		 - This application logs the message 'init fb already dispatched' under the tag '[GVExtension]'
+		 - This application logs the message 'init fb token found' under the tag '[GVExtension]'
+		 - This application logs the message 'init fb token not found' under the tag '[GVExtension]'
+		 - This application logs the message 'init fb with token check' under the tag '[GVExtension]'
+		 - This application logs the message 'no out file.' under the tag '[GVExtension]'
+		 - This application logs the message 'no pending interstitial exists to show.' under the tag '[admobex]'
+		 - This application logs the message 'onAddGeofenceResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByPendingIntentResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByRequestIdsResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'pending interstitial is not ready.' under the tag '[admobex]'
+		 - This application logs the message 'permission for graph request failed' under the tag '[GVExtension]'
+		 - This application logs the message 'presenting pending interstitial.' under the tag '[admobex]'
+		 - This application logs the message 'request auth-read session..' under the tag '[GVExtension]'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'service died' under the tag 'AppStateClient'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'setVisibility called but adView is null.' under the tag '[admobex]'
+		 - This application logs the message 'setVisibility invoked internal' under the tag '[admobex]'
+		 - This application logs the message 'started fb' under the tag '[GVExtension]'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'try create context' under the tag '[GVExtension]'
+		 - This application logs the message 'try create context' under the tag '[admobext]'
+		 - This application logs the message 'unknown message in LocationHandler.handleMessage' under the tag 'LocationClientHelper'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'com.facebook.katana' application installed on the system
+		 - This application retrieves '' information about the 'com.facebook.orca' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_PROVIDERS, GET_RECEIVERS, GET_SERVICES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;'
+		   application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the '' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Lcom/google/android/gms/internal/gk;->y(Landroid/content/Context;)Z' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.A3bibe.apk
+
+	[.] Fingerprint                             
+		 - MD5: 513b5054263d1f41ec546a818070ddfb
+		 - SHA-1: 6990a6287f20b4a5baffc64cf5445d0d560fc3f7
+		 - SHA-256: 3e8b89f19d86717cd8954b931b1b43b95e0359a554703627a091767cce4e5f88
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE', 'android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

@@ -1,0 +1,35 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 폰테마샵_봉봉이(멘트)
+
+	[.] Application Version                     
+		 - 4.0
+
+	[.] Package Name                            
+		 - a.akakao.bong_ment
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - a.akakao.bong_ment.apk
+
+	[.] Fingerprint                             
+		 - MD5: 3300a57b97bea10f25dcf232fa8e33ee
+		 - SHA-1: af48e56e1ac46346ea36a87a372df84752b72a9f
+		 - SHA-256: 6e4eb9a6a90a5e8c5ffbbbcd1f7de7c76e494b0fe6a038c2bed8d6a2959ca825
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: []
+		 - Implied: []
+		 - Declared: ['com.kakao.talk.theme.V40327']
+
+

@@ -1,0 +1,217 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - ajaz treasure hunt2
+
+	[.] Application Version                     
+		 - 1.0.5
+
+	[.] Package Name                            
+		 - air.ajazgames.ajaztreasurehunt2
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the phone's current state
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '->createContext()' under the tag '[PushNotifyEx]'
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '0' under the tag 'GCMBroadcastReceiver'
+		 - This application logs the message '0' under the tag '[PushNotifyEx]'
+		 - This application logs the message '0' under the tag '[admobex]'
+		 - This application logs the message '1' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '1' under the tag 'GCMRegistrar'
+		 - This application logs the message '1' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '1' under the tag 'WalletClientImpl'
+		 - This application logs the message '1' under the tag '[PushNotifyEx]'
+		 - This application logs the message '1' under the tag '[admobex]'
+		 - This application logs the message '10' under the tag '[admobex]'
+		 - This application logs the message '11' under the tag '[admobex]'
+		 - This application logs the message '15' under the tag '[PushNotifyEx]'
+		 - This application logs the message '2' under the tag '0'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'AndroidWebView'
+		 - This application logs the message '2' under the tag 'Asserts'
+		 - This application logs the message '2' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '2' under the tag 'GCMBroadcastReceiver'
+		 - This application logs the message '2' under the tag 'GCMRegistrar'
+		 - This application logs the message '2' under the tag 'GmsClient'
+		 - This application logs the message '2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '2' under the tag 'ImageManager'
+		 - This application logs the message '2' under the tag 'Lc/m/x/a/iab/p;->d()Z'
+		 - This application logs the message '2' under the tag 'LocationClientImpl'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '2' under the tag '[PushNotifyEx]'
+		 - This application logs the message '2' under the tag '[admobex]'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '3' under the tag 'DataItem'
+		 - This application logs the message '3' under the tag 'GAV4'
+		 - This application logs the message '3' under the tag 'GCMBaseIntentService'
+		 - This application logs the message '3' under the tag 'GCMRegistrar'
+		 - This application logs the message '3' under the tag 'GmsClient'
+		 - This application logs the message '3' under the tag 'GmsClientEvents'
+		 - This application logs the message '3' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag '[admobex]'
+		 - This application logs the message '5' under the tag 'DataHolder'
+		 - This application logs the message '5' under the tag 'GCMRegistrar'
+		 - This application logs the message '5' under the tag '[IABExtension]'
+		 - This application logs the message '5' under the tag '[PushNotifyEx]'
+		 - This application logs the message '5' under the tag '[admobex]'
+		 - This application logs the message '6' under the tag 'DataHolder'
+		 - This application logs the message '7' under the tag '[admobex]'
+		 - This application logs the message '9' under the tag '[admobex]'
+		 - This application logs the message 'Acquiring wakelock' under the tag 'GCMBaseIntentService'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Background.' under the tag '[admobex]'
+		 - This application logs the message 'Base64 decoding failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Begin Android ShowAd Banner.' under the tag '[admobex]'
+		 - This application logs the message 'Billing already initalized.' under the tag '[IABExtension]'
+		 - This application logs the message 'Calling connect() while still connected, missing disconnect().' under the tag 'GmsClient'
+		 - This application logs the message 'Certificate has expired.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Certificate is not yet valid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Context already created!' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Could not discover AIR container.' under the tag '3'
+		 - This application logs the message 'Could not generate certificate.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Could not get ad id.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Could not get certificate instance.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Could not parse dimensions.' under the tag '[admobex]'
+		 - This application logs the message 'Destroy called on an active adView.  Removing from viewGroup.' under the tag '[admobex]'
+		 - This application logs the message 'Destroy.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Dq.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Error parsing active ad state (thread)' under the tag '[admobex]'
+		 - This application logs the message 'Exception hooking AIR container.' under the tag 'Could not discover AIR container.'
+		 - This application logs the message 'Failed posting extra to callback' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Failed posting extras obj to callback' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Failed to locate the air main intent.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'From tag could not be parsed.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'GmsClient' under the tag 'GmsClient'
+		 - This application logs the message 'Google Play Store is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services missing when getting application info.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'IAB.init' under the tag '[IABExtension]'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Interstitial has not been preloaded.' under the tag '[admobex]'
+		 - This application logs the message 'Invalid key specification.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Led default' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Ljava/util/concurrent/locks/Lock;->unlock()V' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Manifest is not properly configured.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Manual Exception' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Measure view.' under the tag '[admobex]'
+		 - This application logs the message 'Message title not available (custom).' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Message title not available (extras).' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'NO DIM VIEW' under the tag '[admobex]'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'No current token, starting registration...' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'No embedded icon res.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'NoSuchAlgorithmException.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Notification data was not valid.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'Notifications not supported on this device.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Notify status icon resource not valid.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Null pending result returned for onFullWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onMaskedWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onPreAuthorizationDetermined' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onWalletObjectsCreated' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Param parsing exception:' under the tag '[admobex]'
+		 - This application logs the message 'Pause.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'Purchase->Update' under the tag 'Lc/m/x/a/iab/p;->d()Z'
+		 - This application logs the message 'Rebuild layout front.' under the tag '[admobex]'
+		 - This application logs the message 'Received a location in client after calling removeLocationUpdates.' under the tag 'LocationClientHelper'
+		 - This application logs the message 'Registering receiver' under the tag 'GCMRegistrar'
+		 - This application logs the message 'Releasing wakelock' under the tag 'GCMBaseIntentService'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Signature exception.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Signature verification failed.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'Spaces are not allowed in deep-link IDs.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'Start Service Connection..' under the tag '[IABExtension]'
+		 - This application logs the message 'System message - no as3 event.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'The date of the device is not valid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'The provided deep-link ID is empty.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'Wakelock reference is null' under the tag 'GCMBaseIntentService'
+		 - This application logs the message 'activation' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'check state...s' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'context disposal' under the tag '[IABExtension]'
+		 - This application logs the message 'could not parse accent color' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'could not parse led color' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'destroy called but adView is null.' under the tag '[admobex]'
+		 - This application logs the message 'enq message instance.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'fg message dispatch.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'fg msg sent.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'fg, instance freed.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'internal error: retry receiver class not set yet' under the tag 'GCMRegistrar'
+		 - This application logs the message 'invalid sound file' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'no pending interstitial exists to show.' under the tag '[admobex]'
+		 - This application logs the message 'onAddGeofenceResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByPendingIntentResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByRequestIdsResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'pending interstitial is not ready.' under the tag '[admobex]'
+		 - This application logs the message 'presenting pending interstitial.' under the tag '[admobex]'
+		 - This application logs the message 'push message instance.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'push thread--' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'service died' under the tag 'AppStateClient'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'setVisibility called but adView is null.' under the tag '[admobex]'
+		 - This application logs the message 'setVisibility invoked internal' under the tag '[admobex]'
+		 - This application logs the message 'signature does not match data.' under the tag 'IABUtil/Security'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'thread pushed.' under the tag '[PushNotifyEx]'
+		 - This application logs the message 'try create context' under the tag '[admobext]'
+		 - This application logs the message 'unknown message in LocationHandler.handleMessage' under the tag 'LocationClientHelper'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gsf' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_PROVIDERS, GET_RECEIVERS, GET_SERVICES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;'
+		   application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Lcom/google/android/gms/internal/gk;->y(Landroid/content/Context;)Z' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.ajazgames.ajaztreasurehunt2.apk
+
+	[.] Fingerprint                             
+		 - MD5: 03eae2081ededd0f3949bc5a5464fdf3
+		 - SHA-1: a6176354076e7436bbe9d548474900e2f90079e6
+		 - SHA-256: 656b094cf28bc817e1815fc22ff1de0b2f4d5316cad020df1b3aaaf5f7737c4a
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['air.ajazgames.ajaztreasurehunt2.permission.C2D_MESSAGE',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET',
+		   'android.permission.READ_PHONE_STATE',  'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE',  'com.android.vending.BILLING',
+		   'com.google.android.c2dm.permission.RECEIVE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: ['air.ajazgames.ajaztreasurehunt2.permission.C2D_MESSAGE']
+
+

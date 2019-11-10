@@ -1,0 +1,35 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - LidoMobile
+
+	[.] Application Version                     
+		 - 0.3
+
+	[.] Package Name                            
+		 - air.air.lido.LidoMobile
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.air.lido.LidoMobile.apk
+
+	[.] Fingerprint                             
+		 - MD5: 2a2fe02152b2801ceb664c2037cf1d48
+		 - SHA-1: d010a9f1b309706e789a024258bb788d97b22313
+		 - SHA-256: 51fa392afb20432361cf19d9f3c33e76f392fbff873896ae5c65d6a5d503d3ea
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

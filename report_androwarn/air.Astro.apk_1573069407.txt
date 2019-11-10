@@ -1,0 +1,49 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Astro The Last Fly
+
+	[.] Application Version                     
+		 - 0.1.8
+
+	[.] Package Name                            
+		 - air.Astro
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.Astro.apk
+
+	[.] Fingerprint                             
+		 - MD5: 427707a57d3df5f5acafabe11400e30c
+		 - SHA-1: 22b027e1b08f133cf4a3ad1ef22b9d3cdbfa8cfb
+		 - SHA-256: 711d8466ec26548d0719cdbced697f6f577d8430244357d4767f7c7f05ea736b
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.CAMERA',
+		   'android.permission.DISABLE_KEYGUARD',  'android.permission.INTERNET',  'android.permission.READ_PHONE_STATE',  'android.permission.RECORD_AUDIO',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

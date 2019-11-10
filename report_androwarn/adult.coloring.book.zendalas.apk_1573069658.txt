@@ -1,0 +1,124 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Adult Coloring Book Zendalas
+
+	[.] Application Version                     
+		 - 1.0.1
+
+	[.] Package Name                            
+		 - adult.coloring.book.zendalas
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '0' under the tag ''
+		 - This application logs the message '0' under the tag '0'
+		 - This application logs the message '0' under the tag '14'
+		 - This application logs the message '0' under the tag 'Ljava/io/IOException;-><init>()V'
+		 - This application logs the message '1' under the tag ''
+		 - This application logs the message '1' under the tag '0'
+		 - This application logs the message '1' under the tag '3'
+		 - This application logs the message '1' under the tag 'Ljava/lang/Object;->toString()Ljava/lang/String;'
+		 - This application logs the message '10' under the tag 'Ljava/lang/String;->length()I'
+		 - This application logs the message '11' under the tag 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;'
+		 - This application logs the message '12' under the tag 'Ljava/io/File;->getPath()Ljava/lang/String;'
+		 - This application logs the message '12' under the tag 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;'
+		 - This application logs the message '13' under the tag '5'
+		 - This application logs the message '18' under the tag 'Lcom/ansca/corona/CoronaActivity;->canWriteToExternalStorage()Z'
+		 - This application logs the message '2' under the tag 'v2'
+		 - This application logs the message '23' under the tag 'Lcom/ansca/corona/permissions/PermissionsSettings;->getPermissions()Ljava/util/LinkedHashSet;'
+		 - This application logs the message '3' under the tag '4'
+		 - This application logs the message '3' under the tag '5'
+		 - This application logs the message '3' under the tag 'Ljava/io/File;->getPath()Ljava/lang/String;'
+		 - This application logs the message '3' under the tag 'Ljava/io/IOException;'
+		 - This application logs the message '3' under the tag 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;'
+		 - This application logs the message '4' under the tag '2'
+		 - This application logs the message '4' under the tag 'Lcom/ansca/corona/Controller;->getContext()Landroid/content/Context;'
+		 - This application logs the message '4' under the tag 'Ljava/util/Queue;->poll()Ljava/lang/Object;'
+		 - This application logs the message '5' under the tag ''
+		 - This application logs the message '5' under the tag '1'
+		 - This application logs the message '5' under the tag 'Landroid/database/CursorWindow;->allocRow()Z'
+		 - This application logs the message '6' under the tag '1'
+		 - This application logs the message '6' under the tag 'Landroid/database/CursorWindow;->close()V'
+		 - This application logs the message '6' under the tag
+		   'Lcom/ansca/corona/CoronaActivity$SelectMediaRequestPermissionsResultHandler;->generateEmptyMediaEvent()Lcom/ansca/corona/events/MediaPickerTask;'
+		 - This application logs the message '6' under the tag 'Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I'
+		 - This application logs the message '7' under the tag '-1'
+		 - This application logs the message '7' under the tag '6'
+		 - This application logs the message '8' under the tag '7'
+		 - This application logs the message '8' under the tag 'Landroid/support/multidex/MultiDexExtractor;->verifyZipFile(Ljava/io/File;)Z'
+		 - This application logs the message '8' under the tag 'Ljava/io/File;->getPath()Ljava/lang/String;'
+		 - This application logs the message '8' under the tag 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;'
+		 - This application logs the message '9' under the tag '0'
+		 - This application logs the message '9' under the tag '7'
+		 - This application logs the message '9' under the tag 'Ljava/io/File;->getPath()Ljava/lang/String;'
+		 - This application logs the message 'Landroid/database/CursorWindow;->allocRow()Z' under the tag 'v4'
+		 - This application logs the message 'Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;' under the tag '11'
+		 - This application logs the message 'Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;' under the tag '9'
+		 - This application logs the message 'Landroid/support/multidex/MultiDexExtractor;->getTimeStamp(Ljava/io/File;)J' under the tag 'Ljava/util/List;->size()I'
+		 - This application logs the message 'Lcom/ansca/corona/permissions/PermissionsSettings;->getPermissions()Ljava/util/LinkedHashSet;' under the tag
+		   'Lcom/ansca/corona/permissions/PermissionUrgency;->from(Ljava/lang/String;)Lcom/ansca/corona/permissions/PermissionUrgency;'
+		 - This application logs the message 'Lcom/ansca/corona/permissions/PermissionsSettings;->getPermissions()Ljava/util/LinkedHashSet;' under the tag 'Ljava/lang/Integer;->intValue()I'
+		 - This application logs the message 'Lcom/google/android/gms/internal/dw$b;->bR()V' under the tag 'Lcom/google/android/gms/internal/dw$b;->bR()V'
+		 - This application logs the message 'Ljava/lang/Class;->getName()Ljava/lang/String;' under the tag '11'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'Ljava/lang/RuntimeException;'
+		 - This application logs the message 'Ljava/lang/String;->length()I' under the tag '0'
+		 - This application logs the message 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;' under the tag 'Ljava/lang/StringBuilder;->toString()Ljava/lang/String;'
+		 - This application logs the message 'Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;' under the tag 'Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;'
+		 - This application logs the message 'Ljava/util/HashSet;->iterator()Ljava/util/Iterator;' under the tag 'Ljava/util/HashSet;->isEmpty()Z'
+		 - This application logs the message 'Lorg/apache/http/NameValuePair;->getValue()Ljava/lang/String;' under the tag 'Lorg/apache/http/NameValuePair;->getValue()Ljava/lang/String;'
+		 - This application logs the message 'v10' under the tag '256'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Ljava/lang/String;->length()I' application installed on the system
+		 - This application retrieves '' information about the 'v32' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the 'Ljava/lang/String;->length()I' application installed on the system
+		 - This application retrieves 'GET_PERMISSIONS' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_PROVIDERS' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the '64' application installed on the system
+
+	[.] Location Lookup                         
+		 - This application reads location information from all available providers (WiFi, GPS etc.)
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+	[.] Audio Video Eavesdropping               
+		 - This application records audio from the 'MIC' source
+
+	[.] Code Execution                          
+		 - This application loads a native library
+		 - This application loads a native library: 'Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - adult.coloring.book.zendalas.apk
+
+	[.] Fingerprint                             
+		 - MD5: f90424d70feffb13fcd89cc8f98bd466
+		 - SHA-1: 3b8ad8a19fc050e72c68ff5333935d2292c955ee
+		 - SHA-256: 784c30b1f626417156c814830e27586039156fa50943f6109aaca8e7af6c60d0
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.INTERNET',  'android.permission.RECORD_AUDIO',  'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

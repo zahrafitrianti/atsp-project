@@ -1,0 +1,251 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - SHOOTER BALL 2
+
+	[.] Application Version                     
+		 - 1.0
+
+	[.] Package Name                            
+		 - adsprotech.games.ball.shooter.two
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the MCC+MNC of the provider of the SIM
+		 - This application reads the Service Provider Name (SPN)
+		 - This application reads the constant indicating the state of the device SIM card
+		 - This application reads the current location of the device
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the Cell ID value
+		 - This application reads the Location Area Code value
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '' under the tag 'Lcom/samsung/android/sdk/iap/lib/helper/SamsungIapHelper;->access$000()Ljava/lang/String;'
+		 - This application logs the message '' under the tag 'Ljava/lang/Boolean;->booleanValue()Z'
+		 - This application logs the message '' under the tag 'Ljava/lang/Object;->getClass()Ljava/lang/Class;'
+		 - This application logs the message '-1002' under the tag 'Lcom/samsung/android/sdk/iap/lib/helper/SamsungIapHelper;->access$000()Ljava/lang/String;'
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'ProviderInstaller'
+		 - This application logs the message '0' under the tag 'WearableClient'
+		 - This application logs the message '1' under the tag 'AppDataSearchClient'
+		 - This application logs the message '1' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '1' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '13' under the tag 'startapp'
+		 - This application logs the message '14' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '2' under the tag '1'
+		 - This application logs the message '2' under the tag 'Asserts'
+		 - This application logs the message '2' under the tag 'FitnessSensorService'
+		 - This application logs the message '2' under the tag 'GmsClient'
+		 - This application logs the message '2' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message '2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '2' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '2' under the tag 'ImageManager'
+		 - This application logs the message '2' under the tag 'Lcom/samsung/android/sdk/iap/lib/helper/SamsungIapHelper;->access$000()Ljava/lang/String;'
+		 - This application logs the message '2' under the tag 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;'
+		 - This application logs the message '2' under the tag 'LocationClientImpl'
+		 - This application logs the message '2' under the tag 'OneTimePlayLogger'
+		 - This application logs the message '2' under the tag 'StartAppWall.Util'
+		 - This application logs the message '2' under the tag 'Unity Purchasing Amazon'
+		 - This application logs the message '2' under the tag 'WalletClientImpl'
+		 - This application logs the message '2' under the tag 'WearableClient'
+		 - This application logs the message '2' under the tag 'WearableLS'
+		 - This application logs the message '2' under the tag 'startapp'
+		 - This application logs the message '3' under the tag '2'
+		 - This application logs the message '3' under the tag 'ConnectionTracker'
+		 - This application logs the message '3' under the tag 'DataItem'
+		 - This application logs the message '3' under the tag 'DataMap'
+		 - This application logs the message '3' under the tag 'FMOD'
+		 - This application logs the message '3' under the tag 'FitnessSensorService'
+		 - This application logs the message '3' under the tag 'GAV4'
+		 - This application logs the message '3' under the tag 'GmsClient'
+		 - This application logs the message '3' under the tag 'GmsClientEvents'
+		 - This application logs the message '3' under the tag 'GmsClientSupervisor'
+		 - This application logs the message '3' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '3' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '3' under the tag 'Lcom/samsung/android/sdk/iap/lib/activity/PaymentActivity;->checkIapPackage()Z'
+		 - This application logs the message '3' under the tag 'Video'
+		 - This application logs the message '3' under the tag 'WearableClient'
+		 - This application logs the message '3' under the tag 'WearableLS'
+		 - This application logs the message '3' under the tag 'startapp'
+		 - This application logs the message '4' under the tag 'ConnectionTracker'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message '4' under the tag 'WearableClient'
+		 - This application logs the message '4' under the tag 'offset'
+		 - This application logs the message '5' under the tag ''
+		 - This application logs the message '5' under the tag 'GA'
+		 - This application logs the message '5' under the tag 'Ljava/util/ArrayList;-><init>()V'
+		 - This application logs the message '6' under the tag 'DataHolder'
+		 - This application logs the message '6' under the tag 'GmsClient'
+		 - This application logs the message '6' under the tag 'SafeDataBufferRef'
+		 - This application logs the message '6' under the tag 'Unity Purchasing'
+		 - This application logs the message '6' under the tag 'startapp'
+		 - This application logs the message '6' under the tag 'v1'
+		 - This application logs the message '7' under the tag 'DataHolder'
+		 - This application logs the message '7' under the tag 'DataMap'
+		 - This application logs the message '7' under the tag 'Fitness'
+		 - This application logs the message '7' under the tag 'WearableClient'
+		 - This application logs the message '8' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '8' under the tag 'WearableClient'
+		 - This application logs the message '9' under the tag 'LocalBroadcastManager'
+		 - This application logs the message 'Adding StartApp Banner' under the tag 'startapp'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'AutoScreeViewTracking is not supported on API 14 or earlier devices' under the tag 'com.google.android.gms.measurement.ScreenViewService'
+		 - This application logs the message 'Binder call returned null.' under the tag 'GoogleAuthUtil'
+		 - This application logs the message 'Binding OK... ' under the tag 'Lcom/samsung/android/sdk/iap/lib/activity/BaseActivity;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'Calling destroy() on Android' under the tag 'GoogleMobileAdsUnityPlugin'
+		 - This application logs the message 'Calling hide() on Android' under the tag 'GoogleMobileAdsUnityPlugin'
+		 - This application logs the message 'Calling loadAd() on Android' under the tag 'GoogleMobileAdsUnityPlugin'
+		 - This application logs the message 'Calling show() on Android' under the tag 'GoogleMobileAdsUnityPlugin'
+		 - This application logs the message 'ConnectionTracker' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Could not find package info for Google Play Services' under the tag 'Fitness'
+		 - This application logs the message 'Creating purchase activity' under the tag 'Unity Purchasing'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Dropping invalid message' under the tag 'GCM'
+		 - This application logs the message 'Error parsing purchase output' under the tag 'Lorg/json/JSONObject;'
+		 - This application logs the message 'Error parsing userid output' under the tag '5'
+		 - This application logs the message 'Event buffer full, flushing' under the tag '2'
+		 - This application logs the message 'Failed to get remote context' under the tag 'ProviderInstaller'
+		 - This application logs the message 'Google Play Store is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services missing when getting application info.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'IAP Service Disconnected...' under the tag 'Lcom/samsung/android/sdk/iap/lib/helper/SamsungIapHelper;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'IResolveAccountCallbacks#onAccountResolutionComplete should be executed from the same process, unexpected RemoteException.' under the tag 'SignInClientImpl'
+		 - This application logs the message 'ISignInCallbacks#onAuthAccount should be executed from the same process, unexpected RemoteException.' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Ignoring onFullWalletLoaded, Activity has gone' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Ignoring onIsNewUserDetermined, Activity has gone' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Ignoring onMaskedWalletLoaded, Activity has gone' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Ignoring onPreAuthorizationDetermined, Activity has gone' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Ignoring onWalletObjectsCreated, Activity has gone' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Integration Error - App ID is missing' under the tag 'StartApp'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Internal error: step mismatch. Expected: %d, Actual: %d 2' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Interstitial was not ready to be shown.' under the tag 'GoogleMobileAdsUnityPlugin'
+		 - This application logs the message 'Invalid screenId in saved activity state' under the tag 'com.google.android.gms.measurement.internal.ActivityLifecycleTracker'
+		 - This application logs the message 'Lcom/amazon/device/iap/model/PurchaseResponse;->getRequestStatus()Lcom/amazon/device/iap/model/PurchaseResponse$RequestStatus;' under the tag 'Unity Purchasing
+		   Amazon'
+		 - This application logs the message 'Lcom/amazon/device/iap/model/Receipt;->isCanceled()Z' under the tag 'Lcom/amazon/device/iap/model/Receipt;->isCanceled()Z'
+		 - This application logs the message 'Lcom/amazon/device/iap/model/UserDataResponse;->getUserData()Lcom/amazon/device/iap/model/UserData;' under the tag 'v1'
+		 - This application logs the message 'Lcom/samsung/android/sdk/iap/lib/vo/VerificationVo;->dump()Ljava/lang/String;' under the tag '2'
+		 - This application logs the message 'Loading StartApp Ad' under the tag 'startapp'
+		 - This application logs the message 'Lorg/json/JSONObject;->keys()Ljava/util/Iterator;' under the tag 'Lorg/json/JSONObject;->keys()Ljava/util/Iterator;'
+		 - This application logs the message 'Making Creator dynamically' under the tag 'Lcom/google/android/gms/maps/internal/zzx;->zzqD()Ljava/lang/Class;'
+		 - This application logs the message 'Making Creator statically' under the tag 'Lcom/google/android/gms/maps/internal/zzx;->zzqC()Z'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Null pending result returned for onFullWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onIsNewUserDetermined' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onMaskedWalletLoaded' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onPreAuthorizationDetermined' under the tag 'WalletClientImpl'
+		 - This application logs the message 'Null pending result returned for onWalletObjectsCreated' under the tag 'WalletClientImpl'
+		 - This application logs the message 'One of the API components you attempted to connect to is not available.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message 'Received a location in client after calling removeLocationUpdates.' under the tag 'LocationClientHelper'
+		 - This application logs the message 'Received batch result' under the tag 'Fitness'
+		 - This application logs the message 'Remote account accessor probably died' under the tag 'AccountAccessor'
+		 - This application logs the message 'Remote service probably died when authAccount is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when clearAccountFromSessionStore is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when resolveAccount is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Remote service probably died when saveDefaultAccount is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'Removing StartApp Banner' under the tag 'startapp'
+		 - This application logs the message 'Requesting %d groups of skus 8' under the tag 'Unity Purchasing Amazon'
+		 - This application logs the message 'Service was disconnected.  Will try caching.' under the tag 'PlayLoggerImpl'
+		 - This application logs the message 'Showing StartApp Ad' under the tag 'startapp'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Spaces are not allowed in deep-link IDs.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'Storing location at more than millisecond granularity is not supported. Extra precision is lost as the value is converted to milliseconds.' under the tag
+		   'Fitness'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'The provided deep-link ID is empty.' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'The specified account could not be signed in.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'UUID.randomUUID() returned 0.' under the tag 'com.google.android.gms.measurement.data.ScreenViewInfo'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'Unable to write sandbox JSON! Ensure your manifest has WRITE_EXTERNAL permission' under the tag 'Unity Purchasing Amazon'
+		 - This application logs the message 'Unexpected error code: %s 2' under the tag 'GoogleMobileAdsUnityPlugin'
+		 - This application logs the message 'Unresolved error while connecting client. Stopping auto-manage.' under the tag 'GmsSupportLifecycleFragment'
+		 - This application logs the message 'adClicked' under the tag 'Unity'
+		 - This application logs the message 'adDisplayed' under the tag 'Unity'
+		 - This application logs the message 'adHidden' under the tag 'Unity'
+		 - This application logs the message 'adNotDisplayed' under the tag 'Unity'
+		 - This application logs the message 'end Init... ' under the tag 'Lcom/samsung/android/sdk/iap/lib/helper/SamsungIapHelper;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once. Ignoring.' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once. Ignoring.' under the tag 'WalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once.Ignoring.' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'initialize(WalletFragmentInitParams) was called more than once.Ignoring.' under the tag 'WalletFragment'
+		 - This application logs the message 'initiatePurchaseRequest' under the tag 'Unity Purchasing Amazon'
+		 - This application logs the message 'logger connection failed' under the tag 'OneTimePlayLogger'
+		 - This application logs the message 'onAddGeofenceResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onGetUserIdResponse:%s 2' under the tag 'Unity Purchasing Amazon'
+		 - This application logs the message 'onItemDataResponse' under the tag 'Unity Purchasing Amazon'
+		 - This application logs the message 'onPurchaseResponse' under the tag 'Unity Purchasing Amazon'
+		 - This application logs the message 'onPurchaseUpdatesResponse' under the tag 'Unity Purchasing Amazon'
+		 - This application logs the message 'onRemoveGeofencesByPendingIntentResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByRequestIdsResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'receipts 1' under the tag '0'
+		 - This application logs the message 'service died' under the tag 'AppStateClient'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'service probably died' under the tag 'GmsClient'
+		 - This application logs the message 'start Init... ' under the tag 'Lcom/samsung/android/sdk/iap/lib/helper/SamsungIapHelper;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'unknown - getItemList ' under the tag 'Lcom/samsung/android/sdk/iap/lib/helper/SamsungIapHelper;->access$000()Ljava/lang/String;'
+		 - This application logs the message 'unknown message in LocationHandler.handleMessage' under the tag 'LocationClientHelper'
+		 - This application logs the message 'unregistering receiver' under the tag 'startapp'
+		 - This application logs the message 'updateMaskedWallet() was called before initialize()' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'updateMaskedWallet() was called before initialize()' under the tag 'WalletFragment'
+		 - This application logs the message 'updateMaskedWalletRequest() was called before initialize()' under the tag 'SupportWalletFragment'
+		 - This application logs the message 'updateMaskedWalletRequest() was called before initialize()' under the tag 'WalletFragment'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/google/android/gms/gcm/GoogleCloudMessaging;->zzZ(Landroid/content/Context;)Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Lcom/google/android/gms/common/GooglePlayServicesUtil;->zzJ(Landroid/content/Context;)V' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Lcom/google/android/gms/internal/zzlu;->zzQ(Landroid/content/Context;)Z' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.sec.android.iap' application installed on the system
+		 - This application lists applications installed on the system
+
+	[.] Location Lookup                         
+		 - This application reads location information from all available providers (WiFi, GPS etc.)
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+	[.] Code Execution                          
+		 - This application loads a native library
+
+
+[+] Apk File
+	[.] File Name                               
+		 - adsprotech.games.ball.shooter.two.apk
+
+	[.] Fingerprint                             
+		 - MD5: ebec360c7350a131a362ef9915bc48df
+		 - SHA-1: cabae3fcbcd7c3b7aa2661142de8b7281319231c
+		 - SHA-256: 629454356213cc9961a1ab8b09fd4f4e0be9d27bbf41842590231658bb7a0cb7
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET',  'com.android.vending.BILLING',
+		   'com.sec.android.iap.permission.BILLING']
+		 - Implied: []
+		 - Declared: []
+
+

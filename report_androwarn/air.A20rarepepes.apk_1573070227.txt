@@ -1,0 +1,35 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 20rarepepes
+
+	[.] Application Version                     
+		 - 1
+
+	[.] Package Name                            
+		 - air.A20rarepepes
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.A20rarepepes.apk
+
+	[.] Fingerprint                             
+		 - MD5: f529a840ad4af698e84dd0424dcd8ea8
+		 - SHA-1: 97080a1c6d42321fb74969cc3e4f57e05922677c
+		 - SHA-256: 5c1960d07510ee8dec74914c59736d370825e79dd9eef783efe8079bc0229c65
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: []
+		 - Implied: []
+		 - Declared: []
+
+

@@ -1,0 +1,171 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Ora Esatta
+
+	[.] Application Version                     
+		 - 4.0.1
+
+	[.] Package Name                            
+		 - adrianoferraguto.oraesatta
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Current loader is running; attempting to cancel' under the tag 'LoaderManager'
+		 - This application logs the message '  Current loader is stopped; replacing' under the tag 'LoaderManager'
+		 - This application logs the message '  Enqueuing as new pending loader' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load canceled -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load canceled -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '' under the tag 'Landroid/support/v4/widget/SwipeRefreshLayout;->canChildScrollUp()Z'
+		 - This application logs the message '0' under the tag 'Ljava/lang/Object;->getClass()Ljava/lang/Class;'
+		 - This application logs the message '0' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '0' under the tag 'fb-UnpackingSoSource'
+		 - This application logs the message '1' under the tag 'ActionBarDrawerToggleHoneycomb ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message '10' under the tag 'ApkSoSource'
+		 - This application logs the message '10' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '10' under the tag 'NotifManCompat'
+		 - This application logs the message '10' under the tag 'ViewPager'
+		 - This application logs the message '11' under the tag 'FragmentManager'
+		 - This application logs the message '12' under the tag 'FragmentManager'
+		 - This application logs the message '13' under the tag 'fb-UnpackingSoSource'
+		 - This application logs the message '14' under the tag 'FragmentManager'
+		 - This application logs the message '14' under the tag 'android.support.v4.speech.tts'
+		 - This application logs the message '15' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'NativeMemoryChunk'
+		 - This application logs the message '2' under the tag 'NotifManCompat'
+		 - This application logs the message '2' under the tag 'ViewPager'
+		 - This application logs the message '3' under the tag 'ContextCompat'
+		 - This application logs the message '3' under the tag 'DocumentFile'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'Ljava/util/Set;->iterator()Ljava/util/Iterator;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'MediaControllerCompat'
+		 - This application logs the message '3' under the tag 'NotifManCompat 5'
+		 - This application logs the message '3' under the tag 'NotifManCompat'
+		 - This application logs the message '3' under the tag 'RoundedBitmapDrawableFactory'
+		 - This application logs the message '4' under the tag 'DocumentFile'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'ListPopupWindow'
+		 - This application logs the message '4' under the tag 'LoaderManager'
+		 - This application logs the message '4' under the tag 'NotifManCompat'
+		 - This application logs the message '4' under the tag 'Rating'
+		 - This application logs the message '4' under the tag 'fb-UnpackingSoSource'
+		 - This application logs the message '5' under the tag 'ApkSoSource'
+		 - This application logs the message '5' under the tag 'DocumentFile'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'NestedScrollView'
+		 - This application logs the message '5' under the tag 'fb-UnpackingSoSource'
+		 - This application logs the message '6' under the tag 'AtomicFile'
+		 - This application logs the message '6' under the tag 'EnvironmentCompat'
+		 - This application logs the message '6' under the tag 'FragmentActivity'
+		 - This application logs the message '6' under the tag 'SlidingPaneLayout'
+		 - This application logs the message '6' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '7' under the tag 'NavUtils'
+		 - This application logs the message '7' under the tag 'React'
+		 - This application logs the message '7' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '7' under the tag 'fb-UnpackingSoSource'
+		 - This application logs the message '8' under the tag 'DocumentFile'
+		 - This application logs the message '8' under the tag 'NestedScrollView'
+		 - This application logs the message '8' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '8' under the tag 'fb-UnpackingSoSource'
+		 - This application logs the message '9' under the tag 'ApkSoSource'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Cannot programmatically select non-user route because the platform is missing the selectRouteInt() method.  Media routing may not work.' under the tag
+		   'MediaRouterJellybean'
+		 - This application logs the message 'Cannot scan for wifi displays because the DisplayManager.scanWifiDisplays() method is not available on this device.' under the tag 'MediaRouterJellybeanMr1'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find voice search activity' under the tag 'SearchView'
+		 - This application logs the message 'Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.'
+		   under the tag 'TwilightManager'
+		 - This application logs the message 'DrawerToggle may not show up because NavigationIcon is not visible. You may need to call actionbar.setDisplayHomeAsUpEnabled(true);' under the tag
+		   'ActionBarDrawerToggle'
+		 - This application logs the message 'Failed to cast mScroller field in ScrollView (probably due to OEM changes to AOSP)! This app will exhibit the bounce-back scrolling bug :(' under the tag
+		   'React'
+		 - This application logs the message 'Failed to get mScroller field for ScrollView! This app will exhibit the bounce-back scrolling bug :(' under the tag 'React'
+		 - This application logs the message 'Hit bug #35412, retrying with Spannables removed' under the tag 'TextLayoutBuilder'
+		 - This application logs the message 'Invalid percentage-based rating value' under the tag 'Rating'
+		 - This application logs the message 'Landroid/content/pm/PackageManager$NameNotFoundException;->toString()Ljava/lang/String;' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Landroid/support/v4/widget/SwipeRefreshLayout;->canChildScrollUp()Z' under the tag '1'
+		 - This application logs the message 'Landroid/support/v7/internal/view/SupportMenuInflater;->access$500()[Ljava/lang/Class;' under the tag 'SupportMenuInflater'
+		 - This application logs the message 'Landroid/support/v7/internal/widget/DecorContentParent;->hideOverflowMenu()Z' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewCompat'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager ViewPager'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'ViewPager'
+		 - This application logs the message 'Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;' under the tag 'DrawableCompatJellybeanMr1 DrawableCompatJellybeanMr1'
+		 - This application logs the message 'Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;' under the tag 'DrawableCompatJellybeanMr1'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'RemoteInput is only supported from API Level 16' under the tag 'RemoteInput'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'Trying to set out of range star-based rating' under the tag 'Rating'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR_OVERLAY id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'deps mismatch on deps store: regenerating' under the tag 'fb-UnpackingSoSource'
+		 - This application logs the message 'getActionProvider: item does not implement SupportMenuItem; returning null' under the tag 'MenuItemCompat'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'short read of so store deps file: marking unclean' under the tag 'fb-UnpackingSoSource'
+		 - This application logs the message 'so store dirty: regenerating' under the tag 'fb-UnpackingSoSource'
+		 - This application logs the message 'starting syncer worker' under the tag 'fb-UnpackingSoSource'
+		 - This application retrieves '' information about the '' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+		 - This application tries to find out if the currently active data network is metered
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address '1' on the ': connect, resolve' port
+		 - This application opens a Socket and connects it to the remote address '10' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address '2' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address '3' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'Ljava/io/InterruptedIOException;->getMessage()Ljava/lang/String;' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'timeout' on the 'N/A' port
+
+	[.] Pim Data Leakage                        
+		 - This application accesses data stored in the clipboard
+
+	[.] Code Execution                          
+		 - This application loads a native library
+		 - This application loads a native library: 'Ljava/lang/System;->mapLibraryName(Ljava/lang/String;)Ljava/lang/String;'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - adrianoferraguto.oraesatta.apk
+
+	[.] Fingerprint                             
+		 - MD5: d84310afeefa79b2c276e89b9bdc4782
+		 - SHA-1: 22a8413cf642ca9d559e0e890af0010a20d24980
+		 - SHA-256: 3fbd7f10e4b91a267f6b0d76259dbe664e8e4081a807cb1f4828fe0f7b21215a
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

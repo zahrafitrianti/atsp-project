@@ -1,0 +1,351 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 17SUMMIT
+
+	[.] Application Version                     
+		 - 15.7.7
+
+	[.] Package Name                            
+		 - a2z.Mobile.Event3478
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Device Settings Harvesting              
+		 - This application logs the message '  Ignoring load complete -- destroyed' under the tag 'LoaderManager'
+		 - This application logs the message '  Ignoring load complete -- not active' under the tag 'LoaderManager'
+		 - This application logs the message ' Points are coincident' under the tag 'PathParser'
+		 - This application logs the message '%1$-11s %2$-12s %3$s %4$s 2' under the tag 'Picasso'
+		 - This application logs the message '' under the tag ''
+		 - This application logs the message '*** WARNING *** surfaceChanged() gave us a null surface!' under the tag 'Lcom/journeyapps/barcodescanner/c;->i()Ljava/lang/String;'
+		 - This application logs the message '.      /\\' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.      \\/' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.     /  \\' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.     \\  /' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.     |  | ' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.     |  |' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.    /    \\' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.    \\    /' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.   / |  | \\' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.   \\ |  | /' under the tag 'CrashlyticsCore'
+		 - This application logs the message '.' under the tag 'CrashlyticsCore'
+		 - This application logs the message '0' under the tag 'CameraConfiguration'
+		 - This application logs the message '0' under the tag 'DefaultDatabaseErrorHandler'
+		 - This application logs the message '0' under the tag 'Fade'
+		 - This application logs the message '0' under the tag 'FragmentActivity'
+		 - This application logs the message '0' under the tag 'FragmentManager'
+		 - This application logs the message '0' under the tag 'FragmentStatePagerAdapter'
+		 - This application logs the message '0' under the tag 'InstanceID'
+		 - This application logs the message '0' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '0' under the tag 'InstanceID/Store'
+		 - This application logs the message '0' under the tag 'SQLiteContentHelper'
+		 - This application logs the message '0' under the tag 'SQLiteProgram'
+		 - This application logs the message '0' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '1' under the tag '0'
+		 - This application logs the message '1' under the tag 'BasePendingResult'
+		 - This application logs the message '1' under the tag 'BulkCursor'
+		 - This application logs the message '1' under the tag 'Database Database'
+		 - This application logs the message '1' under the tag 'Database'
+		 - This application logs the message '1' under the tag 'GmsClient'
+		 - This application logs the message '1' under the tag 'GoogleApiAvailability'
+		 - This application logs the message '1' under the tag 'GoogleApiManager'
+		 - This application logs the message '1' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '1' under the tag 'HttpUrlPinger'
+		 - This application logs the message '1' under the tag 'InstanceID'
+		 - This application logs the message '1' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '1' under the tag 'LinearLayoutManager'
+		 - This application logs the message '1' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '1' under the tag 'NavUtils'
+		 - This application logs the message '1' under the tag 'NestedScrollView'
+		 - This application logs the message '14' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '2' under the tag ''
+		 - This application logs the message '2' under the tag '1'
+		 - This application logs the message '2' under the tag 'ActionProvider(support)'
+		 - This application logs the message '2' under the tag 'ButterKnife'
+		 - This application logs the message '2' under the tag 'CameraConfiguration'
+		 - This application logs the message '2' under the tag 'Database'
+		 - This application logs the message '2' under the tag 'DefaultDatabaseErrorHandler'
+		 - This application logs the message '2' under the tag 'FragmentManager'
+		 - This application logs the message '2' under the tag 'GoogleApiManager'
+		 - This application logs the message '2' under the tag 'GridLayoutManager'
+		 - This application logs the message '2' under the tag 'LinearSmoothScroller'
+		 - This application logs the message '2' under the tag 'LoaderManager'
+		 - This application logs the message '2' under the tag 'RecyclerView'
+		 - This application logs the message '2' under the tag 'SQLiteCompiledSql'
+		 - This application logs the message '2' under the tag 'SQLiteProgram'
+		 - This application logs the message '2' under the tag 'SQLiteStatements 1'
+		 - This application logs the message '2' under the tag 'SQLiteStatements'
+		 - This application logs the message '2' under the tag 'TextViewCompatGingerbread'
+		 - This application logs the message '2' under the tag 'View'
+		 - This application logs the message '2' under the tag 'ViewDragHelper'
+		 - This application logs the message '2' under the tag 'WakefulBroadcastReceiver'
+		 - This application logs the message '2' under the tag 'base-activity'
+		 - This application logs the message '3' under the tag ''
+		 - This application logs the message '3' under the tag '0'
+		 - This application logs the message '3' under the tag '2'
+		 - This application logs the message '3' under the tag '3'
+		 - This application logs the message '3' under the tag 'ButterKnife'
+		 - This application logs the message '3' under the tag 'CameraConfiguration'
+		 - This application logs the message '3' under the tag 'CoordinatorLayout'
+		 - This application logs the message '3' under the tag 'Cursor'
+		 - This application logs the message '3' under the tag 'Database'
+		 - This application logs the message '3' under the tag 'Device error: no camera parameters are available. Proceeding without configuration.'
+		 - This application logs the message '3' under the tag 'Fade'
+		 - This application logs the message '3' under the tag 'FragmentManager'
+		 - This application logs the message '3' under the tag 'GoogleApiAvailability'
+		 - This application logs the message '3' under the tag 'InstanceID'
+		 - This application logs the message '3' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '3' under the tag 'InstanceID/Store'
+		 - This application logs the message '3' under the tag 'Landroid/content/Intent;->getAction()Ljava/lang/String;'
+		 - This application logs the message '3' under the tag 'LoaderManager'
+		 - This application logs the message '3' under the tag 'PhotoViewAttacher'
+		 - This application logs the message '3' under the tag 'RecyclerView'
+		 - This application logs the message '3' under the tag 'SQLiteCompiledSql'
+		 - This application logs the message '3' under the tag 'SQLiteQueryBuilder'
+		 - This application logs the message '3' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '3' under the tag 'TextViewCompatGingerbread'
+		 - This application logs the message '3' under the tag 'UidVerifier'
+		 - This application logs the message '3' under the tag 'ViewPager'
+		 - This application logs the message '3' under the tag 'error InstanceID/Rpc InstanceID/Rpc'
+		 - This application logs the message '3' under the tag 'v1'
+		 - This application logs the message '4' under the tag '0'
+		 - This application logs the message '4' under the tag 'Android-Iconics'
+		 - This application logs the message '4' under the tag 'BeaconParser'
+		 - This application logs the message '4' under the tag 'CameraConfiguration'
+		 - This application logs the message '4' under the tag 'Database'
+		 - This application logs the message '4' under the tag 'FragmentManager'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag 'LinearLayoutManager'
+		 - This application logs the message '4' under the tag 'NestedScrollView'
+		 - This application logs the message '4' under the tag 'SuggestionsAdapter'
+		 - This application logs the message '5' under the tag '6'
+		 - This application logs the message '5' under the tag 'Cursor'
+		 - This application logs the message '5' under the tag 'Database'
+		 - This application logs the message '5' under the tag 'Fade'
+		 - This application logs the message '5' under the tag 'FragmentManager'
+		 - This application logs the message '5' under the tag 'InstanceID/Rpc'
+		 - This application logs the message '6' under the tag 'FragmentManager'
+		 - This application logs the message '6' under the tag 'GAv4'
+		 - This application logs the message '6' under the tag 'ViewPager'
+		 - This application logs the message '8' under the tag 'FragmentManager'
+		 - This application logs the message '8' under the tag 'ListPopupWindow'
+		 - This application logs the message '8' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '9' under the tag 'FragmentManager'
+		 - This application logs the message '9' under the tag 'LocalBroadcastManager'
+		 - This application logs the message '==============' under the tag 'LinearLayoutManager'
+		 - This application logs the message 'ActionBarDrawerToggleHoneycomb' under the tag 'ActionBarDrawerToggleHoneycomb'
+		 - This application logs the message 'Activity result delivered for unknown Fragment.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Activity started without extras' under the tag 'GoogleApiActivity'
+		 - This application logs the message 'Activity started without resolution' under the tag 'GoogleApiActivity'
+		 - This application logs the message 'Activity state:' under the tag 'FragmentManager'
+		 - This application logs the message 'An invalid account was specified when connecting. Please provide a valid account.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'App restored, clearing state' under the tag 'InstanceID/Store'
+		 - This application logs the message 'AppCompatDelegate' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'Attempted to bind to a service in a STOPPED package.' under the tag 'ConnectionTracker'
+		 - This application logs the message 'Bad ComponentName while traversing activity parent metadata' under the tag 'TaskStackBuilder'
+		 - This application logs the message 'Barcode scene mode already set' under the tag 'CameraConfiguration'
+		 - This application logs the message 'Both Google Play Services and legacy GSF package are missing' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Camera does not support exposure compensation' under the tag 'CameraConfiguration'
+		 - This application logs the message 'Cannot call this method in a scroll callback. Scroll callbacks might be run during a measure & layout pass where you cannot change the RecyclerView data. Any
+		   method call that might change the structure of the RecyclerView or the adapter contents should be postponed to the next frame.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot fling without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot scroll to position a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Cannot smooth scroll without a LayoutManager set. Call setLayoutManager with a non-null argument.' under the tag 'RecyclerView'
+		 - This application logs the message 'Closing camera' under the tag 'Lcom/journeyapps/barcodescanner/a/b;->g()Ljava/lang/String;'
+		 - This application logs the message 'Configuring camera' under the tag 'Lcom/journeyapps/barcodescanner/a/b;->g()Ljava/lang/String;'
+		 - This application logs the message 'Could not call getMaxAvailableHeightMethod(View, int, boolean) on PopupWindow. Using the public version.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not call setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not delete row because either the row ID column is not available or ithas not been read.' under the tag 'Cursor'
+		 - This application logs the message 'Could not fetch setConstantState(). Oh well.' under the tag 'DrawableUtils'
+		 - This application logs the message 'Could not find method computeFitSystemWindows. Oh well.' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method getMaxAvailableHeight(View, int, boolean) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method makeOptionalFitsSystemWindows. Oh well...' under the tag 'ViewUtils'
+		 - This application logs the message 'Could not find method setClipToScreenEnabled() on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setEpicenterBounds(Rect) on PopupWindow. Oh well.' under the tag 'ListPopupWindow'
+		 - This application logs the message 'Could not find method setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Could not find voice search activity' under the tag 'SearchView'
+		 - This application logs the message 'Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values.'
+		   under the tag 'TwilightManager'
+		 - This application logs the message 'Could not invoke setConstantState(). Oh well.' under the tag 'DrawableUtils'
+		 - This application logs the message 'Could not invoke setTouchModal() on PopupWindow. Oh well.' under the tag 'MenuPopupWindow'
+		 - This application logs the message 'Database object for corrupted database is already open, closing' under the tag 'DefaultDatabaseErrorHandler'
+		 - This application logs the message 'Developer error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Device does not support focus areas' under the tag 'CameraConfiguration'
+		 - This application logs the message 'Device does not support metering areas' under the tag 'CameraConfiguration'
+		 - This application logs the message 'Device error: no camera parameters are available. Proceeding without configuration.' under the tag
+		   'Lcom/journeyapps/barcodescanner/a/c;->k()Landroid/hardware/Camera$Parameters;'
+		 - This application logs the message 'DrawerToggle may not show up because NavigationIcon is not visible. You may need to call actionbar.setDisplayHomeAsUpEnabled(true);' under the tag
+		   'ActionBarDrawerToggle'
+		 - This application logs the message 'Dropping invalid message' under the tag 'GCM'
+		 - This application logs the message 'Dropping invalid message' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'EditText added is not a TextInputEditText. Please switch to using that class instead.' under the tag 'TextInputLayout'
+		 - This application logs the message 'Enabling video stabilization...' under the tag 'CameraConfiguration'
+		 - This application logs the message 'Failed to resolve REGISTER intent, falling back' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Finishing due to inactivity' under the tag 'Lcom/journeyapps/barcodescanner/d;->h()Ljava/lang/String;'
+		 - This application logs the message 'GCMIntentService constructor called' under the tag 'a2z::GCMIntentService'
+		 - This application logs the message 'Google Play Store is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play Store signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services is invalid. Cannot recover.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Google Play services is missing.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Google Play services signature invalid.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'GoogleCertificates has been initialized already' under the tag 'GoogleCertificates'
+		 - This application logs the message 'Got ACTION_MOVE event but have an invalid active pointer id.' under the tag '1'
+		 - This application logs the message 'Got ACTION_POINTER_DOWN event but have an invalid action index.' under the tag '1'
+		 - This application logs the message 'Got ACTION_POINTER_DOWN event but have an invalid action index.' under the tag 'Landroid/support/v4/view/t;->b(Landroid/view/MotionEvent;)I'
+		 - This application logs the message 'Got preview callback, but no handler or resolution available' under the tag 'Lcom/journeyapps/barcodescanner/a/c;->j()Ljava/lang/String;'
+		 - This application logs the message 'HIT: Cached in binding map.' under the tag 'ButterKnife'
+		 - This application logs the message 'HIT: Loaded binding class and constructor.' under the tag 'ButterKnife'
+		 - This application logs the message 'InstanceID/Rpc ' under the tag 'Landroid/content/Intent;->getAction()Ljava/lang/String;'
+		 - This application logs the message 'Internal error occurred. Please see logs for detailed information' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Invalid requestCode mapping in savedInstanceState.' under the tag 'FragmentActivity'
+		 - This application logs the message 'Landroid/content/Intent;->getAction()Ljava/lang/String;' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Landroid/content/Intent;->getExtras()Landroid/os/Bundle;' under the tag 'InstanceID'
+		 - This application logs the message 'Landroid/content/Intent;->getExtras()Landroid/os/Bundle;' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Landroid/database/Cursor;->getPosition()I' under the tag 'SearchView'
+		 - This application logs the message 'Landroid/hardware/Camera;->getParameters()Landroid/hardware/Camera$Parameters;' under the tag '1'
+		 - This application logs the message 'Lcom/google/android/gms/common/internal/i;->i()Ljava/lang/String;' under the tag 'GmsClient'
+		 - This application logs the message 'Ljava/io/File;->getPath()Ljava/lang/String;' under the tag 'SupportV4Utils'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag 'MenuItemWrapper'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'DatabaseUtils DatabaseUtils'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'DatabaseUtils'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag 'HttpUrlPinger'
+		 - This application logs the message 'Ljava/lang/IndexOutOfBoundsException;->getMessage()Ljava/lang/String;' under the tag 'HttpUrlPinger'
+		 - This application logs the message 'Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;' under the tag 'Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;'
+		 - This application logs the message 'Ljava/lang/Object;->toString()Ljava/lang/String;' under the tag 'DataBuffer'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'Database'
+		 - This application logs the message 'Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;' under the tag 'FragmentManager'
+		 - This application logs the message 'Ljava/lang/String;' under the tag 'InstanceID'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GAv4'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GmsClient'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'SignInCoordinator'
+		 - This application logs the message 'Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;' under the tag 'WorkSourceUtil'
+		 - This application logs the message 'MISS: Reached framework class. Abandoning search.' under the tag 'ButterKnife'
+		 - This application logs the message 'Messenger failed, fallback to startService' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Missing resolution for ConnectionResult.RESOLUTION_REQUIRED. Call GoogleApiAvailability#showErrorNotification(Context, ConnectionResult) instead.' under the tag
+		   'GoogleApiAvailability'
+		 - This application logs the message 'Mutated drawable is not the same instance as the input.' under the tag 'AppCompatDrawableManager'
+		 - This application logs the message 'Negative effect already set' under the tag 'CameraConfiguration'
+		 - This application logs the message 'Network error occurred. Please retry request later.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'No adapter attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'No layout manager attached; skipping layout' under the tag 'RecyclerView'
+		 - This application logs the message 'No suitable FPS range?' under the tag 'CameraConfiguration'
+		 - This application logs the message 'No supported values match' under the tag 'CameraConfiguration'
+		 - This application logs the message 'Notification.extras field is not of type Bundle' under the tag 'NotificationCompat'
+		 - This application logs the message 'One of the API components you attempted to connect to is not available.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'Opening camera' under the tag 'Lcom/journeyapps/barcodescanner/a/b;->g()Ljava/lang/String;'
+		 - This application logs the message 'Package has more than one signature.' under the tag 'GoogleSignatureVerifier'
+		 - This application logs the message 'Passed over target position while smooth scrolling.' under the tag 'RecyclerView'
+		 - This application logs the message 'Progress display unsupported' under the tag 'ToolbarWidgetWrapper'
+		 - This application logs the message 'Received call to unregister a listener without a matching registration call.' under the tag 'UnregisterListenerTask'
+		 - This application logs the message 'Received null response from onSignInSuccess' under the tag 'GoogleApiManager'
+		 - This application logs the message 'RecyclerView does not support scrolling to an absolute position. Use scrollToPosition instead' under the tag 'RecyclerView'
+		 - This application logs the message 'Remote account accessor probably died' under the tag 'AccountAccessor'
+		 - This application logs the message 'Remote process exception when closing' under the tag 'BulkCursor'
+		 - This application logs the message 'Remote process exception when deactivating' under the tag 'BulkCursor'
+		 - This application logs the message 'Remote service probably died when signIn is called' under the tag 'SignInClientImpl'
+		 - This application logs the message 'SeekBar view is null and hence cannot be adjusted.' under the tag 'SeekBarPreference'
+		 - This application logs the message 'SeekBar view is null in onBindViewHolder.' under the tag 'SeekBarPreference'
+		 - This application logs the message 'Setting a custom background is not supported.' under the tag 'FloatingActionButton'
+		 - This application logs the message 'Setup failed because the remote process is dead' under the tag 'BulkCursor'
+		 - This application logs the message 'Smooth Scroll action is being updated too frequently. Make sure you are not changing it unless necessary' under the tag 'RecyclerView'
+		 - This application logs the message 'Start drag has been called but swiping is not enabled' under the tag 'ItemTouchHelper'
+		 - This application logs the message 'Start drag has been called with a view holder which is not a child of the RecyclerView which is controlled by this ItemTouchHelper.' under the tag
+		   'ItemTouchHelper'
+		 - This application logs the message 'Start swipe has been called but dragging is not enabled' under the tag 'ItemTouchHelper'
+		 - This application logs the message 'Start swipe has been called with a view holder which is not a child of the RecyclerView controlled by this ItemTouchHelper.' under the tag 'ItemTouchHelper'
+		 - This application logs the message 'Starting preview' under the tag 'Lcom/journeyapps/barcodescanner/a/b;->g()Ljava/lang/String;'
+		 - This application logs the message 'The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.' under the tag
+		   'GooglePlayServicesUtil'
+		 - This application logs the message 'The application is not licensed to the user.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'The current user profile is restricted and could not use authenticated features.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'The specified account could not be signed in.' under the tag 'GoogleApiAvailability'
+		 - This application logs the message 'This device does not support video stabilization' under the tag 'CameraConfiguration'
+		 - This application logs the message 'Tried to change cursor after adapter was closed.' under the tag 'SuggestionsAdapter'
+		 - This application logs the message 'UUID.randomUUID() returned 0.' under the tag 'GAv4'
+		 - This application logs the message 'Unable to commit updates because the remote process is dead' under the tag 'BulkCursor'
+		 - This application logs the message 'Unable to delete row because the remote process is dead' under the tag 'BulkCursor'
+		 - This application logs the message 'Unable to fetch column names because the remote process is dead' under the tag 'BulkCursor'
+		 - This application logs the message 'Unable to get window because the remote process is dead' under the tag 'BulkCursor'
+		 - This application logs the message 'Unexpected error, device missing required alghorithms' under the tag 'InstanceID'
+		 - This application logs the message 'Unexpected response: null' under the tag 'InstanceID/Rpc'
+		 - This application logs the message 'Video stabilization already enabled' under the tag 'CameraConfiguration'
+		 - This application logs the message 'You must override onLayoutChildren(Recycler recycler, State state) ' under the tag 'RecyclerView'
+		 - This application logs the message 'You must override smoothScrollToPosition to support smooth scrolling' under the tag 'RecyclerView'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'You should now use the AppCompatDelegate.FEATURE_SUPPORT_ACTION_BAR_OVERLAY id when requesting this feature.' under the tag 'AppCompatDelegate'
+		 - This application logs the message 'app:theme is now deprecated. Please move to using android:theme instead.' under the tag 'AppCompatViewInflater'
+		 - This application logs the message 'beginTransaction() failed' under the tag 'Database'
+		 - This application logs the message 'cannot find the best camera size' under the tag '6'
+		 - This application logs the message 'close ChirpeSQLiteOPenHelper' under the tag 'Ljava/lang/Object;->getClass()Ljava/lang/Class;'
+		 - This application logs the message 'commitUpdates not supported on this cursor, did you include the _id column?' under the tag 'BulkCursor'
+		 - This application logs the message 'commitUpdates not supported on this cursor, did you include the _id column?' under the tag 'Cursor'
+		 - This application logs the message 'containerSize or previewSize is not set yet Preview frame is too small' under the tag ''
+		 - This application logs the message 'exception during rollback, maybe the DB previously performed an auto-rollback' under the tag 'Database'
+		 - This application logs the message 'iCertData failed to retrive data from remote' under the tag 'GoogleCertificates'
+		 - This application logs the message 'internal representation of views on the screen' under the tag 'LinearLayoutManager'
+		 - This application logs the message 'mServiceBroker is null, client disconnected' under the tag 'GmsClient'
+		 - This application logs the message 'onCreateLoader' under the tag 'base-activity'
+		 - This application logs the message 'onLoadFinished' under the tag 'base-activity'
+		 - This application logs the message 'onLoaderReset' under the tag 'base-activity'
+		 - This application logs the message 'received deprecated onAccountValidationComplete callback, ignoring' under the tag 'GmsClient'
+		 - This application logs the message 'saveAllState: no fragments!' under the tag 'FragmentManager'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'service probably died' under the tag 'GmsClient'
+		 - This application logs the message 'setActionProvider: item does not implement SupportMenuItem; ignoring' under the tag 'MenuItemCompat'
+		 - This application logs the message 'v0' under the tag '0'
+		 - This application logs the message 'v0' under the tag 'Landroid/support/v7/widget/ListPopupWindow;->getAnchorView()Landroid/view/View;'
+		 - This application logs the message 'v2' under the tag 'SupportMenuInflater'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Fabric com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/google/android/gms/b/a;->b(Landroid/content/Context;)Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/google/android/gms/iid/e;->a(Landroid/content/Context;)Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves '' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_RECEIVERS' information about the 'CrashlyticsCore' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.google.android.gms' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES, MATCH_UNINSTALLED_PACKAGES' information about the 'Lcom/google/android/gms/common/util/e;->c(Landroid/content/Context;)Z' application installed on the
+		   system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Telephony Services Abuse                
+		 - This application makes phone calls
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address '0' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address '2' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;' on the 'N/A' port
+		 - This application opens a Socket and connects it to the remote address 'timeout' on the 'N/A' port
+
+	[.] Code Execution                          
+		 - This application loads a native library: 'sqlcipher'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - a2z.Mobile.Event3478.apk
+
+	[.] Fingerprint                             
+		 - MD5: acbc3524cd83670d523512763bf24ae9
+		 - SHA-1: 589e163539d28d98643f5d2bbc6b6e9a25b9fe68
+		 - SHA-256: 18fafd1f24f2246d88c103636f67ce55b27c46016fda2f59016bc055977148de
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['a2z.Mobile.Event3478.permission.C2D_MESSAGE',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.BLUETOOTH',  'android.permission.BLUETOOTH_ADMIN',
+		   'android.permission.CAMERA',  'android.permission.INTERNET',  'android.permission.READ_EXTERNAL_STORAGE',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE',  'com.google.android.c2dm.permission.RECEIVE']
+		 - Implied: []
+		 - Declared: ['a2z.Mobile.Event3478.permission.C2D_MESSAGE']
+
+

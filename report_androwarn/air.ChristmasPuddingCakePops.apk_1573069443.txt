@@ -1,0 +1,105 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Christmas Pudding Cake Pops
+
+	[.] Application Version                     
+		 - 1.0.0
+
+	[.] Package Name                            
+		 - air.ChristmasPuddingCakePops
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the phone's current state
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message ' 2' under the tag '[admobex]'
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '0' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '1' under the tag '[admobex]'
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '2' under the tag '[admobex]'
+		 - This application logs the message '3' under the tag 'AdobeAIRMainActivity'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '4' under the tag 'GmsClient'
+		 - This application logs the message '4' under the tag '[admobex]'
+		 - This application logs the message '5' under the tag 'DataHolder'
+		 - This application logs the message '5' under the tag 'GmsClientEvents'
+		 - This application logs the message '5' under the tag '[admobex]'
+		 - This application logs the message 'Could not discover AIR container.' under the tag '1'
+		 - This application logs the message 'Could not parse dimensions.' under the tag '[admobex]'
+		 - This application logs the message 'Destroy called on an active adView.  Removing from viewGroup.' under the tag '[admobex]'
+		 - This application logs the message 'Error parsing active ad state (thread)' under the tag '[admobex]'
+		 - This application logs the message 'Exception hooking AIR container.' under the tag 'Could not discover AIR container.'
+		 - This application logs the message 'GooglePlayServicesUtil 2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Interstitial has not been preloaded.' under the tag '[admobex]'
+		 - This application logs the message 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Landroid/content/Context;->getResources()Landroid/content/res/Resources;' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Lcom/google/android/gms/internal/hr;->e()V' under the tag 'GmsClient'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag '[admobex]'
+		 - This application logs the message 'Ljava/util/concurrent/locks/Lock;->unlock()V' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Param parsing exception:' under the tag '[admobex]'
+		 - This application logs the message 'RECEIVED_AD 2 [admobex] 1' under the tag '[admobex]'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'X509 GooglePlayServicesUtil Package has more than one signature.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '[admobex] Background. LEFT 4' under the tag '[admobex]'
+		 - This application logs the message '[admobex] Background.' under the tag '[admobex]'
+		 - This application logs the message '[admobex] Begin Android ShowAd Banner. [admobex] 1' under the tag '[admobex]'
+		 - This application logs the message '[admobex] Begin Android ShowAd Banner.' under the tag '[admobex]'
+		 - This application logs the message '[admobex] NO DIM VIEW 0,0 [admobex] Measure view.' under the tag '[admobex]'
+		 - This application logs the message '[admobex] NO DIM VIEW' under the tag '[admobex]'
+		 - This application logs the message '[admobex] presenting pending interstitial. [admobex] pending interstitial is not ready. [admobex] no pending interstitial exists to show.' under the tag
+		   '[admobex]'
+		 - This application logs the message '[admobex] presenting pending interstitial. [admobex] pending interstitial is not ready.' under the tag '[admobex]'
+		 - This application logs the message '[admobex] presenting pending interstitial.' under the tag '[admobex]'
+		 - This application logs the message '[admobex] setVisibility invoked internal' under the tag '[admobex]'
+		 - This application logs the message 'destroy called but adView is null.' under the tag '[admobex]'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'try create context' under the tag '[admobext]'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'A required meta-data tag in your app\'s AndroidManifest.xml does not exist.  You must have the following declaration within the
+		   <application> element:     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" /> com.google.android.gms' application installed on the
+		   system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.android.vending' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.ChristmasPuddingCakePops.apk
+
+	[.] Fingerprint                             
+		 - MD5: d197736001a7d453aa674a2b9f31313e
+		 - SHA-1: aeb4cc6b8666ba8ce107813e925b3761f41e0542
+		 - SHA-256: be966ad449e9f37da333a5db215ebc68a6e2c7a97927be18aba404775bdf9ce6
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.DISABLE_KEYGUARD',  'android.permission.INTERNET',  'android.permission.READ_PHONE_STATE',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

@@ -1,0 +1,103 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Ezan
+
+	[.] Application Version                     
+		 - 2.0.3
+
+	[.] Package Name                            
+		 - air.co.yapps.ezan
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the phone's current state
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '0' under the tag 'LocalNotificationsContext::decodeLocalNotification'
+		 - This application logs the message '10' under the tag 'AdMobExtension'
+		 - This application logs the message '12' under the tag 'AlarmRestoreOnBoot:'
+		 - This application logs the message '12' under the tag 'JK_ANE_LocalNotification'
+		 - This application logs the message '2' under the tag 'Adobe AIR'
+		 - This application logs the message '2' under the tag 'LocalNotificationManager::initialize'
+		 - This application logs the message '2' under the tag 'LocalNotificationsContext::getSelectedNotificationCode'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '3' under the tag 'AdMobExtension'
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message '3' under the tag 'LocalNotificationManager::persistNotification'
+		 - This application logs the message '5' under the tag 'LocalNotificationManager::unpersistNotification'
+		 - This application logs the message '7' under the tag 'LocalNotificationsContext::getSelectedNotificationData'
+		 - This application logs the message '9' under the tag 'LocalNotificationManager::cancel'
+		 - This application logs the message 'AdMobExtension HideAdFunction.call() AdMobExtension end HideAdFunction.call()' under the tag 'AdMobExtension'
+		 - This application logs the message 'AdMobExtension HideAdFunction.call()' under the tag 'AdMobExtension'
+		 - This application logs the message 'AdMobExtension RevealAdFunction.call() AdMobExtension end RevealAdFunction.call()' under the tag 'AdMobExtension'
+		 - This application logs the message 'AdMobExtension RevealAdFunction.call()' under the tag 'AdMobExtension'
+		 - This application logs the message 'AdMobExtension ShowInterstitialFunction.call() AdMobExtension end ShowInterstitialFunction.call()' under the tag 'AdMobExtension'
+		 - This application logs the message 'AdMobExtension ShowInterstitialFunction.call()' under the tag 'AdMobExtension'
+		 - This application logs the message 'AlarmRestoreOnBoot: Successfully restored alarms upon reboot' under the tag 'JK_ANE_LocalNotification'
+		 - This application logs the message 'Called' under the tag 'LocalNotificationManager::cancelAll'
+		 - This application logs the message 'Called' under the tag 'LocalNotificationManager::unpersistAllNotifications'
+		 - This application logs the message 'Context disposed.' under the tag 'AdMobExtension'
+		 - This application logs the message 'Exception' under the tag 'LocalNotification::serialize'
+		 - This application logs the message 'GetHeightFunction.call()' under the tag 'AdMobExtension'
+		 - This application logs the message 'GoogleAdsAssertion 3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'HideAdFunction.call()' under the tag 'AdMobExtension'
+		 - This application logs the message 'Ljava/lang/Throwable;->toString()Ljava/lang/String;' under the tag 'Unhandled exception'
+		 - This application logs the message 'LocalNotificationManager::notify 8' under the tag 'LocalNotificationManager::notify'
+		 - This application logs the message 'NOTIF_TITLE NOTIF_BODY NOTIF_TICKER com.juankpro.ane.localnotif.notificationCodeKey NOTIF_ICON_RESOURCE NOTIF_NUM_ANNOT NOTIF_PLAY_SOUND NOTIF_SOUND_NAME
+		   NOTIF_VIBRATE NOTIF_CANCEL_OS NOTIF_RUA NOTIF_ONGOING NOTIF_POLICY NOTIF_HAS_ACTION com.juankpro.ane.localnotif.actionDataKey LocalNotificationManager
+		   com.juankpro.ane.localnotif.mainActivityClassNameKey LocalNotificationManager::notify 9' under the tag 'LocalNotificationManager::notify'
+		 - This application logs the message 'NewAdFunction.call()' under the tag 'AdMobExtension'
+		 - This application logs the message 'Warning! Ad is null' under the tag 'AdMobExtension'
+		 - This application logs the message 'cache instance' under the tag 'LocalNotificationsContext::LocalNotificationsContext'
+		 - This application logs the message 'com.juankpro.ane.localnotif.notificationCodeKey 3' under the tag 'LocalNotificationIntentService::onHandleIntent'
+		 - This application logs the message 'context created' under the tag 'Lcom/spacebarup/admob/AdMobExtensionContext;-><init>()V'
+		 - This application logs the message 'created interstitial' under the tag 'AdMobExtension'
+		 - This application logs the message 'getFunctions()' under the tag 'AdMobExtension'
+		 - This application logs the message 'new IAB_BANNER' under the tag 'AdMobExtension'
+		 - This application logs the message 'new IAB_LEADERBOARD' under the tag 'AdMobExtension'
+		 - This application logs the message 'new IAB_MRECT' under the tag 'AdMobExtension'
+		 - This application logs the message 'new IAB_WIDE_SKYSCRAPER' under the tag 'AdMobExtension'
+		 - This application logs the message 'new default IAB_BANNER' under the tag 'AdMobExtension'
+		 - This application logs the message 'onPreDraw()' under the tag 'AdMobExtension'
+		 - This application logs the message 'set instance to null' under the tag 'LocalNotificationsContext::dispose'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.co.yapps.ezan.apk
+
+	[.] Fingerprint                             
+		 - MD5: 07e482f7c4549d1b0c37e78d8846a98f
+		 - SHA-1: 200c971b4cbe2a1289dd79a59fe6c37971b80131
+		 - SHA-256: 4539cc7dcfa87b6e702b05617af73d16d45bb6b046e2f234d00e2dae32bc80de
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',
+		   'android.permission.INTERNET',  'android.permission.RECEIVE_BOOT_COMPLETED',  'android.permission.VIBRATE']
+		 - Implied: []
+		 - Declared: []
+
+

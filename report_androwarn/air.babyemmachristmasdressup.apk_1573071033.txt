@@ -1,0 +1,62 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Baby Emma Christmas Dressup
+
+	[.] Application Version                     
+		 - 1.0.0
+
+	[.] Package Name                            
+		 - air.babyemmachristmasdressup
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message '4' under the tag '[AdMobEx]'
+		 - This application logs the message '5' under the tag '[AdMobEx] [AdMobEx]'
+		 - This application logs the message '5' under the tag '[AdMobEx]'
+		 - This application logs the message '9' under the tag '[AdMobEx]'
+		 - This application logs the message 'Destroy called on an active adView.  Removing from viewGroup.' under the tag '[AdMobEx]'
+		 - This application logs the message 'Failed to convert view state to FREObject.' under the tag '[AdMobEx]'
+		 - This application logs the message 'GoogleAdsAssertion 3' under the tag 'GoogleAdsAssertion'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag '[AdMobEx] onfail destroy adview:'
+		 - This application logs the message 'Ljava/lang/Exception;->getMessage()Ljava/lang/String;' under the tag '[AdMobEx]'
+		 - This application logs the message 'RECEIVED_AD 2 [AdMobEx] 1' under the tag '[AdMobEx]'
+		 - This application logs the message '[AdMobEx] setVisibility invoked internal' under the tag '[AdMobEx]'
+		 - This application logs the message 'add test' under the tag '[admobex]'
+		 - This application logs the message 'destroy called but adView is null.' under the tag '[AdMobEx]'
+		 - This application logs the message 'setVisibility called but adView is null.' under the tag '[AdMobEx]'
+		 - This application logs the message 'try create context' under the tag '[admobext]'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;' application installed on the system
+		 - This application retrieves '' information about the 'android.intent.action.VIEW' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.babyemmachristmasdressup.apk
+
+	[.] Fingerprint                             
+		 - MD5: d70269c413b8087a362af6b24eb060fa
+		 - SHA-1: ff23685228cee6e9036b66725e2ea92925a8744f
+		 - SHA-256: f9316eb5bfa353ee89233ec336bdccbeb82e2596a9415e5d6cd01137c936df07
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.DISABLE_KEYGUARD',  'android.permission.INTERNET',  'android.permission.READ_PHONE_STATE',  'android.permission.WAKE_LOCK',
+		   'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

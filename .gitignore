@@ -3,5 +3,5 @@ AndroBugs_Framework/
 Benign-sample-187/
 androwarn/
 atspvenv/
-report*
 .ipynb*
+*.png

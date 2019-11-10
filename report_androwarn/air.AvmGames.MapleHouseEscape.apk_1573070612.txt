@@ -1,0 +1,105 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - Maple House Escape
+
+	[.] Application Version                     
+		 - V 1.0.0.4
+
+	[.] Package Name                            
+		 - air.AvmGames.MapleHouseEscape
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message ' 2' under the tag '[admobex]'
+		 - This application logs the message '0' under the tag 'DataBuffer'
+		 - This application logs the message '1' under the tag '1'
+		 - This application logs the message '1' under the tag '[admobex]'
+		 - This application logs the message '2' under the tag 'Asserts'
+		 - This application logs the message '2' under the tag 'LocationClientImpl'
+		 - This application logs the message '2' under the tag '[admobex]'
+		 - This application logs the message '3' under the tag 'DataItem'
+		 - This application logs the message '3' under the tag 'GAV4'
+		 - This application logs the message '3' under the tag 'GmsClient'
+		 - This application logs the message '3' under the tag 'GmsClientEvents'
+		 - This application logs the message '4' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '4' under the tag '[admobex]'
+		 - This application logs the message '5' under the tag '[admobex]'
+		 - This application logs the message '6' under the tag 'DataHolder'
+		 - This application logs the message '7' under the tag '[admobex]'
+		 - This application logs the message 'Could not discover AIR container.' under the tag '1'
+		 - This application logs the message 'Could not parse dimensions.' under the tag '[admobex]'
+		 - This application logs the message 'Destroy called on an active adView.  Removing from viewGroup.' under the tag '[admobex]'
+		 - This application logs the message 'Error parsing active ad state (thread)' under the tag '[admobex]'
+		 - This application logs the message 'Exception hooking AIR container.' under the tag 'Could not discover AIR container.'
+		 - This application logs the message 'GooglePlayServicesUtil 2' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Interstitial has not been preloaded.' under the tag '[admobex]'
+		 - This application logs the message 'Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z' under the tag 'GooglePlusPlatform'
+		 - This application logs the message 'Lcom/google/android/gms/internal/ff$b;->eN()V' under the tag 'GmsClient'
+		 - This application logs the message 'Lcom/google/android/gms/internal/gk;->y(Landroid/content/Context;)Z' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message 'Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;' under the tag '[admobex]'
+		 - This application logs the message 'Ljava/util/concurrent/locks/Lock;->unlock()V' under the tag 'GoogleApiClientImpl'
+		 - This application logs the message 'Param parsing exception:' under the tag '[admobex]'
+		 - This application logs the message 'RECEIVED_AD 2 [admobex] 1' under the tag '[admobex]'
+		 - This application logs the message 'Rebuild layout front.' under the tag '[admobex]'
+		 - This application logs the message 'Received a location in client after calling removeLocationUpdates.' under the tag 'LocationClientHelper'
+		 - This application logs the message 'Sign in button not found, using placeholder instead' under the tag 'SignInButton'
+		 - This application logs the message 'Unable to allocate row to hold data.' under the tag 'DataHolder'
+		 - This application logs the message 'X509 GooglePlayServicesUtil Package has more than one signature.' under the tag 'GooglePlayServicesUtil'
+		 - This application logs the message '[admobex] Background. LEFT 4' under the tag '[admobex]'
+		 - This application logs the message '[admobex] Background.' under the tag '[admobex]'
+		 - This application logs the message '[admobex] Begin Android ShowAd Banner. [admobex] 1' under the tag '[admobex]'
+		 - This application logs the message '[admobex] Begin Android ShowAd Banner.' under the tag '[admobex]'
+		 - This application logs the message '[admobex] NO DIM VIEW 0,0 [admobex] Measure view.' under the tag '[admobex]'
+		 - This application logs the message '[admobex] NO DIM VIEW' under the tag '[admobex]'
+		 - This application logs the message '[admobex] presenting pending interstitial. [admobex] pending interstitial is not ready. [admobex] no pending interstitial exists to show.' under the tag
+		   '[admobex]'
+		 - This application logs the message '[admobex] presenting pending interstitial. [admobex] pending interstitial is not ready.' under the tag '[admobex]'
+		 - This application logs the message '[admobex] presenting pending interstitial.' under the tag '[admobex]'
+		 - This application logs the message '[admobex] setVisibility invoked internal' under the tag '[admobex]'
+		 - This application logs the message 'destroy called but adView is null.' under the tag '[admobex]'
+		 - This application logs the message 'onAddGeofenceResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByPendingIntentResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'onRemoveGeofencesByRequestIdsResult called multiple times' under the tag 'LocationClientImpl'
+		 - This application logs the message 'service died' under the tag 'AppStateClient'
+		 - This application logs the message 'service died' under the tag 'GmsClient'
+		 - This application logs the message 'try create context' under the tag '[admobext]'
+		 - This application logs the message 'unknown message in LocationHandler.handleMessage' under the tag 'LocationClientHelper'
+		 - This application retrieves '' information about the '' application installed on the system
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'com.android.vending' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES, GET_PROVIDERS, GET_RECEIVERS, GET_SERVICES' information about the 'Landroid/content/Context;->getApplicationContext()Landroid/content/Context;'
+		   application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'com.android.vending' application installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.AvmGames.MapleHouseEscape.apk
+
+	[.] Fingerprint                             
+		 - MD5: a569edb6995c447f1bec51cab68de367
+		 - SHA-1: 6aeecb911031ef09d56fd8c70f8ef09d26dafd74
+		 - SHA-256: 12e6d26f57cd0241e0e427b41f53bf96f95f2a13c0040268b1899dcbcb39ec95
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_NETWORK_STATE',  'android.permission.DISABLE_KEYGUARD',  'android.permission.INTERNET',  'android.permission.WAKE_LOCK']
+		 - Implied: []
+		 - Declared: []
+
+

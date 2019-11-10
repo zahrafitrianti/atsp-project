@@ -1,0 +1,36 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - OfflineEditing
+
+	[.] Application Version                     
+		 - 2.0.8
+
+	[.] Package Name                            
+		 - air.AIRMapViewer
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.AIRMapViewer.apk
+
+	[.] Fingerprint                             
+		 - MD5: 77d02cb632b0ddf98bfc65c3ba681de6
+		 - SHA-1: 0a6bebf0877b1e9ee973c58696ab922831e1a477
+		 - SHA-256: 32b9036f9f5e71915838603b3635c2cef3ac3f4eff1f44a20a588a531a9eb9ab
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_FINE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.INTERNET',
+		   'android.permission.WRITE_EXTERNAL_STORAGE']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

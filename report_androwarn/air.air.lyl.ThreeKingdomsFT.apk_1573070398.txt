@@ -1,0 +1,126 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 三國志霸王群英傳
+
+	[.] Application Version                     
+		 - 2.235
+
+	[.] Package Name                            
+		 - air.air.lyl.ThreeKingdomsFT
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the ISO country code equivalent of the current registered operator's MCC (Mobile Country Code)
+		 - This application reads the current location of the device
+		 - This application reads the device phone type value
+		 - This application reads the numeric name (MCC+MNC) of current registered operator
+		 - This application reads the operator name
+		 - This application reads the phone's current state
+		 - This application reads the radio technology (network type) currently in use on the device for data transmission
+		 - This application reads the software version number for the device, for example, the IMEI/SV for GSM phones
+		 - This application reads the unique device ID, i.e the IMEI for GSM and the MEID or ESN for CDMA phones
+		 - This application reads the unique subscriber ID, for example, the IMSI for a GSM phone
+		 - This application reads the Cell ID value
+		 - This application reads the Location Area Code value
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '' under the tag 'Mobads Proxy Mobads Proxy'
+		 - This application logs the message '2' under the tag ''
+		 - This application logs the message '2' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '2' under the tag 'AndroidWebView'
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message '2' under the tag 'test'
+		 - This application logs the message '3' under the tag 'AndroidGcmRegistrationService'
+		 - This application logs the message '4' under the tag ''
+		 - This application logs the message '4' under the tag 'RecommendAd-DEMO '
+		 - This application logs the message 'onAdClick' under the tag 'InterstitialAd'
+		 - This application logs the message 'onAdClick' under the tag 'QianTiePian_AD'
+		 - This application logs the message 'onAdClick' under the tag 'RSplashActivity'
+		 - This application logs the message 'onAdClick' under the tag 'SplashActivity'
+		 - This application logs the message 'onAdClick' under the tag 'ZanTingYe_AD'
+		 - This application logs the message 'onAdDismissed' under the tag 'CSplashActivity'
+		 - This application logs the message 'onAdDismissed' under the tag 'InterstitialAd'
+		 - This application logs the message 'onAdDismissed' under the tag 'QianTiePian_AD'
+		 - This application logs the message 'onAdDismissed' under the tag 'RSplashActivity'
+		 - This application logs the message 'onAdDismissed' under the tag 'ZanTingYe_AD'
+		 - This application logs the message 'onAdFailed' under the tag 'CSplashActivity'
+		 - This application logs the message 'onAdFailed' under the tag 'InterstitialAd'
+		 - This application logs the message 'onAdFailed' under the tag 'QianTiePian_AD'
+		 - This application logs the message 'onAdFailed' under the tag 'RSplashActivity'
+		 - This application logs the message 'onAdFailed' under the tag 'ZanTingYe_AD'
+		 - This application logs the message 'onAdPresent' under the tag 'InterstitialAd'
+		 - This application logs the message 'onAdPresent' under the tag 'QianTiePian_AD'
+		 - This application logs the message 'onAdPresent' under the tag 'RSplashActivity'
+		 - This application logs the message 'onAdPresent' under the tag 'SplashActivity'
+		 - This application logs the message 'onAdPresent' under the tag 'ZanTingYe_AD'
+		 - This application logs the message 'onAdReady' under the tag 'InterstitialAd'
+		 - This application logs the message 'onAdReady' under the tag 'QianTiePian_AD'
+		 - This application logs the message 'onAdReady' under the tag 'ZanTingYe_AD'
+		 - This application logs the message 'onAdSwitch' under the tag ''
+		 - This application logs the message 'onIconClick' under the tag 'RecommendAd-DEMO '
+		 - This application logs the message 'onIconShow' under the tag 'RecommendAd-DEMO '
+		 - This application logs the message 'onVideoClickAd' under the tag 'Demo'
+		 - This application logs the message 'onVideoClickClose' under the tag 'Demo'
+		 - This application logs the message 'onVideoClickReplay' under the tag 'Demo'
+		 - This application logs the message 'onVideoError' under the tag 'Demo'
+		 - This application logs the message 'onVideoFinish' under the tag ''
+		 - This application logs the message 'onVideoFinish' under the tag 'Demo'
+		 - This application logs the message 'onVideoStart' under the tag ''
+		 - This application logs the message 'onVideoStart' under the tag 'Demo'
+		 - This application logs the message 'parse error' under the tag 'gif'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+		 - This application logs the message '展示关闭' under the tag 'YoumiAdDemo'
+		 - This application logs the message '展示失败' under the tag 'YoumiAdDemo'
+		 - This application logs the message '展示成功' under the tag 'YoumiAdDemo'
+		 - This application logs the message '广告条切换' under the tag 'YoumiAdDemo'
+		 - This application logs the message '插屏点击' under the tag 'YoumiAdDemo'
+		 - This application logs the message '请求广告失败' under the tag 'YoumiAdDemo'
+		 - This application logs the message '请求广告成功' under the tag 'YoumiAdDemo'
+		 - This application retrieves '' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves '' information about the 'Lcom/adobe/air/AndroidGcmRegistrationService;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_ACTIVITIES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_CONFIGURATIONS' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_RECEIVERS' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_SERVICES' information about the 'Landroid/content/Context;->getPackageName()Ljava/lang/String;' application installed on the system
+		 - This application retrieves 'GET_SIGNATURES' information about the 'Lnet/youmi/android/b/b/b/e;->a(Ljava/lang/String;)Z' application installed on the system
+		 - This application lists applications installed on the system
+
+	[.] Connection Interfaces Exfiltration      
+		 - This application reads details about the currently active data network
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+	[.] Code Execution                          
+		 - This application executes a UNIX command containing this argument: 'Ljava/io/File;->getAbsolutePath()Ljava/lang/String;'
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.air.lyl.ThreeKingdomsFT.apk
+
+	[.] Fingerprint                             
+		 - MD5: 5ebb99a7972c931bd36c5898bbb1ac36
+		 - SHA-1: a6421a22d183255d5f96c3692dda2f29291e79ef
+		 - SHA-256: aa1850bf290768f242b720f79fec0f73c15d12df6c81a45a4de1b7228eeee96c
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.ACCESS_COARSE_LOCATION',  'android.permission.ACCESS_NETWORK_STATE',  'android.permission.ACCESS_WIFI_STATE',  'android.permission.CAMERA',
+		   'android.permission.DISABLE_KEYGUARD',  'android.permission.GET_TASKS',  'android.permission.INTERNET',  'android.permission.MODIFY_AUDIO_SETTINGS',
+		   'android.permission.MOUNT_UNMOUNT_FILESYSTEMS',  'android.permission.PROCESS_OUTGOING_CALLS',  'android.permission.READ_PHONE_STATE',  'android.permission.RECORD_AUDIO',
+		   'android.permission.SYSTEM_ALERT_WINDOW',  'android.permission.VIBRATE',  'android.permission.WAKE_LOCK',  'android.permission.WRITE_EXTERNAL_STORAGE',  'android.permission.WRITE_SETTINGS',
+		   'com.android.launcher.permission.INSTALL_SHORTCUT',  'com.android.vending.BILLING']
+		 - Implied: [['android.permission.READ_EXTERNAL_STORAGE', None]]
+		 - Declared: []
+
+

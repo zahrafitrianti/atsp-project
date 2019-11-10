@@ -1,0 +1,35 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - التوحد أشيائي
+
+	[.] Application Version                     
+		 - 01
+
+	[.] Package Name                            
+		 - air.Autism.Things
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.Autism.Things.apk
+
+	[.] Fingerprint                             
+		 - MD5: bd0cce37f070bb14eafd8c3b740e2d72
+		 - SHA-1: eb783f3d33c1cc722514dd62bb8b7e9e4e887782
+		 - SHA-256: b2564f4c6885222047153d902dcd1fa1ed27095533d00eb97bdb8a34594af797
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: []
+		 - Implied: []
+		 - Declared: []
+
+

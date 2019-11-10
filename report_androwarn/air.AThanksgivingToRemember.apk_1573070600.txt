@@ -1,0 +1,47 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - AThanksgivingToRemember
+
+	[.] Application Version                     
+		 - 1.0.1
+
+	[.] Package Name                            
+		 - air.AThanksgivingToRemember
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+	[.] Telephony Identifiers Leakage           
+		 - This application reads the phone's current state
+
+	[.] Device Settings Harvesting              
+		 - This application logs the message '2' under the tag 'Release Logging: '
+		 - This application logs the message '2' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceCreated' under the tag 'VideoSurfaceView'
+		 - This application logs the message 'surfaceDestroyed' under the tag 'VideoSurfaceView'
+
+	[.] Suspicious Connection Establishment     
+		 - This application opens a Socket and connects it to the remote address 'Ljava/net/InetAddress;->getLocalHost()Ljava/net/InetAddress;' on the '' port
+
+
+[+] Apk File
+	[.] File Name                               
+		 - air.AThanksgivingToRemember.apk
+
+	[.] Fingerprint                             
+		 - MD5: ab44396830b8b50225442400dd0761d9
+		 - SHA-1: 2654691e425e8883bade0ec887c27f7fdb49254e
+		 - SHA-256: 346c04d367c643d590cadb328b5b978192190a6e71dca7fd1519a856ee40b5ee
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.INTERNET']
+		 - Implied: []
+		 - Declared: []
+
+

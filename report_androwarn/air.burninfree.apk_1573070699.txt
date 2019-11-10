@@ -1,0 +1,35 @@
+===== Androwarn Report =====
+[+] Application Information
+	[.] Application Name                        
+		 - 번인클리어 free
+
+	[.] Application Version                     
+		 - 1.0.0
+
+	[.] Package Name                            
+		 - air.burninfree
+
+	[.] Description                             
+		 - N/A
+		 - N/A
+
+
+[+] Analysis Results
+
+[+] Apk File
+	[.] File Name                               
+		 - air.burninfree.apk
+
+	[.] Fingerprint                             
+		 - MD5: e823573961e06cf640dfd4c02e05c654
+		 - SHA-1: 3459c9618a4a059afd94520e5647a00054f9aef2
+		 - SHA-256: 5a9b3b87f3e9ea864d80c1ba17b02ac456864a7d0ce408cd1531eef70b5155a4
+
+
+[+] Androidmanifest.Xml
+	[.] Permissions                             
+		 - Asked: ['android.permission.WAKE_LOCK']
+		 - Implied: []
+		 - Declared: []
+
+
