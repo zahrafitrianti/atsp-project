@@ -2,6 +2,7 @@
 To run this project you have to change the hardcoded path for input and output inside the various class to adapt to your path for the input and output
 
 ## Structure tree
+``` bash
 +---Reports		                                -> Folder of all reports
 |   +---Report MobSF		                    -> Folder of MobSF reports 
 |   |   +---Report Benign apk		            -> MobSF reports for bening apk dataset
@@ -14,7 +15,7 @@ To run this project you have to change the hardcoded path for input and output i
 \---result		                                -> Result folder, inside the result of the combined scores for the apks
     +---Result Androbugs		                -> Result for the scores of Androbugs
     \---Result AndroWarn		                -> Result for the scores of AndroWarn
-
+```
 ## Analyzer tools installation
 
 ### Androwarn
